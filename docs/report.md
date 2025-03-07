@@ -2,10 +2,15 @@
 
 Alunos:
 Walker Junio Gonzaga Rocha - walker.rocha@sga.pucminas.br,
+
 Izabela Dobscha Santos Borges - idsborges@sga.pucminas.br,
+
 Guilherme Amintas Lopes Magalhaes - guilherme.amintas@sga.pucminas.br,
+
 Álvaro Oliveira Soares de Souza - alvaro.souza.1213824@sga.pucminas.br,
+
 Luiz Eduardo Araújo de Medeiros - leamedeiros@sga.pucminas.br
+
 ---
 
 Professores:
@@ -27,8 +32,6 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 
 ## Introdução
-A introdução deve apresentar de dois a quatro parágrafos de contextualização do trabalho. 
-
 O mercado de dados tem se expandido rapidamente no Brasil, impulsionado pela crescente demanda por profissionais qualificados para atuar em áreas como ciência de dados, engenharia de dados e análise de negócios. No entanto, essa expansão não ocorre de forma homogênea em todas as regiões do país, gerando desigualdades no acesso a oportunidades e desenvolvimento profissional. Fatores como disponibilidade de cursos, maturidade do setor tecnológico em cada estado e diferenças salariais impactam diretamente a inserção de novos talentos na área.
 
 Diante desse cenário, este trabalho busca compreender as diferenças regionais no mercado de dados do Brasil, com foco em iniciantes e profissionais em transição de carreira. A análise será realizada a partir de dados sobre experiência profissional, faixa salarial, situação de emprego, nível educacional e principais ferramentas utilizadas, permitindo a identificação de padrões e desafios enfrentados por esses profissionais em diferentes localidades.
