@@ -239,6 +239,12 @@ Da apresentação final (armazenado no repositório);
 
 Do vídeo de apresentação (armazenado no repositório).
 
+Variaveis a serem utilzadas:
+RegiaoP1_i_2
+Nivel de atuação P2_g
+faixa salarial 
+ha quanto tempo está na area de dados
+
 
 
 
