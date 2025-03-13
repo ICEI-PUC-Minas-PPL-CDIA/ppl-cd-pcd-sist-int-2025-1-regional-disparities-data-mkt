@@ -1,4 +1,4 @@
-# Nome do projeto
+# Diferenças Regionais no mercado de Dados no Brasil
 
 Escreva um ou dois parágrafos resumindo o objetivo do seu projeto. Lembrando que o objeto é desenvolver um sistema inteligente. Você deve mencionar o produto que está sendo desenvolvido, e não o que se espera obter com este produto.
 
@@ -12,7 +12,7 @@ Walker Junio Gonzaga Rocha 	1594346@sga.pucminas.br
 
 ## Professor
 
-* Nome completo do professor (Prof. Hugo Bastos de Paula)
+*  Prof. Hugo Bastos de Paula
 
 ## Instruções de utilização
 
