@@ -4,10 +4,11 @@ Escreva um ou dois parágrafos resumindo o objetivo do seu projeto. Lembrando qu
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+Álvaro Oliveira Soares de Souza 1213824@sga.pucminas.br
+Guilherme Amintas Lopes Magalhaes 830665@sga.pucminas.br	
+Izabela Dobscha Santos Borges 924521@sga.pucminas.br
+Luiz Eduardo Araújo de Medeiros 1455932@sga.pucminas.br
+Walker Junio Gonzaga Rocha 	1594346@sga.pucminas.br
 
 ## Professor
 
