@@ -109,13 +109,15 @@ diagramas de personas e mapa de stakeholders.
 
 ###    Dicionário de dados
 
-Apresente uma descrição das bases de dados a serem utilizadas. 
-Dicionários de dados devem conter as bases de dados, os nomes dos atributos 
-com seu significado, seu tipo (inteiro, real, textual, categórico, etc).
+O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fonte de dados. Essa base de dados busca relacionar as regioes do Brasil com o merdado de Dados Brasileiro.
+Nele temos os seguintes atributos: 
 
-Este projeto deve utilizar pelo menos duas fontes de dados. Uma fonte principal e 
-uma fonte para enriquecimentos dos dados principais.
-
+|                Atributo               |                                    Descrição                                      | tipo de dado     |
+| ------------------------------------- | --------------------------------------------------------------------------------- | -----------------|
+|            Região                     | Atributo que Identifica onde reside cada integrante da tabela                     | Dado tipo texto  |
+|       Nível de Atuação                | Atributo que Identifica do nível de experiência de cada integrante da tabela      | Dado tipo texto  |
+|        Faixa Salarial                 | Atributo que Identifica a remuneração mensal de cada integrante da tabela         | Números reais    |
+| Há quanto tempo está na área de dados | Atributo que Identifica a quanto tempo o integrante está atuando na área de dados | Números reais    |
 
 ###    Descrição de dados
 
