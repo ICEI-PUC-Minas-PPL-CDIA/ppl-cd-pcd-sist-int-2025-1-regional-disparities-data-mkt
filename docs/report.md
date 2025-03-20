@@ -25,8 +25,8 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+### RESUMO
+O mercado de dados no Brasil tem crescido significativamente nos últimos anos, impulsionado pela digitalização das empresas e pelo avanço de tecnologias como big data e inteligência artificial. No entanto, esse crescimento não ocorre de forma uniforme entre as regiões do país, resultando em desigualdades no acesso a oportunidades de trabalho e desenvolvimento profissional. Este estudo investiga essas disparidades regionais, analisando fatores como experiência profissional, faixa salarial, nível educacional e ferramentas utilizadas por iniciantes e profissionais em transição de carreira. Para isso, será desenvolvido um sistema inteligente capaz de fornecer insights relevantes sobre essas diferenças, auxiliando tanto os profissionais quanto empresas e instituições educacionais a tomarem decisões mais informadas. A pesquisa busca contribuir para uma melhor compreensão do mercado de dados no Brasil, promovendo maior equidade na distribuição de oportunidades e inclusão profissional no setor.
 
 ---
 
@@ -40,24 +40,23 @@ O objetivo é desenvolver um sistema inteligente capaz de fornecer insights rele
 
 ###    Contextualização
 
-Na **contextualização**, o aluno deve dizer do que se trata o trabalho, em que área ou contexto se insere. 
-A **contextualização** deve ser desenvolvida de algo mais genérico para algo mais específico. 
-A citação de pesquisas quantitativas é bem aceita aqui (corretamente referenciadas).
+Nos últimos anos, o mercado de dados tem experimentado um crescimento exponencial em escala global, impulsionado pelo avanço de tecnologias como big data, inteligência artificial e aprendizado de máquina. Empresas de diversos setores passaram a utilizar dados como recurso estratégico, promovendo uma alta demanda por profissionais especializados, como cientistas de dados, engenheiros de dados e analistas de negócios. Esse fenômeno também se reflete no Brasil, onde a digitalização das empresas e o desenvolvimento de soluções baseadas em dados impulsionam um mercado promissor para profissionais da área.
+
+No entanto, essa expansão do mercado de dados não ocorre de maneira uniforme em todas as regiões do país. Estudos indicam que as oportunidades na área de tecnologia estão concentradas em grandes centros urbanos, como São Paulo, Rio de Janeiro e Belo Horizonte, onde há maior presença de empresas de tecnologia e startups inovadoras (FONSECA et al., 2021). Enquanto isso, regiões como Norte e Nordeste enfrentam desafios relacionados à falta de capacitação profissional e à escassez de investimentos em infraestrutura tecnológica.
+
+A formação profissional também desempenha um papel fundamental na inserção dos trabalhadores no mercado de dados. Segundo um levantamento realizado pelo LinkedIn (2022), 68% das vagas na área exigem formação acadêmica ou cursos técnicos especializados, mas a distribuição dessas oportunidades educacionais ainda é desigual entre os estados brasileiros. Isso cria um obstáculo para iniciantes e profissionais em transição de carreira, que buscam se qualificar para ingressar nesse setor em expansão.
+
+Compreender essas desigualdades regionais no mercado de dados é essencial para a formulação de estratégias que promovam maior equidade na distribuição das oportunidades. Assim, este trabalho propõe uma análise das diferenças regionais no mercado de dados do Brasil, focando nos desafios enfrentados por iniciantes e profissionais em transição de carreira. A partir de dados sobre experiência profissional, faixa salarial, situação de emprego, nível educacional e principais ferramentas utilizadas, busca-se desenvolver um sistema inteligente que forneça insights relevantes para profissionais, empresas e instituições de ensino, auxiliando na tomada de decisões e na promoção de iniciativas para reduzir as disparidades regionais no setor.
 
 ###    Problema
 
-Nesse momento você deve apresentar o problema que seu agente pretende resolver. 
-No entanto, não é a hora de comentar sobre a aplicação.
-Descreva também o contexto em que essa aplicação será usada, se  houver: 
-empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, 
-pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+O mercado de dados no Brasil tem se expandido rapidamente, mas de maneira desigual entre as regiões do país. Enquanto grandes centros urbanos, como São Paulo, Rio de Janeiro e Belo Horizonte, concentram a maior parte das oportunidades, outras regiões, como o Norte e o Nordeste, enfrentam desafios significativos para acompanhar esse crescimento. Essa discrepância se reflete na oferta de empregos, nos salários praticados, no acesso à capacitação profissional e na presença de empresas que demandam profissionais qualificados na área de dados.
 
-O **problema** pode ser algo vivido em uma empresa específica. Neste caso, o aluno deve 
-sucintamente apresentar o cenário de problema da empresa. A empresa só deve ser citada 
-explicitamente se o aluno tiver autorização para tal.
+Um dos principais problemas enfrentados por iniciantes e profissionais em transição de carreira é a falta de informações claras sobre as diferenças regionais no setor. Muitas vezes, esses profissionais não têm acesso a dados concretos sobre as melhores estratégias para ingressar no mercado de trabalho, quais habilidades são mais demandadas em cada região e quais áreas da ciência de dados oferecem maior potencial de crescimento. Isso pode levar a decisões pouco informadas sobre formação e carreira, dificultando sua inserção no setor.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+Além disso, empresas e instituições educacionais também enfrentam dificuldades para entender o panorama do mercado de dados em diferentes estados. Sem uma visão clara sobre a demanda por profissionais e as lacunas de qualificação, elas podem ter dificuldades para estruturar programas de capacitação eficientes ou para atrair talentos qualificados. A falta de dados sobre essas desigualdades pode limitar investimentos estratégicos e perpetuar as disparidades regionais.
+
+Diante desse cenário, surge a necessidade de um sistema que analise e forneça insights sobre as diferenças regionais no mercado de dados no Brasil. Essa ferramenta deve permitir que profissionais tomem decisões mais informadas sobre qualificação e oportunidades, além de auxiliar empresas e instituições educacionais a desenvolverem iniciativas mais alinhadas com as necessidades do setor.
 
 
 ###    Objetivo geral
@@ -66,24 +65,14 @@ Desenvolver um sistema inteligente para analisar e comparar as diferenças regio
 
 ####    Objetivos específicos
 
-Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde 
-você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar 
-no seu trabalho.
+1-Analisar a distribuição regional das oportunidades no mercado de dados no Brasil – Examinar como os fatores geográficos influenciam a oferta de empregos, os salários praticados e a demanda por profissionais qualificados, destacando as diferenças entre estados e regiões.
 
-(Possivel resposta)
-O objetivo é desenvolver um sistema inteligente capaz de oferecer insights sobre quais regiões apresentam mais desafios para novos profissionais, quais habilidades são mais valorizadas no mercado e quais fatores influenciam a empregabilidade. Ao fornecer essas informações de forma acessível, o sistema ajudará estudantes, autodidatas e profissionais em requalificação a tomarem decisões mais estratégicas sobre sua formação e carreira. Além disso, o estudo poderá contribuir para empresas, educadores e formuladores de políticas públicas, fornecendo dados concretos sobre a realidade do setor e incentivando ações que promovam maior inclusão e equidade no mercado de tecnologia.
-
-
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+2-Investigar a relação entre qualificação profissional e empregabilidade na área de dados – Avaliar como o nível educacional, a formação acadêmica e o domínio de ferramentas impactam a inserção no mercado de trabalho em diferentes regiões, identificando padrões que possam orientar a capacitação de novos profissionais.
 
 
 ###    Justificativas
 
 A escolha do tema "Diferenças regionais no mercado de dados do Brasil" surge da necessidade de compreender as disparidades no acesso a oportunidades e desenvolvimento profissional na área de tecnologia, especialmente para iniciantes e profissionais em transição de carreira. O mercado de dados cresce rapidamente, mas nem todos os profissionais possuem as mesmas condições para ingressar e evoluir na área, seja por barreiras educacionais, econômicas ou regionais. Este trabalho busca identificar essas desigualdades analisando fatores como nível de escolaridade, áreas de estudo, situação profissional, transição de carreira e ferramentas mais utilizadas, permitindo um mapeamento detalhado das condições enfrentadas pelos iniciantes em diferentes regiões do país.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 
 
@@ -97,12 +86,6 @@ Esse público busca aprendizado acessível, prática e oportunidades no mercado 
 
 (olhar esses pontos)-Adicione informações sobre o público-alvo por meio de uma descrição textual, 
 diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 
 ## Análise exploratórida dos dados
