@@ -92,7 +92,7 @@ diagramas de personas e mapa de stakeholders.
 
 ###    Dicionário de dados
 
-O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fonte de dados. Essa base de dados busca relacionar as regioes do Brasil com o merdado de Dados Brasileiro.
+O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fonte de dados. Essa base de dados busca relacionar as regioes do Brasil com o mercado de Dados Brasileiro.
 Nele temos os seguintes atributos: 
 
 |                Atributo               |                                    Descrição                                      | tipo de dado     |
@@ -101,6 +101,20 @@ Nele temos os seguintes atributos:
 |       Nível de Atuação                | Atributo que Identifica do nível de experiência de cada integrante da tabela      | Dado tipo texto  |
 |        Faixa Salarial                 | Atributo que Identifica a remuneração mensal de cada integrante da tabela         | Números reais    |
 | Há quanto tempo está na área de dados | Atributo que Identifica a quanto tempo o integrante está atuando na área de dados | Números reais    |
+
+Em adição à base principal ultilizaremos a base auxiliar "Brasil: Dispêndidos ds governo estaduais em ciência e tecnologia (C&T), por região e unidade da fereração, 2000 - 2023" provida pelo MCTI (Ministério da Tecnológia, Ciência e Inovação) sobre investimentos de cada estado brasileiros em tecnológia ao lonog dos anos. 
+Nessa tabela temos os seguintes atributos:
+
+|                Atributo               |                                    Descrição                                      | tipo de dado     |
+| ------------------------------------- | --------------------------------------------------------------------------------- | -----------------|
+|            Região                     | Atributo que Identifica a região alvo do investimento                             | Dado tipo texto  |
+|            Estado                     | Atributo que Identifica o estado alvo do investimento                             | Dado tipo texto  |
+| Investimento em Ciência e Tecnologia  | Atributo que Identifica o dispêndio em Ciência e Tecnologia em milhões de reais   | Números reais    |
+
+
+
+
+
 
 ###    Descrição de dados
 
