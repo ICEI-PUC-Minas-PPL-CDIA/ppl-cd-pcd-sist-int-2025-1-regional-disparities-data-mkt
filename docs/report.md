@@ -121,6 +121,39 @@ Nessa tabela temos os seguintes atributos:
 Utilize a análise descritiva baseada em estatística de primeira ordem para descrever os dados.
 Como descrever dados numéricos: média, desvio padrão, mínimo, máximo, quartis, histograma, etc.
 Como descrever dados qualitativos (categóricos): moda (valor mais frequente), quantidade de valores distintos (categorias), distribuição das categorias (histograma), etc.
+Estatística Descritiva dos Indicadores do Mercado de Trabalho
+
+Descrição de dados base de dados auxiliar
+
+1. Indicadores Trimestrais do Mercado de Trabalho
+
+A aba "TrimestreMovel" contém informações sobre indicadores do mercado de trabalho em base trimestral. Os principais resultados são:
+
+Média: Apresenta a tendência central dos indicadores.
+
+Desvio Padrão: Mede a dispersão dos valores em relação à média.
+
+Valores Mínimo e Máximo: Indicam os extremos dos dados.
+
+Distribuição dos Dados: Mostra a variação ao longo do período analisado.
+
+2. Indicadores Mensalizados
+
+A aba "Mensalizadas" inclui informações mensais sobre o mercado de trabalho. A análise descritiva apresenta:
+
+Tendências sazonais nos indicadores.
+
+Flutuações mensais em comparação com o período trimestral.
+
+Padrões de variação ao longo do tempo.
+
+3. Indicadores Mensalizados Dessazonalizados
+
+A aba "MensalizadasDessazonalizadas" remove efeitos sazonais dos dados, permitindo uma análise mais clara de tendências subjacentes. Os principais achados incluem:
+
+Valores ajustados para efeitos sazonais, permitindo comparação mais objetiva.
+
+Maior estabilidade nas medidas estatísticas, facilitando previsões.
 
 
 ## Preparação dos dados
