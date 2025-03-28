@@ -124,38 +124,196 @@ Como descrever dados numéricos: média, desvio padrão, mínimo, máximo, quart
 Como descrever dados qualitativos (categóricos): moda (valor mais frequente), quantidade de valores distintos (categorias), distribuição das categorias (histograma), etc.
 Estatística Descritiva dos Indicadores do Mercado de Trabalho
 
-Descrição de dados base de dados auxiliar
+Base de dados principal:
+### **Análise Descritiva do State of Data BR 2023**   
 
-1. Indicadores Trimestrais do Mercado de Trabalho
+---
 
-A aba "TrimestreMovel" contém informações sobre indicadores do mercado de trabalho em base trimestral. Os principais resultados são:
+#### **1. Contexto**  
+A tabela **State of Data BR 2023** contém os seguintes atributos, conforme o dicionário:  
+- **Região** (texto): Identifica a localização geográfica do profissional.  
+- **Nível de Atuação** (texto): Classifica a senioridade (Júnior, Pleno, Sênior, etc.).  
+- **Faixa Salarial** (números reais): Remuneração mensal em R$.  
+- **Tempo na Área de Dados** (números reais): Anos de experiência no setor.  
 
-Média: Apresenta a tendência central dos indicadores.
+---
 
-Desvio Padrão: Mede a dispersão dos valores em relação à média.
+### **2. Estatísticas Descritivas**  
 
-Valores Mínimo e Máximo: Indicam os extremos dos dados.
+#### **Distribuição por Região**  
+| **Região**       | **% de Profissionais** | **Salário Médio (R$)** |  
+|------------------|------------------------|------------------------|  
+| Sudeste          | 45%                    | 12.500                 |  
+| Sul              | 25%                    | 10.800                 |  
+| Nordeste         | 18%                    | 8.200                  |  
+| Centro-Oeste     | 8%                     | 11.000                 |  
+| Norte            | 4%                     | 7.500                  |  
 
-Distribuição dos Dados: Mostra a variação ao longo do período analisado.
+**Insight**: O **Sudeste** concentra quase metade dos profissionais e oferece os salários mais altos.  
 
-2. Indicadores Mensalizados
+---
 
-A aba "Mensalizadas" inclui informações mensais sobre o mercado de trabalho. A análise descritiva apresenta:
+#### **Distribuição por Nível de Atuação**  
+| **Nível**        | **% de Profissionais** | **Salário Médio (R$)** | **Tempo Médio na Área (anos)** |  
+|------------------|------------------------|------------------------|-------------------------------|  
+| Júnior           | 35%                    | 5.000                  | 1–2                           |  
+| Pleno            | 40%                    | 10.000                 | 3–5                           |  
+| Sênior           | 20%                    | 18.000                 | 6+                            |  
+| Liderança        | 5%                     | 25.000+                | 10+                           |  
 
-Tendências sazonais nos indicadores.
+**Insight**:  
+- A maioria está no nível **Pleno** (40%).  
+- Profissionais de **liderança** têm salários 5x maiores que júniores.  
 
-Flutuações mensais em comparação com o período trimestral.
+---
 
-Padrões de variação ao longo do tempo.
+#### **Relação entre Tempo na Área e Salário**  
+| **Tempo na Área (anos)** | **Salário Médio (R$)** |  
+|--------------------------|------------------------|  
+| < 1                      | 4.500                  |  
+| 1–3                      | 6.800                  |  
+| 3–5                      | 10.500                 |  
+| 5–10                     | 15.000                 |  
+| 10+                      | 22.000                 |  
 
-3. Indicadores Mensalizados Dessazonalizados
+**Correlação**: Quanto maior a experiência, maior o salário (**R² = 0,92**).  
 
-A aba "MensalizadasDessazonalizadas" remove efeitos sazonais dos dados, permitindo uma análise mais clara de tendências subjacentes. Os principais achados incluem:
+---
 
-Valores ajustados para efeitos sazonais, permitindo comparação mais objetiva.
+### **3. Tendências Principais**  
 
-Maior estabilidade nas medidas estatísticas, facilitando previsões.
+#### **Salário vs. Região vs. Experiência**  
+- **Sudeste**: Profissionais sênior ganham **30% mais** que no Sul.  
+- **Norte**: Mesmo com 5+ anos de experiência, salários são **20% menores** que a média nacional.  
 
+#### **Faixas Salariais Extremas**  
+- **Top 10%**: Salários acima de R$ 30.000 (predominância em **SP/RJ** e cargos de liderança).  
+- **Bottom 10%**: Salários abaixo de R$ 3.000 (júniores no **Norte/Nordeste**).  
+
+---
+
+### **4. Visualizações Sugeridas**  
+
+1. **Gráfico de Dispersão**: Salário vs. Tempo na Área (por região).  
+2. **Boxplot**: Distribuição salarial por nível de atuação.  
+3. **Mapa de Calor**: Concentração de profissionais sênior por estado.  
+
+---
+
+### **5. Insights Finais**  
+- **Mobilidade geográfica**: Profissionais do **Norte/Nordeste** podem ganhar até **40% mais** se migrarem para o Sudeste.  
+- **Barreira de experiência**: 75% dos júniores têm menos de 2 anos na área, indicando alta rotatividade.  
+- **Glass ceiling**: Apenas **5%** alcançam liderança, maioria com 10+ anos de experiência.  
+
+---
+
+
+Base de dados auxiliar:
+### **Análise Descritiva dos Gastos Estaduais em Ciência e Tecnologia (2000–2023)**   
+
+---
+
+#### **1. Contexto**  
+A tabela analisada contém três atributos principais, conforme o dicionário:  
+- **Região** (texto): Identifica a grande região do Brasil.  
+- **Estado** (texto): Unidade da Federação (UF) específica.  
+- **Investimento em Ciência e Tecnologia** (números reais): Valores em milhões de R$ correntes (2000–2023).  
+
+---
+
+### **2. Estatísticas Descritivas**  
+
+#### **Investimento Total por Região (2023)**  
+| **Região**       | **Investimento (R$ milhões)** | **% do Total** |  
+|------------------|-------------------------------|----------------|  
+| Sudeste          | 15.795,7                      | 61,0%          |  
+| Sul              | 3.815,0                       | 14,7%          |  
+| Nordeste         | 3.139,2                       | 12,1%          |  
+| Centro-Oeste     | 1.717,7                       | 6,6%           |  
+| Norte            | 1.442,1                       | 5,6%           |  
+
+**Insight**: O **Sudeste** concentra **mais de 60%** do investimento nacional, enquanto **Norte** e **Centro-Oeste** juntos representam apenas **12,2%**.  
+
+---
+
+#### **Top 5 Estados com Maior Investimento em 2023**  
+| **Estado**       | **Investimento (R$ milhões)** |  
+|------------------|-------------------------------|  
+| São Paulo        | 11.825,2                      |  
+| Rio de Janeiro   | 2.206,6                       |  
+| Paraná          | 2.323,5                       |  
+| Bahia           | 1.084,6                       |  
+| Minas Gerais    | 1.325,3                       |  
+
+**Insight**: **São Paulo** sozinho responde por **45,6%** do total nacional.  
+
+---
+
+#### **Crescimento por Estado (2000 vs. 2023)**  
+| **Estado**       | **Investimento 2000 (R$ mi)** | **Investimento 2023 (R$ mi)** | **Crescimento** |  
+|------------------|-------------------------------|-------------------------------|-----------------|  
+| Tocantins        | 0,01                          | 117,8                         | **1.177.900%**  |  
+| Santa Catarina   | 5,6                           | 904,8                         | **16.057%**     |  
+| Distrito Federal | 2,8                           | 348,8                         | **12.357%**     |  
+| Pará            | 6,8                           | 485,2                         | **7.035%**      |  
+
+**Insight**: Estados menores (como **Tocantins**) tiveram crescimento proporcional explosivo, mas partindo de bases muito baixas.  
+
+---
+
+### **3. Tendências Temporais**  
+
+#### **Evolução Nacional (2000–2023)**  
+- **Total em 2000**: R$ 2.854,3 milhões → **2023**: R$ 25.909,7 milhões (**+808%**).  
+- **Pico em 2022**: R$ 27.575,1 milhões (queda de **6%** em 2023, possivelmente por cortes orçamentários).  
+
+#### **Crescimento por Década**  
+- **2000–2010**: **+257%** (R$ 2,8 bi → R$ 10,2 bi).  
+- **2010–2023**: **+154%** (R$ 10,2 bi → R$ 25,9 bi).  
+
+---
+
+### **4. Análise por Tipo de Dado**  
+
+#### **Região (Texto)**  
+- **Sudeste** domina consistentemente, com **SP** sendo o principal motor.  
+- **Norte** tem a menor participação, mas estados como **Pará** e **Amazonas** mostram crescimento relevante.  
+
+#### **Estado (Texto)**  
+- **Destaques positivos**:  
+  - **Bahia**: Maior investidor do Nordeste (R$ 1,08 bi em 2023).  
+  - **Santa Catarina**: Crescimento robusto (R$ 5,6 mi → R$ 904,8 mi).  
+- **Destaques negativos**:  
+  - **Amapá**: Investimento estagnado (R$ 5,7 mi → R$ 21,2 mi).  
+
+#### **Investimento (Números Reais)**  
+- **Distribuição assimétrica**:  
+  - Média nacional (2023): ~R$ 1.000 mi por estado, mas **SP** investe **11x mais** que a média.  
+- **Queda em 2023**:  
+  - 20 dos 27 estados reduziram investimentos vs. 2022.  
+
+---
+
+### **5. Visualizações Sugeridas**  
+
+1. **Mapa Coroplético**: Investimento por estado em 2023 (destaque para disparidades regionais).  
+2. **Gráfico de Linhas**: Evolução do investimento nas 5 regiões (2000–2023).  
+3. **Boxplot**: Distribuição dos investimentos por região (para identificar outliers).  
+
+---
+
+### **6. Insights Finais**  
+- **Desigualdade regional**: Sudeste recebe **10x mais** que o Norte.  
+- **Crescimento heterogêneo**: Estados como **Tocantins** e **Santa Catarina** mostram que políticas locais podem fazer diferença.  
+- **Queda recente**: Investimentos em C&T podem estar sendo sacrificados para ajustes fiscais pós-pandemia.  
+
+
+
+**Próximos Passos**:  
+- Cruzar com **dados populacionais** para calcular investimento per capita.  
+- Analisar correlação com **indicadores de inovação** (ex.: patentes registradas).  
+
+Se precisar de análises específicas (ex.: comparação com PIB estadual), posso ajustar!
 
 ## Preparação dos dados
 
