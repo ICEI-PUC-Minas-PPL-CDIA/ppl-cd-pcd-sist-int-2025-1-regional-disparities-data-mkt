@@ -306,14 +306,7 @@ A tabela analisada contém três atributos principais, conforme o dicionário:
 - **Desigualdade regional**: Sudeste recebe **10x mais** que o Norte.  
 - **Crescimento heterogêneo**: Estados como **Tocantins** e **Santa Catarina** mostram que políticas locais podem fazer diferença.  
 - **Queda recente**: Investimentos em C&T podem estar sendo sacrificados para ajustes fiscais pós-pandemia.  
-
-
-
-**Próximos Passos**:  
-- Cruzar com **dados populacionais** para calcular investimento per capita.  
-- Analisar correlação com **indicadores de inovação** (ex.: patentes registradas).  
-
-Se precisar de análises específicas (ex.: comparação com PIB estadual), posso ajustar!
+---
 
 ## Preparação dos dados
 
