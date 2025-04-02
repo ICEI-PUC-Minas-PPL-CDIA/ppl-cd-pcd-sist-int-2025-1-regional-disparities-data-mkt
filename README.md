@@ -4,15 +4,16 @@ Escreva um ou dois parágrafos resumindo o objetivo do seu projeto. Lembrando qu
 
 ## Integrantes
 
-Álvaro Oliveira Soares de Souza 1213824@sga.pucminas.br
-Guilherme Amintas Lopes Magalhaes 830665@sga.pucminas.br	
-Izabela Dobscha Santos Borges 924521@sga.pucminas.br
-Luiz Eduardo Araújo de Medeiros 1455932@sga.pucminas.br
-Walker Junio Gonzaga Rocha 	1594346@sga.pucminas.br
+Álvaro Oliveira Soares de Souza 1213824@sga.pucminas.br,
+Guilherme Amintas Lopes Magalhaes 830665@sga.pucminas.br,	
+Izabela Dobscha Santos Borges 924521@sga.pucminas.br,
+Luiz Eduardo Araújo de Medeiros 1455932@sga.pucminas.br,
+Walker Junio Gonzaga Rocha 	1594346@sga.pucminas.br,
 
 ## Professor
 
-*  Prof. Hugo Bastos de Paula
+*  Prof. Hugo Bastos de Paula,
+*  Prof. Hayala Nepommuceno Curto,
 
 ## Instruções de utilização
 
