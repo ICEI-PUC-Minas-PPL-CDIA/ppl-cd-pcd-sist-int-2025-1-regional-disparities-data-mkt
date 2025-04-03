@@ -1,22 +1,22 @@
 # TITULO DO PROJETO: Diferenças regionais no mercado de dados do Brasil.
 
 Alunos:
-Walker Junio Gonzaga Rocha - walker.rocha@sga.pucminas.br,
+Walker Junio Gonzaga Rocha - walker.rocha@sga.pucminas.br  
 
-Izabela Dobscha Santos Borges - idsborges@sga.pucminas.br,
+Izabela Dobscha Santos Borges - idsborges@sga.pucminas.br  
 
-Guilherme Amintas Lopes Magalhaes - guilherme.amintas@sga.pucminas.br,
+Guilherme Amintas Lopes Magalhaes - guilherme.amintas@sga.pucminas.br  
 
-Álvaro Oliveira Soares de Souza - alvaro.souza.1213824@sga.pucminas.br,
+Álvaro Oliveira Soares de Souza - alvaro.souza.1213824@sga.pucminas.br  
 
-Luiz Eduardo Araújo de Medeiros - leamedeiros@sga.pucminas.br
+Luiz Eduardo Araújo de Medeiros - leamedeiros@sga.pucminas.br  
 
 ---
 
 Professores:
 
-** Prof. Hug Bastos de Paula
-** prof. Hayala Nepomuceno Curto
+* Prof. Hug Bastos de Paula.  
+* Prof. Hayala Nepomuceno Curto.  
 
 ---
 
@@ -26,8 +26,10 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-### RESUMO
-O mercado de dados no Brasil tem crescido significativamente nos últimos anos, impulsionado pela digitalização das empresas e pelo avanço de tecnologias como big data e inteligência artificial. No entanto, esse crescimento não ocorre de forma uniforme entre as regiões do país, resultando em desigualdades no acesso a oportunidades de trabalho e desenvolvimento profissional. Este estudo investiga essas disparidades regionais, analisando fatores como experiência profissional, faixa salarial, nível educacional e ferramentas utilizadas por iniciantes e profissionais em transição de carreira. Para isso, será desenvolvido um sistema inteligente capaz de fornecer insights relevantes sobre essas diferenças, auxiliando tanto os profissionais quanto empresas e instituições educacionais a tomarem decisões mais informadas. A pesquisa busca contribuir para uma melhor compreensão do mercado de dados no Brasil, promovendo maior equidade na distribuição de oportunidades e inclusão profissional no setor.
+### Resumo
+O mercado de dados no Brasil tem crescido significativamente nos últimos anos, impulsionado pela digitalização das empresas e pelo avanço de tecnologias como big data e inteligência artificial. No entanto, esse crescimento não ocorre de forma uniforme entre as regiões do país, resultando em desigualdades no acesso a oportunidades de trabalho e desenvolvimento profissional. Este estudo investiga essas disparidades regionais, analisando fatores como experiência profissional, faixa salarial, nível educacional e ferramentas utilizadas por iniciantes e profissionais em transição de carreira.  
+
+Para isso, será desenvolvido um sistema inteligente capaz de fornecer insights relevantes sobre essas diferenças, auxiliando tanto os profissionais quanto empresas e instituições educacionais a tomarem decisões mais informadas. A pesquisa busca contribuir para uma melhor compreensão do mercado de dados no Brasil, promovendo maior equidade na distribuição de oportunidades e inclusão profissional no setor.
 
 ---
 
@@ -62,13 +64,15 @@ Diante desse cenário, surge a necessidade de um sistema que analise e forneça 
 
 ###    Objetivo geral
 
-Desenvolver um sistema inteligente para analisar e comparar as diferenças regionais no mercado de dados do Brasil, identificando padrões de oportunidades e desafios enfrentados por iniciantes e profissionais em transição de carreira. O sistema utilizará dados da pesquisa, como tempo de experiência, faixa salarial, situação profissional e transição de carreira para mapear disparidades regionais. Além disso, aspectos como nível de educação, área de estudo e principais ferramentas utilizadas serão analisados para entender diferenças na qualificação e no acesso a tecnologias. Fatores relacionados à empresa, como tamanho da empresa e tipo de empresa, e modalidades de trabalho (presencial, híbrido ou remoto), também serão considerados. O objetivo é auxiliar esses profissionais a tomarem decisões mais informadas sobre sua inserção no mercado, destacando tendências e desafios específicos de cada região.
+Desenvolver um sistema inteligente para analisar e comparar as diferenças regionais no mercado de dados do Brasil, identificando padrões de oportunidades e desafios enfrentados por iniciantes e profissionais em transição de carreira. O sistema utilizará dados da pesquisa, como tempo de experiência, faixa salarial, situação profissional e transição de carreira para mapear disparidades regionais.  
+
+Além disso, aspectos como nível de educação, área de estudo e principais ferramentas utilizadas serão analisados para entender diferenças na qualificação e no acesso a tecnologias. Fatores relacionados à empresa, como tamanho da empresa e tipo de empresa, e modalidades de trabalho (presencial, híbrido ou remoto), também serão considerados. O objetivo é auxiliar esses profissionais a tomarem decisões mais informadas sobre sua inserção no mercado, destacando tendências e desafios específicos de cada região.
 
 ####    Objetivos específicos
 
-1-Analisar a distribuição regional das oportunidades no mercado de dados no Brasil – Examinar como os fatores geográficos influenciam a oferta de empregos, os salários praticados e a demanda por profissionais qualificados, destacando as diferenças entre estados e regiões.
+1. Analisar a distribuição regional das oportunidades no mercado de dados no Brasil – Examinar como os fatores geográficos influenciam a oferta de empregos, os salários praticados e a demanda por profissionais qualificados, destacando as diferenças entre estados e regiões.
 
-2-Investigar a relação entre qualificação profissional e empregabilidade na área de dados – Avaliar como o nível educacional, a formação acadêmica e o domínio de ferramentas impactam a inserção no mercado de trabalho em diferentes regiões, identificando padrões que possam orientar a capacitação de novos profissionais.
+2. Investigar a relação entre qualificação profissional e empregabilidade na área de dados – Avaliar como o nível educacional, a formação acadêmica e o domínio de ferramentas impactam a inserção no mercado de trabalho em diferentes regiões, identificando padrões que possam orientar a capacitação de novos profissionais.
 
 
 ###    Justificativas
@@ -99,11 +103,11 @@ Nele temos os seguintes atributos:
 |                Atributo               |                                    Descrição                                      | tipo de dado     |
 | ------------------------------------- | --------------------------------------------------------------------------------- | -----------------|
 |            Idade                      | Atributo que Identifica a idade de cada intergrante da tabela                     | Número Inteiro   |
-|           Genero                      | Atributo que Identifica o gênero de cada integrante da tabela                     | Dado tipo texto  |
+|           Gênero                      | Atributo que Identifica o gênero de cada integrante da tabela                     | Dado tipo texto  |
 |           Estado onde mora            | Atributo que Identifica estado onde reside cada integrante da tabela              | Dado tipo texto  |
 |          Região onde mora             | Atributo que Identifica região onde reside cada integrante da tabela              | Dado tipo texto  |
 |       Mudou de estado                 | Atributo que Identifica se o integrante mudou de estado                           | Número inteiro   |
-|      Região de origem                 | Atributo que Identifica a região de origem de cada integrante da tabela           | Dado tipo texto  |
+|      Região de Origem                 | Atributo que Identifica a região de origem de cada integrante da tabela           | Dado tipo texto  |
 |       Nível de Atuação                | Atributo que Identifica do nível de experiência de cada integrante da tabela      | Dado tipo texto  |
 |        Faixa Salarial                 | Atributo que Identifica a remuneração mensal de cada integrante da tabela         | Números reais    |
 | Há quanto tempo está na área de dados | Atributo que Identifica a quanto tempo o integrante está atuando na área de dados | Números reais    |
