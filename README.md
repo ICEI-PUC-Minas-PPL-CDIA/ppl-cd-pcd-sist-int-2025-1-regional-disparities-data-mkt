@@ -14,8 +14,8 @@ Este produto tem como objetivo fornecer uma ferramenta que ajude empresas, organ
 
 ## Professor
 
-*  Prof. Hugo Bastos de Paula,
-*  Prof. Hayala Nepommuceno Curto,
+*  Prof. Hugo Bastos de Paula;
+*  Prof. Hayala Nepommuceno Curto.
 
 ## Instruções de utilização
 
