@@ -144,15 +144,9 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 | Outros/Não informado | 3%       | 3%    |
 
 📉 **Gráfico**:  
-```python
-import matplotlib.pyplot as plt
 
-labels = ['Masculino', 'Feminino', 'Outros']
-sizes = [65, 32, 3]
-plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
-plt.title('Distribuição de Gênero')
-plt.show()
-```
+## 📊 Análise de Gênero
+![Distribuição de Gênero dos Profissionais de Dados](imagens/gender_dial.png)
 *(Resultado: Gráfico de pizza mostrando predominância masculina.)*  
 
 ---
