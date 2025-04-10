@@ -89,9 +89,6 @@ Profissionais Migrando para Dados – Vêm de áreas como marketing, engenharia 
 Requalificados pelo Mercado – Profissionais de setores impactados por mudanças tecnológicas, buscando recolocação com foco em cursos rápidos.
 Esse público busca aprendizado acessível, prática e oportunidades no mercado de dados.
 
-(olhar esses pontos)-Adicione informações sobre o público-alvo por meio de uma descrição textual, 
-diagramas de personas e mapa de stakeholders.
-
 
 ## Análise exploratórida dos dados
 
@@ -117,7 +114,7 @@ Nele temos os seguintes atributos:
 
 
 
-Em adição à base principal ultilizaremos a base auxiliar "Brasil: Dispêndidos ds governo estaduais em ciência e tecnologia (C&T), por região e unidade da fereração, 2000 - 2023" provida pelo MCTI (Ministério da Tecnológia, Ciência e Inovação) sobre investimentos de cada estado brasileiros em tecnológia ao lonog dos anos. 
+Em adição à base principal ultilizaremos a base auxiliar "Brasil: Dispêndidos ds governo estaduais em ciência e tecnologia (C&T), por região e unidade da fereração, 2000 - 2023" provida pelo MCTI (Ministério da Tecnológia, Ciência e Inovação) sobre investimentos de cada estado brasileiros em tecnológia ao longo dos anos. 
 Nessa tabela temos os seguintes atributos:
 
 |                Atributo               |                                    Descrição                                      | tipo de dado     |
@@ -127,6 +124,18 @@ Nessa tabela temos os seguintes atributos:
 | Investimento em Ciência e Tecnologia  | Atributo que Identifica o dispêndio em Ciência e Tecnologia em milhões de reais   | Números reais    |
 
 
+Como fonte adicional de dados, utilizaremos a base auxiliar do Censo da Educação Superior de 2023, provida pelo Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP), com importantes atributos sobre a distribuição de cursos na área de tecnologia e ciência de dados pelo país.
+Temos os atributos:
+
+|                Atributo               |                                    Descrição                                      | tipo de dado           |
+| ------------------------------------- | --------------------------------------------------------------------------------- | ---------------------- |
+|         Código da Região              | Atributo que Identifica a região geográfica da Instituição de Ensino Superior     | Numérico/Qualitativo   |
+|   Tipo de Categoria Administrativa    | Atributo que Identifica se a IES é Federal, Estadual, Municipal, Privada, etc.    | Numérico/Qualitativo   |
+|           Nome do Curso               | Atributo que Identifica o curso de ensino superior em questão                     | Descritivo/Qualitativo |
+|    Código da área geral do curso      | Atributo que Identifica a área geral do curso (Exemplo: Tecnologia)               | Numérico/Qualitativo   |
+|              Gratuito                 | Atributo que Identifica se o curso é gratuito                                     | Numérico/Qualitativo   |
+|       Tipo de Nível Acadêmico         | Atributo que Identifica o tipo de nível acadêmico do curso                        | Numérico/Qualitativo   |
+|     Quantidade de Vagas Totais        | Atributo que Identifica quantas vagas no total são ofertadas no curso             | Numérico/Quantitativo  |
 
 
 
@@ -206,15 +215,8 @@ A tabela **State of Data BR 2023** contém os seguintes atributos, conforme o di
 
 ---
 
-### **4. Visualizações Sugeridas**  
 
-1. **Gráfico de Dispersão**: Salário vs. Tempo na Área (por região).  
-2. **Boxplot**: Distribuição salarial por nível de atuação.  
-3. **Mapa de Calor**: Concentração de profissionais sênior por estado.  
-
----
-
-### **5. Insights Finais**  
+### **4. Insights Finais**  
 - **Mobilidade geográfica**: Profissionais do **Norte/Nordeste** podem ganhar até **40% mais** se migrarem para o Sudeste.  
 - **Barreira de experiência**: 75% dos júniores têm menos de 2 anos na área, indicando alta rotatividade.  
 - **Glass ceiling**: Apenas **5%** alcançam liderança, maioria com 10+ anos de experiência.  
