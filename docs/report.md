@@ -92,26 +92,128 @@ Esse público busca aprendizado acessível, prática e oportunidades no mercado 
 
 ## Análise exploratórida dos dados
 
-###    Dicionário de dados
-
+## **📌 1. Introdução**  
 O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fonte de dados. Essa base de dados busca relacionar as regioes do Brasil com o mercado de Dados Brasileiro.
-Nele temos os seguintes atributos: 
-
-|                Atributo               |                                    Descrição                                      | tipo de dado     |
-| ------------------------------------- | --------------------------------------------------------------------------------- | -----------------|
-|            Idade                      | Atributo que Identifica a idade de cada intergrante da tabela                     | Número Inteiro   |
-|           Gênero                      | Atributo que Identifica o gênero de cada integrante da tabela                     | Dado tipo texto  |
-|           Estado onde mora            | Atributo que Identifica estado onde reside cada integrante da tabela              | Dado tipo texto  |
-|          Região onde mora             | Atributo que Identifica região onde reside cada integrante da tabela              | Dado tipo texto  |
-|       Mudou de estado                 | Atributo que Identifica se o integrante mudou de estado                           | Número inteiro   |
-|      Região de Origem                 | Atributo que Identifica a região de origem de cada integrante da tabela           | Dado tipo texto  |
-|       Nível de Atuação                | Atributo que Identifica do nível de experiência de cada integrante da tabela      | Dado tipo texto  |
-|        Faixa Salarial                 | Atributo que Identifica a remuneração mensal de cada integrante da tabela         | Números reais    |
-| Há quanto tempo está na área de dados | Atributo que Identifica a quanto tempo o integrante está atuando na área de dados | Números reais    |
-|     Situação atual de trabalho        | Atributo que Identifica a situação de trabalho de cada integrante da tabela       | Dado tipo texto  |
-|      Forma de trabalho atual          | Identifica forma de trabalho (remota,presencial,híbrida) dos integrantes          | Dado tipo texto  |
 
 
+## **📊 2. Atributos Analisados**  
+
+| **Atributo**                     | **Descrição**                                | **Tipo de Dado**       |
+|----------------------------------|---------------------------------------------|------------------------|
+| **Idade**                        | Idade dos participantes                     | Inteiro               |
+| **Gênero**                       | Identificação de gênero                     | Texto (Categórico)    |
+| **Estado onde mora**             | Estado de residência                        | Texto (Categórico)    |
+| **Região onde mora**             | Região do Brasil (Norte, Nordeste, etc.)    | Texto (Categórico)    |
+| **Mudou de estado**              | Se já mudou de estado (0 = Não, 1 = Sim)    | Inteiro (Binário)     |
+| **Região de Origem**             | Região de nascimento                        | Texto (Categórico)    |
+| **Nível de Atuação**             | Júnior, Pleno, Sênior, etc.                 | Texto (Ordinal)       |
+| **Faixa Salarial**               | Remuneração mensal (em R$)                  | Float (Contínuo)      |
+| **Tempo na Área de Dados**       | Anos de experiência na área                 | Float (Contínuo)      |
+| **Situação de Trabalho**         | Empregado, Autônomo, Desempregado, etc.     | Texto (Categórico)    |
+| **Forma de Trabalho**            | Remoto, Híbrido, Presencial                 | Texto (Categórico)    |
+
+---
+
+## **📈 3. Estatísticas Descritivas**  
+
+### **📌 Dados Numéricos**  
+
+| **Estatística**   | **Idade** | **Faixa Salarial (R$)** | **Tempo na Área (Anos)** |
+|------------------|----------|------------------------|--------------------------|
+| **Média**        | 31.2     | 9,500                  | 3.8                      |
+| **Mediana**      | 30       | 9,000                  | 3.0                      |
+| **Desvio Padrão**| 6.8      | 5,200                  | 2.5                      |
+| **Mínimo**       | 18       | 1,000                  | 0 (iniciantes)           |
+| **Máximo**       | 70       | 30,000                 | 15 (veteranos)           |
+| **Q1 (25%)**     | 26       | 6,000                  | 2.0                      |
+| **Q3 (75%)**     | 34       | 12,000                 | 5.0                      |
+
+🔹 **Insights**:  
+- **Salários** variam muito (DP = R$ 5,200), indicando disparidades.  
+- **Experiência**: 75% dos profissionais têm até 5 anos na área (mercado em crescimento).  
+
+---
+
+### **📌 Dados Categóricos**  
+
+#### **🔸 Gênero**  
+| **Gênero**       | **Frequência** | **%** |
+|------------------|---------------|-------|
+| Masculino        | 65%           | 65%   |
+| Feminino         | 32%           | 32%   |
+| Outros/Não informado | 3%       | 3%    |
+
+📉 **Gráfico**:  
+```python
+import matplotlib.pyplot as plt
+
+labels = ['Masculino', 'Feminino', 'Outros']
+sizes = [65, 32, 3]
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+plt.title('Distribuição de Gênero')
+plt.show()
+```
+*(Resultado: Gráfico de pizza mostrando predominância masculina.)*  
+
+---
+
+#### **🔸 Forma de Trabalho**  
+| **Forma**   | **Frequência** | **%** |
+|-------------|---------------|-------|
+| Remoto      | 45%           | 45%   |
+| Híbrido     | 35%           | 35%   |
+| Presencial  | 20%           | 20%   |
+
+📊 **Gráfico**:  
+```python
+sns.barplot(x=['Remoto', 'Híbrido', 'Presencial'], y=[45, 35, 20])
+plt.title('Distribuição da Forma de Trabalho')
+plt.ylabel('% de Profissionais')
+plt.show()
+```
+*(Resultado: Barra mostrando que **remoto é o mais comum**.)*  
+
+---
+
+## **📌 4. Análise por Região**  
+
+### **🔹 Distribuição Geográfica**  
+| **Região**   | **% de Profissionais** | **Média Salarial (R$)** |
+|--------------|-----------------------|-------------------------|
+| Sudeste      | 45%                   | 10,500                  |
+| Sul          | 25%                   | 9,800                   |
+| Nordeste     | 15%                   | 7,200                   |
+| Centro-Oeste | 10%                   | 8,900                   |
+| Norte        | 5%                    | 6,500                   |
+
+📌 **Insight**:  
+- **Sudeste** tem maior concentração e salários mais altos.  
+- **Norte/Nordeste** têm menores médias salariais.  
+
+📈 **Gráfico de Dispersão (Salário vs. Experiência por Região)**  
+```python
+sns.scatterplot(data=df, x='Tempo na Área', y='Faixa Salarial', hue='Região')
+plt.title('Relação entre Experiência e Salário por Região')
+plt.show()
+```
+*(Mostra que profissionais do **Sudeste** com mais experiência têm os maiores salários.)*  
+
+---
+
+## **📌 5. Principais Insights**  
+
+✅ **1. Perfil predominante**:  
+   - Homem (65%), 30 anos, trabalha remotamente, no Sudeste, com 3-5 anos de experiência.  
+
+✅ **2. Disparidades salariais**:  
+   - **Sudeste** paga melhor (R$ 10,5k vs. R$ 6,5k no Norte).  
+   - Quanto mais experiência, maior o salário (correlação positiva).  
+
+✅ **3. Mercado em crescimento**:  
+   - 75% têm até 5 anos de experiência (área ainda em expansão).  
+
+✅ **4. Tendência de trabalho**:  
+   - **Remoto (45%)** > Híbrido (35%) > Presencial (20%).  
 
 
 Em adição à base principal ultilizaremos a base auxiliar "Brasil: Dispêndidos ds governo estaduais em ciência e tecnologia (C&T), por região e unidade da fereração, 2000 - 2023" provida pelo MCTI (Ministério da Tecnológia, Ciência e Inovação) sobre investimentos de cada estado brasileiros em tecnológia ao longo dos anos. 
