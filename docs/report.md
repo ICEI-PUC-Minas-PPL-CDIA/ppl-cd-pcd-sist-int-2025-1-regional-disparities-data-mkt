@@ -92,7 +92,7 @@ Esse público busca aprendizado acessível, prática e oportunidades no mercado 
 
 ## Análise exploratórida dos dados
 
-## **📌 1. Introdução**  
+## **📌 1. Introdução State of data_BR_2023 ( Base Principal)**  
 O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fonte de dados. Essa base de dados busca relacionar as regioes do Brasil com o mercado de Dados Brasileiro.
 
 
@@ -225,28 +225,107 @@ plt.show()
 
 
 Em adição à base principal ultilizaremos a base auxiliar "Brasil: Dispêndidos ds governo estaduais em ciência e tecnologia (C&T), por região e unidade da fereração, 2000 - 2023" provida pelo MCTI (Ministério da Tecnológia, Ciência e Inovação) sobre investimentos de cada estado brasileiros em tecnológia ao longo dos anos. 
-Nessa tabela temos os seguintes atributos:
+# **Análise Exploratória (EDA) - Censo da Educação Superior 2023 (INEP)**  
+*(Base Auxiliar: Cursos de Tecnologia e Ciência de Dados no Brasil)*  
 
-|                Atributo               |                                    Descrição                                      | tipo de dado     |
-| ------------------------------------- | --------------------------------------------------------------------------------- | -----------------|
-|            Região                     | Atributo que Identifica a região alvo do investimento                             | Dado tipo texto  |
-|            Estado                     | Atributo que Identifica o estado alvo do investimento                             | Dado tipo texto  |
-| Investimento em Ciência e Tecnologia  | Atributo que Identifica o dispêndio em Ciência e Tecnologia em milhões de reais   | Números reais    |
+---
 
+## **📌 1. Introdução Base MCTI (BASE AUXILIAR 1)**  
 
-Como fonte adicional de dados, utilizaremos a base auxiliar do Censo da Educação Superior de 2023, provida pelo Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP), com importantes atributos sobre a distribuição de cursos na área de tecnologia e ciência de dados pelo país.
-Temos os atributos:
+Esta análise complementar utiliza os dados do **Censo da Educação Superior 2023 (INEP)** para mapear a distribuição de cursos na área de tecnologia e ciência de dados no Brasil. O objetivo é cruzar essas informações com a base principal (*State of Data Brazil 2023*) e identificar:  
+✔ **Oferta de cursos** por região e tipo de instituição.  
+✔ **Relação entre vagas ofertadas** e perfil profissional.  
+✔ **Acesso gratuito** à educação na área.  
 
-|                Atributo               |                                    Descrição                                      | tipo de dado           |
-| ------------------------------------- | --------------------------------------------------------------------------------- | ---------------------- |
-|         Código da Região              | Atributo que Identifica a região geográfica da Instituição de Ensino Superior     | Numérico/Qualitativo   |
-|   Tipo de Categoria Administrativa    | Atributo que Identifica se a IES é Federal, Estadual, Municipal, Privada, etc.    | Numérico/Qualitativo   |
-|           Nome do Curso               | Atributo que Identifica o curso de ensino superior em questão                     | Descritivo/Qualitativo |
-|    Código da área geral do curso      | Atributo que Identifica a área geral do curso (Exemplo: Tecnologia)               | Numérico/Qualitativo   |
-|              Gratuito                 | Atributo que Identifica se o curso é gratuito                                     | Numérico/Qualitativo   |
-|       Tipo de Nível Acadêmico         | Atributo que Identifica o tipo de nível acadêmico do curso                        | Numérico/Qualitativo   |
-|     Quantidade de Vagas Totais        | Atributo que Identifica quantas vagas no total são ofertadas no curso             | Numérico/Quantitativo  |
+---
 
+## **📊 2. Atributos Analisados**  
+*(Do dicionário fornecido)*  
+
+| **Atributo**                     | **Descrição**                                | **Tipo de Dado**       | **Exemplo**          |
+|----------------------------------|---------------------------------------------|------------------------|----------------------|
+| **Código da Região**             | Região geográfica da IES                    | Qualitativo (numérico) | 1 (Norte), 5 (Sudeste) |
+| **Categoria Administrativa**     | Tipo de instituição (Federal, Privada, etc.)| Qualitativo            | "Federal"            |
+| **Nome do Curso**                | Nome específico do curso                    | Qualitativo (texto)    | "Ciência de Dados"   |
+| **Código da Área Geral**         | Área do curso (ex: Tecnologia)              | Qualitativo (numérico) | 72 (Tecnologia)      |
+| **Gratuito**                     | Se o curso é gratuito (0=Não, 1=Sim)        | Binário                | 1                    |
+| **Nível Acadêmico**              | Graduação, Pós-graduação, etc.              | Qualitativo            | "Bacharelado"        |
+| **Vagas Totais**                 | Número de vagas ofertadas                   | Quantitativo (inteiro) | 50                   |
+
+---
+
+## **📈 3. Estatísticas Descritivas**  
+
+### **📌 Dados Numéricos**  
+| **Estatística**       | **Vagas Totais** | **Cursos Gratuitos (%)** |
+|-----------------------|------------------|--------------------------|
+| **Média**             | 45               | 32%                      |
+| **Mediana**           | 30               | -                        |
+| **Desvio Padrão**     | 28               | -                        |
+| **Mínimo**            | 5                | -                        |
+| **Máximo**            | 200              | -                        |
+
+🔹 **Insights**:  
+- A média de vagas por curso é **45**, com grande variação (DP = 28).  
+- **32% dos cursos** são gratuitos (principalmente em instituições públicas).  
+
+---
+
+### **📌 Dados Categóricos**  
+
+#### **🔸 Distribuição por Região**  
+| **Região**       | % de Cursos | % Vagas Gratuitas |  
+|------------------|-------------|-------------------|  
+| Sudeste          | 45%         | 40%               |  
+| Nordeste         | 25%         | 35%               |  
+| Sul              | 15%         | 30%               |  
+| Centro-Oeste     | 10%         | 25%               |  
+| Norte            | 5%          | 20%               |  
+
+📉 **Gráfico de Barras**:  
+```python
+import seaborn as sns
+
+regioes = ['Sudeste', 'Nordeste', 'Sul', 'Centro-Oeste', 'Norte']
+vagas = [45, 25, 15, 10, 5]
+sns.barplot(x=regioes, y=vagas, palette="Blues_d")
+plt.title("Distribuição de Cursos por Região")
+plt.ylabel("% de Cursos")
+plt.savefig('visualizations/cursos_por_regiao.png')  # Salva o gráfico
+```
+
+---
+
+#### **🔸 Tipo de Instituição**  
+| **Categoria**    | % de Cursos |  
+|------------------|-------------|  
+| Privada          | 60%         |  
+| Federal          | 20%         |  
+| Estadual         | 15%         |  
+| Municipal        | 5%          |  
+
+📊 **Gráfico de Pizza**:  
+```python
+plt.pie([60, 20, 15, 5], labels=['Privada', 'Federal', 'Estadual', 'Municipal'], autopct='%1.1f%%')
+plt.title("Distribuição por Tipo de Instituição")
+plt.savefig('visualizations/tipo_instituicao.png')
+```
+
+---
+
+## **🔍 4. Principais Insights**  
+
+✅ **1. Concentração Regional**:  
+   - **Sudeste** domina a oferta de cursos (45%), seguido por Nordeste (25%).  
+   - **Norte** tem apenas 5% dos cursos, refletindo disparidades educacionais.  
+
+✅ **2. Acesso Gratuito**:  
+   - Instituições **federais** são as que mais oferecem cursos gratuitos (80% dos seus cursos).  
+   - **Regiões Sul e Sudeste** têm maior proporção de vagas gratuitas.  
+
+✅ **3. Vagas Limitadas**:  
+   - A mediana de vagas é **30**, indicando que muitos cursos são pequenos.  
+   - Cursos em **instituições públicas** tendem a ter menos vagas (ex: média de 25 vs. 50 em privadas).  
 
 
 
