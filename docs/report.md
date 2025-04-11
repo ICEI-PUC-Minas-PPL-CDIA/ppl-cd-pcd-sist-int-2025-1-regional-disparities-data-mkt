@@ -1,4 +1,4 @@
-# TITULO DO PROJETO: Diferenças regionais no mercado de dados do Brasil.
+#  Diferenças regionais no mercado de dados do Brasil.
 
 Alunos:
 Walker Junio Gonzaga Rocha - walker.rocha@sga.pucminas.br  
@@ -224,10 +224,6 @@ plt.show()
    - **Remoto (45%)** > Híbrido (35%) > Presencial (20%).  
 
 
-Em adição à base principal ultilizaremos a base auxiliar "Brasil: Dispêndidos ds governo estaduais em ciência e tecnologia (C&T), por região e unidade da fereração, 2000 - 2023" provida pelo MCTI (Ministério da Tecnológia, Ciência e Inovação) sobre investimentos de cada estado brasileiros em tecnológia ao longo dos anos. 
-# **Análise Exploratória (EDA) - Censo da Educação Superior 2023 (INEP)**  
-*(Base Auxiliar: Cursos de Tecnologia e Ciência de Dados no Brasil)*  
-
 ---
 
 ## **📌 1. Introdução Base MCTI (BASE AUXILIAR 1)**  
@@ -328,109 +324,7 @@ plt.savefig('visualizations/tipo_instituicao.png')
    - Cursos em **instituições públicas** tendem a ter menos vagas (ex: média de 25 vs. 50 em privadas).  
 
 
-
-###    Descrição de dados
-
-
-
-Base de dados auxiliar:
-### **Análise Descritiva dos Gastos Estaduais em Ciência e Tecnologia (2000–2023)**   
-
----
-
-#### **1. Contexto**  
-A tabela analisada contém três atributos principais, conforme o dicionário:  
-- **Região** (texto): Identifica a grande região do Brasil.  
-- **Estado** (texto): Unidade da Federação (UF) específica.  
-- **Investimento em Ciência e Tecnologia** (números reais): Valores em milhões de R$ correntes (2000–2023).  
-
----
-
-### **2. Estatísticas Descritivas**  
-
-#### **Investimento Total por Região (2023)**  
-| **Região**       | **Investimento (R$ milhões)** | **% do Total** |  
-|------------------|-------------------------------|----------------|  
-| Sudeste          | 15.795,7                      | 61,0%          |  
-| Sul              | 3.815,0                       | 14,7%          |  
-| Nordeste         | 3.139,2                       | 12,1%          |  
-| Centro-Oeste     | 1.717,7                       | 6,6%           |  
-| Norte            | 1.442,1                       | 5,6%           |  
-
-**Insight**: O **Sudeste** concentra **mais de 60%** do investimento nacional, enquanto **Norte** e **Centro-Oeste** juntos representam apenas **12,2%**.  
-
----
-
-#### **Top 5 Estados com Maior Investimento em 2023**  
-| **Estado**       | **Investimento (R$ milhões)** |  
-|------------------|-------------------------------|  
-| São Paulo        | 11.825,2                      |  
-| Rio de Janeiro   | 2.206,6                       |  
-| Paraná          | 2.323,5                       |  
-| Bahia           | 1.084,6                       |  
-| Minas Gerais    | 1.325,3                       |  
-
-**Insight**: **São Paulo** sozinho responde por **45,6%** do total nacional.  
-
----
-
-#### **Crescimento por Estado (2000 vs. 2023)**  
-| **Estado**       | **Investimento 2000 (R$ mi)** | **Investimento 2023 (R$ mi)** | **Crescimento** |  
-|------------------|-------------------------------|-------------------------------|-----------------|  
-| Tocantins        | 0,01                          | 117,8                         | **1.177.900%**  |  
-| Santa Catarina   | 5,6                           | 904,8                         | **16.057%**     |  
-| Distrito Federal | 2,8                           | 348,8                         | **12.357%**     |  
-| Pará            | 6,8                           | 485,2                         | **7.035%**      |  
-
-**Insight**: Estados menores (como **Tocantins**) tiveram crescimento proporcional explosivo, mas partindo de bases muito baixas.  
-
----
-
-### **3. Tendências Temporais**  
-
-#### **Evolução Nacional (2000–2023)**  
-- **Total em 2000**: R$ 2.854,3 milhões → **2023**: R$ 25.909,7 milhões (**+808%**).  
-- **Pico em 2022**: R$ 27.575,1 milhões (queda de **6%** em 2023, possivelmente por cortes orçamentários).  
-
-#### **Crescimento por Década**  
-- **2000–2010**: **+257%** (R$ 2,8 bi → R$ 10,2 bi).  
-- **2010–2023**: **+154%** (R$ 10,2 bi → R$ 25,9 bi).  
-
----
-
-### **4. Análise por Tipo de Dado**  
-
-#### **Região (Texto)**  
-- **Sudeste** domina consistentemente, com **SP** sendo o principal motor.  
-- **Norte** tem a menor participação, mas estados como **Pará** e **Amazonas** mostram crescimento relevante.  
-
-#### **Estado (Texto)**  
-- **Destaques positivos**:  
-  - **Bahia**: Maior investidor do Nordeste (R$ 1,08 bi em 2023).  
-  - **Santa Catarina**: Crescimento robusto (R$ 5,6 mi → R$ 904,8 mi).  
-- **Destaques negativos**:  
-  - **Amapá**: Investimento estagnado (R$ 5,7 mi → R$ 21,2 mi).  
-
-#### **Investimento (Números Reais)**  
-- **Distribuição assimétrica**:  
-  - Média nacional (2023): ~R$ 1.000 mi por estado, mas **SP** investe **11x mais** que a média.  
-- **Queda em 2023**:  
-  - 20 dos 27 estados reduziram investimentos vs. 2022.  
-
----
-
-### **5. Visualizações Sugeridas**  
-
-1. **Mapa Coroplético**: Investimento por estado em 2023 (destaque para disparidades regionais).  
-2. **Gráfico de Linhas**: Evolução do investimento nas 5 regiões (2000–2023).  
-3. **Boxplot**: Distribuição dos investimentos por região (para identificar outliers).  
-
----
-
-### **6. Insights Finais**  
-- **Desigualdade regional**: Sudeste recebe **10x mais** que o Norte.  
-- **Crescimento heterogêneo**: Estados como **Tocantins** e **Santa Catarina** mostram que políticas locais podem fazer diferença.  
-- **Queda recente**: Investimentos em C&T podem estar sendo sacrificados para ajustes fiscais pós-pandemia.  
+ 
 ---
 
 ## Preparação dos dados
