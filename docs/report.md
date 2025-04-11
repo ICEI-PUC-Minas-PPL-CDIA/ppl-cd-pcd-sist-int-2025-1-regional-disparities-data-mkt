@@ -98,19 +98,19 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 
 ## **📊 2. Atributos Analisados**  
 
-| **Atributo**                     | **Descrição**                                | **Tipo de Dado**       |
-|----------------------------------|---------------------------------------------|------------------------|
-| **Idade**                        | Idade dos participantes                     | Inteiro               |
-| **Gênero**                       | Identificação de gênero                     | Texto (Categórico)    |
-| **Estado onde mora**             | Estado de residência                        | Texto (Categórico)    |
-| **Região onde mora**             | Região do Brasil (Norte, Nordeste, etc.)    | Texto (Categórico)    |
-| **Mudou de estado**              | Se já mudou de estado (0 = Não, 1 = Sim)    | Inteiro (Binário)     |
-| **Região de Origem**             | Região de nascimento                        | Texto (Categórico)    |
-| **Nível de Atuação**             | Júnior, Pleno, Sênior, etc.                 | Texto (Ordinal)       |
-| **Faixa Salarial**               | Remuneração mensal (em R$)                  | Float (Contínuo)      |
-| **Tempo na Área de Dados**       | Anos de experiência na área                 | Float (Contínuo)      |
-| **Situação de Trabalho**         | Empregado, Autônomo, Desempregado, etc.     | Texto (Categórico)    |
-| **Forma de Trabalho**            | Remoto, Híbrido, Presencial                 | Texto (Categórico)    |
+| **Atributo**                   | **Descrição**                               | **Escala do dado** | **Tipo de Dado**      |
+|--------------------------------|---------------------------------------------|-------------------------------------------|
+| `Idade`                        | Idade dos participantes                     | Discreta           | Inteiro               |
+| `Gênero`                       | Identificação de gênero                     | Nominal            | Texto (Categórico)    |
+| `Estado onde mora`             | Estado de residência                        | Nominal            | Texto (Categórico)    |
+| `Região onde mora`             | Região do Brasil (Norte, Nordeste, etc.)    | Nominal            | Texto (Categórico)    |
+| `Mudou de estado`              | Se já mudou de estado (0 = Não, 1 = Sim)    | Nominal            | Inteiro (Binário)     |
+| `Região de Origem`             | Região de nascimento                        | Nominal            | Texto (Categórico)    |
+| `Nível de Atuação`             | Júnior, Pleno, Sênior, etc.                 | Ordinal            | Texto (Ordinal)       |
+| `Faixa Salarial`               | Remuneração mensal (em R$)                  | Contínuo           | Float (Contínuo)      |
+| `Tempo na Área de Dados`       | Anos de experiência na área                 | Discreta           | Float (Contínuo)      |
+| `Situação de Trabalho`         | Empregado, Autônomo, Desempregado, etc.     | Nominal            | Texto (Categórico)    |
+| `Forma de Trabalho`            | Remoto, Híbrido, Presencial                 | Nominal            | Texto (Categórico)    |
 
 ---
 
@@ -238,15 +238,15 @@ Esta análise complementar utiliza os dados do **Censo da Educação Superior 20
 ## **📊 2. Atributos Analisados**  
 *(Do dicionário fornecido)*  
 
-| **Atributo**                     | **Descrição**                                | **Tipo de Dado**       | **Exemplo**          |
-|----------------------------------|---------------------------------------------|------------------------|----------------------|
-| **Código da Região**             | Região geográfica da IES                    | Qualitativo (numérico) | 1 (Norte), 5 (Sudeste) |
-| **Categoria Administrativa**     | Tipo de instituição (Federal, Privada, etc.)| Qualitativo            | "Federal"            |
-| **Nome do Curso**                | Nome específico do curso                    | Qualitativo (texto)    | "Ciência de Dados"   |
-| **Código da Área Geral**         | Área do curso (ex: Tecnologia)              | Qualitativo (numérico) | 72 (Tecnologia)      |
-| **Gratuito**                     | Se o curso é gratuito (0=Não, 1=Sim)        | Binário                | 1                    |
-| **Nível Acadêmico**              | Graduação, Pós-graduação, etc.              | Qualitativo            | "Bacharelado"        |
-| **Vagas Totais**                 | Número de vagas ofertadas                   | Quantitativo (inteiro) | 50                   |
+| **Atributo**                     | **Descrição**                                | **Tipo de Dado**       | **Escala do dado**   | **Exemplo**            |
+|----------------------------------|----------------------------------------------|------------------------|-----------------------------------------------|
+| **Código da Região**             | Região geográfica da IES                     | Qualitativo (numérico) | Nominal              | 1 (Norte), 5 (Sudeste) |
+| **Categoria Administrativa**     | Tipo de instituição (Federal, Privada, etc.) | Qualitativo            | Nominal              | "Federal"              |
+| **Nome do Curso**                | Nome específico do curso                     | Qualitativo (texto)    | Nominal              | "Ciência de Dados"     |
+| **Código da Área Geral**         | Área do curso (ex: Tecnologia)               | Qualitativo (numérico) | Nominal              | 72 (Tecnologia)        |
+| **Gratuito**                     | Se o curso é gratuito (0=Não, 1=Sim)         | Binário                | Nominal              | 1                      |
+| **Nível Acadêmico**              | Graduação, Pós-graduação, etc.               | Qualitativo            | Ordinal              | "Bacharelado"          |
+| **Vagas Totais**                 | Número de vagas ofertadas                    | Quantitativo (inteiro) | Razão                | 50                     |
 
 ---
 
