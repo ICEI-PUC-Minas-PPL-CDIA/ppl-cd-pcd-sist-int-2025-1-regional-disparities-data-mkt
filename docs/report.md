@@ -187,7 +187,7 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 
 ---
 
-## **📌 5. Principais Insights**  
+## **🔍 5. Principais Insights**  
 
 ✅ **1. Perfil predominante**:  
    - Homem (65%), 30 anos, trabalha remotamente, no Sudeste, com 3-5 anos de experiência.  
@@ -284,7 +284,101 @@ Esta análise complementar utiliza os dados do **Censo da Educação Superior 20
 ✅ **3. Vagas Limitadas**:  
    - A mediana de vagas é **30**, indicando que muitos cursos são pequenos.  
    - Cursos em **instituições públicas** tendem a ter menos vagas (ex: média de 25 vs. 50 em privadas).  
+---
+# Análise Detalhada dos Investimentos em Ciência e Tecnologia por Região e Estado em 2023 (BASE AUXILIAR 2)
 
+## 1. **📌Introdução Base MCTI (Base Auxiliar 2)**
+Esta análise foca exclusivamente nos dados de 2023 do dataset "Brasil: Dispêndios de governo estaduais em ciência e tecnologia (G2T)", examinando a distribuição regional e estadual dos investimentos no ano mais recente disponível.
+
+## 2. 📊**Atributos Analisados**
+
+| Atributo | Descrição | Tipo de Dado | Escala |
+|----------|-----------|--------------|--------|
+| Região | Identifica a região geográfica | Texto (Categórico) | Nominal |
+| Estado | Unidade da Federação | Texto (Categórico) | Nominal |
+| Investimento 2023 | Valor aplicado em C&T (em milhões R$) | Numérico | Contínuo |
+| Participação % | Percentual no total nacional | Numérico | Razão |
+| Variação 2022-23 | Mudança em relação ao ano anterior | Numérico | Intervalar |
+
+## 3. **📈Estatísticas Descritivas (2023)**
+
+### Dados Numéricos (Valores em milhões R$)
+
+| Estatística | Investimento Estadual |
+|-------------|----------------------|
+| Média | 970,21 |
+| Mediana | 485,20 |
+| Desvio Padrão | 1.984,64 |
+| Mínimo | 21,20 (Amapá) |
+| Máximo | 11.825,20 (São Paulo) |
+| Q1 (25%) | 175,30 |
+| Q3 (75%) | 1.084,60 |
+
+🔹 **Insights:**
+- Grande disparidade (DP alto) entre estados
+- Mediana muito abaixo da média indica concentração em poucos estados
+- 75% dos estados investiram menos de 1,1 bilhão
+
+## 4. Análise por Região (2023)
+
+| Região | Investimento (R$ mi) | % Total | Estados | Crescimento 2022-23 | Média por Estado |
+|--------|----------------------|---------|---------|---------------------|------------------|
+| Sudeste | 15.795,70 | 60,96% | 4 | -14,27% | 3.948,93 |
+| Sul | 3.815,00 | 14,73% | 3 | +20,58% | 1.271,67 |
+| Nordeste | 3.139,20 | 12,11% | 9 | +7,11% | 348,80 |
+| Centro-Oeste | 1.717,70 | 6,63% | 4 | +2,53% | 429,43 |
+| Norte | 1.442,10 | 5,57% | 7 | +4,60% | 206,01 |
+
+**Gráfico:** [Barra comparativa mostrando investimento por região]
+
+**Principais Observações:**
+- Sudeste tem média estadual 19x maior que a Norte
+- Sul foi a única região com crescimento acima de 20%
+- 3 estados do Sudeste (SP, RJ, MG) respondem por 59% do total nacional
+
+## 5. Top 10 Estados em 2023
+
+| Posição | Estado | Região | Investimento (R$ mi) | % Brasil | Variação 2022-23 |
+|---------|--------|--------|----------------------|----------|------------------|
+| 1 | São Paulo | Sudeste | 11.825,20 | 45,64% | -18,40% |
+| 2 | Paraná | Sul | 2.323,50 | 8,97% | +24,45% |
+| 3 | Rio de Janeiro | Sudeste | 2.206,60 | 8,52% | -4,99% |
+| 4 | Minas Gerais | Sudeste | 1.325,30 | 5,12% | +4,38% |
+| 5 | Bahia | Nordeste | 1.084,60 | 4,19% | +24,93% |
+| 6 | Rio Grande do Sul | Sul | 586,70 | 2,26% | +13,70% |
+| 7 | Santa Catarina | Sul | 904,80 | 3,49% | +15,86% |
+| 8 | Distrito Federal | Centro-Oeste | 348,80 | 1,35% | -11,70% |
+| 9 | Ceará | Nordeste | 682,90 | 2,64% | -2,99% |
+| 10 | Pernambuco | Nordeste | 350,20 | 1,35% | -11,84% |
+
+**Gráfico:** [Top 10 estados com valores absolutos e variação]
+
+**Destaques:**
+- Paraná ultrapassou RJ na 2ª posição com crescimento de 24,45%
+- Bahia foi o 2º maior crescimento no Top 10 (+24,93%)
+- SP teve redução de 18,4%, mas mantém liderança absoluta
+
+## **📉6. Análise de Disparidades**
+
+**Razão entre maior e menor investimento:**
+- Estadual: SP (11.825,20) / AP (21,20) = 558x
+- Regional: Sudeste (15.795,70) / Norte (1.442,10) = 11x
+
+**Participação dos 5 maiores:**
+1. SP (45,64%)
+2. PR (8,97%)
+3. RJ (8,52%)
+4. MG (5,12%)
+5. BA (4,19%)
+**Total:** 72,44% do investimento nacional
+
+## 7.🔍 Principais Insights
+
+✅1. **Concentração extrema:** 3 estados respondem por quase 60% do total
+✅2. **Sul em destaque:** Única região com crescimento acima de 20%
+✅3. **Queda no Sudeste:** Redução de 14,27% puxada por São Paulo
+✅4. **Nordeste consistente:** Crescimento moderado (7,11%) com Bahia se destacando
+✅5. **Disparidades regionais:** Média por estado no Sudeste é 19x maior que no Norte
 
 ---
 
