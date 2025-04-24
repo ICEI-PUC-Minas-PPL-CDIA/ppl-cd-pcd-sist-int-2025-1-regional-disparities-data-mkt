@@ -283,7 +283,9 @@ Esta análise complementar utiliza os dados do **Censo da Educação Superior 20
 | Centro-Oeste     | 10%         | 25%               |  
 | Norte            | 5%          | 20%               |  
 
-📉 **Gráfico de Barras**:  
+📉 **Gráfico de Barras**: 
+![image](https://github.com/user-attachments/assets/53f6dc68-53ea-4741-a3d0-6cc8c84e1681)
+
 ```python
 import seaborn as sns
 
