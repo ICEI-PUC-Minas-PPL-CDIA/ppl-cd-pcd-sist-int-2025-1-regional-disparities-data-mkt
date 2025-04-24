@@ -213,16 +213,15 @@ Esta análise complementar utiliza os dados do **Censo da Educação Superior 20
 ## **📊 2. Atributos Analisados**  
 
 
-| **Atributo**                     | **Descrição**                                | **Tipo de Dado**       | **Escala do dado**   | **Exemplo**            |
-|----------------------------------|----------------------------------------------|------------------------|-----------------------------------------------|
-| **Código da Região**             | Região geográfica da IES                     | Qualitativo (numérico) | Nominal              | 1 (Norte), 5 (Sudeste) |
-| **Categoria Administrativa**     | Tipo de instituição (Federal, Privada, etc.) | Qualitativo            | Nominal              | "Federal"              |
-| **Nome do Curso**                | Nome específico do curso                     | Qualitativo (texto)    | Nominal              | "Ciência de Dados"     |
-| **Código da Área Geral**         | Área do curso (ex: Tecnologia)               | Qualitativo (numérico) | Nominal              | 72 (Tecnologia)        |
-| **Gratuito**                     | Se o curso é gratuito (0=Não, 1=Sim)         | Binário                | Nominal              | 1                      |
-| **Nível Acadêmico**              | Graduação, Pós-graduação, etc.               | Qualitativo            | Ordinal              | "Bacharelado"          |
-| **Vagas Totais**                 | Número de vagas ofertadas                    | Quantitativo (inteiro) | Razão                | 50                     |
-
+| **Atributo**                 | **Descrição**                                | **Tipo de Dado**         | **Escala do dado** | **Exemplo**            |
+|-----------------------------|----------------------------------------------|--------------------------|--------------------|------------------------|
+| **Código da Região**        | Região geográfica da IES                     | Qualitativo (numérico)   | Nominal            | 1 (Norte), 5 (Sudeste) |
+| **Categoria Administrativa**| Tipo de instituição (Federal, Privada, etc.) | Qualitativo              | Nominal            | "Federal"              |
+| **Nome do Curso**           | Nome específico do curso                     | Qualitativo (texto)      | Nominal            | "Ciência de Dados"     |
+| **Código da Área Geral**    | Área do curso (ex: Tecnologia)               | Qualitativo (numérico)   | Nominal            | 72 (Tecnologia)        |
+| **Gratuito**                | Se o curso é gratuito (0=Não, 1=Sim)         | Binário                  | Nominal            | 1                      |
+| **Nível Acadêmico**         | Graduação, Pós-graduação, etc.              | Qualitativo              | Ordinal            | "Bacharelado"          |
+| **Vagas Totais**            | Número de vagas ofertadas                    | Quantitativo (inteiro)   | Razão              | 50                     |
 ---
 
 ## **📈 3. Estatísticas Descritivas**  
