@@ -96,21 +96,21 @@ Esse público busca aprendizado acessível, prática e oportunidades no mercado 
 O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fonte de dados. Essa base de dados busca relacionar as regioes do Brasil com o mercado de Dados Brasileiro.
 
 
-## **📊 2. Atributos Analisados**  
+## 📊 2. Atributos Analisados  
 
-| **Atributo**                   | **Descrição**                               | **Escala do dado** | **Tipo de Dado**      |
-|--------------------------------|---------------------------------------------|-------------------------------------------|
-| `Idade`                        | Idade dos participantes                     | Discreta           | Inteiro               |
-| `Gênero`                       | Identificação de gênero                     | Nominal            | Texto (Categórico)    |
-| `Estado onde mora`             | Estado de residência                        | Nominal            | Texto (Categórico)    |
-| `Região onde mora`             | Região do Brasil (Norte, Nordeste, etc.)    | Nominal            | Texto (Categórico)    |
-| `Mudou de estado`              | Se já mudou de estado (0 = Não, 1 = Sim)    | Nominal            | Inteiro (Binário)     |
-| `Região de Origem`             | Região de nascimento                        | Nominal            | Texto (Categórico)    |
-| `Nível de Atuação`             | Júnior, Pleno, Sênior, etc.                 | Ordinal            | Texto (Ordinal)       |
-| `Faixa Salarial`               | Remuneração mensal (em R$)                  | Contínuo           | Float (Contínuo)      |
-| `Tempo na Área de Dados`       | Anos de experiência na área                 | Discreta           | Float (Contínuo)      |
-| `Situação de Trabalho`         | Empregado, Autônomo, Desempregado, etc.     | Nominal            | Texto (Categórico)    |
-| `Forma de Trabalho`            | Remoto, Híbrido, Presencial                 | Nominal            | Texto (Categórico)    |
+| **Atributo**               | **Descrição**                                 | **Escala do dado** | **Tipo de Dado**         |
+|---------------------------|-----------------------------------------------|--------------------|--------------------------|
+| `Idade`                   | Idade dos participantes                       | Discreta           | Inteiro                  |
+| `Gênero`                  | Identificação de gênero                       | Nominal            | Texto (Categórico)       |
+| `Estado onde mora`        | Estado de residência                          | Nominal            | Texto (Categórico)       |
+| `Região onde mora`        | Região do Brasil (Norte, Nordeste, etc.)      | Nominal            | Texto (Categórico)       |
+| `Mudou de estado`         | Se já mudou de estado (0 = Não, 1 = Sim)      | Nominal            | Inteiro (Binário)        |
+| `Região de Origem`        | Região de nascimento                          | Nominal            | Texto (Categórico)       |
+| `Nível de Atuação`        | Júnior, Pleno, Sênior, etc.                   | Ordinal            | Texto (Ordinal)          |
+| `Faixa Salarial`          | Remuneração mensal (em R$)                    | Contínuo           | Float (Contínuo)         |
+| `Tempo na Área de Dados`  | Anos de experiência na área                   | Discreta           | Float (Contínuo)         |
+| `Situação de Trabalho`    | Empregado, Autônomo, Desempregado, etc.       | Nominal            | Texto (Categórico)       |
+| `Forma de Trabalho`       | Remoto, Híbrido, Presencial                   | Nominal            | Texto (Categórico)       |
 
 ---
 
