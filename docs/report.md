@@ -144,6 +144,8 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 | Outros/Não informado | 3%       | 3%    |
 
 📉 **Gráfico**:  
+![image](https://github.com/user-attachments/assets/99bd1173-0d8f-40fd-9d85-e82ed272ea8d)
+![image](https://github.com/user-attachments/assets/76b44511-3faf-482a-9222-cf256de0222d)
 
 ## 📊 Análise de Gênero
 ```python
