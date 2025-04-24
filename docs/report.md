@@ -308,6 +308,8 @@ plt.savefig('visualizations/cursos_por_regiao.png')  # Salva o gráfico
 | Municipal        | 5%          |  
 
 📊 **Gráfico de Pizza**:  
+![image](https://github.com/user-attachments/assets/8671dbcc-d841-443a-bbd0-052cff8d60fc)
+
 ```python
 plt.pie([60, 20, 15, 5], labels=['Privada', 'Federal', 'Estadual', 'Municipal'], autopct='%1.1f%%')
 plt.title("Distribuição por Tipo de Instituição")
