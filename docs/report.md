@@ -237,7 +237,7 @@ Esta análise complementar utiliza os dados do **Censo da Educação Superior 20
 
 🔹 **Insights**:  
 - A média de vagas por curso é **45**, com grande variação (DP = 28).  
-- **32% dos cursos** são gratuitos (principalmente em instituições públicas).  
+- **32% dos cursos** são gratuitos (principalmente em instituições públicas).   
 
 ---
 
