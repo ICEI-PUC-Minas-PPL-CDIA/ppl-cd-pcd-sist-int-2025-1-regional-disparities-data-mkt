@@ -175,6 +175,9 @@ plt.close()  # Fecha o gráfico
 | Presencial  | 20%           | 20%   |
 
 📊 **Gráfico**:  
+![image](https://github.com/user-attachments/assets/dade1ded-2210-4f10-a28c-5fa9f3327b21)
+![image](https://github.com/user-attachments/assets/bfcbe605-37f6-42d3-b3cb-45248ca2acc9)
+
 ```python
 sns.barplot(x=['Remoto', 'Híbrido', 'Presencial'], y=[45, 35, 20])
 plt.title('Distribuição da Forma de Trabalho')
