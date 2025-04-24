@@ -143,25 +143,10 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 | Feminino         | 32%           | 32%   |
 | Outros/Não informado | 3%       | 3%    |
 
+## 📊 Análise de Gênero
 📉 **Gráfico**:  
 ![image](https://github.com/user-attachments/assets/76b44511-3faf-482a-9222-cf256de0222d)
 
-## 📊 Análise de Gênero
-```python
-import matplotlib.pyplot as plt
-
-# Dados
-labels = ['Masculino', 'Feminino', 'Outros']
-sizes = [65, 32, 3]
-colors = ['#66b3ff', '#ff9999', '#99ff99']
-
-# Plot
-plt.figure(figsize=(8, 6))
-plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=90)
-plt.title('Distribuição de Gênero', pad=20)
-plt.savefig('visualizations/gender_dist.png', dpi=300, bbox_inches='tight')  # Salva
-plt.close()  # Fecha o gráfico
-```
 *(Resultado: Gráfico de pizza mostrando predominância masculina.)*  
 
 ---
@@ -176,12 +161,6 @@ plt.close()  # Fecha o gráfico
 📊 **Gráfico**:  
 ![image](https://github.com/user-attachments/assets/bfcbe605-37f6-42d3-b3cb-45248ca2acc9)
 
-```python
-sns.barplot(x=['Remoto', 'Híbrido', 'Presencial'], y=[45, 35, 20])
-plt.title('Distribuição da Forma de Trabalho')
-plt.ylabel('% de Profissionais')
-plt.show()
-```
 *(Resultado: Barra mostrando que **remoto é o mais comum**.)*  
 
 ---
@@ -204,11 +183,6 @@ plt.show()
 📈 **Gráfico de Dispersão (Salário vs. Experiência por Região)**  
 ![image](https://github.com/user-attachments/assets/bc262740-3734-49ce-8f99-5e1effcbb376)
 
-```python
-sns.scatterplot(data=df, x='Tempo na Área', y='Faixa Salarial', hue='Região')
-plt.title('Relação entre Experiência e Salário por Região')
-plt.show()
-```
 *(Mostra que profissionais do **Sudeste** com mais experiência têm os maiores salários.)*  
 
 ---
@@ -231,17 +205,13 @@ plt.show()
 
 ---
 
-## **📌 1. Introdução Base MCTI (BASE AUXILIAR 1)**  
+## **📌 1. Introdução Base Censo da Educação Superior 2023 (INEP)(BASE AUXILIAR 2)**  
 
-Esta análise complementar utiliza os dados do **Censo da Educação Superior 2023 (INEP)** para mapear a distribuição de cursos na área de tecnologia e ciência de dados no Brasil. O objetivo é cruzar essas informações com a base principal (*State of Data Brazil 2023*) e identificar:  
-✔ **Oferta de cursos** por região e tipo de instituição.  
-✔ **Relação entre vagas ofertadas** e perfil profissional.  
-✔ **Acesso gratuito** à educação na área.  
-
+Esta análise complementar utiliza os dados do **Censo da Educação Superior 2023 (INEP)** para mapear a distribuição de cursos na área de tecnologia e ciência de dados no Brasil. O objetivo é cruzar essas informações com a base principal (*State of Data Brazil 2023*)
 ---
 
 ## **📊 2. Atributos Analisados**  
-*(Do dicionário fornecido)*  
+
 
 | **Atributo**                     | **Descrição**                                | **Tipo de Dado**       | **Escala do dado**   | **Exemplo**            |
 |----------------------------------|----------------------------------------------|------------------------|-----------------------------------------------|
@@ -286,16 +256,6 @@ Esta análise complementar utiliza os dados do **Censo da Educação Superior 20
 📉 **Gráfico de Barras**: 
 ![image](https://github.com/user-attachments/assets/53f6dc68-53ea-4741-a3d0-6cc8c84e1681)
 
-```python
-import seaborn as sns
-
-regioes = ['Sudeste', 'Nordeste', 'Sul', 'Centro-Oeste', 'Norte']
-vagas = [45, 25, 15, 10, 5]
-sns.barplot(x=regioes, y=vagas, palette="Blues_d")
-plt.title("Distribuição de Cursos por Região")
-plt.ylabel("% de Cursos")
-plt.savefig('visualizations/cursos_por_regiao.png')  # Salva o gráfico
-```
 
 ---
 
@@ -309,12 +269,6 @@ plt.savefig('visualizations/cursos_por_regiao.png')  # Salva o gráfico
 
 📊 **Gráfico de Pizza**:  
 ![image](https://github.com/user-attachments/assets/8671dbcc-d841-443a-bbd0-052cff8d60fc)
-
-```python
-plt.pie([60, 20, 15, 5], labels=['Privada', 'Federal', 'Estadual', 'Municipal'], autopct='%1.1f%%')
-plt.title("Distribuição por Tipo de Instituição")
-plt.savefig('visualizations/tipo_instituicao.png')
-```
 
 ---
 
@@ -333,7 +287,6 @@ plt.savefig('visualizations/tipo_instituicao.png')
    - Cursos em **instituições públicas** tendem a ter menos vagas (ex: média de 25 vs. 50 em privadas).  
 
 
- 
 ---
 
 ## Preparação dos dados
