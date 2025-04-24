@@ -144,7 +144,6 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 | Outros/Não informado | 3%       | 3%    |
 
 📉 **Gráfico**:  
-![image](https://github.com/user-attachments/assets/99bd1173-0d8f-40fd-9d85-e82ed272ea8d)
 ![image](https://github.com/user-attachments/assets/76b44511-3faf-482a-9222-cf256de0222d)
 
 ## 📊 Análise de Gênero
@@ -175,7 +174,6 @@ plt.close()  # Fecha o gráfico
 | Presencial  | 20%           | 20%   |
 
 📊 **Gráfico**:  
-![image](https://github.com/user-attachments/assets/dade1ded-2210-4f10-a28c-5fa9f3327b21)
 ![image](https://github.com/user-attachments/assets/bfcbe605-37f6-42d3-b3cb-45248ca2acc9)
 
 ```python
@@ -204,7 +202,6 @@ plt.show()
 - **Norte/Nordeste** têm menores médias salariais.  
 
 📈 **Gráfico de Dispersão (Salário vs. Experiência por Região)**  
-![image](https://github.com/user-attachments/assets/9da9c7d9-2621-4ed2-9970-0b1c873a687e)
 ![image](https://github.com/user-attachments/assets/bc262740-3734-49ce-8f99-5e1effcbb376)
 
 ```python
