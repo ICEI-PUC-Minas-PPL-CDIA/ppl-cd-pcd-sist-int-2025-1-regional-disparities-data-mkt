@@ -204,6 +204,9 @@ plt.show()
 - **Norte/Nordeste** têm menores médias salariais.  
 
 📈 **Gráfico de Dispersão (Salário vs. Experiência por Região)**  
+![image](https://github.com/user-attachments/assets/9da9c7d9-2621-4ed2-9970-0b1c873a687e)
+![image](https://github.com/user-attachments/assets/bc262740-3734-49ce-8f99-5e1effcbb376)
+
 ```python
 sns.scatterplot(data=df, x='Tempo na Área', y='Faixa Salarial', hue='Região')
 plt.title('Relação entre Experiência e Salário por Região')
