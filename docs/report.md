@@ -80,7 +80,6 @@ Além disso, aspectos como nível de educação, área de estudo e principais fe
 A escolha do tema "Diferenças regionais no mercado de dados do Brasil" surge da necessidade de compreender as disparidades no acesso a oportunidades e desenvolvimento profissional na área de tecnologia, especialmente para iniciantes e profissionais em transição de carreira. O mercado de dados cresce rapidamente, mas nem todos os profissionais possuem as mesmas condições para ingressar e evoluir na área, seja por barreiras educacionais, econômicas ou regionais. Este trabalho busca identificar essas desigualdades analisando fatores como nível de escolaridade, áreas de estudo, situação profissional, transição de carreira e ferramentas mais utilizadas, permitindo um mapeamento detalhado das condições enfrentadas pelos iniciantes em diferentes regiões do país.
 
 
-
 ##    Público alvo
 
 Perfil dos Usuários: Iniciantes e Pessoas em Transição de Carreira
@@ -350,6 +349,7 @@ Esta análise foca exclusivamente nos dados de 2023 do dataset "Brasil: Dispênd
 | 10 | Pernambuco | Nordeste | 350,20 | 1,35% | -11,84% |
 
 **Gráfico:** [Top 10 estados com valores absolutos e variação]
+![image](https://github.com/user-attachments/assets/f13d34f4-6742-4b2d-a028-05b787f941e4)
 
 **Destaques:**
 - Paraná ultrapassou RJ na 2ª posição com crescimento de 24,45%
