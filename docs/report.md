@@ -253,7 +253,6 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 📉 **Gráfico de Barras**: 
 ![image](https://github.com/user-attachments/assets/53f6dc68-53ea-4741-a3d0-6cc8c84e1681)
 
-
 ---
 
 #### **🔸 Tipo de Instituição**  
@@ -328,6 +327,7 @@ Esta análise foca exclusivamente nos dados de 2023 do dataset "Brasil: Dispênd
 | Norte | 1.442,10 | 5,57% | 7 | +4,60% | 206,01 |
 
 **Gráfico:** [Barra comparativa mostrando investimento por região]
+![image](https://github.com/user-attachments/assets/b957e910-1697-48cd-aff7-a7598f3d28cc)
 
 **Principais Observações:**
 - Sudeste tem média estadual 19x maior que a Norte
