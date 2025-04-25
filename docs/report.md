@@ -281,9 +281,9 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
    - A mediana de vagas é **30**, indicando que muitos cursos são pequenos.  
    - Cursos em **instituições públicas** tendem a ter menos vagas (ex: média de 25 vs. 50 em privadas).  
 ---
-# Análise Detalhada dos Investimentos em Ciência e Tecnologia por Região e Estado em 2023 (BASE AUXILIAR 2)
+# Análise Detalhada dos Investimentos em Ciência e Tecnologia por Região e Estado em 2023 (BASE AUXILIAR 3)
 
-## 1. **📌Introdução Base MCTI (Base Auxiliar 2)**
+## 1. **📌Introdução Base MCTI (Base Auxiliar 3)**
 Esta análise foca exclusivamente nos dados de 2023 do dataset "Brasil: Dispêndios de governo estaduais em ciência e tecnologia (G2T)", examinando a distribuição regional e estadual dos investimentos no ano mais recente disponível.
 
 ## 2. 📊**Atributos Analisados**
