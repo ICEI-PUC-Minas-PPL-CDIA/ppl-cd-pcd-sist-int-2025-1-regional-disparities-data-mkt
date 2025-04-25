@@ -206,9 +206,7 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 ---
 
 ## **📌 1. Introdução Base Censo da Educação Superior 2023 (INEP)(BASE AUXILIAR 2)**  
-
-Esta análise complementar utiliza os dados do **Censo da Educação Superior 2023 (INEP)** para mapear a distribuição de cursos na área de tecnologia e ciência de dados no Brasil. O objetivo é cruzar essas informações com a base principal (*State of Data Brazil 2023*)
----
+Esta análise complementar utiliza os dados do Censo da Educação Superior 2023 (INEP) para mapear a distribuição de cursos na área de tecnologia e ciência de dados no Brasil. O objetivo é cruzar essas informações com a base principal (*State of Data Brazil 2023*)
 
 ## **📊 2. Atributos Analisados**  
 
