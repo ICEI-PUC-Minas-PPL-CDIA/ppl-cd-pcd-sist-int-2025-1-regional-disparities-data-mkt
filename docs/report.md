@@ -244,15 +244,17 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 
 ### **📌 Dados Categóricos**  
 
-#### **🔸 Distribuição por Região e po Tipo de Instituição**  
+#### 🔸 **Distribuição por Região e por Tipo de Instituição**
+
 | Região       | Tipo 1 (Pública Federal) | Tipo 2 (Pública Estadual) | Tipo 3 (Pública Municipal) | Tipo 4 (Privada com fins lucrativos) | Tipo 5 (Privada sem fins lucrativos) | Total Geral |
-|--------------|---------------------------|----------------------------|..........................|--------------------------------------|----------------------------------------|--------------|
-| Nordeste     | 6                       | 0                          | 0                          |1104                                | 41                                    | 1151        |
-| Centro-Oeste | 2                       | 0                        | 0                         | 497                                  | 39                                    | 538         |
-| Sudeste      | 0                         | 377                    | 1                           | 2847                                 | 337                                    | 3562        |
-| Sul          | 0                         | 0                        | 0                           | 1313                                 | 107                                    | 1420         |
-| Norte        | 0                         | 1                        | 0                           | 384                                    | 18                                    | 403          |
-| Total        | 8                      | 378                    | 1                           | 6145                               | 542                                   | 7074        |
+|--------------|---------------------------|----------------------------|-----------------------------|--------------------------------------|----------------------------------------|--------------|
+| Nordeste     | 6                         | 0                          | 0                           | 1104                                 | 41                                     | 1151         |
+| Centro-Oeste | 2                         | 0                          | 0                           | 497                                  | 39                                     | 538          |
+| Sudeste      | 0                         | 377                        | 1                           | 2847                                 | 337                                    | 3562         |
+| Sul          | 0                         | 0                          | 0                           | 1313                                 | 107                                    | 1420         |
+| Norte        | 0                         | 1                          | 0                           | 384                                  | 18                                     | 403          |
+| **Total**    | 8                         | 378                        | 1                           | 6145                                 | 542                                    | 7074         |
+
 
 
 📉 **Gráfico de Barras**: 
