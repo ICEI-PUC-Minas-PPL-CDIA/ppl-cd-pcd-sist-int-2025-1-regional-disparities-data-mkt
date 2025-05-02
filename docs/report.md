@@ -265,11 +265,11 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 #### **🔸 Distribuição por Dimensão do Curso**  
 | Dimensão            | Descrição             | Total de Cursos |
 |---------------------|------------------------|------------------|
-| 1                   | Pequeno porte          | 43               |
-| 2                   | Médio porte            | 260              |
-| 3                   | Grande porte           | 35000            |
+| 1                   | Pequeno porte          | 59               |
+| 2                   | Médio porte            | 6411              |
+| 3                   | Grande porte           | 132           |
 | 4                   | Muito grande porte     | 137              |
-| **Total**           |                        | 35440            |
+| **Total**           |                        | 6           |
 
 📊 **Gráfico de Pizza**:  
 ![image](https://github.com/user-attachments/assets/8671dbcc-d841-443a-bbd0-052cff8d60fc)
