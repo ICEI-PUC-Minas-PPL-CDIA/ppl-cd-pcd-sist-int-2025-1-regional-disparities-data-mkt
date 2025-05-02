@@ -393,14 +393,9 @@ A preparação dos dados consiste dos seguintes passos:
 
 ## Indução de modelos
 
-### Modelo 1: Algoritmo
+### Clusterização com K-means
 
-Substitua o título pelo nome do algoritmo que será utilizado. P. ex. árvore de decisão, rede neural, SVM, etc.
-Justifique a escolha do modelo.
-Apresente o processo utilizado para amostragem de dados (particionamento, cross-validation).
-Descreva os parâmetros utilizados. 
-Apresente trechos do código utilizado comentados. Se utilizou alguma ferramenta gráfica, apresente imagens
-com o fluxo de processamento.
+Utilizaremos o aprendizado não supervisionado. O K-means foi escolhido por ser a melhor ferramenta para dividir os dados em diferentes agrupamentos de características semelhantes e identificar o perfil de trabalhador na área de dados por cada região. O K-means é especialmente eficaz quando se deseja identificar padrões ou segmentações em grandes conjuntos de dados. No contexto desse trabalho, essa abordagem facilita a identificação das regiões com característica semelhantes, promovendo uma análise mais clara e objetiva dos perfis regionais.
 
 ### Modelo 2: Algoritmo
 
@@ -410,6 +405,14 @@ Repita os passos anteriores para o segundo modelo.
 ## Resultados
 
 ### Resultados obtidos com o modelo 1.
+
+#### Matriz de confusão
+
+|                          | **Classe Predita: Positiva** | **Classe Predita: Negativa** |
+|--------------------------|------------------------------|------------------------------|
+| **Classe Real: Positiva** | Verdadeiro Positivo (VP)     | Falso Negativo (FN)          |
+| **Classe Real: Negativa** | Falso Positivo (FP)          | Verdadeiro Negativo (VN)     |
+
 
 Apresente aqui os resultados obtidos com a indução do modelo 1. 
 Apresente uma matriz de confusão quando pertinente. Apresente as medidas de performance
