@@ -288,6 +288,8 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 | Sul          | 20.307             | 369                   | 1,82%                  |
 | Norte        | 634                | 56                    | 8,83%                  |
 
+📊 **Gráfico de Barras**: 
+![image](https://github.com/user-attachments/assets/72a039d4-aee9-4502-b4eb-c69f73c4f89e)
 
 ---
 
