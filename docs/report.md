@@ -211,13 +211,15 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 
 | **Atributo**                 | **Descrição**                                | **Tipo de Dado**         | **Escala do dado** | **Exemplo**            |
 |-----------------------------|----------------------------------------------|--------------------------|--------------------|------------------------|
-| **Código da Região**        | Região geográfica da IES                     | Qualitativo (numérico)   | Nominal            | 1 (Norte), 5 (Sudeste) |
+| **Nome da Região**          | Região geográfica                            | Qualitativo (texto)      | Nominal            | Norte                  |
 | **Categoria Administrativa**| Tipo de instituição (Federal, Privada, etc.) | Qualitativo              | Nominal            | "Federal"              |
-| **Nome do Curso**           | Nome específico do curso                     | Qualitativo (texto)      | Nominal            | "Ciência de Dados"     |
-| **Código da Área Geral**    | Área do curso (ex: Tecnologia)               | Qualitativo (numérico)   | Nominal            | 72 (Tecnologia)        |
-| **Gratuito**                | Se o curso é gratuito (0=Não, 1=Sim)         | Binário                  | Nominal            | 1                      |
-| **Nível Acadêmico**         | Graduação, Pós-graduação, etc.              | Qualitativo              | Ordinal            | "Bacharelado"          |
-| **Vagas Totais**            | Número de vagas ofertadas                    | Quantitativo (inteiro)   | Razão              | 50                     |
+| **Dimensão do curso**       | Tipo de dimensão geográfica dos cursos presenciais e à distância oferecidos no Brasil e por instituições brasileiras no exterior| Qualitativo (texto)      | Nominal            | "Curso presencial ofertado no Brasil"     |
+| **Total de vagas oferecidas**    | Número total de vagas oferecidas              | Qualitativo (inteiro)   | Razão           | 150       |
+| **Vagas novas**                | Quantidade de vagas novas oferecidas        | Qualitativo (inteiro)                | Razão            | 150                      |
+| **Total de inscritos**         | Quantidade total de inscritos              | Qualitativo (inteiro)             | Razão            | 416          |
+| **Quantidade de ingressantes**            | Quantidade de ingressantes                    | Quantitativo (inteiro)   | Razão              | 16                     |
+| **Quantidade de concluintes**             | Quantidade de concluintes                   | Quantitativo (inteiro)   | Razão              | 16                     |
+
 ---
 
 ## **📈 3. Estatísticas Descritivas**  
