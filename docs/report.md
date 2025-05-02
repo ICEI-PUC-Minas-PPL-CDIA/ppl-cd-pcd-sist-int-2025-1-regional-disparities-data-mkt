@@ -269,7 +269,7 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 | 2                   | Médio porte            | 6411              |
 | 3                   | Grande porte           | 132           |
 | 4                   | Muito grande porte     | 137              |
-| **Total**           |                        | 6           |
+| **Total**           |                        | 6608           |
 
 📊 **Gráfico de Pizza**:  
 ![image](https://github.com/user-attachments/assets/8671dbcc-d841-443a-bbd0-052cff8d60fc)
