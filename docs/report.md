@@ -104,7 +104,6 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 | `Estado onde mora`        | Estado de residência                          | Nominal            | Texto (Categórico)       |
 | `Região onde mora`        | Região do Brasil (Norte, Nordeste, etc.)      | Nominal            | Texto (Categórico)       |
 | `Mudou de estado`         | Se já mudou de estado (0 = Não, 1 = Sim)      | Nominal            | Inteiro (Binário)        |
-| `Região de Origem`        | Região de nascimento                          | Nominal            | Texto (Categórico)       |
 | `Nível de Atuação`        | Júnior, Pleno, Sênior, etc.                   | Ordinal            | Texto (Ordinal)          |
 | `Faixa Salarial`          | Remuneração mensal (em R$)                    | Contínuo           | Float (Contínuo)         |
 | `Tempo na Área de Dados`  | Anos de experiência na área                   | Discreta           | Float (Contínuo)         |
