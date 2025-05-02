@@ -211,7 +211,7 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 
 | **Atributo**                 | **Descrição**                                | **Tipo de Dado**         | **Escala do dado** | **Exemplo**            |
 |-----------------------------|----------------------------------------------|--------------------------|--------------------|------------------------|
-| **Nome da Região**          | Região geográfica                            | Qualitativo (texto)      | Nominal            | Norte                  |
+| **Código da Região**          | Código da região geográfica                            | Qualitativo (inteiro)      | Nominal            | Norte(1)                 |
 | **Categoria Administrativa**| Tipo de instituição (Federal, Privada, etc.) | Qualitativo              | Nominal            | "Federal"              |
 | **Dimensão do curso**       | Tipo de dimensão geográfica dos cursos presenciais e à distância oferecidos no Brasil e por instituições brasileiras no exterior| Qualitativo (texto)      | Nominal            | "Curso presencial ofertado no Brasil"     |
 | **Total de vagas oferecidas**    | Número total de vagas oferecidas              | Qualitativo (inteiro)   | Razão           | 150       |
