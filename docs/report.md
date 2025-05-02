@@ -244,14 +244,16 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 
 ### **📌 Dados Categóricos**  
 
-#### **🔸 Distribuição por Região**  
-| **Região**       | % de Cursos | % Vagas Gratuitas |  
-|------------------|-------------|-------------------|  
-| Sudeste          | 45%         | 40%               |  
-| Nordeste         | 25%         | 35%               |  
-| Sul              | 15%         | 30%               |  
-| Centro-Oeste     | 10%         | 25%               |  
-| Norte            | 5%          | 20%               |  
+#### **🔸 Distribuição por Região e po Tipo de Instituição**  
+| Região       | Tipo 1 (Pública Federal) | Tipo 2 (Pública Estadual) | Tipo 3 (Pública Municipal) | Tipo 4 (Privada com fins lucrativos) | Tipo 5 (Privada sem fins lucrativos) | Total Geral |
+|--------------|---------------------------|----------------------------|..........................|--------------------------------------|----------------------------------------|--------------|
+| Nordeste     | 6                       | 0                          | 0                          |1104                                | 41                                    | 1151        |
+| Centro-Oeste | 2                       | 0                        | 0                         | 497                                  | 39                                    | 538         |
+| Sudeste      | 0                         | 377                    | 1                           | 2847                                 | 337                                    | 3562        |
+| Sul          | 0                         | 0                        | 0                           | 1313                                 | 107                                    | 1420         |
+| Norte        | 0                         | 1                        | 0                           | 384                                    | 18                                    | 403          |
+| Total        | 8                      | 378                    | 1                           | 6145                               | 542                                   | 7074        |
+
 
 📉 **Gráfico de Barras**: 
 ![image](https://github.com/user-attachments/assets/53f6dc68-53ea-4741-a3d0-6cc8c84e1681)
