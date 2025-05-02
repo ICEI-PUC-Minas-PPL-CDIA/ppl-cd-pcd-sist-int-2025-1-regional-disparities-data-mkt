@@ -225,13 +225,16 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 ## **📈 3. Estatísticas Descritivas**  
 
 ### **📌 Dados Numéricos**  
-| **Estatística**       | **Vagas Totais** | **Cursos Gratuitos (%)** |
-|-----------------------|------------------|--------------------------|
-| **Média**             | 45               | 32%                      |
-| **Mediana**           | 30               | -                        |
-| **Desvio Padrão**     | 28               | -                        |
-| **Mínimo**            | 5                | -                        |
-| **Máximo**            | 200              | -                        |
+| Estatística      | Código Região |  Dimensão | Categoria Administrativa | Vagas Totais | Vgas Novas | Ingressantes   | Conclusões | Inscrições |
+|------------------|-----------|-------------|-----------------------------|-------------|----------|------------|----------------|---------------|
+| Média            | 3,076195  | 2,012015833 | 3,966214306                 | 34,28046367 | 22,6775516 | 3,532654792 | 0,472999717    | 9,829940628   |
+| Mediana          | 3         | 2           | 4                           | 0           | 0        | 1          | 0              | 0             |
+| Desvio Padrão    | 0,94332   | 0,173933564 | 0,547338485                 | 501,5214707 | 309,8044912 | 17,06217768 | 3,291986572    | 190,3735686   |
+| Mínimo           | 1         | 1           | 1                           | 0           | 0        | 0          | 0              | 0             |
+| Máximo           | 5         | 4           | 5                           | 17681       | 10000    | 830        | 142            | 12946         |
+| Q1               | 3         | 2           | 4                           | 0           | 0        | 0          | 0              | 0             |
+| Q2               | 3         | 2           | 4                           | 0           | 0        | 2          | 0              | 0             |
+
 
 🔹 **Insights**:  
 - A média de vagas por curso é **45**, com grande variação (DP = 28).  
