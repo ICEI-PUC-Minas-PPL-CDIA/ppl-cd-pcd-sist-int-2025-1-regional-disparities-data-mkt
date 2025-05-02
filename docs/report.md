@@ -262,13 +262,14 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 
 ---
 
-#### **🔸 Tipo de Instituição**  
-| **Categoria**    | % de Cursos |  
-|------------------|-------------|  
-| Privada          | 60%         |  
-| Federal          | 20%         |  
-| Estadual         | 15%         |  
-| Municipal        | 5%          |  
+#### **🔸 Distribuição por Dimensão do Curso**  
+| Dimensão            | Descrição             | Total de Cursos |
+|---------------------|------------------------|------------------|
+| 1                   | Pequeno porte          | 43               |
+| 2                   | Médio porte            | 260              |
+| 3                   | Grande porte           | 35000            |
+| 4                   | Muito grande porte     | 137              |
+| **Total**           |                        | 35440            |
 
 📊 **Gráfico de Pizza**:  
 ![image](https://github.com/user-attachments/assets/8671dbcc-d841-443a-bbd0-052cff8d60fc)
