@@ -419,13 +419,6 @@ A preparação dos dados consiste dos seguintes passos:
 ## Indução de modelos
 
 ### Modelo 1: Classificação com árvore de decisão
-(VERIFICAR INTRODUÇÃO)
-Neste modelo, optamos por utilizar um algoritmo de aprendizado supervisionado, com foco na tarefa de classificação. A proposta é prever a região mais provável a partir de um conjunto de atributos individuais, como idade, gênero, faixa salarial, entre outros. O modelo é treinado com dados rotulados, ou seja, registros históricos que já indicam a qual região cada perfil pertence.
-
-A escolha da árvore de decisão se justifica por diversos motivos. Em primeiro lugar, trata-se de um algoritmo intuitivo e interpretável, o que facilita tanto a análise dos resultados quanto a explicação para públicos não técnicos. A estrutura em forma de árvore permite visualizar claramente o caminho lógico que o modelo segue para tomar uma decisão, o que é uma vantagem importante em contextos acadêmicos e profissionais onde a transparência do modelo é desejável.
-
-Além disso, a árvore de decisão lida bem com variáveis categóricas e numéricas, o que é compatível com a natureza dos dados utilizados neste projeto. Outro ponto relevante é a rapidez no treinamento e na inferência, o que torna esse modelo adequado mesmo quando se trabalha com volumes de dados moderados
-()
 
 # Relatório de Análise de Dados Automatizada
 
