@@ -435,6 +435,12 @@ Repita os passos anteriores para o segundo modelo.
 
 ### Resultados obtidos com o modelo 1.
 
+![Árvore de Decisão](imagens/Arvore de decisao.png)
+
+![Matriz de Confusão](imagens/Matriz de Confusao.png)
+
+
+
 #### Matriz de confusão
 
 | Região Real \ Prevista | Norte | Nordeste | Centro-Oeste | Sudeste | Sul |
@@ -445,7 +451,7 @@ Repita os passos anteriores para o segundo modelo.
 | **Sudeste**            | 10    | 84       | 39           | 351     | 98  |
 | **Sul**                | 5     | 31       | 21           | 102     | 27  |
 
-
+#### Análise da Matriz por região
 
 | Classe       | Precisão | Revocação | F1-score | Suporte |
 | ------------ | -------- | --------- | -------- | ------- |
@@ -454,6 +460,8 @@ Repita os passos anteriores para o segundo modelo.
 | Norte        | 0.06     | 0.07      | 0.06     | 15      |
 | Sudeste      | 0.66     | 0.60      | 0.63     | 582     |
 | Sul          | 0.17     | 0.15      | 0.16     | 186     |
+
+#### Análise Geral
 
 | Métrica         | Valor                                              |
 | --------------- | -------------------------------------------------- |
