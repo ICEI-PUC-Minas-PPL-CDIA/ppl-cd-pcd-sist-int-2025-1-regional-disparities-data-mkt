@@ -271,8 +271,9 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 | 4                   | Muito grande porte     | 137              |
 | **Total**           |                        | 6608           |
 
-📊 **Gráfico de Pizza**:  
-![image](https://github.com/user-attachments/assets/8671dbcc-d841-443a-bbd0-052cff8d60fc)
+📊 **Gráfico de Barras**:  
+![image](https://github.com/user-attachments/assets/00c96540-91bf-4846-a68b-0c7f917586ab)
+
 
 
 
