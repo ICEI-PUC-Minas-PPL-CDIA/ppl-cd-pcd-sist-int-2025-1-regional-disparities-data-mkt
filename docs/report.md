@@ -393,7 +393,7 @@ A preparação dos dados consiste dos seguintes passos:
 
 ## Indução de modelos
 
-### Clusterização com K-means
+### Modelo 1: Clusterização com K-means
 
 Utilizaremos o aprendizado não supervisionado. O K-means foi escolhido por ser a melhor ferramenta para dividir os dados em diferentes agrupamentos de características semelhantes e identificar o perfil de trabalhador na área de dados por cada região. O K-means é especialmente eficaz quando se deseja identificar padrões ou segmentações em grandes conjuntos de dados. No contexto desse trabalho, essa abordagem facilita a identificação das regiões com característica semelhantes, promovendo uma análise mais clara e objetiva dos perfis regionais.
 
