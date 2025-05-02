@@ -435,21 +435,13 @@ Repita os passos anteriores para o segundo modelo.
 
 ### Resultados obtidos com o modelo 1.
 
-![Árvore de Decisão](imagens/Arvore de decisao.png)
+#### Árvore de Decisão
 
-![Matriz de Confusão](imagens/Matriz de Confusao.png)
-
-
+![Árvore de Decisão](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/Arvore%20de%20decisao.png)
 
 #### Matriz de confusão
 
-| Região Real \ Prevista | Norte | Nordeste | Centro-Oeste | Sudeste | Sul |
-| ---------------------- | ----- | -------- | ------------ | ------- | --- |
-| **Norte**              | 1     | 3        | 4            | 5       | 2   |
-| **Nordeste**           | 1     | 17       | 5            | 42      | 23  |
-| **Centro-Oeste**       | 1     | 9        | 9            | 29      | 11  |
-| **Sudeste**            | 10    | 84       | 39           | 351     | 98  |
-| **Sul**                | 5     | 31       | 21           | 102     | 27  |
+![Matriz de Confusão](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/Matriz%20de%20Confusao.png)
 
 #### Análise da Matriz por região
 
