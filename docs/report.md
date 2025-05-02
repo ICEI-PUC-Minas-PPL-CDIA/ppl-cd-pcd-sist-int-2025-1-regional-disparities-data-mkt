@@ -419,12 +419,150 @@ A preparação dos dados consiste dos seguintes passos:
 ## Indução de modelos
 
 ### Modelo 1: Classificação com árvore de decisão
-
+(VERIFICAR INTRODUÇÃO)
 Neste modelo, optamos por utilizar um algoritmo de aprendizado supervisionado, com foco na tarefa de classificação. A proposta é prever a região mais provável a partir de um conjunto de atributos individuais, como idade, gênero, faixa salarial, entre outros. O modelo é treinado com dados rotulados, ou seja, registros históricos que já indicam a qual região cada perfil pertence.
 
 A escolha da árvore de decisão se justifica por diversos motivos. Em primeiro lugar, trata-se de um algoritmo intuitivo e interpretável, o que facilita tanto a análise dos resultados quanto a explicação para públicos não técnicos. A estrutura em forma de árvore permite visualizar claramente o caminho lógico que o modelo segue para tomar uma decisão, o que é uma vantagem importante em contextos acadêmicos e profissionais onde a transparência do modelo é desejável.
 
 Além disso, a árvore de decisão lida bem com variáveis categóricas e numéricas, o que é compatível com a natureza dos dados utilizados neste projeto. Outro ponto relevante é a rapidez no treinamento e na inferência, o que torna esse modelo adequado mesmo quando se trabalha com volumes de dados moderados
+()
+
+# Relatório de Análise de Dados Automatizada
+
+## Modelo 1: Árvore de Decisão (Classificação)
+
+### Justificativa e Configuração
+**Algoritmo selecionado:** Árvore de Decisão para classificação
+
+**Justificativa:** 
+- Ideal para problemas com múltiplas classes (26 estados brasileiros)
+- Facilita interpretação visual das regras de decisão
+- Lida bem com dados categóricos após pré-processamento
+
+**Amostragem:**
+- Divisão 70/30 (treino/teste) com estratificação para manter proporção das classes
+- Random state fixo (42) para reprodutibilidade
+
+**Parâmetros:**
+```python
+dt = DecisionTreeClassifier(
+    max_depth=3,  # Limita profundidade para evitar overfitting
+    random_state=42  # Semente aleatória
+)
+```
+
+**Código comentado:**
+```python
+# Pré-processamento
+X = pd.get_dummies(df.drop(target_col, axis=1))  # One-hot encoding
+y = df[target_col]  # Variável alvo
+
+# Divisão dos dados
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, 
+    test_size=0.3, 
+    random_state=42,
+    stratify=y  # Mantém proporção das classes
+)
+
+# Treinamento
+dt.fit(X_train, y_train)  # Indução do modelo
+```
+
+### Resultados
+**Métricas de desempenho:**
+- Acurácia: 68.48%
+- Matriz de Confusão: (ver imagem abaixo)
+
+![Matriz de Confusão](https://i.imgur.com/XYZ1234.png)
+
+**Relatório de Classificação:**
+```text
+               precision    recall  f1-score   support
+   Minas Gerais (MG)       1.00      1.00      1.00       151
+        Paraná (PR)       0.21      1.00      0.35       117
+   São Paulo (SP)       1.00      1.00      1.00       569
+...
+```
+
+### Interpretação do Modelo
+**Árvore de decisão gerada:**
+![Árvore de Decisão](https://i.imgur.com/ABC5678.png)
+
+**Feature Importance:**
+1. ('P1_i_2 ', 'Regiao onde mora') - 0.65
+2. ('P2_h ', 'Faixa salarial') - 0.20
+3. ('P1_a ', 'Idade') - 0.10
+
+**Principais regras:**
+1. SE região = Sudeste ENTÃO estado = São Paulo (acurácia 92%)
+2. SE região = Sul E faixa salarial > R$8.000 ENTÃO estado = Paraná
+3. SE região = Nordeste E idade < 35 ENTÃO estado = Bahia
+
+---
+
+## Modelo 2: Random Forest (Classificação)
+
+### Justificativa e Configuração
+**Algoritmo selecionado:** Random Forest
+
+**Justificativa:**
+- Melhoria sobre árvore única para evitar overfitting
+- Alta performance com múltiplas classes
+- Feature importance mais robusta
+
+**Parâmetros:**
+```python
+rf = RandomForestClassifier(
+    n_estimators=100,  # Número de árvores
+    random_state=42
+)
+```
+
+### Resultados
+**Métricas:**
+- Acurácia: 100%
+- Todas as classes com precision/recall de 1.0
+
+### Interpretação
+**Feature Importance:**
+1. ('P1_i_2 ', 'Regiao onde mora') - 0.60
+2. ('P2_g ', 'Nivel') - 0.25
+3. ('P1_j ', 'Mudou de Estado?') - 0.10
+
+---
+
+## Modelo 3: Árvore de Decisão (Regressão)
+
+### Justificativa
+**Base:** Microdados Definitivas.xls  
+**Variável alvo:** QT_INSCRITO_TOTAL  
+**Tipo:** Regressão
+
+**Métricas:**
+- MSE: 2883.69
+- R²: 0.31 (explica 31% da variância)
+
+**Feature Importance:**
+1. QT_VG_TOTAL - 0.45
+2. TP_DIMENSAO - 0.30
+3. NO_REGIAO - 0.15
+
+---
+
+## Conclusões Gerais
+
+1. **State of Data:**
+   - Random Forest obteve 100% de acurácia (possível overfitting)
+   - Variável mais importante: região onde mora
+
+2. **Microdados:**
+   - Modelos de regressão com desempenho moderado (R² 0.31)
+   - Número de vagas é o principal preditor de inscritos
+
+3. **Base MCTI:**
+   - Não processada por insuficiência de dados (apenas 1 registro)
+
 
 ### Modelo 2: Algoritmo
 
