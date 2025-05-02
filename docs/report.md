@@ -258,7 +258,7 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 
 
 📉 **Gráfico de Barras**: 
-![image](https://github.com/user-attachments/assets/53f6dc68-53ea-4741-a3d0-6cc8c84e1681)
+![image](https://github.com/user-attachments/assets/d257bab1-e6a7-4f33-93c7-d51a88f82ae6)
 
 ---
 
