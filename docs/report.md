@@ -274,6 +274,20 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 📊 **Gráfico de Pizza**:  
 ![image](https://github.com/user-attachments/assets/8671dbcc-d841-443a-bbd0-052cff8d60fc)
 
+
+
+
+## Total de Inscritos e Concluintes por Região
+
+| Região       | Total de Inscritos | Total de Concluintes | Taxa de Conclusão (%) |
+|--------------|--------------------|-----------------------|------------------------|
+| Nordeste     | 3.274              | 257                   | 7,85%                  |
+| Centro-Oeste | 3.975              | 256                   | 6,44%                  |
+| Sudeste      | 41.977             | 2.399                 | 5,71%                  |
+| Sul          | 20.307             | 369                   | 1,82%                  |
+| Norte        | 634                | 56                    | 8,83%                  |
+
+
 ---
 
 ## **🔍 4. Principais Insights**  
