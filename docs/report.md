@@ -418,9 +418,13 @@ A preparação dos dados consiste dos seguintes passos:
 
 ## Indução de modelos
 
-### Modelo 1: Clusterização com K-means
+### Modelo 1: Classificação com árvore de decisão
 
-Utilizaremos o aprendizado não supervisionado. O K-means foi escolhido por ser a melhor ferramenta para dividir os dados em diferentes agrupamentos de características semelhantes e identificar o perfil de trabalhador na área de dados por cada região. O K-means é especialmente eficaz quando se deseja identificar padrões ou segmentações em grandes conjuntos de dados. No contexto desse trabalho, essa abordagem facilita a identificação das regiões com característica semelhantes, promovendo uma análise mais clara e objetiva dos perfis regionais.
+Neste modelo, optamos por utilizar um algoritmo de aprendizado supervisionado, com foco na tarefa de classificação. A proposta é prever a região mais provável a partir de um conjunto de atributos individuais, como idade, gênero, faixa salarial, entre outros. O modelo é treinado com dados rotulados, ou seja, registros históricos que já indicam a qual região cada perfil pertence.
+
+A escolha da árvore de decisão se justifica por diversos motivos. Em primeiro lugar, trata-se de um algoritmo intuitivo e interpretável, o que facilita tanto a análise dos resultados quanto a explicação para públicos não técnicos. A estrutura em forma de árvore permite visualizar claramente o caminho lógico que o modelo segue para tomar uma decisão, o que é uma vantagem importante em contextos acadêmicos e profissionais onde a transparência do modelo é desejável.
+
+Além disso, a árvore de decisão lida bem com variáveis categóricas e numéricas, o que é compatível com a natureza dos dados utilizados neste projeto. Outro ponto relevante é a rapidez no treinamento e na inferência, o que torna esse modelo adequado mesmo quando se trabalha com volumes de dados moderados
 
 ### Modelo 2: Algoritmo
 
@@ -433,23 +437,34 @@ Repita os passos anteriores para o segundo modelo.
 
 #### Matriz de confusão
 
-|                          | **Classe Predita: Positiva** | **Classe Predita: Negativa** |
-|--------------------------|------------------------------|------------------------------|
-| **Classe Real: Positiva** | Verdadeiro Positivo (VP)     | Falso Negativo (FN)          |
-| **Classe Real: Negativa** | Falso Positivo (FP)          | Verdadeiro Negativo (VN)     |
+| Região Real \ Prevista | Norte | Nordeste | Centro-Oeste | Sudeste | Sul |
+| ---------------------- | ----- | -------- | ------------ | ------- | --- |
+| **Norte**              | 1     | 3        | 4            | 5       | 2   |
+| **Nordeste**           | 1     | 17       | 5            | 42      | 23  |
+| **Centro-Oeste**       | 1     | 9        | 9            | 29      | 11  |
+| **Sudeste**            | 10    | 84       | 39           | 351     | 98  |
+| **Sul**                | 5     | 31       | 21           | 102     | 27  |
 
 
-Apresente aqui os resultados obtidos com a indução do modelo 1. 
-Apresente uma matriz de confusão quando pertinente. Apresente as medidas de performance
-apropriadas para o seu problema. 
-Por exemplo, no caso de classificação: precisão, revocação, F-measure, acurácia.
+
+| Classe       | Precisão | Revocação | F1-score | Suporte |
+| ------------ | -------- | --------- | -------- | ------- |
+| Centro-Oeste | 0.12     | 0.15      | 0.13     | 59      |
+| Nordeste     | 0.12     | 0.19      | 0.15     | 88      |
+| Norte        | 0.06     | 0.07      | 0.06     | 15      |
+| Sudeste      | 0.66     | 0.60      | 0.63     | 582     |
+| Sul          | 0.17     | 0.15      | 0.16     | 186     |
+
+| Métrica         | Valor                                              |
+| --------------- | -------------------------------------------------- |
+| Acurácia        | 0.44                                               |
+| Média Macro     | 0.22 (precisão), 0.23 (revocação), 0.23 (f1-score) |
+| Média Ponderada | 0.47 (precisão), 0.44 (revocação), 0.45 (f1-score) |
+
 
 ### Interpretação do modelo 1
 
-Apresente os parâmetros do modelo obtido. Tentre mostrar as regras que são utilizadas no
-processo de 'raciocínio' (*reasoning*) do sistema inteligente. Utilize medidas como 
-o *feature importances* para tentar entender quais atributos o modelo se baseia no
-processo de tomada de decisão.
+Durante o reasoning, o sistema inteligente segue um fluxo lógico hierárquico, como: "Se 'FaixaSalarial' ≤ X e 'TempoExperiencia' > Y, então classifique como Região Z", extraído diretamente da estrutura da árvore. Para entender quais atributos mais influenciam as decisões, a análise de feature importances revela que Faixa Salarial, Tempo de Experiência e Nível são as variáveis mais determinantes (ex.: importância de 0.35, 0.25 e 0.15, respectivamente), enquanto atributos como Forma de Trabalho têm impacto marginal. Essa distribuição mostra que o modelo prioriza características socioeconômicas e profissionais para prever a região, alinhando-se a padrões reais de distribuição geográfica de profissionais de dados.
 
 
 ### Resultados obtidos com o modelo 2.
