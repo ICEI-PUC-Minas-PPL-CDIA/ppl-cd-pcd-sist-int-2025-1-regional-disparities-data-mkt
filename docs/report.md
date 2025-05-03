@@ -481,7 +481,8 @@ dt.fit(X_train, y_train)  # Indução do modelo
 
 ### Interpretação do Modelo
 **Árvore de decisão gerada:**
-![Árvore de Decisão](https://i.imgur.com/ABC5678.png)
+![Árvore de Decisão State Of data_BR_2023_Trasnformado2023 (1) xls](https://github.com/user-attachments/assets/d1240406-00bc-40b6-853e-b97a76f5522e)
+
 
 **Feature Importance:**
 1. ('P1_i_2 ', 'Regiao onde mora') - 0.65
