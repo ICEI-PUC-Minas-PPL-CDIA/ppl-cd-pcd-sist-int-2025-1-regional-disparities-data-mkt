@@ -470,13 +470,13 @@ dt.fit(X_train, y_train)  # Indução do modelo
 ![Matriz de Confusão](https://i.imgur.com/XYZ1234.png)
 
 **Relatório de Classificação:**
-```text
-               precision    recall  f1-score   support
-   Minas Gerais (MG)       1.00      1.00      1.00       151
-        Paraná (PR)       0.21      1.00      0.35       117
-   São Paulo (SP)       1.00      1.00      1.00       569
-...
-```
+| Estado               | Precision | Recall | F1-Score | Support |
+|----------------------|-----------|--------|----------|---------|
+| Minas Gerais (MG)    | 1.00      | 1.00   | 1.00     | 151     |
+| Paraná (PR)          | 0.21      | 1.00   | 0.35     | 117     |
+| São Paulo (SP)       | 1.00      | 1.00   | 1.00     | 569     |
+| ...                  | ...       | ...    | ...      | ...     |
+
 
 ### Interpretação do Modelo
 **Árvore de decisão gerada:**
