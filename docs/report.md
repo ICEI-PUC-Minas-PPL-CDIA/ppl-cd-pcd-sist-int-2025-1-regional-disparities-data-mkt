@@ -467,7 +467,8 @@ dt.fit(X_train, y_train)  # Indução do modelo
 - Acurácia: 68.48%
 - Matriz de Confusão: (ver imagem abaixo)
 
-![Matriz de Confusão](https://i.imgur.com/XYZ1234.png)
+![1  Treinando Árvore de Decisão (Classificação)  State Of data_BR_2023_Trasnformado2023 (1) xls](https://github.com/user-attachments/assets/f0c65939-286a-4b1e-be36-d9fb3389fa11)
+
 
 **Relatório de Classificação:**
 | Estado               | Precision | Recall | F1-Score | Support |
