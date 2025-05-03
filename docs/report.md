@@ -543,6 +543,27 @@ rf = RandomForestClassifier(
 2. TP_DIMENSAO - 0.30
 3. NO_REGIAO - 0.15
 
+[1] Treinando Árvore de Decisão (Regressão)...
+
+Métricas do Árvore de Decisão:
+MSE: 2883.69
+R²: 0.31
+![1  TREINANDO ÁRVORE DE DECISÃO(REGRESSÃO)  Microdados Definitivas (2) xls](https://github.com/user-attachments/assets/93b29e59-6294-4acf-a481-4b9b0ac8177d)
+
+[2] Treinando Random Forest (Regressão)...
+
+Métricas do Random Forest:
+MSE: 4702.91
+R²: -0.13
+![2  Treinando Random Forest (Regressão)   Microdados Definitivas (2) xls](https://github.com/user-attachments/assets/9a7d9b70-9cfc-440c-ba22-7382403ed01a)
+
+[3] Treinando Regressão Linear...
+
+Métricas do Regressão Linear:
+MSE: 4023.20
+R²: 0.04
+![3  Treinando Regressão Linear  Microdados Definitivas (2) xls](https://github.com/user-attachments/assets/99d639a4-6465-4f84-9332-821785e3b292)
+
 ---
 
 ## Conclusões Gerais
