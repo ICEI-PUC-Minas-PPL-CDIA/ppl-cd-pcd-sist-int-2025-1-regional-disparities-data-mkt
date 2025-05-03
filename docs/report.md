@@ -352,21 +352,43 @@ Esta análise foca na variação dos dados do ano 2019 até 2023, do dataset "Br
 
 ## 4. Análise por Região (2023)
 
-| Região | Investimento (R$ mi) | % Total | Estados | Crescimento 2022-23 | Média por Estado |
-|--------|----------------------|---------|---------|---------------------|------------------|
-| Sudeste | 15.795,70 | 60,96% | 4 | -14,27% | 3.948,93 |
-| Sul | 3.815,00 | 14,73% | 3 | +20,58% | 1.271,67 |
-| Nordeste | 3.139,20 | 12,11% | 9 | +7,11% | 348,80 |
-| Centro-Oeste | 1.717,70 | 6,63% | 4 | +2,53% | 429,43 |
-| Norte | 1.442,10 | 5,57% | 7 | +4,60% | 206,01 |
+| Ano  | Região        | Investimento (R$ mi) | % Total | Estados | Crescimento Anual (%) | Média por Estado (R$ mi) |
+|------|---------------|---------------------:|--------:|--------:|----------------------:|-------------------------:|
+| 2019 | Norte         | 646,3               | 3,48%   | 7       | -                     | 92,33                   |
+| 2019 | Nordeste      | 2.201,70            | 11,86%  | 9       | -                     | 244,63                  |
+| 2019 | Sudeste       | 12.314,00           | 66,31%  | 4       | -                     | 3.078,50                |
+| 2019 | Sul           | 2.130,10            | 11,47%  | 3       | -                     | 710,03                  |
+| 2019 | Centro-Oeste  | 1.279,70            | 6,89%   | 4       | -                     | 319,93                  |
+| 2020 | Norte         | 687,0               | 3,76%   | 7       | +6,30%                | 98,14                   |
+| 2020 | Nordeste      | 1.952,40            | 10,67%  | 9       | -11,33%               | 216,93                  |
+| 2020 | Sudeste       | 11.976,30           | 65,48%  | 4       | -2,74%                | 2.994,08                |
+| 2020 | Sul           | 2.416,20            | 13,21%  | 3       | +13,44%               | 805,40                  |
+| 2020 | Centro-Oeste  | 1.256,40            | 6,87%   | 4       | -1,82%                | 314,10                  |
+| 2021 | Norte         | 995,9               | 4,50%   | 7       | +44,96%               | 142,27                  |
+| 2021 | Nordeste      | 2.300,50            | 10,38%  | 9       | +17,82%               | 255,61                  |
+| 2021 | Sudeste       | 14.801,20           | 66,80%  | 4       | +23,59%               | 3.700,30                |
+| 2021 | Sul           | 2.601,40            | 11,74%  | 3       | +7,66%                | 867,13                  |
+| 2021 | Centro-Oeste  | 1.457,70            | 6,58%   | 4       | +16,03%               | 364,43                  |
+| 2022 | Norte         | 1.378,70            | 5,00%   | 7       | +38,44%               | 196,96                  |
+| 2022 | Nordeste      | 2.930,70            | 10,63%  | 9       | +27,39%               | 325,63                  |
+| 2022 | Sudeste       | 18.426,60           | 66,82%  | 4       | +24,50%               | 4.606,65                |
+| 2022 | Sul           | 3.163,80            | 11,47%  | 3       | +21,61%               | 1.054,60                |
+| 2022 | Centro-Oeste  | 1.675,30            | 6,08%   | 4       | +14,93%               | 418,83                  |
+| 2023 | Norte         | 1.442,10            | 5,57%   | 7       | +4,60%                | 206,01                  |
+| 2023 | Nordeste      | 3.139,20            | 12,12%  | 9       | +7,11%                | 348,80                  |
+| 2023 | Sudeste       | 15.795,70           | 60,97%  | 4       | -14,27%               | 3.948,93                |
+| 2023 | Sul           | 3.815,00            | 14,73%  | 3       | +20,59%               | 1.271,67                |
+| 2023 | Centro-Oeste  | 1.717,70            | 6,63%   | 4       | -9,70%                | 429,43                  |
 
 **Gráfico:** [Barra comparativa mostrando investimento por região]
 ![image](https://github.com/user-attachments/assets/b957e910-1697-48cd-aff7-a7598f3d28cc)
 
 **Principais Observações:**
-- Sudeste tem média estadual 19x maior que a Norte
-- Sul foi a única região com crescimento acima de 20%
-- 3 estados do Sudeste (SP, RJ, MG) respondem por 59% do total nacional
+- Sudeste manteve liderança (60-66% do total).
+- Norte apresentou maior crescimento acumulado (123% 2019-2023).
+- 2022 foi ano de pico para Sudeste (R$ 18,4 bi).
+- Sul teve crescimento consistente (média +15,8% ao ano).
+- Centro-Oeste foi a região mais estável.
 
 ## 5. Top 10 Estados em 2023
 
