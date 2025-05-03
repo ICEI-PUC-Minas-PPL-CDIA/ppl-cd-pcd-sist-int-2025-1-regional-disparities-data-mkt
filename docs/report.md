@@ -380,8 +380,9 @@ Esta análise foca na variação dos dados do ano 2019 até 2023, do dataset "Br
 | 2023 | Sul           | 3.815,00            | 14,73%  | 3       | +20,59%               | 1.271,67                |
 | 2023 | Centro-Oeste  | 1.717,70            | 6,63%   | 4       | -9,70%                | 429,43                  |
 
-**Gráfico:** [Barra comparativa mostrando investimento por região]
-![image](https://github.com/user-attachments/assets/b957e910-1697-48cd-aff7-a7598f3d28cc)
+**Gráfico:** 
+![image](https://github.com/user-attachments/assets/b0131494-3e81-456a-b89a-49f4de6737ce)
+
 
 **Principais Observações:**
 - Sudeste manteve liderança (60-66% do total).
@@ -406,7 +407,8 @@ Esta análise foca na variação dos dados do ano 2019 até 2023, do dataset "Br
 | 10      | Goiás             | Centro-Oeste  | 2.418,90                 | 0,98%    | +39,44%               |
 
 **Gráfico:** [Top 10 estados com valores absolutos e variação]
-![image](https://github.com/user-attachments/assets/f13d34f4-6742-4b2d-a028-05b787f941e4)
+![image](https://github.com/user-attachments/assets/2169b556-5150-465a-91f7-334dc105ce4d)
+
 
 **Crescimentos em destaques:**
 1. Paraná (+89,6%)
