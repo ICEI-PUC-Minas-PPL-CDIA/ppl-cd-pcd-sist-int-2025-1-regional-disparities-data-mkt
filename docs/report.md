@@ -318,23 +318,32 @@ Esta análise foca na variação dos dados do ano 2019 até 2023, do dataset "Br
 |----------|-----------|--------------|--------|
 | Região | Identifica a região geográfica | Texto (Categórico) | Nominal |
 | Estado | Unidade da Federação | Texto (Categórico) | Nominal |
-| Investimento 2023 | Valor aplicado em C&T (em milhões R$) | Numérico | Contínuo |
+| Investimento 2019-2023 | Valor aplicado em C&T (em milhões R$) | Numérico | Contínuo |
 | Participação % | Percentual no total nacional | Numérico | Razão |
-| Variação 2022-23 | Mudança em relação ao ano anterior | Numérico | Intervalar |
+| Variação 2019-2023 | Mudança em relação ao ano anterior | Numérico | Intervalar |
 
-## 3. **📈Estatísticas Descritivas (2023)**
+## 3. **📈Estatísticas Descritivas**
 
 ### Dados Numéricos (Valores em milhões R$)
 
-| Estatística | Investimento Estadual |
-|-------------|----------------------|
-| Média | 970,21 |
-| Mediana | 485,20 |
-| Desvio Padrão | 1.984,64 |
-| Mínimo | 21,20 (Amapá) |
-| Máximo | 11.825,20 (São Paulo) |
-| Q1 (25%) | 175,30 |
-| Q3 (75%) | 1.084,60 |
+# Estatística Descritiva Consolidada - Investimentos MCTI (2019-2023)
+
+| Categoria   | Estatística    | Investimento (R$ mi) | Participação (%) | Variação (%) |
+|-------------|---------------|----------------------:|-----------------:|-------------:|
+| **Regiões** | Média         | 4,500.06            | 19.18           | 8.72        |
+|             | Mediana       | 14,801.2            | 15.80           | 7.15        |
+|             | Desvio Padrão | 5,354.06            | 13.42           | 6.33        |
+|             | Mínimo        | 644.30              | 3.48            | -1.53       |
+|             | Máximo        | 18,426.60           | 49.45           | 22.15       |
+|             | Q1 (25%)      | 1,378.70            | 7.64            | 3.92        |
+|             | Q3 (75%)      | 3,815.00            | 25.63           | 12.40       |
+| **Estados** | Média         | 833.35              | 1.49            | 15.24       |
+|             | Mediana       | 295.90              | 0.57            | 12.60       |
+|             | Desvio Padrão | 2199.9              | 2.26            | 18.75       |
+|             | Mínimo        | 6.70                | 0.03            | -48.21      |
+|             | Máximo        | 2,323.50            | 9.37            | 89.55       |
+|             | Q1 (25%)      | 84.60               | 0.34            | 3.45        |
+|             | Q3 (75%)      | 451.00              | 1.82            | 24.30       |
 
 🔹 **Insights:**
 - Grande disparidade (DP alto) entre estados
