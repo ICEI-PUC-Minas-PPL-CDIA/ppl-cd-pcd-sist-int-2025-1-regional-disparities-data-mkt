@@ -519,7 +519,12 @@ rf = RandomForestClassifier(
 Treinando Random Forest (Classificação)...
 
 Acurácia do Random Forest: 100.00%
-(imagem)
+
+![2  Treinando Random Forest (Classificação)  State Of data_BR_2023_Trasnformado2023 (1) xls](https://github.com/user-attachments/assets/510f3b31-6bce-4049-a587-f4421b3e102a)
+
+Treinando Regressão Logística...
+
+Acurácia do Regressão Logística: 99.86%
 ![3  Treinando Regressão Logística  State Of data_BR_2023_Trasnformado2023 (1) xls](https://github.com/user-attachments/assets/90f7c77f-6b0a-4ff6-8ea1-98b68e4e6f18)
 
 **Métricas:**
