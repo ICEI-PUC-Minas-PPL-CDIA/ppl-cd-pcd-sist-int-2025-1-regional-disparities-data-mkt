@@ -1,5 +1,5 @@
 #  Diferenças regionais no mercado de dados do Brasil. 
- 
+  
 Alunos: 
 Walker Junio Gonzaga Rocha - walker.rocha@sga.pucminas.br  
 
