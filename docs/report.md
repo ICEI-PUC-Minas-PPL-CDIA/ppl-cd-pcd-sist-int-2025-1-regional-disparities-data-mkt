@@ -310,7 +310,7 @@ Esta análise complementar utiliza os dados do Censo da Educação Superior 2023
 # Análise Detalhada dos Investimentos em Ciência e Tecnologia por Região e Estado em 2023 (BASE AUXILIAR 3)
 
 ## 1. **📌Introdução Base MCTI (Base Auxiliar 3)**
-Esta análise foca exclusivamente nos dados de 2023 do dataset "Brasil: Dispêndios de governo estaduais em ciência e tecnologia (G2T)", examinando a distribuição regional e estadual dos investimentos no ano mais recente disponível.
+Esta análise foca na variação dos dados do ano 2019 até 2023, do dataset "Brasil: Dispêndios de governo estaduais em ciência e tecnologia (G2T)", examinando a distribuição regional e estadual dos investimentos nos 5 mais recentes anos disponíveis.
 
 ## 2. 📊**Atributos Analisados**
 
