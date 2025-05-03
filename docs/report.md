@@ -597,7 +597,7 @@ R²: 0.04
 Repita os passos anteriores para o segundo modelo.
 
 
-## Resultados
+## Resultados(Rascunho)
 
 ### Resultados obtidos com o modelo 1.
 
