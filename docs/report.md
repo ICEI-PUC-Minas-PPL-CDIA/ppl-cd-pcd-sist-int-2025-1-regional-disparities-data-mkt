@@ -390,28 +390,36 @@ Esta análise foca na variação dos dados do ano 2019 até 2023, do dataset "Br
 - Sul teve crescimento consistente (média +15,8% ao ano).
 - Centro-Oeste foi a região mais estável.
 
-## 5. Top 10 Estados em 2023
+## 5. Top 10 Estados
 
-| Posição | Estado | Região | Investimento (R$ mi) | % Brasil | Variação 2022-23 |
-|---------|--------|--------|----------------------|----------|------------------|
-| 1 | São Paulo | Sudeste | 11.825,20 | 45,64% | -18,40% |
-| 2 | Paraná | Sul | 2.323,50 | 8,97% | +24,45% |
-| 3 | Rio de Janeiro | Sudeste | 2.206,60 | 8,52% | -4,99% |
-| 4 | Minas Gerais | Sudeste | 1.325,30 | 5,12% | +4,38% |
-| 5 | Bahia | Nordeste | 1.084,60 | 4,19% | +24,93% |
-| 6 | Rio Grande do Sul | Sul | 586,70 | 2,26% | +13,70% |
-| 7 | Santa Catarina | Sul | 904,80 | 3,49% | +15,86% |
-| 8 | Distrito Federal | Centro-Oeste | 348,80 | 1,35% | -11,70% |
-| 9 | Ceará | Nordeste | 682,90 | 2,64% | -2,99% |
-| 10 | Pernambuco | Nordeste | 350,20 | 1,35% | -11,84% |
+| Posição | Estado            | Região        | Investimento Total (R$ mi) | % Brasil | Variação 2019-2023 (%) |
+|---------|-------------------|---------------|---------------------------:|---------:|-----------------------:|
+| 1       | São Paulo         | Sudeste       | 59.156,80                | 23,98%   | +18,91%               |
+| 2       | Rio de Janeiro    | Sudeste       | 10.937,10                | 4,43%    | +59,74%               |
+| 3       | Minas Gerais      | Sudeste       | 5.565,00                 | 2,26%    | +72,68%               |
+| 4       | Paraná            | Sul           | 5.120,50                 | 2,08%    | +89,55%               |
+| 5       | Rio Grande do Sul | Sul           | 4.992,40                 | 2,02%    | +48,91%               |
+| 6       | Bahia             | Nordeste      | 4.067,60                 | 1,65%    | +43,56%               |
+| 7       | Santa Catarina    | Sul           | 4.033,10                 | 1,63%    | +64,22%               |
+| 8       | Distrito Federal  | Centro-Oeste  | 3.945,50                 | 1,60%    | +27,03%               |
+| 9       | Ceará             | Nordeste      | 2.725,60                 | 1,10%    | +58,32%               |
+| 10      | Goiás             | Centro-Oeste  | 2.418,90                 | 0,98%    | +39,44%               |
 
 **Gráfico:** [Top 10 estados com valores absolutos e variação]
 ![image](https://github.com/user-attachments/assets/f13d34f4-6742-4b2d-a028-05b787f941e4)
 
-**Destaques:**
-- Paraná ultrapassou RJ na 2ª posição com crescimento de 24,45%
-- Bahia foi o 2º maior crescimento no Top 10 (+24,93%)
-- SP teve redução de 18,4%, mas mantém liderança absoluta
+**Crescimentos em destaques:**
+1. Paraná (+89,6%)
+2. Minas Gerais (+72,7%)
+3. Santa Catarina (+64,2%)
+   
+**Quedas Expressivas (fora do Top 10):**
+- Amapá (-12,4%)
+- Roraima (-8,7%)
+
+**Dados Complementares:**
+- Estados representam 41,73% do investimento nacional
+- 7 dos 10 estados são do Sudeste/Sul
 
 ## **📉6. Análise de Disparidades**
 
