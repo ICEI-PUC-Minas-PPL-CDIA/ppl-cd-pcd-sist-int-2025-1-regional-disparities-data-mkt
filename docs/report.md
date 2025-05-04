@@ -54,34 +54,62 @@ O crescimento global do mercado de dados, impulsionado por tecnologias como IA e
 
 Essa disparidade se materializa em fatores críticos para os profissionais:
 
--Salários: Regiões com maior investimento em infraestrutura tecnológica apresentam médias salariais até 40% superiores às demais (Catho, 2023);
+➡️Salários: Regiões com maior investimento em infraestrutura tecnológica apresentam médias salariais até 40% superiores às demais (Catho, 2023);
 
--Empregabilidade: Capitais do Sudeste concentram 85% das vagas para cientistas de dados, enquanto estados do Norte têm menos de 5% (LinkedIn, 2023);
+➡️Empregabilidade: Capitais do Sudeste concentram 85% das vagas para cientistas de dados, enquanto estados do Norte têm menos de 5% (LinkedIn, 2023);
 
--Capacitação: A falta de investimento em educação tecnológica em regiões periféricas limita o acesso a ferramentas avançadas (ex: cloud computing) e cursos especializados, perpetuando ciclos de exclusão profissional.
+➡️Capacitação: A falta de investimento em educação tecnológica em regiões periféricas limita o acesso a ferramentas avançadas (ex: cloud computing) e cursos especializados, perpetuando ciclos de exclusão profissional.
 
 Além disso, a formação de ecossistemas de inovação (como parques tecnológicos e hubs de startups) depende diretamente de aportes públicos e privados, que são escassos fora dos grandes centros. Isso cria um efeito cascata: menos investimento → menos empregos qualificados → menor retenção de talentos → estagnação econômica regional.
 
 Nesse contexto, este estudo visa mapear como a distribuição desigual de recursos financeiros molda trajetórias profissionais desiguais, analisando dados de investimentos por região, pesquisas salariais, taxas de empregabilidade e acesso a educação. A integração dessas variáveis em um sistema inteligente permitirá identificar padrões como:
 
--Correlação entre volume de investimento em TI e crescimento de vagas locais;
+➡️Correlação entre volume de investimento em TI e crescimento de vagas locais;
 
--Impacto da ausência de polos tecnológicos na migração de profissionais para outras regiões;
+➡️Impacto da ausência de polos tecnológicos na migração de profissionais para outras regiões;
 
--Efeito de programas de capacitação financiados por investimentos públicos no nível salarial.
+➡️Efeito de programas de capacitação financiados por investimentos públicos no nível salarial.
 
 Os resultados buscarão orientar políticas de descentralização de recursos, incentivos fiscais para empresas em regiões negligenciadas e adaptação de currículos educacionais às demandas locais. O objetivo final é transformar a ciência de dados em um vetor de equidade, garantindo que o avanço tecnológico não reproduza, mas sim corrija, as assimetrias históricas do Brasil.
 
+---
+
 ###    Problema
 
-O mercado de dados no Brasil tem se expandido rapidamente, mas de maneira desigual entre as regiões do país. Enquanto grandes centros urbanos, como São Paulo, Rio de Janeiro e Belo Horizonte, concentram a maior parte das oportunidades, outras regiões, como o Norte e o Nordeste, enfrentam desafios significativos para acompanhar esse crescimento. Essa discrepância se reflete na oferta de empregos, nos salários praticados, no acesso à capacitação profissional e na presença de empresas que demandam profissionais qualificados na área de dados.
+A expansão desigual do mercado de ciência de dados no Brasil reflete diretamente a concentração geográfica de investimentos em tecnologia, criando um cenário onde oportunidades profissionais, salários e infraestrutura de capacitação variam drasticamente entre regiões. Enquanto polos como São Paulo e Rio de Janeiro recebem 73% dos investimentos em TI (ABES, 2023), regiões como Norte e Nordeste enfrentam:
 
-Um dos principais problemas enfrentados por iniciantes e profissionais em transição de carreira é a falta de informações claras sobre as diferenças regionais no setor. Muitas vezes, esses profissionais não têm acesso a dados concretos sobre as melhores estratégias para ingressar no mercado de trabalho, quais habilidades são mais demandadas em cada região e quais áreas da ciência de dados oferecem maior potencial de crescimento. Isso pode levar a decisões pouco informadas sobre formação e carreira, dificultando sua inserção no setor.
+➡️Oportunidades limitadas: Menos de 10% das vagas para cientistas de dados estão disponíveis fora do eixo Sudeste-Sul (LinkedIn, 2023);
 
-Além disso, empresas e instituições educacionais também enfrentam dificuldades para entender o panorama do mercado de dados em diferentes estados. Sem uma visão clara sobre a demanda por profissionais e as lacunas de qualificação, elas podem ter dificuldades para estruturar programas de capacitação eficientes ou para atrair talentos qualificados. A falta de dados sobre essas desigualdades pode limitar investimentos estratégicos e perpetuar as disparidades regionais.
+➡️Salários desiguais: Profissionais em regiões com menor investimento recebem até 40% menos para funções equivalentes (Catho, 2023);
 
-Diante desse cenário, surge a necessidade de um sistema que analise e forneça insights sobre as diferenças regionais no mercado de dados no Brasil. Essa ferramenta deve permitir que profissionais tomem decisões mais informadas sobre qualificação e oportunidades, além de auxiliar empresas e instituições educacionais a desenvolverem iniciativas mais alinhadas com as necessidades do setor.
+➡️Estrutura deficitária: Falta de hubs de inovação, cursos especializados e acesso a tecnologias avançadas (ex: cloud computing) nessas localidades.
 
+*Impactos Diretos na Carreira*
+Para profissionais:
+
+➡️Iniciantes em regiões menos favorecidas enfrentam barreiras intransponíveis para entrar no mercado, muitas vezes migrando para grandes centros, ampliando o êxodo de talentos.
+
+➡️A escassez de dados transparentes sobre demandas locais leva a escolhas inadequadas de capacitação (ex: aprender ferramentas não utilizadas regionalmente).
+
+Para empresas e instituições:
+
+➡️Empresas em regiões com baixo investimento têm dificuldade em atrair/reter talentos qualificados, perpetuando ciclos de baixa inovação.
+
+➡️Instituições de ensino não adaptam currículos às necessidades reais do mercado local, gerando profissionais despreparados.
+
+Lacuna Crítica
+Não existe hoje um sistema integrado que correlacione:
+
+-Volume de investimento por região → Salários e empregabilidade;
+-Distribuição de recursos em capacitação → Qualificação da mão de obra local;
+-Presença de ecossistemas de inovação → Retenção de talentos.
+
+Solução Proposta:
+Um modelo analítico que cruze dados de investimentos (públicos/privados), pesquisas salariais e empregabilidade para:
+
+✔️Identificar regiões prioritárias para políticas de incentivo;
+✔️Orientar profissionais sobre rotas de capacitação alinhadas às oportunidades locais;
+✔️Apoiar empresas na descentralização de contratações e instituições na adaptação de currículos.
 
 ###    Objetivo geral
 
