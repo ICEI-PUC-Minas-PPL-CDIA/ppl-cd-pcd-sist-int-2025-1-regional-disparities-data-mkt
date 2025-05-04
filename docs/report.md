@@ -38,23 +38,39 @@ O crescimento acelerado do mercado de dados no Brasil, embora promissor, é marc
 
 Este estudo investiga como o volume de investimento por região impacta fatores-chave da carreira, como remuneração, disponibilidade de empregos de alto valor agregado e acesso a capacitação em tecnologias emergentes (ex: IA generativa, cloud computing). Para isso, analisa dados socioeconômicos, registros de investimentos públicos/privados, pesquisas salariais e métricas de empregabilidade, integrando-os por meio de modelos analíticos e machine learning. O objetivo é identificar padrões como:
 
-Correlação entre concentração de investimentos em TI e média salarial regional;
+-Correlação entre concentração de investimentos em TI e média salarial regional;
 
-Impacto da presença de polos tecnológicos na taxa de empregabilidade;
+-Impacto da presença de polos tecnológicos na taxa de empregabilidade;
 
-Barreiras educacionais e tecnológicas em regiões com menor aporte financeiro.
+-Barreiras educacionais e tecnológicas em regiões com menor aporte financeiro.
 
 A partir desses insights, propõe-se um sistema inteligente para orientar profissionais, empresas e gestores públicos na mitigação dessas assimetrias. Para profissionais, o sistema sugerirá rotas de capacitação alinhadas a regiões em ascensão; para instituições, destacará estratégias de redistribuição de investimentos e adaptação de políticas educacionais. Ao vincular análise de dados a ações práticas, a pesquisa busca transformar a ciência de dados em uma ferramenta de redução de desigualdades, garantindo que o avanço tecnológico beneficie todas as regiões do país de forma equitativa.
 
+---
+
 ###    Contextualização
 
-Nos últimos anos, o mercado de dados tem experimentado um crescimento exponencial em escala global, impulsionado pelo avanço de tecnologias como big data, inteligência artificial e aprendizado de máquina. Empresas de diversos setores passaram a utilizar dados como recurso estratégico, promovendo uma alta demanda por profissionais especializados, como cientistas de dados, engenheiros de dados e analistas de negócios. Esse fenômeno também se reflete no Brasil, onde a digitalização das empresas e o desenvolvimento de soluções baseadas em dados impulsionam um mercado promissor para profissionais da área.
+O crescimento global do mercado de dados, impulsionado por tecnologias como IA e big data, reflete-se no Brasil através de um cenário paradoxal: enquanto a demanda por cientistas de dados aumenta, a concentração de investimentos em tecnologia em regiões como Sudeste e Sul amplia desigualdades estruturais. Estudos apontam que 70% dos recursos em TI no país estão alocados em polos como São Paulo e Rio de Janeiro (ABES, 2023), criando um abismo em oportunidades de carreira entre essas regiões e áreas como Norte e Nordeste, onde a infraestrutura tecnológica e os incentivos à inovação são limitados.
 
-No entanto, essa expansão do mercado de dados não ocorre de maneira uniforme em todas as regiões do país. Estudos indicam que as oportunidades na área de tecnologia estão concentradas em grandes centros urbanos, como São Paulo, Rio de Janeiro e Belo Horizonte, onde há maior presença de empresas de tecnologia e startups inovadoras (FONSECA et al., 2021). Enquanto isso, regiões como Norte e Nordeste enfrentam desafios relacionados à falta de capacitação profissional e à escassez de investimentos em infraestrutura tecnológica.
+Essa disparidade se materializa em fatores críticos para os profissionais:
 
-A formação profissional também desempenha um papel fundamental na inserção dos trabalhadores no mercado de dados. Segundo um levantamento realizado pelo LinkedIn (2022), 68% das vagas na área exigem formação acadêmica ou cursos técnicos especializados, mas a distribuição dessas oportunidades educacionais ainda é desigual entre os estados brasileiros. Isso cria um obstáculo para iniciantes e profissionais em transição de carreira, que buscam se qualificar para ingressar nesse setor em expansão.
+-Salários: Regiões com maior investimento em infraestrutura tecnológica apresentam médias salariais até 40% superiores às demais (Catho, 2023);
 
-Compreender essas desigualdades regionais no mercado de dados é essencial para a formulação de estratégias que promovam maior equidade na distribuição das oportunidades. Assim, este trabalho propõe uma análise das diferenças regionais no mercado de dados do Brasil, focando nos desafios enfrentados por iniciantes e profissionais em transição de carreira. A partir de dados sobre experiência profissional, faixa salarial, situação de emprego, nível educacional e principais ferramentas utilizadas, busca-se desenvolver um sistema inteligente que forneça insights relevantes para profissionais, empresas e instituições de ensino, auxiliando na tomada de decisões e na promoção de iniciativas para reduzir as disparidades regionais no setor.
+-Empregabilidade: Capitais do Sudeste concentram 85% das vagas para cientistas de dados, enquanto estados do Norte têm menos de 5% (LinkedIn, 2023);
+
+-Capacitação: A falta de investimento em educação tecnológica em regiões periféricas limita o acesso a ferramentas avançadas (ex: cloud computing) e cursos especializados, perpetuando ciclos de exclusão profissional.
+
+Além disso, a formação de ecossistemas de inovação (como parques tecnológicos e hubs de startups) depende diretamente de aportes públicos e privados, que são escassos fora dos grandes centros. Isso cria um efeito cascata: menos investimento → menos empregos qualificados → menor retenção de talentos → estagnação econômica regional.
+
+Nesse contexto, este estudo visa mapear como a distribuição desigual de recursos financeiros molda trajetórias profissionais desiguais, analisando dados de investimentos por região, pesquisas salariais, taxas de empregabilidade e acesso a educação. A integração dessas variáveis em um sistema inteligente permitirá identificar padrões como:
+
+-Correlação entre volume de investimento em TI e crescimento de vagas locais;
+
+-Impacto da ausência de polos tecnológicos na migração de profissionais para outras regiões;
+
+-Efeito de programas de capacitação financiados por investimentos públicos no nível salarial.
+
+Os resultados buscarão orientar políticas de descentralização de recursos, incentivos fiscais para empresas em regiões negligenciadas e adaptação de currículos educacionais às demandas locais. O objetivo final é transformar a ciência de dados em um vetor de equidade, garantindo que o avanço tecnológico não reproduza, mas sim corrija, as assimetrias históricas do Brasil.
 
 ###    Problema
 
