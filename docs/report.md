@@ -134,8 +134,39 @@ Desenvolver um sistema inteligente para analisar como a disparidade de investime
 
 ###    Justificativas
 
-A escolha do tema "Diferenças regionais no mercado de dados do Brasil" surge da necessidade de compreender as disparidades no acesso a oportunidades e desenvolvimento profissional na área de tecnologia, especialmente para iniciantes e profissionais em transição de carreira. O mercado de dados cresce rapidamente, mas nem todos os profissionais possuem as mesmas condições para ingressar e evoluir na área, seja por barreiras educacionais, econômicas ou regionais. Este trabalho busca identificar essas desigualdades analisando fatores como nível de escolaridade, áreas de estudo, situação profissional, transição de carreira e ferramentas mais utilizadas, permitindo um mapeamento detalhado das condições enfrentadas pelos iniciantes em diferentes regiões do país.
+A investigação sobre como os investimentos regionais em tecnologia impactam a carreira de cientistas de dados justifica-se por três fatores críticos:
 
+1- *Desigualdade Estrutural*
+
+Dados revelam que 70% dos investimentos em TI no Brasil concentram-se no Sudeste (ABES, 2023), criando um abismo salarial e de oportunidades entre regiões. Enquanto um cientista de dados em São Paulo pode ganhar R$12.000,00 por mês, no Nordeste, a média cai para R$7.000,00 por mês (Catho, 2023).
+
+2- *Fuga de Talentos*
+
+A falta de infraestrutura e empregos qualificados em regiões com baixo investimento força profissionais a migrarem para grandes centros, esvaziando o potencial tecnológico local.
+
+3- *Falta de Dados para Decisões Estratégicas*
+
+Não há sistemas que liguem diretamente volume de investimento → oportunidades de carreira → capacitação necessária por região. Isso prejudica:
+
+❌Profissionais: Escolhem formações não alinhadas às demandas locais;
+
+❌Governos: Não identificam onde priorizar incentivos fiscais;
+
+❌Empresas: Perdem talentos por não entenderem disparidades regionais.
+
+*Impacto Social*
+
+Este estudo visa transformar dados em ações concretas:
+
+✔️Redistribuição de recursos: Identificar regiões subfinanciadas para políticas públicas;
+
+✔️Democratização do conhecimento: Adaptar cursos às reais necessidades de cada localidade;
+
+✔️Retenção de talentos: Mostrar oportunidades em regiões além dos grandes polos.
+
+Por que focar em investimento?
+É a raiz das desigualdades:
+Baixo investimento → Pouca infraestrutura → Menos empregos → Profissionais migram → Região se estagna
 
 ##    Público alvo
 
