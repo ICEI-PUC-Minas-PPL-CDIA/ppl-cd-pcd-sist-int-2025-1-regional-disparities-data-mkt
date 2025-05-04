@@ -533,12 +533,29 @@ Esta análise foca na variação dos dados do ano 2019 até 2023, do dataset "Br
 
 ## Preparação dos dados
 
-A preparação dos dados consiste dos seguintes passos:
+## Tabela de Variáveis e Codificações
 
-> - Seleção dos atributos
-> - Tratamentos dos valores faltantes ou omissos: remoção, substituição, indução, etc.
-> - Tratamento dos valores inconsistentes: conversão, remoção de dados duplicados, remoção ou tratamento de ouliers.
-> - Conversão de dados: p. ex. numérico para categórico, categórico para binário, etc.
+| Variável                              | Codificação                                                                                                                                                                                                                                                      |
+|:--------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IDADE                                 | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
+| GÊNERO                                | Masculino=0, Feminino=1, Outro=2, Prefiro não informar=3.                                                                                                                                                                                                        |
+| ESTADO(UF)                            | AC=0, AL=1, AM=2, AP=3, BA=4, CE=5, DF=6, ES=7, GO=8, MA=9, MG=10, MS=11, MT=12, PA=13, PB=14, PE=15, PI=16, PR=17, RJ=18, RN=19, RO=20, RR=21, RS=22, SC=23, SE=24, SP=25, TO=26.                                                                               |
+| REGIÃO                                | Norte=1, Nordeste=2, Centro-Oeste=3, Sudeste=4, Sul=5.                                                                                                                                                                                                           |
+| MUDOU DE ESTADO?                      | Sim=1, Não=0.                                                                                                                                                                                                                                                    |
+| NÍVEL PROFISSIONAL                    | Júnior=0, Pleno=1, Sênior=2.                                                                                                                                                                                                                                     |
+| FAIXA SALARIAL                        | <RS1.000=0, RS1.001-RS2.000=1, RS2.001-RS3.000=2, RS3.001-RS4.000=3, RS4.001-RS6.000=4, RS6.001-RS8.000=5, RS8.001-RS12.000=6, RS12.001-RS16.000=7, RS16.001-RS20.000=8, RS20.001-RS30.000=9, RS30.001-RS40.000=10, >RS40.001=11.                                |
+| EXPERIÊNCIA EM DADOS                  | Nenhuma=0, <1 ano=1, 1-2 anos=2, 3-4 anos=3, 4-6 anos=4, 5-6 anos=5, 7-10 anos=6.                                                                                                                                                                                |
+| SITUAÇÃO DE TRABALHO                  | Prefiro não informar=0, Desempregado (busca)=1, Empreendedor/CNPJ=2, CLT=3, Estagiário=4, Freelancer=5, Servidor Público=6, Estudante (graduação)=7, Estudante (pós-graduação)=8, Acadêmico/Pesquisador=9, Trabalho fora do Brasil=10, Remoto fora do Brasil=11. |
+| FORMA DE TRABALHO                     | 100% presencial=0, 100% remoto=1, Híbrido fixo=2, Híbrido flexível=3.                                                                                                                                                                                            |
+| INVESTIMENTO 2019-2023                | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
+| PARTICIPAÇÃO%                         | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
+| CATEGORIA ADMINISTRATIVA              | Federal=1, Estadual=2, Municipal=3, Privada=4.                                                                                                                                                                                                                   |
+| DIMENSÃO DO CURSO                     | Presencial no Brasil=1, EAD no Brasil=2, Presencial no exterior=3, EAD no exterior=4.                                                                                                                                                                            |
+| TOTAL DE VAGAS( QT_VG _TOTAL)         | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
+| VAGAS NOVAS(QT_VG_NOVA)               | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
+| TOTAL DE INSCRITOS(QT_INSCRITO_TOTAL) | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
+| INGRESSANTES(QT_ING)                  | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
+| CONCLUINTES(QT_CONC)                  | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
 
 
 ## Indução de modelos
