@@ -837,19 +837,20 @@ Associando os demais atributos da base de dados *State of Data*, com o atributo 
 
 ### Tabela de Associação: Região x Forma de Trabalho
 
-| #  | Antecedents                                     | Consequents                                     | Support   | Confidence |
-|----|-------------------------------------------------|-------------------------------------------------|-----------|------------|
-| 0  | (Sudeste)                                       | (Modelo 100% remoto)                            | 0.268282  | 0.432357   |
-| 1  | (Modelo 100% remoto)                            | (Sudeste)                                       | 0.268282  | 0.579710   |
-| 2  | (Modelo híbrido flexível (o funcionário tem li... | (Sudeste)                                     | 0.151666  | 0.749733   |
-| 3  | (Sudeste)                                       | (Modelo híbrido flexível (o funcionário tem li... | 0.151666 | 0.244421   |
-| 4  | (Sudeste)                                       | (Modelo híbrido com dias fixos de trabalho pre... | 0.122458 | 0.197350   |
-| 5  | (Modelo híbrido com dias fixos de trabalho pre... | (Sudeste)                                     | 0.122458  | 0.736979   |
-| 6  | (Modelo 100% remoto)                            | (Sul)                                          | 0.096279  | 0.208041   |
-| 7  | (Sul)                                           | (Modelo 100% remoto)                           | 0.096279  | 0.504535   |
-| 8  | (Sudeste)                                       | (Modelo 100% presencial)                       | 0.078105  | 0.125872   |
-| 9  | (Modelo 100% presencial)                        | (Sudeste)                                     | 0.078105  | 0.462821   |
-| 10 | (Modelo 100% remoto)                            | (Nordeste)                                    | 0.064258  | 0.138850   |
+| #  | Antecedents       | Consequents     | Support   | Confidence |
+|----|-------------------|------------------|-----------|------------|
+| 0  | (Sudeste)         | (Remoto)         | 0.268282  | 0.432357   |
+| 1  | (Remoto)          | (Sudeste)        | 0.268282  | 0.579710   |
+| 2  | (Híbrido Flexível)| (Sudeste)        | 0.151666  | 0.749733   |
+| 3  | (Sudeste)         | (Híbrido Flexível)| 0.151666  | 0.244421   |
+| 4  | (Sudeste)         | (Híbrido Fixo)   | 0.122458  | 0.197350   |
+| 5  | (Híbrido Fixo)    | (Sudeste)        | 0.122458  | 0.736979   |
+| 6  | (Remoto)          | (Sul)            | 0.096279  | 0.208041   |
+| 7  | (Sul)             | (Remoto)         | 0.096279  | 0.504535   |
+| 8  | (Sudeste)         | (Presencial)     | 0.078105  | 0.125872   |
+| 9  | (Presencial)      | (Sudeste)        | 0.078105  | 0.462821   |
+| 10 | (Remoto)          | (Nordeste)       | 0.064258  | 0.138850   |
+
 
 ### Modelo 4: Classificação com Árvore de Decisão
 
