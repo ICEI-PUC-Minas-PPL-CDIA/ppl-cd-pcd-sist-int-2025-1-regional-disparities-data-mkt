@@ -170,11 +170,7 @@ Baixo investimento → Pouca infraestrutura → Menos empregos → Profissionais
 
 ##    Público alvo
 
-Perfil dos Usuários: Iniciantes e Pessoas em Transição de Carreira
-Estudantes e Autodidatas – Aprendendo análise de dados via cursos, com pouca experiência prática. Foco em ferramentas como Python, SQL e Power BI.
-Profissionais Migrando para Dados – Vêm de áreas como marketing, engenharia e administração, aplicando conhecimentos prévios ao setor de dados. Familiaridade com Excel e BI, mas ainda aprendendo conceitos avançados.
-Requalificados pelo Mercado – Profissionais de setores impactados por mudanças tecnológicas, buscando recolocação com foco em cursos rápidos.
-Esse público busca aprendizado acessível, prática e oportunidades no mercado de dados.
+Este estudo tem como foco iniciantes, profissionais em transição de carreira e requalificados que buscam oportunidades no mercado de dados, mas enfrentam desafios distintos conforme sua região. Iniciantes em áreas com menos investimento (como Norte e Nordeste) têm dificuldade para encontrar estágios e mentorias, enquanto nos grandes polos tecnológicos (SP, RJ, MG) a concorrência é maior, porém com mais acesso a networking e capacitação. Profissionais em transição de carreira dependem de cursos online em regiões periféricas, onde há menos vagas júnior, e os requalificados enfrentam salários menores fora do eixo Sudeste-Sul. A pesquisa visa ajudar esses grupos a identificar onde há melhores oportunidades, quais habilidades priorizar e se a migração para outras regiões vale a pena, considerando custo de vida e salários.
 
 
 ## Análise exploratórida dos dados
