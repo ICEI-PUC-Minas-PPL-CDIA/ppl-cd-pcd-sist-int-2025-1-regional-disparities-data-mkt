@@ -27,16 +27,24 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 ---
 
 ### Resumo
+
 O mercado de ciência de dados no Brasil apresenta disparidades regionais significativas, influenciadas pela concentração de investimentos em tecnologia em regiões como Sudeste e Sul. Este estudo analisa como a desigualdade de recursos financeiros impacta a carreira dos profissionais, afetando salários, acesso a empregos de qualidade e capacitação técnica. Utilizando dados socioeconômicos, registros de investimentos e machine learning, o projeto identifica padrões críticos (ex: 80% dos investimentos em TI concentrados no Sudeste) e propõe estratégias para redistribuição de recursos, como políticas de incentivo fiscal e adaptação de currículos educacionais. O objetivo é promover equidade, transformando a ciência de dados em um motor de desenvolvimento inclusivo, reduzindo lacunas históricas entre regiões.
+
 ---
 
-
 ## Introdução
-O mercado de dados tem se expandido rapidamente no Brasil, impulsionado pela crescente demanda por profissionais qualificados para atuar em áreas como ciência de dados, engenharia de dados e análise de negócios. No entanto, essa expansão não ocorre de forma homogênea em todas as regiões do país, gerando desigualdades no acesso a oportunidades e desenvolvimento profissional. Fatores como disponibilidade de cursos, maturidade do setor tecnológico em cada estado e diferenças salariais impactam diretamente a inserção de novos talentos na área.
 
-Diante desse cenário, este trabalho busca compreender as diferenças regionais no mercado de dados do Brasil, com foco em iniciantes e profissionais em transição de carreira. A análise será realizada a partir de dados sobre experiência profissional, faixa salarial, situação de emprego, nível educacional e principais ferramentas utilizadas, permitindo a identificação de padrões e desafios enfrentados por esses profissionais em diferentes localidades.
+O crescimento acelerado do mercado de dados no Brasil, embora promissor, é marcado por desigualdades regionais profundas, diretamente vinculadas à distribuição assimétrica de investimentos em tecnologia, infraestrutura e capacitação profissional. Enquanto regiões como Sudeste e Sul concentram polos tecnológicos, recursos financeiros e iniciativas privadas robustas, áreas como Norte e Nordeste enfrentam lacunas críticas que limitam o acesso a salários competitivos, vagas qualificadas e ferramentas inovadoras. Essa disparidade não apenas reflete desigualdades socioeconômicas históricas, mas também molda trajetórias profissionais desiguais para cientistas de dados.
 
-O objetivo é desenvolver um sistema inteligente capaz de fornecer insights relevantes sobre essas disparidades, auxiliando iniciantes a tomarem decisões mais informadas sobre qualificação e mercado de trabalho. Além disso, a pesquisa pode contribuir para que empresas e instituições educacionais compreendam melhor o panorama do setor e desenvolvam iniciativas para promover maior equidade e inclusão na área de dados no Brasil.
+Este estudo investiga como o volume de investimento por região impacta fatores-chave da carreira, como remuneração, disponibilidade de empregos de alto valor agregado e acesso a capacitação em tecnologias emergentes (ex: IA generativa, cloud computing). Para isso, analisa dados socioeconômicos, registros de investimentos públicos/privados, pesquisas salariais e métricas de empregabilidade, integrando-os por meio de modelos analíticos e machine learning. O objetivo é identificar padrões como:
+
+Correlação entre concentração de investimentos em TI e média salarial regional;
+
+Impacto da presença de polos tecnológicos na taxa de empregabilidade;
+
+Barreiras educacionais e tecnológicas em regiões com menor aporte financeiro.
+
+A partir desses insights, propõe-se um sistema inteligente para orientar profissionais, empresas e gestores públicos na mitigação dessas assimetrias. Para profissionais, o sistema sugerirá rotas de capacitação alinhadas a regiões em ascensão; para instituições, destacará estratégias de redistribuição de investimentos e adaptação de políticas educacionais. Ao vincular análise de dados a ações práticas, a pesquisa busca transformar a ciência de dados em uma ferramenta de redução de desigualdades, garantindo que o avanço tecnológico beneficie todas as regiões do país de forma equitativa.
 
 ###    Contextualização
 
