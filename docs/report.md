@@ -1,7 +1,7 @@
 #  Diferenças regionais no mercado de dados do Brasil. 
   
 Alunos: 
-Walker Junio Gonzaga Rocha - walker.rocha@sga.pucminas.br  
+Walker Junio Gonzaga Rocha - walker.gonzaga@sga.pucminas.br  
 
 Izabela Dobscha Santos Borges - idsborges@sga.pucminas.br  
 
@@ -85,6 +85,7 @@ A expansão desigual do mercado de ciência de dados no Brasil reflete diretamen
 ➡️Estrutura deficitária: Falta de hubs de inovação, cursos especializados e acesso a tecnologias avançadas (ex: cloud computing) nessas localidades.
 
 *Impactos Diretos na Carreira*
+
 Para profissionais:
 
 ➡️Iniciantes em regiões menos favorecidas enfrentam barreiras intransponíveis para entrar no mercado, muitas vezes migrando para grandes centros, ampliando o êxodo de talentos.
@@ -101,28 +102,35 @@ Lacuna Crítica
 Não existe hoje um sistema integrado que correlacione:
 
 -Volume de investimento por região → Salários e empregabilidade;
+
 -Distribuição de recursos em capacitação → Qualificação da mão de obra local;
+
 -Presença de ecossistemas de inovação → Retenção de talentos.
 
 Solução Proposta:
 Um modelo analítico que cruze dados de investimentos (públicos/privados), pesquisas salariais e empregabilidade para:
 
 ✔️Identificar regiões prioritárias para políticas de incentivo;
+
 ✔️Orientar profissionais sobre rotas de capacitação alinhadas às oportunidades locais;
+
 ✔️Apoiar empresas na descentralização de contratações e instituições na adaptação de currículos.
+
+---
 
 ###    Objetivo geral
 
-Desenvolver um sistema inteligente para analisar e comparar as diferenças regionais no mercado de dados do Brasil, identificando padrões de oportunidades e desafios enfrentados por iniciantes e profissionais em transição de carreira. O sistema utilizará dados da pesquisa, como tempo de experiência, faixa salarial, situação profissional e transição de carreira para mapear disparidades regionais.  
-
-Além disso, aspectos como nível de educação, área de estudo e principais ferramentas utilizadas serão analisados para entender diferenças na qualificação e no acesso a tecnologias. Fatores relacionados à empresa, como tamanho da empresa e tipo de empresa, e modalidades de trabalho (presencial, híbrido ou remoto), também serão considerados. O objetivo é auxiliar esses profissionais a tomarem decisões mais informadas sobre sua inserção no mercado, destacando tendências e desafios específicos de cada região.
+Desenvolver um sistema inteligente para analisar como a disparidade de investimento por região no Brasil afeta a carreira de cientistas de dados, considerando salários, oportunidades de emprego e acesso a qualificação.
 
 ####    Objetivos específicos
 
-1. Analisar a distribuição regional das oportunidades no mercado de dados no Brasil – Examinar como os fatores geográficos influenciam a oferta de empregos, os salários praticados e a demanda por profissionais qualificados, destacando as diferenças entre estados e regiões.
+1- Mapear desigualdades regionais – Comparar como o volume de investimento em tecnologia impacta salários e disponibilidade de vagas para cientistas de dados em cada região.
 
-2. Investigar a relação entre qualificação profissional e empregabilidade na área de dados – Avaliar como o nível educacional, a formação acadêmica e o domínio de ferramentas impactam a inserção no mercado de trabalho em diferentes regiões, identificando padrões que possam orientar a capacitação de novos profissionais.
+2- Avaliar o acesso a capacitação – Verificar se regiões com menos investimento têm menor oferta de cursos e domínio de ferramentas avançadas (como IA e cloud computing).
 
+3- Identificar padrões de migração – Analisar se profissionais de regiões com poucos recursos mudam para polos tecnológicos em busca de melhores oportunidades.
+
+---
 
 ###    Justificativas
 
