@@ -27,10 +27,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 ---
 
 ### Resumo
-O mercado de dados no Brasil tem crescido significativamente nos últimos anos, impulsionado pela digitalização das empresas e pelo avanço de tecnologias como big data e inteligência artificial. No entanto, esse crescimento não ocorre de forma uniforme entre as regiões do país, resultando em desigualdades no acesso a oportunidades de trabalho e desenvolvimento profissional. Este estudo investiga essas disparidades regionais, analisando fatores como experiência profissional, faixa salarial, nível educacional e ferramentas utilizadas por iniciantes e profissionais em transição de carreira.  
-
-Para isso, será desenvolvido um sistema inteligente capaz de fornecer insights relevantes sobre essas diferenças, auxiliando tanto os profissionais quanto empresas e instituições educacionais a tomarem decisões mais informadas. A pesquisa busca contribuir para uma melhor compreensão do mercado de dados no Brasil, promovendo maior equidade na distribuição de oportunidades e inclusão profissional no setor.
-
+O mercado de ciência de dados no Brasil apresenta disparidades regionais significativas, influenciadas pela concentração de investimentos em tecnologia em regiões como Sudeste e Sul. Este estudo analisa como a desigualdade de recursos financeiros impacta a carreira dos profissionais, afetando salários, acesso a empregos de qualidade e capacitação técnica. Utilizando dados socioeconômicos, registros de investimentos e machine learning, o projeto identifica padrões críticos (ex: 80% dos investimentos em TI concentrados no Sudeste) e propõe estratégias para redistribuição de recursos, como políticas de incentivo fiscal e adaptação de currículos educacionais. O objetivo é promover equidade, transformando a ciência de dados em um motor de desenvolvimento inclusivo, reduzindo lacunas históricas entre regiões.
 ---
 
 
