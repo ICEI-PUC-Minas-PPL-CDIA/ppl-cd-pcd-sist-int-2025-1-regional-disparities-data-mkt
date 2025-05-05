@@ -1,4 +1,4 @@
-#  Diferenças no mercado de TI do Brasil a nivel de indivíduo. 
+#  Diferenças no mercado de Ciência de Dados do Brasil a nível de indivíduo. 
   
 Alunos: 
 Walker Junio Gonzaga Rocha - walker.gonzaga@sga.pucminas.br  
