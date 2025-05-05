@@ -50,71 +50,77 @@ Ao focar no nível individual, esta pesquisa visa não apenas entender as desigu
 
 ###    Contextualização
 
-O crescimento global do mercado de dados, impulsionado por tecnologias como IA e big data, reflete-se no Brasil através de um cenário paradoxal: enquanto a demanda por cientistas de dados aumenta, a concentração de investimentos em tecnologia em regiões como Sudeste e Sul amplia desigualdades estruturais. Estudos apontam que 70% dos recursos em TI no país estão alocados em polos como São Paulo e Rio de Janeiro (ABES, 2023), criando um abismo em oportunidades de carreira entre essas regiões e áreas como Norte e Nordeste, onde a infraestrutura tecnológica e os incentivos à inovação são limitados.
+O mercado de dados no Brasil vive um momento de expansão, alimentado pela crescente adoção de tecnologias como IA, machine learning e análise de big data. No entanto, por trás dessa demanda aquecida por profissionais qualificados, esconde-se uma realidade desigual: as oportunidades e trajetórias na área são profundamente moldadas por fatores individuais, como formação acadêmica, habilidades técnicas e comportamentais, acesso a redes profissionais e condições socioeconômicas.
 
-Essa disparidade se materializa em fatores críticos para os profissionais:
+Enquanto alguns cientistas de dados conseguem alcançar salários elevados e posições estratégicas em pouco tempo, outros—mesmo com qualificações técnicas semelhantes—enfrentam dificuldades para ingressar no mercado ou progredir na carreira. Essa disparidade não se explica apenas por diferenças regionais (como a concentração de vagas no Sudeste), mas também por barreiras individuais, como:
 
-➡️Salários: Regiões com maior investimento em infraestrutura tecnológica apresentam médias salariais até 40% superiores às demais (Catho, 2023);
+➡️ Divisão técnica: Profissionais com domínio em ferramentas avançadas (ex: PySpark, TensorFlow) têm salários até 35% superiores à média (Pesquisa Stack Overflow, 2023), mas muitos não têm acesso a capacitação nessas tecnologias.
+➡️ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), privilegiando quem já está inserido em ecossistemas tech.
+➡️ Educação formal vs. cursos alternativos: Profissionais com pós-graduação têm 20% mais chances de alcançar cargos sênior, mas bootcamps e certificações podem acelerar a entrada no mercado para quem não tem diploma na área (Data Science Academy, 2023).
 
-➡️Empregabilidade: Capitais do Sudeste concentram 85% das vagas para cientistas de dados, enquanto estados do Norte têm menos de 5% (LinkedIn, 2023);
+Além disso, habilidades não técnicas—como comunicação, pensamento crítico e capacidade de traduzir dados em decisões—são frequentemente subestimadas, mas determinam até 40% da progressão para cargos de liderança (Harvard Business Review, 2022).
 
-➡️Capacitação: A falta de investimento em educação tecnológica em regiões periféricas limita o acesso a ferramentas avançadas (ex: cloud computing) e cursos especializados, perpetuando ciclos de exclusão profissional.
+Nesse cenário, este estudo busca entender como variáveis individuais—e não apenas macroeconômicas ou regionais—influenciam:
 
-Além disso, a formação de ecossistemas de inovação (como parques tecnológicos e hubs de startups) depende diretamente de aportes públicos e privados, que são escassos fora dos grandes centros. Isso cria um efeito cascata: menos investimento → menos empregos qualificados → menor retenção de talentos → estagnação econômica regional.
+A disparidade salarial entre profissionais com habilidades técnicas equivalentes;
 
-Nesse contexto, este estudo visa mapear como a distribuição desigual de recursos financeiros molda trajetórias profissionais desiguais, analisando dados de investimentos por região, pesquisas salariais, taxas de empregabilidade e acesso a educação. A integração dessas variáveis em um sistema inteligente permitirá identificar padrões como:
+O acesso a oportunidades em empresas de ponta vs. barreiras impostas por falta de networking ou viés de seleção;
 
-➡️Correlação entre volume de investimento em TI e crescimento de vagas locais;
+A velocidade de crescimento na carreira, analisando o peso de pós-graduações, cursos livres e experiências práticas.
 
-➡️Impacto da ausência de polos tecnológicos na migração de profissionais para outras regiões;
+➡️ Quais combinações de habilidades (técnicas + comportamentais) têm maior impacto em cada estágio da carreira;
+➡️ O papel de certificações alternativas na competitividade do profissional;
+➡️ Como o background socioeconômico influencia acesso a capacitação e empregabilidade.
 
-➡️Efeito de programas de capacitação financiados por investimentos públicos no nível salarial.
-
-Os resultados buscarão orientar políticas de descentralização de recursos, incentivos fiscais para empresas em regiões negligenciadas e adaptação de currículos educacionais às demandas locais. O objetivo final é transformar a ciência de dados em um vetor de equidade, garantindo que o avanço tecnológico não reproduza, mas sim corrija, as assimetrias históricas do Brasil.
+Os resultados visam orientar tanto profissionais (em estratégias personalizadas de qualificação) quanto empresas e instituições de ensino (na redução de vieses e adaptação de programas de treinamento). O objetivo final é democratizar as oportunidades em dados, garantindo que o potencial da área seja acessível não apenas a quem está nos polos tradicionais ou tem determinados privilégios iniciais, mas a todos os talentos—independentemente de sua origem ou trajetória prévia.
 
 ---
 
 ###    Problema
 
-A expansão desigual do mercado de ciência de dados no Brasil reflete diretamente a concentração geográfica de investimentos em tecnologia, criando um cenário onde oportunidades profissionais, salários e infraestrutura de capacitação variam drasticamente entre regiões. Enquanto polos como São Paulo e Rio de Janeiro recebem 73% dos investimentos em TI (ABES, 2023), regiões como Norte e Nordeste enfrentam:
+O crescimento do mercado de ciência de dados no Brasil, embora promissor, é marcado por disparidades significativas no nível individual, onde fatores como formação, habilidades, acesso a networking e condições socioeconômicas determinam quem consegue ingressar, progredir e se manter competitivo na área. Enquanto alguns profissionais alcançam cargos bem remunerados e oportunidades em empresas inovadoras, outros—mesmo com qualificações técnicas semelhantes—enfrentam barreiras persistentes devido a:
 
-➡️Oportunidades limitadas: Menos de 10% das vagas para cientistas de dados estão disponíveis fora do eixo Sudeste-Sul (LinkedIn, 2023);
+Desigualdades Estruturais no Nível Individual
+➡️ Divisão de habilidades: Profissionais com domínio em ferramentas avançadas (MLOps, engenharia de dados) têm salários até 50% maiores, mas muitos não têm acesso a capacitação nessas tecnologias (Stack Overflow, 2023).
+➡️ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), excluindo quem não está inserido em ecossistemas tech.
+➡️ Educação formal vs. alternativas: Pós-graduação aumenta em 30% as chances de alcançar cargos sênior, mas bootcamps e certificações são a única via para muitos sem diploma na área (Data Science Academy, 2023).
+➡️ Habilidades não técnicas negligenciadas: Competências como comunicação e storytelling impactam 40% das promoções (Harvard Business Review, 2022), mas são pouco desenvolvidas em cursos técnicos.
 
-➡️Salários desiguais: Profissionais em regiões com menor investimento recebem até 40% menos para funções equivalentes (Catho, 2023);
-
-➡️Estrutura deficitária: Falta de hubs de inovação, cursos especializados e acesso a tecnologias avançadas (ex: cloud computing) nessas localidades.
-
-*Impactos Diretos na Carreira*
-
+Impactos Diretos na Carreira
 Para profissionais:
-
-➡️Iniciantes em regiões menos favorecidas enfrentam barreiras intransponíveis para entrar no mercado, muitas vezes migrando para grandes centros, ampliando o êxodo de talentos.
-
-➡️A escassez de dados transparentes sobre demandas locais leva a escolhas inadequadas de capacitação (ex: aprender ferramentas não utilizadas regionalmente).
+➡️ Iniciantes sem acesso a mentorias ou cursos especializados levam 2x mais tempo para conseguir o primeiro emprego na área.
+➡️ Quem não domina inglês ou ferramentas em alta demanda (ex: LLMs, cloud) fica excluído de vagas globais e bem remuneradas.
+➡️ Profissionais de grupos sub-representados (mulheres, negros, periféricos) enfrentam maior dificuldade para alcançar cargos de liderança.
 
 Para empresas e instituições:
-
-➡️Empresas em regiões com baixo investimento têm dificuldade em atrair/reter talentos qualificados, perpetuando ciclos de baixa inovação.
-
-➡️Instituições de ensino não adaptam currículos às necessidades reais do mercado local, gerando profissionais despreparados.
+➡️ Empresas perdem talentos qualificados por não identificarem potenciais além do currículo tradicional.
+➡️ Instituições de ensino formam profissionais desalinhados com demandas reais do mercado, gerando desemprego técnico.
 
 Lacuna Crítica
-Não existe hoje um sistema integrado que correlacione:
+Não existe hoje um sistema que analise como variáveis individuais—e não apenas regionais—impactam:
 
--Volume de investimento por região → Salários e empregabilidade;
+A disparidade salarial entre profissionais com habilidades equivalentes;
 
--Distribuição de recursos em capacitação → Qualificação da mão de obra local;
+O acesso a oportunidades em empresas de ponta vs. barreiras impostas por falta de networking;
 
--Presença de ecossistemas de inovação → Retenção de talentos.
+A efetividade de diferentes rotas de capacitação (graduação, bootcamps, cursos livres).
 
 Solução Proposta:
-Um modelo analítico que cruze dados de investimentos (públicos/privados), pesquisas salariais e empregabilidade para:
 
-✔️Identificar regiões prioritárias para políticas de incentivo;
+Um modelo analítico baseado em dados individuais que cruze:
+✔️ Perfis profissionais → Quais experiências levam a melhores salários e empregabilidade.
 
-✔️Orientar profissionais sobre rotas de capacitação alinhadas às oportunidades locais;
+✔️ Pesquisas salariais e de recrutamento → Viéses de contratação e gaps de competências.
 
-✔️Apoiar empresas na descentralização de contratações e instituições na adaptação de currículos.
+✔️ Trajetórias de sucesso → Rotas alternativas de capacitação (ex.: certificações X pós-graduação).
+
+Objetivo final:
+
+Para profissionais: Identificar as habilidades e estratégias mais eficazes para sua realidade.
+
+Para empresas: Reduzir vieses e encontrar talentos subutilizados.
+
+Para instituições de ensino: Adaptar currículos às demandas do mercado.
 
 ---
 
