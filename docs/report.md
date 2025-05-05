@@ -1,4 +1,4 @@
-#  Diferenças regionais no mercado de TI do Brasil a nivel de indivíduo. 
+#  Diferenças no mercado de TI do Brasil a nivel de indivíduo. 
   
 Alunos: 
 Walker Junio Gonzaga Rocha - walker.gonzaga@sga.pucminas.br  
