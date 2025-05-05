@@ -42,7 +42,7 @@ Os resultados fornecerão um guia prático para profissionais e instituições, 
 
 ## Introdução
 
-Apesar do crescimento acelerado do mercado de dados no Brasil, as oportunidades e trajetórias profissionais nessa área são profundamente desiguais, influenciadas não apenas por fatores econômicos e regionais, mas também por características individuais—como formação acadêmica, habilidades técnicas e comportamentais, acesso a redes de contato (networking) e condições socioeconômicas prévias. Enquanto alguns profissionais conseguem ascender rapidamente a cargos bem remunerados em empresas inovadoras, outros enfrentam barreiras persistentes, mesmo possuindo qualificações aparentemente similares. Essas disparidades sugerem que, além das dinâmicas macro do mercado, aspectos individuais desempenham um papel crucial na definição do sucesso profissional em ciência de dados.
+Apesar do crescimento acelerado do mercado de dados no Brasil, as oportunidades e trajetórias profissionais nessa área são profundamente desiguais, influenciadas não apenas por fatores econômicos e regionais, mas também por características individuais—como formação acadêmica. Enquanto alguns profissionais conseguem ascender rapidamente a cargos bem remunerados em empresas inovadoras, outros enfrentam barreiras persistentes, mesmo possuindo qualificações aparentemente similares. Essas disparidades sugerem que, além das dinâmicas macro do mercado, aspectos individuais desempenham um papel crucial na definição do sucesso profissional em ciência de dados.
 
 Este estudo busca investigar como variáveis a nível individual—como formação educacional, habilidades técnicas (ex: domínio de Python, machine learning), competências não técnicas (ex: comunicação, resolução de problemas), participação em bootcamps ou cursos extracurriculares, e acesso a mentorias—impactam:
 
@@ -158,15 +158,11 @@ Desenvolver um modelo analítico baseado no State of Data Brazil 2023 para ident
 
 ➡️ Analisar a distribuição de formação acadêmica (STEM vs não-STEM), modalidades de capacitação (graduação, pós, cursos livres) e sua correlação com níveis salariais;
 
-➡️ Identificar as combinações de habilidades técnicas (ferramentas, linguagens) mais valorizadas em cada estágio da carreira;
-
 ➡️ Avaliar o impacto de fatores socioeconômicos.
 
 *2-Mensurar como variáveis como gênero, raça, região de origem e tipo de instituição de formação afetam:*
 
 ➡️ Tempo para ingresso no mercado;
-
-➡️ Progressão para cargos sênior e de liderança;
 
 ➡️ Acesso a oportunidades em empresas de elite.
 
