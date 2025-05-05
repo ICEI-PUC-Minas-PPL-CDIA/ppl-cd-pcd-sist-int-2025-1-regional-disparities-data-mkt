@@ -28,7 +28,15 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ### Resumo
 
-O mercado de dados no Brasil sofre grandes disparidades regionais, com empregos e salários concentrados no Sudeste. Este estudo analisa como fatores geográficos e socioeconômicos afetam a carreira de profissionais de dados, usando bases como RAIS, CAGED e PNAD. Métodos de machine learning identificarão padrões (ex.: 80% das vagas em SP/RJ/MG, salários 30-50% menores no Norte/Nordeste). O objetivo é propor políticas para reduzir desigualdades, como capacitação local e incentivos à descentralização do mercado.
+Este estudo analisa como fatores individuais (formação, habilidades técnicas e socioeconômicos) impactam carreiras em dados no Brasil, utilizando o State of Data 2023 como base principal. Aplicando métodos estatísticos, identificaremos:
+
+-Quais habilidades mais influenciam salários e empregabilidade
+
+-Como diferentes trajetórias de capacitação (graduação, cursos livres) afetam a progressão
+
+-Barreiras enfrentadas por grupos sub-representados
+
+Os resultados fornecerão um guia prático para profissionais e instituições, promovendo maior equidade no mercado de dados brasileiro. 
 
 ---
 
@@ -224,12 +232,13 @@ Este estudo visa transformar dados em ações práticas:
 
 -Criar programas de mentoria para talentos em início de carreira.
 
+---
 
 ##    Público alvo
 
-Este estudo tem como foco iniciantes, profissionais em transição de carreira e requalificados que buscam oportunidades no mercado de dados, mas enfrentam desafios distintos conforme sua região. Iniciantes em áreas com menos investimento (como Norte e Nordeste) têm dificuldade para encontrar estágios e mentorias, enquanto nos grandes polos tecnológicos (SP, RJ, MG) a concorrência é maior, porém com mais acesso a networking e capacitação. Profissionais em transição de carreira dependem de cursos online em regiões periféricas, onde há menos vagas júnior, e os requalificados enfrentam salários menores fora do eixo Sudeste-Sul. A pesquisa visa ajudar esses grupos a identificar onde há melhores oportunidades, quais habilidades priorizar e se a migração para outras regiões vale a pena, considerando custo de vida e salários.
+Este estudo tem como público-alvo profissionais em diferentes estágios da carreira em ciência de dados no Brasil, cujas trajetórias são profundamente influenciadas por seu perfil individual e condições de acesso a oportunidades. Nosso foco principal são iniciantes que enfrentam dificuldades para entrar no mercado devido à falta de experiência prática e orientação sobre quais habilidades priorizar; profissionais em transição de carreira, que precisam validar seus conhecimentos sem formação tradicional na área; e trabalhadores subempregados, que mesmo atuando com análise de dados não conseguem alcançar posições melhor remuneradas. Também damos atenção especial a grupos sub-representados, como mulheres, negros e pessoas de baixa renda, que enfrentam barreiras adicionais no acesso a ecossistemas tech qualificados e processos seletivos. A pesquisa visa fornecer a esses grupos dados concretos sobre as habilidades mais valorizadas pelo mercado, estratégias eficazes de capacitação e cases de sucesso que possam servir como referência, ajudando a transformar a ciência de dados em uma carreira mais acessível e democrática. Ao cruzar informações sobre trajetórias reais de profissionais com diferentes backgrounds, buscamos criar um guia prático que mostre não apenas o caminho ideal, mas as múltiplas rotas possíveis para o sucesso na área, considerando as diversas realidades existentes no país.
 
-
+---
 ## Análise exploratórida dos dados
 
 ## **📌 1. Introdução State of data_BR_2023 ( Base Principal)**  
