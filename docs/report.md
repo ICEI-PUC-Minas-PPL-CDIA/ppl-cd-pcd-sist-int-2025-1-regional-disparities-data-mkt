@@ -243,18 +243,25 @@ O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fo
 
 ## 📊 2. Atributos Analisados  
 
-| **Atributo**               | **Descrição**                                 | **Escala do dado** | **Tipo de Dado**         |
-|---------------------------|-----------------------------------------------|--------------------|--------------------------|
-| `Idade`                   | Idade dos participantes                       | Discreta           | Inteiro                  |
-| `Gênero`                  | Identificação de gênero                       | Nominal            | Texto (Categórico)       |
-| `Estado onde mora`        | Estado de residência                          | Nominal            | Texto (Categórico)       |
-| `Região onde mora`        | Região do Brasil (Norte, Nordeste, etc.)      | Nominal            | Texto (Categórico)       |
-| `Mudou de estado`         | Se já mudou de estado (0 = Não, 1 = Sim)      | Nominal            | Inteiro (Binário)        |
-| `Nível de Atuação`        | Júnior, Pleno, Sênior, etc.                   | Ordinal            | Texto (Ordinal)          |
-| `Faixa Salarial`          | Remuneração mensal (em R$)                    | Contínuo           | Float (Contínuo)         |
-| `Tempo na Área de Dados`  | Anos de experiência na área                   | Discreta           | Float (Contínuo)         |
-| `Situação de Trabalho`    | Empregado, Autônomo, Desempregado, etc.       | Nominal            | Texto (Categórico)       |
-| `Forma de Trabalho`       | Remoto, Híbrido, Presencial                   | Nominal            | Texto (Categórico)       |
+# Dicionário de Dados - State of Data 2023
+
+| Atributo                          | Descrição                                                                 | Escala do Dado   | Tipo de Dado               |
+|-----------------------------------|---------------------------------------------------------------------------|------------------|----------------------------|
+| IDADE                             | Idade dos participantes em anos completos                                 | Discreta         | Inteiro                    |
+| GÊNERO                            | Identificação de gênero (Masculino, Feminino, Não-binário, etc.)          | Nominal          | Texto (Categórico)         |
+| REGIÃO ONDE MORA                  | Região geográfica do Brasil onde reside (Norte, Nordeste, etc.)           | Nominal          | Texto (Categórico)         |
+| MUDOU DE ESTADO                   | Indica se já mudou de estado brasileiro (0 = Não, 1 = Sim)                | Nominal          | Inteiro (Binário)          |
+| NÍVEL DE ATUAÇÃO                  | Nível profissional na área de dados (Júnior, Pleno, Sênior, etc.)         | Ordinal          | Texto (Ordinal)            |
+| FAIXA SALARIAL                    | Faixa de remuneração mensal em Reais (R$)                                 | Contínuo         | Float (Contínuo)           |
+| TEMPO NA ÁREA DE DADOS            | Anos de experiência profissional na área de dados                         | Discreta         | Float (Contínuo)           |
+| SITUAÇÃO DE TRABALHO              | Situação atual de emprego (Empregado, Autônomo, Desempregado, etc.)       | Nominal          | Texto (Categórico)         |
+| FORMA DE TRABALHO                 | Modalidade de trabalho (Remoto, Híbrido, Presencial)                       | Nominal          | Texto (Categórico)         |
+| COR/RAÇA/ETNIA                    | Autoidentificação racial/étnica do participante                           | Nominal          | Texto (Categórico)         |
+| EXPERIÊNCIA PROFISSIONAL AFETADA  | Percepção sobre impacto na experiência profissional (0 = Não, 1 = Sim)    | Nominal          | Inteiro (Binário)          |
+| EXPERIÊNCIA PREJUDICADA POR RAÇA  | Se já teve experiência prejudicada por raça/etnia (0 = Não, 1 = Sim)      | Nominal          | Inteiro (Binário)          |
+| EXPERIÊNCIA PREJUDICADA POR GÊNERO| Se já teve experiência prejudicada por identidade de gênero (0 = Não, 1 = Sim) | Nominal      | Inteiro (Binário)          |
+| NÍVEL DE ENSINO                   | Grau de escolaridade (Ensino Médio, Graduação, Pós-graduação, etc.)       | Ordinal          | Texto (Ordinal)            |
+| PRETENDE MUDAR DE EMPREGO         | Intenção de mudar de emprego nos próximos 6 meses (0 = Não, 1 = Sim)      | Nominal          | Inteiro (Binário)          |
 
 ---
 
