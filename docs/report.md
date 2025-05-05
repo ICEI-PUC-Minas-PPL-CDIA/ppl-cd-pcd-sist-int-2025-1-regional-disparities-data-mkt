@@ -1,4 +1,4 @@
-#  Diferenças regionais no mercado de dados do Brasil. 
+#  Diferenças regionais no mercado de TI do Brasil. 
   
 Alunos: 
 Walker Junio Gonzaga Rocha - walker.gonzaga@sga.pucminas.br  
