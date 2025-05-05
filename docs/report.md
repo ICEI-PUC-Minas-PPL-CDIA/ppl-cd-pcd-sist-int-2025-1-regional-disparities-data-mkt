@@ -28,7 +28,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ### Resumo
 
-O mercado de ciência de dados no Brasil apresenta disparidades regionais significativas, influenciadas pela concentração de investimentos em tecnologia em regiões como Sudeste e Sul. Este estudo analisa como a desigualdade de recursos financeiros impacta a carreira dos profissionais, afetando salários, acesso a empregos de qualidade e capacitação técnica. Utilizando dados socioeconômicos, registros de investimentos e machine learning, o projeto identifica padrões críticos (ex: 80% dos investimentos em TI concentrados no Sudeste) e propõe estratégias para redistribuição de recursos, como políticas de incentivo fiscal e adaptação de currículos educacionais. O objetivo é promover equidade, transformando a ciência de dados em um motor de desenvolvimento inclusivo, reduzindo lacunas históricas entre regiões.
+O mercado de dados no Brasil sofre grandes disparidades regionais, com empregos e salários concentrados no Sudeste. Este estudo analisa como fatores geográficos e socioeconômicos afetam a carreira de profissionais de dados, usando bases como RAIS, CAGED e PNAD. Métodos de machine learning identificarão padrões (ex.: 80% das vagas em SP/RJ/MG, salários 30-50% menores no Norte/Nordeste). O objetivo é propor políticas para reduzir desigualdades, como capacitação local e incentivos à descentralização do mercado.
 
 ---
 
