@@ -34,17 +34,17 @@ O mercado de dados no Brasil sofre grandes disparidades regionais, com empregos 
 
 ## Introdução
 
-O crescimento acelerado do mercado de dados no Brasil, embora promissor, é marcado por desigualdades regionais profundas, diretamente vinculadas à distribuição assimétrica de investimentos em tecnologia, infraestrutura e capacitação profissional. Enquanto regiões como Sudeste e Sul concentram polos tecnológicos, recursos financeiros e iniciativas privadas robustas, áreas como Norte e Nordeste enfrentam lacunas críticas que limitam o acesso a salários competitivos, vagas qualificadas e ferramentas inovadoras. Essa disparidade não apenas reflete desigualdades socioeconômicas históricas, mas também molda trajetórias profissionais desiguais para cientistas de dados.
+Apesar do crescimento acelerado do mercado de dados no Brasil, as oportunidades e trajetórias profissionais nessa área são profundamente desiguais, influenciadas não apenas por fatores econômicos e regionais, mas também por características individuais—como formação acadêmica, habilidades técnicas e comportamentais, acesso a redes de contato (networking) e condições socioeconômicas prévias. Enquanto alguns profissionais conseguem ascender rapidamente a cargos bem remunerados em empresas inovadoras, outros enfrentam barreiras persistentes, mesmo possuindo qualificações aparentemente similares. Essas disparidades sugerem que, além das dinâmicas macro do mercado, aspectos individuais desempenham um papel crucial na definição do sucesso profissional em ciência de dados.
 
-Este estudo investiga como o volume de investimento por região impacta fatores-chave da carreira, como remuneração, disponibilidade de empregos de alto valor agregado e acesso a capacitação em tecnologias emergentes (ex: IA generativa, cloud computing). Para isso, analisa dados socioeconômicos, registros de investimentos públicos/privados, pesquisas salariais e métricas de empregabilidade, integrando-os por meio de modelos analíticos e machine learning. O objetivo é identificar padrões como:
+Este estudo busca investigar como variáveis a nível individual—como formação educacional, habilidades técnicas (ex: domínio de Python, machine learning), competências não técnicas (ex: comunicação, resolução de problemas), participação em bootcamps ou cursos extracurriculares, e acesso a mentorias—impactam:
 
--Correlação entre concentração de investimentos em TI e média salarial regional;
+Remuneração: Diferenças salariais entre profissionais com perfis semelhantes, mas trajetórias distintas;
 
--Impacto da presença de polos tecnológicos na taxa de empregabilidade;
+Empregabilidade: Velocidade de inserção no mercado e acesso a vagas de alto valor agregado;
 
--Barreiras educacionais e tecnológicas em regiões com menor aporte financeiro.
+Progressão de carreira: Fatores que aceleram (ou limitam) a ascensão a cargos sênior e de liderança.
 
-A partir desses insights, propõe-se um sistema inteligente para orientar profissionais, empresas e gestores públicos na mitigação dessas assimetrias. Para profissionais, o sistema sugerirá rotas de capacitação alinhadas a regiões em ascensão; para instituições, destacará estratégias de redistribuição de investimentos e adaptação de políticas educacionais. Ao vincular análise de dados a ações práticas, a pesquisa busca transformar a ciência de dados em uma ferramenta de redução de desigualdades, garantindo que o avanço tecnológico beneficie todas as regiões do país de forma equitativa.
+Ao focar no nível individual, esta pesquisa visa não apenas entender as desigualdades no mercado de dados, mas também fornecer ferramentas práticas para que profissionais possam navegar e superar barreiras em suas carreiras—independentemente de seu contexto regional ou socioeconômico inicial.
 
 ---
 
