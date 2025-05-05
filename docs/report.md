@@ -142,53 +142,88 @@ Para instituições de ensino: Adaptar currículos às demandas do mercado.
 
 ###    Objetivo geral
 
-Desenvolver um sistema inteligente para analisar como a disparidade de investimento por região no Brasil afeta a carreira de cientistas de dados, considerando salários, oportunidades de emprego e acesso a qualificação.
+Desenvolver um modelo analítico baseado no State of Data Brazil 2023 para identificar e mensurar como fatores individuais (formação, habilidades técnicas e comportamentais, background socioeconômico e acesso a networking) influenciam as disparidades de oportunidades, remuneração e progressão de carreira no mercado brasileiro de ciência de dados.
 
-####    Objetivos específicos
+###   Objetivos Específicos
 
-1- Mapear desigualdades regionais – Comparar como o volume de investimento em tecnologia impacta salários e disponibilidade de vagas para cientistas de dados em cada região.
+*1-Mapear o perfil individual dos profissionais*
 
-2- Avaliar o acesso a capacitação – Verificar se regiões com menos investimento têm menor oferta de cursos e domínio de ferramentas avançadas (como IA e cloud computing).
+➡️ Analisar a distribuição de formação acadêmica (STEM vs não-STEM), modalidades de capacitação (graduação, pós, cursos livres) e sua correlação com níveis salariais;
 
-3- Identificar padrões de migração – Analisar se profissionais de regiões com poucos recursos mudam para polos tecnológicos em busca de melhores oportunidades.
+➡️ Identificar as combinações de habilidades técnicas (ferramentas, linguagens) mais valorizadas em cada estágio da carreira;
+
+➡️ Avaliar o impacto de fatores socioeconômicos.
+
+*2-Mensurar como variáveis como gênero, raça, região de origem e tipo de instituição de formação afetam:*
+
+➡️ Tempo para ingresso no mercado;
+
+➡️ Progressão para cargos sênior e de liderança;
+
+➡️ Acesso a oportunidades em empresas de elite.
 
 ---
 
 ###    Justificativas
 
-A investigação sobre como os investimentos regionais em tecnologia impactam a carreira de cientistas de dados justifica-se por três fatores críticos:
+A investigação sobre como fatores individuais impactam a carreira de cientistas de dados no Brasil justifica-se por três questões críticas:
 
-1- *Desigualdade Estrutural*
+*1. Desigualdade Oportunidades Ocultas*
 
-Dados revelam que 70% dos investimentos em TI no Brasil concentram-se no Sudeste (ABES, 2023), criando um abismo salarial e de oportunidades entre regiões. Enquanto um cientista de dados em São Paulo pode ganhar R$12.000,00 por mês, no Nordeste, a média cai para R$7.000,00 por mês (Catho, 2023).
+Dados do State of Data Brazil 2023 revelam que:
 
-2- *Fuga de Talentos*
+-Profissionais com formação em STEM (Ciência, Tecnologia, Engenharia e Matemática) têm 30% mais chances de alcançar cargos sênior;
 
-A falta de infraestrutura e empregos qualificados em regiões com baixo investimento força profissionais a migrarem para grandes centros, esvaziando o potencial tecnológico local.
+-Quem domina inglês avançado recebe propostas até 50% melhores em empresas globais;
 
-3- *Falta de Dados para Decisões Estratégicas*
+-Mulheres e profissionais negros ocupam apenas 25% dos cargos de liderança em dados, mesmo com qualificação equivalente.
 
-Não há sistemas que liguem diretamente volume de investimento → oportunidades de carreira → capacitação necessária por região. Isso prejudica:
+Essas disparidades não são explicadas apenas por competência técnica, mas por barreiras invisíveis: acesso a networking, viés em processos seletivos e falta de mentoria.
 
-❌Profissionais: Escolhem formações não alinhadas às demandas locais;
+*2. Capacitação Desalinhada com o Mercado*
 
-❌Governos: Não identificam onde priorizar incentivos fiscais;
+-62% dos profissionais aprendem ferramentas por conta própria (cursos online, bootcamps), mas muitos não sabem quais habilidades priorizar para crescer na carreira;
 
-❌Empresas: Perdem talentos por não entenderem disparidades regionais.
+-Empresas reclamam da falta de soft skills (comunicação, gestão) em candidatos técnicos, mas poucos cursos focam nisso;
 
-*Impacto Social*
+-Quem vem de instituições menos prestigiadas ou regiões periféricas enfrenta dificuldades para ser reconhecido, mesmo com conhecimento equivalente.
 
-Este estudo visa transformar dados em ações concretas:
+*3. Falta de Dados para Decisões Estratégicas*
 
-✔️Redistribuição de recursos: Identificar regiões subfinanciadas para políticas públicas;
+Não há sistemas que cruzem:
 
-✔️Democratização do conhecimento: Adaptar cursos às reais necessidades de cada localidade;
+✔ Perfil individual → Habilidades mais valorizadas no mercado;
 
-✔️Retenção de talentos: Mostrar oportunidades em regiões além dos grandes polos.
+✔ Trajetórias alternativas → Como profissionais sem diploma tradicional alcançaram sucesso;
 
-Por que focar em investimento?
-É a raiz das desigualdades:
-Baixo investimento → Pouca infraestrutura → Menos empregos → Profissionais migram → Região se estagna
+✔ Barreiras socioeconômicas → Quais fatores (além da técnica) impedem a progressão.
+
+Isso prejudica:
+
+❌ Profissionais: Escolhem capacitações que não trazem retorno financeiro ou oportunidades reais;
+
+❌ Empresas: Perdem talentos qualificados por focarem apenas em currículos tradicionais;
+
+❌ Instituições de ensino: Não adaptam cursos às demandas reais do mercado.
+
+Impacto Social
+
+Este estudo visa transformar dados em ações práticas:
+
+✅ Para profissionais:
+
+-Identificar quais habilidades (técnicas e comportamentais) priorizar;
+
+-Mostrar rotas alternativas de capacitação com base em trajetórias reais de sucesso;
+
+-Ajudar grupos sub-representados a superar barreiras de acesso.
+
+✅ Para empresas:
+
+-Reduzir vieses em contratações e valorizar habilidades além do diploma;
+
+-Criar programas de mentoria para talentos em início de carreira.
+
 
 ##    Público alvo
 
