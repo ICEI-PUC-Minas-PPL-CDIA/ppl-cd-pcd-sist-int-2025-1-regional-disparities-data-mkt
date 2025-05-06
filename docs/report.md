@@ -323,7 +323,7 @@ O projeto utiliza o dataset da planilha unificada da State_of_data_2023 com Micr
    - Faixa salarial média entre R$ 8.001-12.000
    - 73.51% consideram mudar de emprego nos próximos 6 meses
 
-## 📊 5. Gráficos Adicionais (Python)
+## 📊 5. Gráficos Adicionais
 
 ### Distribuição de Idade
 
