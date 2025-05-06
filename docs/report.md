@@ -237,262 +237,111 @@ Este estudo tem como público-alvo profissionais em diferentes estágios da carr
 ---
 ## Análise exploratórida dos dados
 
-## **📌 1. Introdução State of data_BR_2023 ( Base Principal)**  
-O nosso projeto vai utilizar o dataset "State of data_BR_2023" como principal fonte de dados. Essa base de dados busca relacionar as regioes do Brasil com o mercado de Dados Brasileiro.
 
+## 📌 1. Introdução
+O projeto utiliza o dataset da planilha unificada da State_of_data_2023 com Microdados(MCTI) como principal fonte de dados, que relaciona os estados brasileiros com o mercado de dados, incluindo informações sobre investimentos, características demográficas dos profissionais e condições de trabalho.
 
-## 📊 2. Atributos Analisados  
+## 📊 2. Atributos Analisados (Dicionário de Dados)
 
-# Dicionário de Dados - State of Data 2023
+| Atributo | Descrição | Escala do Dado | Tipo de Dado |
+|----------|-----------|----------------|--------------|
+| ESTADO | Estado brasileiro onde o profissional atua | Nominal | Texto (Categórico) |
+| INVESTIMENTO EM MILHÕES | Valor investido no estado (em milhões de R$) | Contínuo | Float |
+| IDADE | Idade dos participantes em anos completos | Discreta | Inteiro |
+| GÊNERO | Identificação de gênero (Masculino, Feminino, etc.) | Nominal | Texto (Categórico) |
+| REGIÃO ONDE MORA | Região geográfica do Brasil | Nominal | Texto (Categórico) |
+| MUDOU DE ESTADO | Se já mudou de estado (0 = Não, 1 = Sim) | Nominal | Inteiro (Binário) |
+| NÍVEL DE ENSINO | Grau de escolaridade | Ordinal | Texto (Ordinal) |
+| SITUAÇÃO DE TRABALHO | Situação atual de emprego | Nominal | Texto (Categórico) |
+| NÍVEL | Nível profissional (Júnior, Pleno, Sênior) | Ordinal | Texto (Ordinal) |
+| FAIXA SALARIAL | Faixa de remuneração mensal | Ordinal | Texto (Ordinal) |
+| TEMPO NA ÁREA DE DADOS | Anos de experiência na área | Discreta | Texto (Ordinal) |
+| PRETENDE MUDAR DE EMPREGO | Intenção de mudança em 6 meses | Nominal | Texto (Categórico) |
+| FORMA DE TRABALHO | Modalidade de trabalho (Remoto, Híbrido, Presencial) | Nominal | Texto (Categórico) |
+| COR/RAÇA/ETNIA | Autoidentificação racial/étnica | Nominal | Texto (Categórico) |
+| EXPERIÊNCIA PROFISSIONAL AFETADA | Percepção sobre impacto na experiência | Nominal | Inteiro (Binário) |
+| EXPERIÊNCIA PREJUDICADA POR RAÇA | Se já teve experiência prejudicada por raça | Nominal | Inteiro (Binário) |
+| EXPERIÊNCIA PREJUDICADA POR GÊNERO | Se já teve experiência prejudicada por gênero | Nominal | Inteiro (Binário) |
 
-| Atributo                          | Descrição                                                                 | Escala do Dado   | Tipo de Dado               |
-|-----------------------------------|---------------------------------------------------------------------------|------------------|----------------------------|
-| IDADE                             | Idade dos participantes em anos completos                                 | Discreta         | Inteiro                    |
-| GÊNERO                            | Identificação de gênero (Masculino, Feminino, Não-binário, etc.)          | Nominal          | Texto (Categórico)         |
-| REGIÃO ONDE MORA                  | Região geográfica do Brasil onde reside (Norte, Nordeste, etc.)           | Nominal          | Texto (Categórico)         |
-| MUDOU DE ESTADO                   | Indica se já mudou de estado brasileiro (0 = Não, 1 = Sim)                | Nominal          | Inteiro (Binário)          |
-| NÍVEL DE ATUAÇÃO                  | Nível profissional na área de dados (Júnior, Pleno, Sênior, etc.)         | Ordinal          | Texto (Ordinal)            |
-| FAIXA SALARIAL                    | Faixa de remuneração mensal em Reais (R$)                                 | Contínuo         | Float (Contínuo)           |
-| TEMPO NA ÁREA DE DADOS            | Anos de experiência profissional na área de dados                         | Discreta         | Float (Contínuo)           |
-| SITUAÇÃO DE TRABALHO              | Situação atual de emprego (Empregado, Autônomo, Desempregado, etc.)       | Nominal          | Texto (Categórico)         |
-| FORMA DE TRABALHO                 | Modalidade de trabalho (Remoto, Híbrido, Presencial)                       | Nominal          | Texto (Categórico)         |
-| COR/RAÇA/ETNIA                    | Autoidentificação racial/étnica do participante                           | Nominal          | Texto (Categórico)         |
-| EXPERIÊNCIA PROFISSIONAL AFETADA  | Percepção sobre impacto na experiência profissional (0 = Não, 1 = Sim)    | Nominal          | Inteiro (Binário)          |
-| EXPERIÊNCIA PREJUDICADA POR RAÇA  | Se já teve experiência prejudicada por raça/etnia (0 = Não, 1 = Sim)      | Nominal          | Inteiro (Binário)          |
-| EXPERIÊNCIA PREJUDICADA POR GÊNERO| Se já teve experiência prejudicada por identidade de gênero (0 = Não, 1 = Sim) | Nominal      | Inteiro (Binário)          |
-| NÍVEL DE ENSINO                   | Grau de escolaridade (Ensino Médio, Graduação, Pós-graduação, etc.)       | Ordinal          | Texto (Ordinal)            |
-| PRETENDE MUDAR DE EMPREGO         | Intenção de mudar de emprego nos próximos 6 meses (0 = Não, 1 = Sim)      | Nominal          | Inteiro (Binário)          |
+## 📈 3. Estatísticas Descritivas
 
----
+### Dados Numéricos
 
-## **📈 3. Estatísticas Descritivas**  
+| Estatística | Investimento (milhões) | Idade |
+|-------------|------------------------|-------|
+| Média | 5597.84 | 31.52 |
+| Mediana | 2206.6 | 30 |
+| Moda | 11825.2 | 27 |
+| Desvio Padrão | 5260.78 | 7.08 |
+| Mínimo | 21.2 | 18 |
+| Máximo | 11825.2 | 70 |
+| Q1 (25%) | 21.2 | 18 |
+| Q3 (75%) | 11825.2 | 35 |
 
-### **📌 Dados Numéricos**  
+### Dados Categóricos Principais
 
-| **Estatística**   | **Idade** | **Faixa Salarial (R$)** | **Tempo na Área (Anos)** |
-|------------------|----------|------------------------|--------------------------|
-| **Média**        | 31.2     | 9,500                  | 3.8                      |
-| **Mediana**      | 30       | 9,000                  | 3.0                      |
-| **Desvio Padrão**| 6.8      | 5,200                  | 2.5                      |
-| **Mínimo**       | 18       | 1,000                  | 0 (iniciantes)           |
-| **Máximo**       | 70       | 30,000                 | 15 (veteranos)           |
-| **Q1 (25%)**     | 26       | 6,000                  | 2.0                      |
-| **Q3 (75%)**     | 34       | 12,000                 | 5.0                      |
+#### Gênero
 
-🔹 **Insights**:  
-- **Salários** variam muito (DP = R$ 5,200), indicando disparidades.  
-- **Experiência**: 75% dos profissionais têm até 5 anos na área (mercado em crescimento).  
+![image](https://github.com/user-attachments/assets/99afcd3b-2c71-4d8c-a614-390d5314fd29)
 
----
+"Predomínio masculino (75%) no mercado de dados brasileiro"
 
-### **📌 Dados Categóricos**  
+#### Forma de Trabalho
 
-#### **🔸 Gênero**  
-| **Gênero**       | **Frequência** | **%** |
-|------------------|---------------|-------|
-| Masculino        | 65%           | 65%   |
-| Feminino         | 32%           | 32%   |
-| Outros/Não informado | 3%       | 3%    |
+![image](https://github.com/user-attachments/assets/889adf83-4da2-49f1-9ca0-c3368ea1afdd)
 
-## 📊 Análise de Gênero
-📉 **Gráfico**:  
-![image](https://github.com/user-attachments/assets/76b44511-3faf-482a-9222-cf256de0222d)
+"Modelo remoto lidera (45%), seguido por híbrido (35%) e presencial (20%)"
 
-*(Resultado: Gráfico de pizza mostrando predominância masculina.)*  
+#### Distribuição por Região
 
----
+![image](https://github.com/user-attachments/assets/ade4b8c3-d39d-4831-a207-2c79d3788b4e)
 
-#### **🔸 Forma de Trabalho**  
-| **Forma**   | **Frequência** | **%** |
-|-------------|---------------|-------|
-| Remoto      | 45%           | 45%   |
-| Híbrido     | 35%           | 35%   |
-| Presencial  | 20%           | 20%   |
+"Sudeste concentra os maiores investimentos em dados no país"
 
-📊 **Gráfico**:  
-![image](https://github.com/user-attachments/assets/bfcbe605-37f6-42d3-b3cb-45248ca2acc9)
+## 🔍 4. Principais Insights
 
-*(Resultado: Barra mostrando que **remoto é o mais comum**.)*  
+1. **Perfil predominante**: 
+   - Homem (75%), 30 anos, trabalha remotamente (45%), com 3-5 anos de experiência
+   - Maioria empregada CLT (95.31%)
 
----
+2. **Distribuição geográfica**:
+   - Sudeste concentra maiores investimentos
+   - Norte tem menor representação no mercado de dados
 
-## **📌 4. Análise por Região**  
+3. **Experiência profissional**:
+   - 77.75% não acreditam que sua experiência foi afetada
+   - 9.51% relataram preconceito por raça
+   - 14.37% relataram preconceito por gênero
 
-### **🔹 Distribuição Geográfica**  
-| **Região**   | **% de Profissionais** | **Média Salarial (R$)** |
-|--------------|-----------------------|-------------------------|
-| Sudeste      | 45%                   | 10,500                  |
-| Sul          | 25%                   | 9,800                   |
-| Nordeste     | 15%                   | 7,200                   |
-| Centro-Oeste | 10%                   | 8,900                   |
-| Norte        | 5%                    | 6,500                   |
+4. **Mobilidade**:
+   - 79.69% já mudaram de estado brasileiro
 
-📌 **Insight**:  
-- **Sudeste** tem maior concentração e salários mais altos.  
-- **Norte/Nordeste** têm menores médias salariais.  
+5. **Educação**:
+   - Nível médio de ensino é graduação/pós-graduação
 
-📈 **Gráfico de Dispersão (Salário vs. Experiência por Região)**  
-![image](https://github.com/user-attachments/assets/bc262740-3734-49ce-8f99-5e1effcbb376)
+6. **Mercado de trabalho**:
+   - Faixa salarial média entre R$ 8.001-12.000
+   - 73.51% consideram mudar de emprego nos próximos 6 meses
 
-*(Mostra que profissionais do **Sudeste** com mais experiência têm os maiores salários.)*  
+## 📊 5. Gráficos Adicionais (Python)
 
----
+### Distribuição de Idade
 
-## **🔍 5. Principais Insights**  
+![image](https://github.com/user-attachments/assets/af58cb1d-e886-4bbf-ad68-c04448cb1ab9)
 
-✅ **1. Perfil predominante**:  
-   - Homem (65%), 30 anos, trabalha remotamente, no Sudeste, com 3-5 anos de experiência.  
+"Maioria dos profissionais tem entre 25-38 anos (média de 31.5 anos)"
 
-✅ **2. Disparidades salariais**:  
-   - **Sudeste** paga melhor (R$ 10,5k vs. R$ 6,5k no Norte).  
-   - Quanto mais experiência, maior o salário (correlação positiva).  
+### Nível de Experiência
 
-✅ **3. Mercado em crescimento**:  
-   - 75% têm até 5 anos de experiência (área ainda em expansão).  
+![image](https://github.com/user-attachments/assets/990e2add-fb6d-47a8-b973-3099c56da60c)
 
-✅ **4. Tendência de trabalho**:  
-   - **Remoto (45%)** > Híbrido (35%) > Presencial (20%).  
+"40% dos profissionais têm até 2 anos de experiência na área"
 
+### Relação Investimento x Salário por Estado
 
----
+![image](https://github.com/user-attachments/assets/dc1a9d59-4173-4439-b321-610c0c1a99e7)
 
-# Análise Detalhada dos Investimentos em Ciência e Tecnologia por Região e Estado em 2023 (BASE AUXILIAR 3)
-
-## 1. **📌Introdução Base MCTI (Base Auxiliar 3)**
-Esta análise foca na variação dos dados do ano 2019 até 2023, do dataset "Brasil: Dispêndios de governo estaduais em ciência e tecnologia (G2T)", examinando a distribuição regional e estadual dos investimentos nos 5 mais recentes anos disponíveis.
-
-## 2. 📊**Atributos Analisados**
-
-| Atributo | Descrição | Tipo de Dado | Escala |
-|----------|-----------|--------------|--------|
-| Região | Identifica a região geográfica | Texto (Categórico) | Nominal |
-| Estado | Unidade da Federação | Texto (Categórico) | Nominal |
-| Investimento 2019-2023 | Valor aplicado em C&T (em milhões R$) | Numérico | Contínuo |
-| Participação % | Percentual no total nacional | Numérico | Razão |
-| Variação 2019-2023 | Mudança em relação ao ano anterior | Numérico | Intervalar |
-
-## 3. **📈Estatísticas Descritivas**
-
-### Dados Numéricos (Valores em milhões R$)
-
-# Estatística Descritiva Consolidada - Investimentos MCTI (2019-2023)
-
-| Categoria   | Estatística    | Investimento (R$ mi) | Participação (%) | Variação (%) |
-|-------------|---------------|----------------------:|-----------------:|-------------:|
-| **Regiões** | Média         | 4,500.06            | 19.18           | 8.72        |
-|             | Mediana       | 14,801.2            | 15.80           | 7.15        |
-|             | Desvio Padrão | 5,354.06            | 13.42           | 6.33        |
-|             | Mínimo        | 644.30              | 3.48            | -1.53       |
-|             | Máximo        | 18,426.60           | 49.45           | 22.15       |
-|             | Q1 (25%)      | 1,378.70            | 7.64            | 3.92        |
-|             | Q3 (75%)      | 3,815.00            | 25.63           | 12.40       |
-| **Estados** | Média         | 833.35              | 1.49            | 15.24       |
-|             | Mediana       | 295.90              | 0.57            | 12.60       |
-|             | Desvio Padrão | 2199.9              | 2.26            | 18.75       |
-|             | Mínimo        | 6.70                | 0.03            | -48.21      |
-|             | Máximo        | 2,323.50            | 9.37            | 89.55       |
-|             | Q1 (25%)      | 84.60               | 0.34            | 3.45        |
-|             | Q3 (75%)      | 451.00              | 1.82            | 24.30       |
-
-🔹 **Insights:**
-- Grande disparidade (DP alto) entre estados
-- Mediana muito abaixo da média indica concentração em poucos estados
-- 75% dos estados investiram menos de 1,1 bilhão
-
-## 4. Análise por Região (2023)
-
-| Ano  | Região        | Investimento (R$ mi) | % Total | Estados | Crescimento Anual (%) | Média por Estado (R$ mi) |
-|------|---------------|---------------------:|--------:|--------:|----------------------:|-------------------------:|
-| 2019 | Norte         | 646,3               | 3,48%   | 7       | -                     | 92,33                   |
-| 2019 | Nordeste      | 2.201,70            | 11,86%  | 9       | -                     | 244,63                  |
-| 2019 | Sudeste       | 12.314,00           | 66,31%  | 4       | -                     | 3.078,50                |
-| 2019 | Sul           | 2.130,10            | 11,47%  | 3       | -                     | 710,03                  |
-| 2019 | Centro-Oeste  | 1.279,70            | 6,89%   | 4       | -                     | 319,93                  |
-| 2020 | Norte         | 687,0               | 3,76%   | 7       | +6,30%                | 98,14                   |
-| 2020 | Nordeste      | 1.952,40            | 10,67%  | 9       | -11,33%               | 216,93                  |
-| 2020 | Sudeste       | 11.976,30           | 65,48%  | 4       | -2,74%                | 2.994,08                |
-| 2020 | Sul           | 2.416,20            | 13,21%  | 3       | +13,44%               | 805,40                  |
-| 2020 | Centro-Oeste  | 1.256,40            | 6,87%   | 4       | -1,82%                | 314,10                  |
-| 2021 | Norte         | 995,9               | 4,50%   | 7       | +44,96%               | 142,27                  |
-| 2021 | Nordeste      | 2.300,50            | 10,38%  | 9       | +17,82%               | 255,61                  |
-| 2021 | Sudeste       | 14.801,20           | 66,80%  | 4       | +23,59%               | 3.700,30                |
-| 2021 | Sul           | 2.601,40            | 11,74%  | 3       | +7,66%                | 867,13                  |
-| 2021 | Centro-Oeste  | 1.457,70            | 6,58%   | 4       | +16,03%               | 364,43                  |
-| 2022 | Norte         | 1.378,70            | 5,00%   | 7       | +38,44%               | 196,96                  |
-| 2022 | Nordeste      | 2.930,70            | 10,63%  | 9       | +27,39%               | 325,63                  |
-| 2022 | Sudeste       | 18.426,60           | 66,82%  | 4       | +24,50%               | 4.606,65                |
-| 2022 | Sul           | 3.163,80            | 11,47%  | 3       | +21,61%               | 1.054,60                |
-| 2022 | Centro-Oeste  | 1.675,30            | 6,08%   | 4       | +14,93%               | 418,83                  |
-| 2023 | Norte         | 1.442,10            | 5,57%   | 7       | +4,60%                | 206,01                  |
-| 2023 | Nordeste      | 3.139,20            | 12,12%  | 9       | +7,11%                | 348,80                  |
-| 2023 | Sudeste       | 15.795,70           | 60,97%  | 4       | -14,27%               | 3.948,93                |
-| 2023 | Sul           | 3.815,00            | 14,73%  | 3       | +20,59%               | 1.271,67                |
-| 2023 | Centro-Oeste  | 1.717,70            | 6,63%   | 4       | -9,70%                | 429,43                  |
-
-**Gráfico:** 
-![image](https://github.com/user-attachments/assets/b0131494-3e81-456a-b89a-49f4de6737ce)
-
-
-**Principais Observações:**
-- Sudeste manteve liderança (60-66% do total).
-- Norte apresentou maior crescimento acumulado (123% 2019-2023).
-- 2022 foi ano de pico para Sudeste (R$ 18,4 bi).
-- Sul teve crescimento consistente (média +15,8% ao ano).
-- Centro-Oeste foi a região mais estável.
-
-## 5. Top 10 Estados
-
-| Posição | Estado            | Região        | Investimento Total (R$ mi) | % Brasil | Variação 2019-2023 (%) |
-|---------|-------------------|---------------|---------------------------:|---------:|-----------------------:|
-| 1       | São Paulo         | Sudeste       | 59.156,80                | 23,98%   | +18,91%               |
-| 2       | Rio de Janeiro    | Sudeste       | 10.937,10                | 4,43%    | +59,74%               |
-| 3       | Minas Gerais      | Sudeste       | 5.565,00                 | 2,26%    | +72,68%               |
-| 4       | Paraná            | Sul           | 5.120,50                 | 2,08%    | +89,55%               |
-| 5       | Rio Grande do Sul | Sul           | 4.992,40                 | 2,02%    | +48,91%               |
-| 6       | Bahia             | Nordeste      | 4.067,60                 | 1,65%    | +43,56%               |
-| 7       | Santa Catarina    | Sul           | 4.033,10                 | 1,63%    | +64,22%               |
-| 8       | Distrito Federal  | Centro-Oeste  | 3.945,50                 | 1,60%    | +27,03%               |
-| 9       | Ceará             | Nordeste      | 2.725,60                 | 1,10%    | +58,32%               |
-| 10      | Goiás             | Centro-Oeste  | 2.418,90                 | 0,98%    | +39,44%               |
-
-**Gráfico:** [Top 10 estados com valores absolutos e variação]
-![image](https://github.com/user-attachments/assets/2169b556-5150-465a-91f7-334dc105ce4d)
-
-
-**Crescimentos em destaques:**
-1. Paraná (+89,6%)
-2. Minas Gerais (+72,7%)
-3. Santa Catarina (+64,2%)
-   
-**Quedas Expressivas (fora do Top 10):**
-- Amapá (-12,4%)
-- Roraima (-8,7%)
-
-**Dados Complementares:**
-- Estados representam 41,73% do investimento nacional
-- 7 dos 10 estados são do Sudeste/Sul
-
-## **📉6. Análise de Disparidades**
-
-**Razão entre maior e menor investimento:**
-- Estadual: SP (11.825,20) / AP (21,20) = 558x
-- Regional: Sudeste (15.795,70) / Norte (1.442,10) = 11x
-
-**Participação dos 5 maiores:**
-1. SP (45,64%)
-2. PR (8,97%)
-3. RJ (8,52%)
-4. MG (5,12%)
-5. BA (4,19%)
-**Total:** 72,44% do investimento nacional
-
-## 7.🔍 Principais Insights
-
-✅1. **Concentração extrema:** 3 estados respondem por quase 60% do total
-✅2. **Sul em destaque:** Única região com crescimento acima de 20%
-✅3. **Queda no Sudeste:** Redução de 14,27% puxada por São Paulo
-✅4. **Nordeste consistente:** Crescimento moderado (7,11%) com Bahia se destacando
-✅5. **Disparidades regionais:** Média por estado no Sudeste é 19x maior que no Norte
+"Estados com maior investimento tendem a ter salários médios mais altos"
 
 ---
 
