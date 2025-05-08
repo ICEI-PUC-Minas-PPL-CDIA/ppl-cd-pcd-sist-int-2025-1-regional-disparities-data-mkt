@@ -361,194 +361,36 @@ O projeto utiliza o dataset da planilha unificada da State_of_data_2023 com Micr
 | EXPERIÊNCIA EM DADOS                  | Nenhuma=0, <1 ano=1, 1-2 anos=2, 3-4 anos=3, 4-6 anos=4, 5-6 anos=5, 7-10 anos=6.                                                                                                                                                                                |
 | SITUAÇÃO DE TRABALHO                  | Prefiro não informar=0, Desempregado (busca)=1, Empreendedor/CNPJ=2, CLT=3, Estagiário=4, Freelancer=5, Servidor Público=6, Estudante (graduação)=7, Estudante (pós-graduação)=8, Acadêmico/Pesquisador=9, Trabalho fora do Brasil=10, Remoto fora do Brasil=11. |
 | FORMA DE TRABALHO                     | 100% presencial=0, 100% remoto=1, Híbrido fixo=2, Híbrido flexível=3.                                                                                                                                                                                            |
-| INVESTIMENTO 2019-2023                | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
-| PARTICIPAÇÃO%                         | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
-| CATEGORIA ADMINISTRATIVA              | Federal=1, Estadual=2, Municipal=3, Privada=4.                                                                                                                                                                                                                   |
-| DIMENSÃO DO CURSO                     | Presencial no Brasil=1, EAD no Brasil=2, Presencial no exterior=3, EAD no exterior=4.                                                                                                                                                                            |
-| TOTAL DE VAGAS( QT_VG _TOTAL)         | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
-| VAGAS NOVAS(QT_VG_NOVA)               | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
-| TOTAL DE INSCRITOS(QT_INSCRITO_TOTAL) | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
-| INGRESSANTES(QT_ING)                  | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
-| CONCLUINTES(QT_CONC)                  | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
-
+| INVESTIMENTO 2023                     | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
 
 ## Indução de modelos
 
 ### Modelo 1: Classificação com árvore de decisão
 
-# Relatório de Análise de Dados Automatizada
+Após análise dos modelos feitos com região como atributo alvo, decidimos alterar a pergunta orientada a dados.
+O novo modelo de classificação tem como objetivo classificar os indívuos nos 3 níveis de atuação: Júnior, Pleno e Sênior.
 
-## Modelo 1: Árvore de Decisão (Classificação)
+### Árvore de Decisão:
+![Árvore de Decisão](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/decision_tree_optimized_current_model.png)
 
-### Justificativa e Configuração
-**Algoritmo selecionado:** Árvore de Decisão para classificação
+### Matriz de confusão:
+![Matriz de Confusão](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/confusion_matrix_current_model.png)
 
-**Justificativa:** 
-- Ideal para problemas com múltiplas classes (26 estados brasileiros)
-- Facilita interpretação visual das regras de decisão
-- Lida bem com dados categóricos após pré-processamento
+### Acurácia:
 
-**Amostragem:**
-- Divisão 70/30 (treino/teste) com estratificação para manter proporção das classes
-- Random state fixo (42) para reprodutibilidade
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| Júnior    | 0.75      | 0.81   | 0.77     | 207     |
+| Pleno     | 0.59      | 0.63   | 0.61     | 278     |
+| Sênior    | 0.82      | 0.75   | 0.79     | 361     |
+|           |           |        |          |         |
+| **Accuracy**       |           |        | 0.72     | 846     |
+| **Macro Avg**      | 0.72      | 0.73   | 0.72     | 846     |
+| **Weighted Avg**   | 0.73      | 0.72   | 0.73     | 846     |
 
-**Parâmetros:**
-```python
-dt = DecisionTreeClassifier(
-    max_depth=3,  # Limita profundidade para evitar overfitting
-    random_state=42  # Semente aleatória
-)
-```
+Acurácia do modelo: 0.72
 
-**Código comentado:**
-```python
-# Pré-processamento
-X = pd.get_dummies(df.drop(target_col, axis=1))  # One-hot encoding
-y = df[target_col]  # Variável alvo
-
-# Divisão dos dados
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, 
-    test_size=0.3, 
-    random_state=42,
-    stratify=y  # Mantém proporção das classes
-)
-
-# Treinamento
-dt.fit(X_train, y_train)  # Indução do modelo
-```
-
-### Resultados
-**Métricas de desempenho:**
-- Acurácia: 68.48%
-- Matriz de Confusão: (ver imagem abaixo)
-
-![1  Treinando Árvore de Decisão (Classificação)  State Of data_BR_2023_Trasnformado2023 (1) xls](https://github.com/user-attachments/assets/f0c65939-286a-4b1e-be36-d9fb3389fa11)
-
-
-**Relatório de Classificação:**
-| Estado               | Precision | Recall | F1-Score | Support |
-|----------------------|-----------|--------|----------|---------|
-| Minas Gerais (MG)    | 1.00      | 1.00   | 1.00     | 151     |
-| Paraná (PR)          | 0.21      | 1.00   | 0.35     | 117     |
-| São Paulo (SP)       | 1.00      | 1.00   | 1.00     | 569     |
-| ...                  | ...       | ...    | ...      | ...     |
-
-
-### Interpretação do Modelo
-**Árvore de decisão gerada:**
-![Árvore de Decisão State Of data_BR_2023_Trasnformado2023 (1) xls](https://github.com/user-attachments/assets/d1240406-00bc-40b6-853e-b97a76f5522e)
-
-
-**Feature Importance:**
-1. ('P1_i_2 ', 'Regiao onde mora') - 0.65
-2. ('P2_h ', 'Faixa salarial') - 0.20
-3. ('P1_a ', 'Idade') - 0.10
-
-**Principais regras:**
-1. SE região = Sudeste ENTÃO estado = São Paulo (acurácia 92%)
-2. SE região = Sul E faixa salarial > R$8.000 ENTÃO estado = Paraná
-3. SE região = Nordeste E idade < 35 ENTÃO estado = Bahia
-
----
-
-## Modelo 2: Random Forest (Classificação)
-
-### Justificativa e Configuração
-**Algoritmo selecionado:** Random Forest
-
-**Justificativa:**
-- Melhoria sobre árvore única para evitar overfitting
-- Alta performance com múltiplas classes
-- Feature importance mais robusta
-
-**Parâmetros:**
-```python
-rf = RandomForestClassifier(
-    n_estimators=100,  # Número de árvores
-    random_state=42
-)
-```
-
-### Resultados
-
-Treinando Random Forest (Classificação)...
-
-Acurácia do Random Forest: 100.00%
-
-![2  Treinando Random Forest (Classificação)  State Of data_BR_2023_Trasnformado2023 (1) xls](https://github.com/user-attachments/assets/510f3b31-6bce-4049-a587-f4421b3e102a)
-
-Treinando Regressão Logística...
-
-Acurácia do Regressão Logística: 99.86%
-![3  Treinando Regressão Logística  State Of data_BR_2023_Trasnformado2023 (1) xls](https://github.com/user-attachments/assets/90f7c77f-6b0a-4ff6-8ea1-98b68e4e6f18)
-
-**Métricas:**
-- Acurácia: 100%
-- Todas as classes com precision/recall de 1.0
-
-### Interpretação
-**Feature Importance:**
-1. ('P1_i_2 ', 'Regiao onde mora') - 0.60
-2. ('P2_g ', 'Nivel') - 0.25
-3. ('P1_j ', 'Mudou de Estado?') - 0.10
-
----
-
-## Modelo 3: Árvore de Decisão (Regressão)
-
-### Justificativa
-**Base:** Microdados Definitivas.xls  
-**Variável alvo:** QT_INSCRITO_TOTAL  
-**Tipo:** Regressão
-
-**Métricas:**
-- MSE: 2883.69
-- R²: 0.31 (explica 31% da variância)
-
-**Feature Importance:**
-1. QT_VG_TOTAL - 0.45
-2. TP_DIMENSAO - 0.30
-3. NO_REGIAO - 0.15
-
-[1] Treinando Árvore de Decisão (Regressão)...
-
-Métricas do Árvore de Decisão:
-MSE: 2883.69
-R²: 0.31
-![1  TREINANDO ÁRVORE DE DECISÃO(REGRESSÃO)  Microdados Definitivas (2) xls](https://github.com/user-attachments/assets/93b29e59-6294-4acf-a481-4b9b0ac8177d)
-
-[2] Treinando Random Forest (Regressão)...
-
-Métricas do Random Forest:
-MSE: 4702.91
-R²: -0.13
-![2  Treinando Random Forest (Regressão)   Microdados Definitivas (2) xls](https://github.com/user-attachments/assets/9a7d9b70-9cfc-440c-ba22-7382403ed01a)
-
-[3] Treinando Regressão Linear...
-
-Métricas do Regressão Linear:
-MSE: 4023.20
-R²: 0.04
-![3  Treinando Regressão Linear  Microdados Definitivas (2) xls](https://github.com/user-attachments/assets/99d639a4-6465-4f84-9332-821785e3b292)
-
----
-
-## Conclusões Gerais
-
-1. **State of Data:**
-   - Random Forest obteve 100% de acurácia (possível overfitting)
-   - Variável mais importante: região onde mora
-
-2. **Microdados:**
-   - Modelos de regressão com desempenho moderado (R² 0.31)
-   - Número de vagas é o principal preditor de inscritos
-
-3. **Base MCTI:**
-   - Não processada por insuficiência de dados (apenas 1 registro)
-
-
-### Modelo 3: Associação com Apriori
+### Modelo 2: Associação com Apriori
 
 Associando os demais atributos da base de dados *State of Data*, com o atributo regiões, temos alguns insights interessantes como resultado:
 
@@ -666,7 +508,7 @@ Associando os demais atributos da base de dados *State of Data*, com o atributo 
 | 10 | (Remoto)          | (Nordeste)       | 0.064258  | 0.138850   |
 
 
-### Modelo 4: Classificação com Árvore de Decisão
+### Modelo 3: Classificação com Árvore de Decisão
 
 #### Árvore de Decisão
 
@@ -697,17 +539,9 @@ Associando os demais atributos da base de dados *State of Data*, com o atributo 
 
 ### Interpretação do modelo 1
 
-Durante o reasoning, o sistema inteligente segue um fluxo lógico hierárquico, como: "Se 'FaixaSalarial' ≤ X e 'TempoExperiencia' > Y, então classifique como Região Z", extraído diretamente da estrutura da árvore. Para entender quais atributos mais influenciam as decisões, a análise de feature importances revela que Faixa Salarial, Tempo de Experiência e Nível são as variáveis mais determinantes (ex.: importância de 0.35, 0.25 e 0.15, respectivamente), enquanto atributos como Forma de Trabalho têm impacto marginal. Essa distribuição mostra que o modelo prioriza características socioeconômicas e profissionais para prever a região, alinhando-se a padrões reais de distribuição geográfica de profissionais de dados.
-
-
 ### Resultados obtidos com o modelo 2.
 
-Repita o passo anterior com os resultados do modelo 2.
-
 ### Interpretação do modelo 2
-
-Repita o passo anterior com os parâmetros do modelo 2.
-
 
 ## Análise comparativa dos modelos
 
