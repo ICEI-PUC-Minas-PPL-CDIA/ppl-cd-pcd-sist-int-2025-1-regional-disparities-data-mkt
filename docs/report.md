@@ -267,6 +267,8 @@ O projeto utiliza o dataset da planilha unificada da State_of_data_2023 com Micr
 
 ### Dados Numéricos
 
+Abaixo temos a tabela com as operações estatisticas feitas sobre as colunas da base final ultilizada para a confecção da analise explanatoria, e subsequentemente a criação do modelo de classificação.
+
 | Estatística      | Investimento | Idade   | Gênero | Cor/Raça/Etnia | Afetado ou não | Afetado por raça | Afetado por gênero | Região mora | Mudou de estado | Nível de ensino | Situação de trabalho | Nível | Faixa salarial | Experiência | Trocar emprego | Forma trabalho |
 |------------------|--------------|---------|--------|----------------|----------------|-------------------|--------------------|-------------|------------------|------------------|------------------------|--------|----------------|-------------|----------------|----------------|
 | Média            | 5597,839377  | 31,5246 | 0,7710 | 2,0611         | 0,7775         | 0,0951            | 0,1437             | 2,7950      | 0,7969           | 3,3928           | 0,9531                 | 1,1859 | 9,0014         | 3,4917      | 1,7351         | 1,4489         |
