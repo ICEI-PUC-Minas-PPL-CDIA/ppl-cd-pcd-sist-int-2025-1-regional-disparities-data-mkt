@@ -364,6 +364,7 @@ Abaixo temos a tabela com as operações estatisticas feitas sobre as colunas da
 | SITUAÇÃO DE TRABALHO                  | Prefiro não informar=0, Desempregado (busca)=1, Empreendedor/CNPJ=2, CLT=3, Estagiário=4, Freelancer=5, Servidor Público=6, Estudante (graduação)=7, Estudante (pós-graduação)=8, Acadêmico/Pesquisador=9, Trabalho fora do Brasil=10, Remoto fora do Brasil=11. |
 | FORMA DE TRABALHO                     | 100% presencial=0, 100% remoto=1, Híbrido fixo=2, Híbrido flexível=3.                                                                                                                                                                                            |
 | INVESTIMENTO 2023                     | Variável numérica contínua – não requer codificação.                                                                                                                                                                                                             |
+---
 
 ## Indução de modelos
 
@@ -392,152 +393,46 @@ O novo modelo de classificação tem como objetivo classificar os indívuos nos 
 
 Acurácia do modelo: 0.72
 
-### Modelo 2: Associação com Apriori
+---
 
-Associando os demais atributos da base de dados *State of Data*, com o atributo regiões, temos alguns insights interessantes como resultado:
+### Modelo 2: KNN (Versão preliminar
 
-### Tabela de Associação: Região x Faixa Salarial
-
-| #  | Antecedents                          | Consequents | Support   | Confidence |
-|----|--------------------------------------|-------------|-----------|------------|
-| 0  | (de R$ 8.001/mês a R$ 12.000/mês)    | (Sudeste)   | 0.127001  | 0.583499   |
-| 1  | (Sudeste)                            | (de R$ 8.001/mês a R$ 12.000/mês) | 0.127001  | 0.204672   |
-| 2  | (de R$ 4.001/mês a R$ 6.000/mês)     | (Sudeste)   | 0.094115  | 0.591837   |
-| 3  | (Sudeste)                            | (de R$ 4.001/mês a R$ 6.000/mês)  | 0.094115  | 0.151674   |
-| 4  | (de R$ 12.001/mês a R$ 16.000/mês)   | (Sudeste)   | 0.084163  | 0.616482   |
-| 5  | (Sudeste)                            | (de R$ 12.001/mês a R$ 16.000/mês) | 0.084163  | 0.135635   |
-| 6  | (de R$ 6.001/mês a R$ 8.000/mês)     | (Sudeste)   | 0.080917  | 0.597444   |
-| 7  | (Sudeste)                            | (de R$ 6.001/mês a R$ 8.000/mês)  | 0.080917  | 0.130404   |
-| 8  | (de R$ 3.001/mês a R$ 4.000/mês)     | (Sudeste)   | 0.052358  | 0.703488   |
-| 9  | (de R$ 16.001/mês a R$ 20.000/mês)   | (Sudeste)   | 0.041540  | 0.611465   |
-| 10 | (Sul)                                | (de R$ 8.001/mês a R$ 12.000/mês) | 0.040891  | 0.214286   |
-
-### Tabela de Associação: Região x Idade
-
-| #  | Antecedents | Consequents | Support   | Confidence |
-|----|-------------|-------------|-----------|------------|
-| 0  | (27)        | (Sudeste)   | 0.049546  | 0.673529   |
-| 1  | (28)        | (Sudeste)   | 0.046733  | 0.654545   |
-| 2  | (29)        | (Sudeste)   | 0.043271  | 0.662252   |
-| 3  | (30)        | (Sudeste)   | 0.040242  | 0.628378   |
-| 4  | (26)        | (Sudeste)   | 0.036348  | 0.579310   |
-| 5  | (31)        | (Sudeste)   | 0.034833  | 0.607547   |
-| 6  | (33)        | (Sudeste)   | 0.033535  | 0.695067   |
-| 7  | (32)        | (Sudeste)   | 0.033103  | 0.640167   |
-| 8  | (34)        | (Sudeste)   | 0.028126  | 0.616114   |
-| 9  | (25)        | (Sudeste)   | 0.027477  | 0.577273   |
-| 10 | (35)        | (Sudeste)   | 0.024232  | 0.625698   |
-
-### Tabela de Associação: Região x Gênero
-
-| #  | Antecedents | Consequents | Support   | Confidence |
-|----|-------------|-------------|-----------|------------|
-| 0  | (Sudeste)   | (Masculino) | 0.469710  | 0.756974   |
-| 1  | (Masculino) | (Sudeste)   | 0.469710  | 0.613971   |
-| 2  | (Feminino)  | (Sudeste)   | 0.150801  | 0.641805   |
-| 3  | (Sudeste)   | (Feminino)  | 0.150801  | 0.243026   |
-| 4  | (Masculino) | (Sul)       | 0.145824  | 0.190611   |
-| 5  | (Sul)       | (Masculino) | 0.145824  | 0.764172   |
-| 6  | (Masculino) | (Nordeste)  | 0.084595  | 0.110577   |
-| 7  | (Nordeste)  | (Masculino) | 0.084595  | 0.782000   |
-| 8  | (Centro-oeste) | (Masculino) | 0.052575 | 0.804636   |
-| 9  | (Sul)       | (Feminino)  | 0.045002  | 0.235828   |
-| 10 | (Feminino)  | (Sul)       | 0.045002  | 0.191529   |
-
-### Tabela de Associação: Região x Nível
-
-| #  | Antecedents     | Consequents | Support   | Confidence |
-|----|------------------|-------------|-----------|------------|
-| 0  | (Sudeste)        | (Júnior)    | 0.489399  | 0.788703   |
-| 1  | (Júnior)         | (Sudeste)   | 0.489399  | 0.615008   |
-| 2  | (Sul)            | (Júnior)    | 0.153613  | 0.804989   |
-| 3  | (Júnior)         | (Sul)       | 0.153613  | 0.193040   |
-| 4  | (Nordeste)       | (Júnior)    | 0.091952  | 0.850000   |
-| 5  | (Júnior)         | (Nordeste)  | 0.091952  | 0.115552   |
-| 6  | (Sudeste)        | (Sênior)    | 0.072047  | 0.116109   |
-| 7  | (Sênior)         | (Sudeste)   | 0.072047  | 0.634286   |
-| 8  | (Pleno)          | (Sudeste)   | 0.059065  | 0.651551   |
-| 9  | (Centro-oeste)   | (Júnior)    | 0.047382  | 0.725166   |
-| 10 | (Sênior)         | (Sul)       | 0.020338  | 0.179048   |
+Com base no modelo KNN desenvolvido com os dados da planilha 'state_of_data_updated_Limpa.xlsx', os seguintes insights foram extraídos sobre a relação entre as features selecionadas e o nível (Júnior, Pleno, Sênior) dos profissionais de dados:
 
 
-### Tabela de Associação: Região x Experiência
+Contagem por classe:
+('P2_g ', 'Nivel')
+Sênior    1816
+Pleno     1400
+Júnior    1015
+Name: count, dtype: int64
 
-| #  | Antecedents         | Consequents         | Support   | Confidence |
-|----|---------------------|---------------------|-----------|------------|
-| 0  | (Sudeste)           | (de 1 a 2 anos)     | 0.149070  | 0.240237   |
-| 1  | (de 1 a 2 anos)     | (Sudeste)           | 0.149070  | 0.583404   |
-| 2  | (de 3 a 4 anos)     | (Sudeste)           | 0.144743  | 0.618299   |
-| 3  | (Sudeste)           | (de 3 a 4 anos)     | 0.144743  | 0.233264   |
-| 4  | (Sudeste)           | (de 5 a 6 anos)     | 0.117265  | 0.188982   |
-| 5  | (de 5 a 6 anos)     | (Sudeste)           | 0.117265  | 0.680050   |
-| 6  | (Mais de 10 anos)   | (Sudeste)           | 0.072479  | 0.629699   |
-| 7  | (Sudeste)           | (Mais de 10 anos)   | 0.072479  | 0.116806   |
-| 8  | (de 7 a 10 anos)    | (Sudeste)           | 0.058633  | 0.656174   |
-| 9  | (Menos de 1 ano)    | (Sudeste)           | 0.056253  | 0.563991   |
-| 10 | (Sul)               | (de 1 a 2 anos)     | 0.051493  | 0.269841   |
+Melhor valor de k: 17
 
-### Tabela de Associação: Região x Situação de Trabalho
-
-| #  | Antecedents                               | Consequents                            | Support   | Confidence |
-|----|-------------------------------------------|----------------------------------------|-----------|------------|
-| 0  | (Empregado (CLT))                         | (Sudeste)                              | 0.497187  | 0.642079   |
-| 1  | (Sudeste)                                 | (Empregado (CLT))                      | 0.497187  | 0.801255   |
-| 2  | (Sul)                                     | (Empregado (CLT))                      | 0.147122  | 0.770975   |
-| 3  | (Empregado (CLT))                         | (Sul)                                  | 0.147122  | 0.189997   |
-| 4  | (Nordeste)                                | (Empregado (CLT))                      | 0.077888  | 0.720000   |
-| 5  | (Empregado (CLT))                         | (Nordeste)                             | 0.077888  | 0.100587   |
-| 6  | (Sudeste)                                 | (Empreendedor ou Empregado (CNPJ))     | 0.069234  | 0.111576   |
-| 7  | (Empreendedor ou Empregado (CNPJ))        | (Sudeste)                              | 0.069234  | 0.591497   |
-| 8  | (Centro-oeste)                            | (Empregado (CLT))                      | 0.043055  | 0.658940   |
-| 9  | (Estagiário)                              | (Sudeste)                              | 0.027477  | 0.619512   |
-| 10 | (Empreendedor ou Empregado (CNPJ))        | (Sul)                                  | 0.025530  | 0.218115   |
-
-### Tabela de Associação: Região x Forma de Trabalho
-
-| #  | Antecedents       | Consequents     | Support   | Confidence |
-|----|-------------------|------------------|-----------|------------|
-| 0  | (Sudeste)         | (Remoto)         | 0.268282  | 0.432357   |
-| 1  | (Remoto)          | (Sudeste)        | 0.268282  | 0.579710   |
-| 2  | (Híbrido Flexível)| (Sudeste)        | 0.151666  | 0.749733   |
-| 3  | (Sudeste)         | (Híbrido Flexível)| 0.151666  | 0.244421   |
-| 4  | (Sudeste)         | (Híbrido Fixo)   | 0.122458  | 0.197350   |
-| 5  | (Híbrido Fixo)    | (Sudeste)        | 0.122458  | 0.736979   |
-| 6  | (Remoto)          | (Sul)            | 0.096279  | 0.208041   |
-| 7  | (Sul)             | (Remoto)         | 0.096279  | 0.504535   |
-| 8  | (Sudeste)         | (Presencial)     | 0.078105  | 0.125872   |
-| 9  | (Presencial)      | (Sudeste)        | 0.078105  | 0.462821   |
-| 10 | (Remoto)          | (Nordeste)       | 0.064258  | 0.138850   |
+Acurácia: 0.65
+![image](https://github.com/user-attachments/assets/c2e7abca-3342-4650-82ca-8bfb2cbd6bf8)
 
 
-### Modelo 3: Classificação com Árvore de Decisão
+Relatório de Classificação:
+              precision    recall  f1-score   support
 
-#### Árvore de Decisão
+      Júnior       0.66      0.49      0.56       306
+       Pleno       0.54      0.66      0.60       426
+      Sênior       0.75      0.72      0.73       538
 
-![Árvore de Decisão](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/Arvore%20de%20decisao.png)
+    accuracy                           0.65      1270
+   macro avg       0.65      0.63      0.63      1270
+weighted avg       0.66      0.65      0.65      1270
 
-#### Matriz de confusão
+Matriz de Confusão:
+![image](https://github.com/user-attachments/assets/ea953589-b00c-450d-9b09-ff16d38c06da)
 
-![Matriz de Confusão](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/Matriz%20de%20Confusao.png)
 
-#### Análise da Matriz por região
-
-| Classe       | Precisão | Revocação | F1-score | Suporte |
-| ------------ | -------- | --------- | -------- | ------- |
-| Centro-Oeste | 0.12     | 0.15      | 0.13     | 59      |
-| Nordeste     | 0.12     | 0.19      | 0.15     | 88      |
-| Norte        | 0.06     | 0.07      | 0.06     | 15      |
-| Sudeste      | 0.66     | 0.60      | 0.63     | 582     |
-| Sul          | 0.17     | 0.15      | 0.16     | 186     |
-
-#### Análise Geral
-
-| Métrica         | Valor                                              |
-| --------------- | -------------------------------------------------- |
-| Acurácia        | 0.44                                               |
-| Média Macro     | 0.22 (precisão), 0.23 (revocação), 0.23 (f1-score) |
-| Média Ponderada | 0.47 (precisão), 0.44 (revocação), 0.45 (f1-score) |
-
+Poder Preditivo das Features: As features utilizadas (Investimento em milhões, Idade, Gênero, Cor/raça/etnia, Nível de Ensino, Situação de trabalho, Faixa salarial, Tempo de experiência, Modelo de trabalho) possuem capacidade de prever o nível profissional, resultando em uma acurácia de 65%. Isso indica que estas características contêm informações relevantes para diferenciar os níveis.
+Desempenho por Nível e Confusões: A análise dos resultados por classe e da matriz de confusão revela que o modelo tem diferentes níveis de sucesso na previsão de cada nível (Júnior, Pleno, Sênior). As principais confusões ocorrem entre níveis próximos (ex: Júnior com Pleno, Pleno com Sênior), sugerindo que as características dos profissionais nestes níveis são mais sobrepostas.
+Importância da Escala das Features: O uso do escalonamento (StandardScaler) foi fundamental para o modelo KNN, ressaltando que as diferenças nas escalas das features numéricas impactam a análise de similaridade e a previsão do nível.
+Otimização do Modelo: O valor ótimo de k (9) encontrado pelo GridSearchCV indica o número de vizinhos que melhor equilibra a generalização e a sensibilidade a dados específicos para classificar os profissionais nos diferentes níveis.
+Em resumo, o modelo KNN demonstra que as features selecionadas são preditivas do nível profissional, mas a acurácia de 65% e os padrões de confusão indicam que há espaço para melhorias, seja incluindo novas features, refinando as existentes ou explorando outros modelos.
 
 ### Interpretação do modelo 1
 
