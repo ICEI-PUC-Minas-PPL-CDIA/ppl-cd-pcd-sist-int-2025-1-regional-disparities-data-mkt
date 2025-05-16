@@ -436,6 +436,107 @@ Em resumo, o modelo KNN demonstra que as features selecionadas são preditivas d
 
 ### Interpretação do modelo 1
 
+O modelo de classificação usando árvore de decisão, foi testado com diferentes parâmentros. Os dados de treino/teste foram divididos em 80% e 20% respectivamente. Foi utilizado o One Hot Encoder para lidar com dados categóricos não ordinais. Foram trabalhadas as métricas de Gini e Entropy, e o melhor resultado de acurácia foi obtido utilizando Entropy. 
+
+### Códigos do modelo
+
+```python
+## Dividindo treino e teste: 80/20
+X_train, X_test, y_train, y_test = train_test_split(
+    X_encoded, y, test_size=0.2, random_state=42
+
+#Testando profundidades distintas com Entropy (o mesmo foi feito com Gini)
+depths_to_test = range(1, 21)
+accuracy_scores_entropy = []
+accuracy_scores_entropy_train = []
+
+print("\nTesting different max_depth values for Decision Tree with Entropy criterion:")
+
+for depth in depths_to_test:
+    modelo_entropy = DecisionTreeClassifier(
+        criterion="entropy",
+        random_state=42,
+        class_weight='balanced',
+        max_depth=depth,
+        min_samples_split=50,
+        min_samples_leaf=1
+    )
+
+    modelo_entropy.fit(X_train, y_train)
+    
+    y_pred_entropy = modelo_entropy.predict(X_test)
+    acuracia_entropy = accuracy_score(y_test, y_pred_entropy)
+    accuracy_scores_entropy.append(acuracia_entropy)
+
+    y_pred_entropy_train = modelo_entropy.predict(X_train)
+    acuracia_entropy_train = accuracy_score(y_train, y_pred_entropy_train)
+    accuracy_scores_entropy_train.append(acuracia_entropy_train)
+```
+
+
+#### Gráfico comparativo - profundidades Gini x Entrophy
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/Depth-level%20test.png)
+
+O melhor resultado foi obtido com Entropy na profundidade 8, obtendo 0.7377 de acurácia na base de teste e 0.7613 na base de treino
+Para melhorar a acurácia, utilizamos Grid Search e cross validation, com uma gama de valores distintos para o número mínimo de amostras para se formar um nó e para o splittar.
+
+### Código GridSearch
+
+```python
+ print("\nPerforming Grid Search for min_samples_split and min_samples_leaf (Criterion: Entropy)")
+
+ 
+ param_grid = {
+     'max_depth': [7, 8, 9, 10], # Focar em profundidades próximas à melhor encontrada (8)
+     'min_samples_split': [2, 5, 10, 20, 30, 40, 50], 
+     'min_samples_leaf': [1, 5, 10, 15, 20] # 
+     
+ }
+
+ 
+ dt = DecisionTreeClassifier(criterion="entropy", random_state=42, class_weight='balanced')
+
+ # Criar o GridSearch com cross validantion separado em 5.
+ grid_search = GridSearchCV(estimator=dt, param_grid=param_grid, cv=5, scoring='accuracy', n_jobs=-1)
+
+ # Treinar diferentes modelos com diferentes parametros
+ grid_search.fit(X_train, y_train)
+
+ Imprimir os melhores parametros encontrados
+ print("\nBest parameters found by Grid Search:")
+ print(grid_search.best_params_)
+ print("Best cross-validation accuracy found by Grid Search:")
+ print(grid_search.best_score_)
+
+ # Definir melhor modelo do GridSearch
+ best_modelo = grid_search.best_estimator_
+
+ # Testar o modelo em base de teste distinta
+ y_pred_best = best_modelo.predict(X_test)
+ acuracia_best = accuracy_score(y_test, y_pred_best)
+```
+
+O Grid Search nos retorna a informação de que os parâmetros mais adequandos para o modelo são:
+Min_samples_leaf: 1
+Min_samples_split: 50
+Max_depth: 9
+Criterion: Entropy
+
+### Resultados finais
+
+Com este modelo, os resultados obtidos foram:
+
+Acurácia média do cross validation: 0.7401
+Acurácia em base de teste separada: 0.7482
+
+### Conclusão
+
+Apesar dos testes com diferentes profundidades, o modelo não ultrapassou a acurácia de 75% nos testes. Isso pode
+acontecer por diferentes motivos, como overfitting da base de dados, ou falta de atributos relevantes para diferenciar
+as classes, ou até mesmo escolha equivocada do modelo de classificação ideal. Por tal motivo, foi definido como modelo 2
+a classificação por KNN (K-Nearest Neighbors)
+
+
 ### Resultados obtidos com o modelo 2.
 
 ### Interpretação do modelo 2
