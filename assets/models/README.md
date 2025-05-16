@@ -2,7 +2,10 @@
 
 * modelo final 1
 * modelo final 2
+
+---
 * Modelo 2(Versão Preliminar):
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV
