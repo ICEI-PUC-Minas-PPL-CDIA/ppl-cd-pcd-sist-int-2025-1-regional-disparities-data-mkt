@@ -15,7 +15,7 @@ Luiz Eduardo Araújo de Medeiros - leamedeiros@sga.pucminas.br
 
 Professores:
 
-* Prof. Hug Bastos de Paula.  
+* Prof. Hugo Bastos de Paula.  
 * Prof. Hayala Nepomuceno Curto.  
 
 ---
