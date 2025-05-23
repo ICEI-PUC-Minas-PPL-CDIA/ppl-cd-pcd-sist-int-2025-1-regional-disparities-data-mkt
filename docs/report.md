@@ -409,8 +409,15 @@ Name: count, dtype: int64
 
 Melhor valor de k: 17
 
-Acurácia: 0.65
-![image](https://github.com/user-attachments/assets/c2e7abca-3342-4650-82ca-8bfb2cbd6bf8)
+Acurácia de Teste: 0.65
+Acurácia de Treino: 0.71
+
+![image](https://github.com/user-attachments/assets/db4ab3ea-64ae-4f0d-827e-3aacc4dcd814)
+
+
+Matriz de Confusão:
+
+![image](https://github.com/user-attachments/assets/cdffe2d3-6e2d-4802-90ce-592fd46ca90a)
 
 
 Relatório de Classificação:
@@ -424,15 +431,71 @@ Relatório de Classificação:
    macro avg       0.65      0.63      0.63      1270
 weighted avg       0.66      0.65      0.65      1270
 
+
+análise e avaliação de um modelo de Machine Learning do tipo K-Nearest Neighbors (KNN) focado em classificar o nível de experiência ("Nível") de profissionais da área de dados, utilizando diversas características como entrada.
+
+1. Carregamento e Preparação dos Dados:
+
+O processo começa com o carregamento dos dados de um arquivo Excel (state_of_data_updated_Limpa.xlsx).
+As características relevantes para a análise são selecionadas, abrangendo aspectos demográficos, educacionais, salariais e de experiência profissional.
+A variável alvo para a classificação é definida como "Nível", com categorias numéricas representando Júnior (0), Pleno (1) e Sênior (2).
+Registros com informações ausentes (NaN) são removidos para garantir a qualidade do conjunto de dados.
+Os dados são divididos em conjuntos de features (X) e o target (y).
+2. Balanceamento das Classes:
+
+A distribuição das classes é verificada, mostrando a quantidade de profissionais em cada nível.
+Contagem por classe:
+Sênior: 1816
+Pleno: 1400
+Júnior: 1015
+Nota-se que há uma diferença no número de exemplos entre as classes, com a classe Sênior sendo a mais numerosa, seguida por Pleno e Júnior.
+3. Divisão e Padronização dos Dados:
+
+O conjunto de dados é dividido em proporções de 70% para treino e 30% para teste, garantindo uma avaliação independente do modelo. A seed random_state=42 assegura a reprodutibilidade da divisão.
+As características são padronizadas utilizando StandardScaler. Este passo é crucial para o KNN, pois ele se baseia em distâncias, e a padronização evita que features com escalas maiores dominem o cálculo da distância.
+4. Busca do Melhor Valor de k:
+
+A técnica GridSearchCV com validação cruzada (5 folds) é aplicada para encontrar o valor ideal para o parâmetro n_neighbors (k) do KNN.
+A busca é realizada no intervalo de 1 a 20 vizinhos, com o objetivo de maximizar a acurácia.
+O melhor valor de k encontrado é impresso:
+Melhor valor de k: 17
+5. Treinamento e Avaliação do Modelo Final:
+
+O modelo KNN é treinado utilizando o melhor valor de k identificado (17).
+As previsões são realizadas nos conjuntos de treino e teste para avaliar o desempenho do modelo em dados que ele viu durante o treinamento e em dados novos.
+As acurácias são calculadas e exibidas:
+Acurácia de Teste: 0.65
+Acurácia de Treino: 0.71
+A acurácia de treino ser ligeiramente maior que a de teste sugere que o modelo pode ter aprendido um pouco mais as nuances do conjunto de treino, mas a diferença não indica um overfitting severo.
+6. Matriz de Confusão:
+
+A matriz de confusão é apresentada para detalhar o desempenho do modelo por classe:
 Matriz de Confusão:
-![image](https://github.com/user-attachments/assets/ea953589-b00c-450d-9b09-ff16d38c06da)
+[[151 111  44]
+         [ 55 283  88]
+         [ 23 128 387]]
+Use o código com cuidado
+*   A diagonal principal (151, 283, 387) mostra o número de previsões corretas para as classes Júnior, Pleno e Sênior, respectivamente.
+*   Os valores fora da diagonal indicam os erros de classificação (por exemplo, 111 exemplos Júnior foram preditos como Pleno).
+7. Relatório de Classificação:
 
+O relatório de classificação fornece métricas adicionais por classe:
+Relatório de Classificação:
+precision    recall  f1-score   support
 
-Poder Preditivo das Features: As features utilizadas (Investimento em milhões, Idade, Gênero, Cor/raça/etnia, Nível de Ensino, Situação de trabalho, Faixa salarial, Tempo de experiência, Modelo de trabalho) possuem capacidade de prever o nível profissional, resultando em uma acurácia de 65%. Isso indica que estas características contêm informações relevantes para diferenciar os níveis.
-Desempenho por Nível e Confusões: A análise dos resultados por classe e da matriz de confusão revela que o modelo tem diferentes níveis de sucesso na previsão de cada nível (Júnior, Pleno, Sênior). As principais confusões ocorrem entre níveis próximos (ex: Júnior com Pleno, Pleno com Sênior), sugerindo que as características dos profissionais nestes níveis são mais sobrepostas.
-Importância da Escala das Features: O uso do escalonamento (StandardScaler) foi fundamental para o modelo KNN, ressaltando que as diferenças nas escalas das features numéricas impactam a análise de similaridade e a previsão do nível.
-Otimização do Modelo: O valor ótimo de k (9) encontrado pelo GridSearchCV indica o número de vizinhos que melhor equilibra a generalização e a sensibilidade a dados específicos para classificar os profissionais nos diferentes níveis.
-Em resumo, o modelo KNN demonstra que as features selecionadas são preditivas do nível profissional, mas a acurácia de 65% e os padrões de confusão indicam que há espaço para melhorias, seja incluindo novas features, refinando as existentes ou explorando outros modelos.
+              Júnior       0.66      0.49      0.56       306
+               Pleno       0.54      0.66      0.60       426
+              Sênior       0.75      0.72      0.73       538
+
+            accuracy                           0.65      1270
+           macro avg       0.65      0.63      0.63      1270
+        weighted avg       0.66      0.65      0.65      1270
+Use o código com cuidado
+*   As métricas `precision`, `recall` e `f1-score` oferecem insights sobre a capacidade do modelo em identificar corretamente cada classe e evitar falsos positivos/negativos. A classe Sênior apresenta as melhores métricas de precision e recall.
+*   A acurácia geral (0.65) confirma o desempenho global do modelo no conjunto de teste.
+8. Visualizações:
+
+São gerados gráficos da matriz de confusão (heatmap) e da acurácia vs. o número de vizinhos (k). O gráfico de acurácia vs. k visualiza como a acurácia varia com diferentes valores de k e destaca o melhor k encontrado.
 
 ### Interpretação do modelo 1
 
