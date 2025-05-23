@@ -4,8 +4,10 @@
 * modelo final 2
 
 ---
-* Modelo 2(Versão Preliminar):
+*modelo 2 versão preliminaro
 
+from IPython import get_ipython
+from IPython.display import display
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV
@@ -75,20 +77,26 @@ best_knn = KNeighborsClassifier(n_neighbors=best_k)
 best_knn.fit(X_train_scaled, y_train)
 
 # Previsões no conjunto de teste
-y_pred = best_knn.predict(X_test_scaled)
+y_pred_test = best_knn.predict(X_test_scaled)
 
 # Métricas de avaliação
-accuracy = accuracy_score(y_test, y_pred)
-print(f"\nAcurácia: {accuracy:.2f}")
+accuracy_test = accuracy_score(y_test, y_pred_test)
+print(f"\nAcurácia de Teste: {accuracy_test:.2f}")
+
+# Calcular a acurácia de treino
+y_pred_train = best_knn.predict(X_train_scaled)
+accuracy_train = accuracy_score(y_train, y_pred_train)
+print(f"Acurácia de Treino: {accuracy_train:.2f}")
+
 
 # Matriz de confusão
-conf_matrix = confusion_matrix(y_test, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred_test)
 print("\nMatriz de Confusão:")
 print(conf_matrix)
 
 # Relatório de classificação
 print("\nRelatório de Classificação:")
-print(classification_report(y_test, y_pred))
+print(classification_report(y_test, y_pred_test))
 
 # Plot da matriz de confusão
 plt.figure(figsize=(8, 6))
@@ -125,8 +133,3 @@ plt.axvline(x=best_k, color='r', linestyle='--', label=f'Melhor k = {best_k}')
 plt.legend()
 plt.grid()
 plt.show()
-
----
-
-O código pode estar no formato original da ferramenta utilizada. 
-Pode ser um processo do Orange ou um Jupyter Notebook.
