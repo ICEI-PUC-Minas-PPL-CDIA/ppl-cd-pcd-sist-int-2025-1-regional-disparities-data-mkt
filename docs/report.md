@@ -482,10 +482,6 @@ A acurácia de treino ser ligeiramente maior que a de teste sugere que o modelo 
 
 A matriz de confusão é apresentada para detalhar o desempenho do modelo por classe:
 Matriz de Confusão:
-[[151 111  44]
-[ 55 283  88]
-[ 23 128 387]]
-Use o código com cuidado
 *   A diagonal principal (151, 283, 387) mostra o número de previsões corretas para as classes Júnior, Pleno e Sênior, respectivamente.
 *   Os valores fora da diagonal indicam os erros de classificação (por exemplo, 111 exemplos Júnior foram preditos como Pleno).
 
