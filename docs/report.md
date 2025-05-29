@@ -510,6 +510,28 @@ São gerados gráficos da matriz de confusão (heatmap) e da acurácia vs. o nú
 
 ---
 
+### Resultados 
+### Resultados obtidos com o modelo 1.
+### Acurácia:
+
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| Júnior    | 0.75      | 0.81   | 0.77     | 207     |
+| Pleno     | 0.59      | 0.63   | 0.61     | 278     |
+| Sênior    | 0.82      | 0.75   | 0.79     | 361     |
+|           |           |        |          |         |
+| **Accuracy**       |           |        | 0.72     | 846     |
+| **Macro Avg**      | 0.72      | 0.73   | 0.72     | 846     |
+| **Weighted Avg**   | 0.73      | 0.72   | 0.73     | 846     |
+
+Acurácia do modelo: 0.72
+
+
+Com este modelo, os resultados obtidos foram:
+
+Acurácia média do cross validation: 0.7401
+Acurácia em base de teste separada: 0.7482
+
 ### Interpretação do modelo 1
 
 O modelo de classificação usando árvore de decisão, foi testado com diferentes parâmentros. Os dados de treino/teste foram divididos em 80% e 20% respectivamente. Foi utilizado o One Hot Encoder para lidar com dados categóricos não ordinais. Foram trabalhadas as métricas de Gini e Entropy, e o melhor resultado de acurácia foi obtido utilizando Entropy. 
@@ -598,21 +620,6 @@ Min_samples_split: 50
 Max_depth: 9
 Criterion: Entropy
 
-### Resultados finais
-
-Com este modelo, os resultados obtidos foram:
-
-Acurácia média do cross validation: 0.7401
-Acurácia em base de teste separada: 0.7482
-
-### Conclusão
-
-Apesar dos testes com diferentes profundidades, o modelo não ultrapassou a acurácia de 75% nos testes. Isso pode
-acontecer por diferentes motivos, como overfitting da base de dados, ou falta de atributos relevantes para diferenciar
-as classes, ou até mesmo escolha equivocada do modelo de classificação ideal. Por tal motivo, foi definido como modelo 2
-a classificação por KNN (K-Nearest Neighbors)
-
-
 ### Resultados obtidos com o modelo 2.
 
 ### Interpretação do modelo 2
@@ -630,10 +637,12 @@ Tende criar um pacote de distribuição para o modelo construído, para ser apli
 em um sistema inteligente.
 
 
-## 8. Conclusão
+### Conclusão
 
-Apresente aqui a conclusão do seu trabalho. Discussão dos resultados obtidos no trabalho, 
-onde se verifica as observações pessoais de cada aluno.
+Apesar dos testes com diferentes profundidades, o modelo não ultrapassou a acurácia de 75% nos testes. Isso pode
+acontecer por diferentes motivos, como overfitting da base de dados, ou falta de atributos relevantes para diferenciar
+as classes, ou até mesmo escolha equivocada do modelo de classificação ideal. Por tal motivo, foi definido como modelo 2
+a classificação por KNN (K-Nearest Neighbors)
 
 Uma conclusão deve ter 3 partes:
 
