@@ -497,6 +497,7 @@ São gerados gráficos da matriz de confusão (heatmap) e da acurácia vs. o nú
 ---
 
 ### Resultados 
+---
 ### Resultados obtidos com o modelo 1.
 ### Acurácia:
 
@@ -516,6 +517,7 @@ Acurácia do modelo: 0.72
 Com este modelo, os resultados obtidos foram:
 
 Acurácia média do cross validation: 0.7401
+
 Acurácia em base de teste separada: 0.7482
 
 ### Interpretação do modelo 1
