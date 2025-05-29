@@ -379,20 +379,6 @@ O novo modelo de classificação tem como objetivo classificar os indívuos nos 
 ### Matriz de confusão:
 ![Matriz de Confusão](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/confusion_matrix_current_model.png)
 
-### Acurácia:
-
-| Class     | Precision | Recall | F1-Score | Support |
-|-----------|-----------|--------|----------|---------|
-| Júnior    | 0.75      | 0.81   | 0.77     | 207     |
-| Pleno     | 0.59      | 0.63   | 0.61     | 278     |
-| Sênior    | 0.82      | 0.75   | 0.79     | 361     |
-|           |           |        |          |         |
-| **Accuracy**       |           |        | 0.72     | 846     |
-| **Macro Avg**      | 0.72      | 0.73   | 0.72     | 846     |
-| **Weighted Avg**   | 0.73      | 0.72   | 0.73     | 846     |
-
-Acurácia do modelo: 0.72
-
 ---
 
 ### Modelo 2: KNN (Versão preliminar
