@@ -42,7 +42,7 @@ Os resultados fornecerão um guia prático para profissionais e instituições, 
 
 ## Introdução
 
-Apesar do crescimento acelerado do mercado de dados no Brasil, as oportunidades e trajetórias profissionais nessa área são profundamente desiguais, influenciadas não apenas por fatores econômicos e regionais, mas também por características individuais—como formação acadêmica. Enquanto alguns profissionais conseguem ascender rapidamente a cargos bem remunerados em empresas inovadoras, outros enfrentam barreiras persistentes, mesmo possuindo qualificações aparentemente similares. Essas disparidades sugerem que, além das dinâmicas macro do mercado, aspectos individuais desempenham um papel crucial na definição do sucesso profissional em ciência de dados.
+Apesar do crescimento acelerado do mercado de dados no Brasil, as oportunidades e trajetórias profissionais nessa área são profundamente desiguais, influenciadas não apenas por fatores econômicos e regionais, mas também por características individuais, como formação acadêmica. Enquanto alguns profissionais conseguem ascender rapidamente a cargos bem remunerados em empresas inovadoras, outros enfrentam barreiras persistentes, mesmo possuindo qualificações aparentemente similares. Essas disparidades sugerem que, além das dinâmicas macro do mercado, aspectos individuais desempenham um papel crucial na definição do sucesso profissional em ciência de dados.
 
 Este estudo busca investigar como variáveis a nível individual—como formação educacional, habilidades técnicas (ex: domínio de Python, machine learning), competências não técnicas (ex: comunicação, resolução de problemas), participação em bootcamps ou cursos extracurriculares, e acesso a mentorias—impactam:
 
@@ -58,17 +58,17 @@ Ao focar no nível individual, esta pesquisa visa não apenas entender as desigu
 
 ###    Contextualização
 
-O mercado de dados no Brasil vive um momento de expansão, alimentado pela crescente adoção de tecnologias como IA, machine learning e análise de big data. No entanto, por trás dessa demanda aquecida por profissionais qualificados, esconde-se uma realidade desigual: as oportunidades e trajetórias na área são profundamente moldadas por fatores individuais, como formação acadêmica, habilidades técnicas e comportamentais, acesso a redes profissionais e condições socioeconômicas.
+O mercado de dados no Brasil vive um momento de expansão, aimpulsionado pelo uso de tecnologias como inteligência artificial, machine learning e análise de big data. No entanto, por trás dessa demanda aquecida por profissionais qualificados, há uma realidade desigual: as oportunidades e trajetórias na área são profundamente moldadas por fatores individuais, como formação acadêmica, habilidades técnicas e comportamentais, acesso a redes profissionais e condições socioeconômicas.
 
-Enquanto alguns cientistas de dados conseguem alcançar salários elevados e posições estratégicas em pouco tempo, outros—mesmo com qualificações técnicas semelhantes—enfrentam dificuldades para ingressar no mercado ou progredir na carreira. Essa disparidade não se explica apenas por diferenças regionais (como a concentração de vagas no Sudeste), mas também por barreiras individuais, como:
+Enquanto alguns cientistas de dados conseguem alcançar salários elevados e posições estratégicas em poucos anos, outros, mesmo com qualificações técnicas semelhantes, enfrentam dificuldades para ingressar no mercado ou progredir na carreira. Essa disparidade não se explica apenas por diferenças regionais (como a concentração de vagas no Sudeste), mas também por barreiras individuais, como:
 
 ➡️ Divisão técnica: Profissionais com domínio em ferramentas avançadas (ex: PySpark, TensorFlow) têm salários até 35% superiores à média (Pesquisa Stack Overflow, 2023), mas muitos não têm acesso a capacitação nessas tecnologias.
 
-➡️ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), privilegiando quem já está inserido em ecossistemas tech.
+➡️ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), privilegiando quem já está inserido em ambientes corporativos da área tecnológica.
 
 ➡️ Educação formal vs. cursos alternativos: Profissionais com pós-graduação têm 20% mais chances de alcançar cargos sênior, mas bootcamps e certificações podem acelerar a entrada no mercado para quem não tem diploma na área (Data Science Academy, 2023).
 
-Além disso, habilidades não técnicas—como comunicação, pensamento crítico e capacidade de traduzir dados em decisões—são frequentemente subestimadas, mas determinam até 40% da progressão para cargos de liderança (Harvard Business Review, 2022).
+Além disso, habilidades não técnicas—como comunicação, pensamento crítico e capacidade de traduzir dados em decisões, são frequentemente subestimadas, mas determinam até 40% da progressão para cargos de liderança (Harvard Business Review, 2022).
 
 Nesse cenário, este estudo busca entender como variáveis individuais—e não apenas macroeconômicas ou regionais—influenciam:
 
@@ -78,11 +78,11 @@ Nesse cenário, este estudo busca entender como variáveis individuais—e não 
 
 -A velocidade de crescimento na carreira, analisando o peso de pós-graduações, cursos livres e experiências práticas.
 
-➡️ Quais combinações de habilidades (técnicas + comportamentais) têm maior impacto em cada estágio da carreira;
+-Quais combinações de habilidades (técnicas e comportamentais) têm maior impacto em cada estágio da carreira;
 
-➡️ O papel de certificações alternativas na competitividade do profissional;
+-O papel de certificações alternativas na competitividade do profissional;
 
-➡️ Como o background socioeconômico influencia acesso a capacitação e empregabilidade.
+-Como as condições (background) socioeconômicas influenciam o acesso à capacitação e à empregabilidade.
 
 Os resultados visam orientar tanto profissionais (em estratégias personalizadas de qualificação) quanto empresas e instituições de ensino (na redução de vieses e adaptação de programas de treinamento). O objetivo final é democratizar as oportunidades em dados, garantindo que o potencial da área seja acessível não apenas a quem está nos polos tradicionais ou tem determinados privilégios iniciais, mas a todos os talentos—independentemente de sua origem ou trajetória prévia.
 
@@ -96,7 +96,7 @@ O crescimento do mercado de ciência de dados no Brasil, embora promissor, é ma
 
 ➡️ Divisão de habilidades: Profissionais com domínio em ferramentas avançadas (MLOps, engenharia de dados) têm salários até 50% maiores, mas muitos não têm acesso a capacitação nessas tecnologias (Stack Overflow, 2023).
 
-➡️ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), excluindo quem não está inserido em ecossistemas tech.
+➡️ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), excluindo quem não está inserido em ambientes corporativos da área tecnológica.
 
 ➡️ Educação formal vs. alternativas: Pós-graduação aumenta em 30% as chances de alcançar cargos sênior, mas bootcamps e certificações são a única via para muitos sem diploma na área (Data Science Academy, 2023).
 
@@ -120,13 +120,13 @@ Para empresas e instituições:
 
 *Lacuna Crítica*
 
-Não existe hoje um sistema que analise como variáveis individuais—e não apenas regionais—impactam:
+Não existe hoje um sistema que analise como variáveis individuais, e não apenas regionais, impactam:
 
-A disparidade salarial entre profissionais com habilidades equivalentes;
+-A disparidade salarial entre profissionais com habilidades equivalentes;
 
-O acesso a oportunidades em empresas de ponta vs. barreiras impostas por falta de networking;
+-O acesso a oportunidades em empresas de ponta vs. barreiras impostas por falta de networking;
 
-A efetividade de diferentes rotas de capacitação (graduação, bootcamps, cursos livres).
+-A efetividade de diferentes rotas de capacitação (graduação, bootcamps, cursos livres).
 
 *Solução Proposta:*
 
@@ -180,7 +180,7 @@ Dados do State of Data Brazil 2023 revelam que:
 
 -Quem domina inglês avançado recebe propostas até 50% melhores em empresas globais;
 
--Mulheres e profissionais negros ocupam apenas 25% dos cargos de liderança em dados, mesmo com qualificação equivalente.
+-Mulheres e negros ocupam apenas 25% dos cargos de liderança em dados, mesmo com qualificação equivalente.
 
 Essas disparidades não são explicadas apenas por competência técnica, mas por barreiras invisíveis: acesso a networking, viés em processos seletivos e falta de mentoria.
 
@@ -188,7 +188,7 @@ Essas disparidades não são explicadas apenas por competência técnica, mas po
 
 -62% dos profissionais aprendem ferramentas por conta própria (cursos online, bootcamps), mas muitos não sabem quais habilidades priorizar para crescer na carreira;
 
--Empresas reclamam da falta de soft skills (comunicação, gestão) em candidatos técnicos, mas poucos cursos focam nisso;
+-Empresas  precisam de profissionais que possuem habilidades não técnicas (comunicação, gestão), mas poucos cursos focam nisso;
 
 -Quem vem de instituições menos prestigiadas ou regiões periféricas enfrenta dificuldades para ser reconhecido, mesmo com conhecimento equivalente.
 
