@@ -566,6 +566,19 @@ A acurácia de treino ser ligeiramente maior que a de teste sugere que o modelo 
 
 ## Análise comparativa dos modelos
 
+Os atributos utilizados foram padronizados para ambos os modelos:
+
+- Investimento em milhões
+_ Idade
+_ Gênero
+_ Cor/Raça/Etnia
+_ Nível de Ensino
+_ Situação de Trabalho
+_ Faixa salarial
+_ Tempo de experiência
+_ Forma de Trabalho
+_ Nível (atributo alvo)
+
 Ambos os modelos utilizados foram de classificação, com o objetivo final de classificar o atributo "Nível" (Júnior, Pleno, Sênior) de cada indivíduo da tabela, e foram otimizados a partir de testes com diferentes métricas e diferentes atributos, além da implementação de bibliotecas como XGBoost.
 
 O modelo 1, Classificação com Árvore de Decisão, atingiu uma acurácia máxima de 0.73 na base de teste, e 0.76 na base de treino. O modelo aprendeu bem a discernir as classes "Júnior" e "Sênior", ambas tendo precisão e recall maior quando comparadas à classe "Pleno". A maior dificuldade de aprendizado do modelo é de distinguir as classes "Sênior" e "Pleno".
