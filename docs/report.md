@@ -418,82 +418,6 @@ Matriz de Confusão:
    macro avg       0.65      0.63      0.63      1270
 weighted avg       0.66      0.65      0.65      1270
 
-
-análise e avaliação de um modelo de Machine Learning do tipo K-Nearest Neighbors (KNN) focado em classificar o nível de experiência ("Nível") de profissionais da área de dados, utilizando diversas características como entrada.
-
-1. Carregamento e Preparação dos Dados:
-
-O processo começa com o carregamento dos dados de um arquivo Excel (state_of_data_updated_Limpa.xlsx).
-As características relevantes para a análise são selecionadas, abrangendo aspectos demográficos, educacionais, salariais e de experiência profissional.
-A variável alvo para a classificação é definida como "Nível", com categorias numéricas representando Júnior (0), Pleno (1) e Sênior (2).
-Registros com informações ausentes (NaN) são removidos para garantir a qualidade do conjunto de dados.
-Os dados são divididos em conjuntos de features (X) e o target (y).
-
-
-2. Balanceamento das Classes:
-
-A distribuição das classes é verificada, mostrando a quantidade de profissionais em cada nível.
-Contagem por classe:
-Sênior: 1816
-Pleno: 1400
-Júnior: 1015
-Nota-se que há uma diferença no número de exemplos entre as classes, com a classe Sênior sendo a mais numerosa, seguida por Pleno e Júnior.
-
-
-3. Divisão e Padronização dos Dados:
-
-O conjunto de dados é dividido em proporções de 70% para treino e 30% para teste, garantindo uma avaliação independente do modelo. A seed random_state=42 assegura a reprodutibilidade da divisão.
-As características são padronizadas utilizando StandardScaler. Este passo é crucial para o KNN, pois ele se baseia em distâncias, e a padronização evita que features com escalas maiores dominem o cálculo da distância.
-
-
-4. Busca do Melhor Valor de k:
-
-A técnica GridSearchCV com validação cruzada (5 folds) é aplicada para encontrar o valor ideal para o parâmetro n_neighbors (k) do KNN.
-A busca é realizada no intervalo de 1 a 20 vizinhos, com o objetivo de maximizar a acurácia.
-O melhor valor de k encontrado é impresso:
-Melhor valor de k: 17
-
-
-5. Treinamento e Avaliação do Modelo Final:
-
-O modelo KNN é treinado utilizando o melhor valor de k identificado (17).
-As previsões são realizadas nos conjuntos de treino e teste para avaliar o desempenho do modelo em dados que ele viu durante o treinamento e em dados novos.
-As acurácias são calculadas e exibidas:
-Acurácia de Teste: 0.65
-Acurácia de Treino: 0.71
-A acurácia de treino ser ligeiramente maior que a de teste sugere que o modelo pode ter aprendido um pouco mais as nuances do conjunto de treino, mas a diferença não indica um overfitting severo.
-
-
-6. Matriz de Confusão:
-
-A matriz de confusão é apresentada para detalhar o desempenho do modelo por classe:
-Matriz de Confusão:
-*   A diagonal principal (151, 283, 387) mostra o número de previsões corretas para as classes Júnior, Pleno e Sênior, respectivamente.
-*   Os valores fora da diagonal indicam os erros de classificação (por exemplo, 111 exemplos Júnior foram preditos como Pleno).
-
-
-7. Relatório de Classificação:
-
-O relatório de classificação fornece métricas adicionais por classe:
-Relatório de Classificação:
-precision    recall  f1-score   support
-
-              Júnior       0.66      0.49      0.56       306
-               Pleno       0.54      0.66      0.60       426
-              Sênior       0.75      0.72      0.73       538
-
-            accuracy                           0.65      1270
-           macro avg       0.65      0.63      0.63      1270
-        weighted avg       0.66      0.65      0.65      1270
-Use o código com cuidado
-*   As métricas `precision`, `recall` e `f1-score` oferecem insights sobre a capacidade do modelo em identificar corretamente cada classe e evitar falsos positivos/negativos. A classe Sênior apresenta as melhores métricas de precision e recall.
-*   A acurácia geral (0.65) confirma o desempenho global do modelo no conjunto de teste.
-
-
-8. Visualizações:
-
-São gerados gráficos da matriz de confusão (heatmap) e da acurácia vs. o número de vizinhos (k). O gráfico de acurácia vs. k visualiza como a acurácia varia com diferentes valores de k e destaca o melhor k encontrado.
-
 ---
 
 ### Resultados 
@@ -610,14 +534,48 @@ Criterion: Entropy
 
 ### Resultados obtidos com o modelo 2.
 
+Relatório de Classificação:
+precision    recall  f1-score   support
+
+              Júnior       0.66      0.49      0.56       306
+               Pleno       0.54      0.66      0.60       426
+              Sênior       0.75      0.72      0.73       538
+
+            accuracy                           0.65      1270
+           macro avg       0.65      0.63      0.63      1270
+        weighted avg       0.66      0.65      0.65      1270
+
 ### Interpretação do modelo 2
+
+O conjunto de dados foi dividido em proporções de 70% para treino e 30% para teste, garantindo uma avaliação independente do modelo. A seed random_state=42 assegura a reprodutibilidade da divisão.
+As características são padronizadas utilizando StandardScaler. Este passo é crucial para o KNN, pois ele se baseia em distâncias, e a padronização evita que features com escalas maiores dominem o cálculo da distância.
+
+A técnica GridSearchCV com validação cruzada (5 folds) é aplicada para encontrar o valor ideal para o parâmetro n_neighbors (k) do KNN.
+A busca é realizada no intervalo de 1 a 20 vizinhos, com o objetivo de maximizar a acurácia.
+O melhor valor de k encontrado é impresso:
+Melhor valor de k: 17
+
+O modelo KNN é treinado utilizando o melhor valor de k identificado (17).
+As previsões são realizadas nos conjuntos de treino e teste para avaliar o desempenho do modelo em dados que ele viu durante o treinamento e em dados novos.
+As acurácias são calculadas e exibidas:
+Acurácia de Teste: 0.65
+Acurácia de Treino: 0.71
+A acurácia de treino ser ligeiramente maior que a de teste sugere que o modelo pode ter aprendido um pouco mais as nuances do conjunto de treino, mas a diferença não indica um overfitting severo.
+
+
 
 ## Análise comparativa dos modelos
 
-Discuta sobre as forças e fragilidades de cada modelo. Exemplifique casos em que um
-modelo se sairia melhor que o outro. Nesta seção é possível utilizar a sua imaginação
-e extrapolar um pouco o que os dados sugerem.
+Ambos os modelos utilizados foram de classificação, com o objetivo final de classificar o atributo "Nível" (Júnior, Pleno, Sênior) de cada indivíduo da tabela, e foram otimizados a partir de testes com diferentes métricas e diferentes atributos, além da implementação de bibliotecas como XGBoost.
 
+O modelo 1, Classificação com Árvore de Decisão, atingiu uma acurácia máxima de 0.73 na base de teste, e 0.76 na base de treino. O modelo aprendeu bem a discernir as classes "Júnior" e "Sênior", ambas tendo precisão e recall maior quando comparadas à classe "Pleno". A maior dificuldade de aprendizado do modelo é de distinguir as classes "Sênior" e "Pleno".
+
+O modelo 2, Classificação por K Nearest Neighbors, antingiu uma acurácia máxima de 0.65 na base de teste, e 0.71 na base de treino.
+As bases de treino e teste foram dividas em 70% e 30%, respectivamente, em contraste ao 80% e 20% do modelo de árvore de decisão. As mesmas dificuldades foram enfrentadas: O maior recall e precisão foi da classe com maior contagem. 
+
+### Conclusão comparativa
+
+Ambos os modelos apresentaram características semelhantes e enfrentaram dificuldades análogas. A aplicação de dois modelos de classificação mostrou-se ineficaz para a obtenção de conclusões distintas. Diante disso, optou-se pela substituição do modelo com pior desempenho por um novo modelo, com o intuito de aprimorar os resultados da análise.
 
 ### Distribuição do modelo (opcional)
 
