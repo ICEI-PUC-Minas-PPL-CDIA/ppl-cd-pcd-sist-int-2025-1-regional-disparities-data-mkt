@@ -6,6 +6,7 @@
 ---
 *modelo 2 versão preliminaro
 
+```python
 from IPython import get_ipython
 from IPython.display import display
 import pandas as pd
