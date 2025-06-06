@@ -381,233 +381,110 @@ O novo modelo de classificação tem como objetivo classificar os indívuos nos 
 
 ---
 
-### Modelo 2: KNN (Versão preliminar
+# Modelo 2: Random Forest
 
-Com base no modelo KNN desenvolvido com os dados da planilha 'state_of_data_updated_Limpa.xlsx', os seguintes insights foram extraídos sobre a relação entre as features selecionadas e o nível (Júnior, Pleno, Sênior) dos profissionais de dados:
+Com base no modelo Random Forest desenvolvido com os dados da planilha 'state_of_data_updated_Limpa.xlsx', os seguintes insights foram extraídos sobre a relação entre as features selecionadas e o nível (Júnior, Pleno, Sênior) dos profissionais de dados:
 
-###Contagem por classe:
+### Contagem por classe:
+Obtivemos através de analise da base que a distruibuição da varivel "('P2_g ', 'Nivel')_Num", esse partição está explicita pela tabela abaixo e também pelo gráfico proposto:
 
-('P2_g ', 'Nivel')
-Sênior    1816
-Pleno     1400
-Júnior    1015
-Name: count, dtype: int64
+| Nível   | Quantidade |
+|---------|------------|
+| Sênior  | 1816       |
+| Pleno   | 1400       |
+| Júnior  | 1015       |
 
-###Melhor valor de k: 17
 
-Acurácia de Teste: 0.65
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/distribuicao_da_variavel_nivel.png)
 
-Acurácia de Treino: 0.71
 
-![image](https://github.com/user-attachments/assets/db4ab3ea-64ae-4f0d-827e-3aacc4dcd814)
+Após isso o modelo separa quais as variaveis ira utilizar, separando das quais não sao númericas, dessa forma temos as seguintes features utilizadas:
 
+### ✅ Features Selecionadas para o Modelo
 
-Matriz de Confusão:
+| Nº  | Feature                                                                                           |
+|-----|---------------------------------------------------------------------------------------------------|
+| 1   | Investimento_em_milhões                                                                           |
+| 2   | P1_a__Idade                                                                                       |
+| 3   | P1_b__Genero_Num                                                                                  |
+| 4   | P1_c__Cor_raca_etnia_Num                                                                          |
+| 5   | P1_e_1__Não_acredito_que_minha_experiência_profissional_seja_afetada                              |
+| 6   | P1_e_2__Experiencia_prejudicada_devido_a_minha_Cor_Raça_Etnia                                     |
+| 7   | P1_e_3__Experiencia_prejudicada_devido_a_minha_identidade_de_gênero                               |
+| 8   | P1_i_2__Regiao_onde_mora_Num                                                                      |
+| 9   | P1_j__Mudou_de_Estado                                                                             |
+| 10  | P1_l__Nivel_de_Ensino_Num                                                                         |
+| 11  | P2_a__Qual_sua_situação_atual_de_trabalho_Num                                                     |
+| 12  | P2_h__Faixa_salarial_Num                                                                          |
+| 13  | P2_i__Quanto_tempo_de_experiência_na_área_de_dados_você_tem_Num                                   |
+| 14  | P2_n__Você_pretende_mudar_de_emprego_nos_próximos_6_meses_Num                                     |
+| 15  | P2_r__Atualmente_qual_a_sua_forma_de_trabalho_Num                                                 |
 
-![image](https://github.com/user-attachments/assets/cdffe2d3-6e2d-4802-90ce-592fd46ca90a)
+## Preparação dos dados e engenharias de features
 
+-> Na proxima parte temos a preparação da base para o inicio do modelo, temos então o balanceamento da variavel smote utlizando 'SMOTE', a divisão da base entre treinamento e teste e a ordenação das features pela importancia para a analise proposta.
 
-###Relatório de Classificação:
-              precision    recall  f1-score   support
+Balanceamento da variavel nivel por SMOTE
 
-      Júnior       0.66      0.49      0.56       306
-       Pleno       0.54      0.66      0.60       426
-      Sênior       0.75      0.72      0.73       538
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/balanceamento_smote.png)
 
-    accuracy                           0.65      1270
-   macro avg       0.65      0.63      0.63      1270
-weighted avg       0.66      0.65      0.65      1270
 
----
+Ordenação das features
 
-### Resultados 
----
-### Resultados obtidos com o modelo 1.
-### Acurácia:
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/ordena%C3%A7%C3%A3o_features.png)
 
-| Class     | Precision | Recall | F1-Score | Support |
-|-----------|-----------|--------|----------|---------|
-| Júnior    | 0.75      | 0.81   | 0.77     | 207     |
-| Pleno     | 0.59      | 0.63   | 0.61     | 278     |
-| Sênior    | 0.82      | 0.75   | 0.79     | 361     |
-|           |           |        |          |         |
-| **Accuracy**       |           |        | 0.72     | 846     |
-| **Macro Avg**      | 0.72      | 0.73   | 0.72     | 846     |
-| **Weighted Avg**   | 0.73      | 0.72   | 0.73     | 846     |
 
-Acurácia do modelo: 0.72
+Separação da base entre treino e teste:
 
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/divisao_treino_teste.png)
 
-Com este modelo, os resultados obtidos foram:
 
-Acurácia média do cross validation: 0.7401
+## Treinamento e otimização do modelo 
 
-Acurácia em base de teste separada: 0.7482
+Primeiramente, antes de entramos na execução do modelo, temos que analisar a curva de aprendizado do modelo de treino, o qual está demonstrado pela imagem a seguir:
 
-### Interpretação do modelo 1
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/curva_apredizado.png)
 
-O modelo de classificação usando árvore de decisão, foi testado com diferentes parâmentros. Os dados de treino/teste foram divididos em 80% e 20% respectivamente. Foi utilizado o One Hot Encoder para lidar com dados categóricos não ordinais. Foram trabalhadas as métricas de Gini e Entropy, e o melhor resultado de acurácia foi obtido utilizando Entropy. 
 
-### Códigos do modelo
 
-```python
-## Dividindo treino e teste: 80/20
-X_train, X_test, y_train, y_test = train_test_split(
-    X_encoded, y, test_size=0.2, random_state=42
 
-#Testando profundidades distintas com Entropy (o mesmo foi feito com Gini)
-depths_to_test = range(1, 21)
-accuracy_scores_entropy = []
-accuracy_scores_entropy_train = []
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/matriz_confusao_treino.png)
 
-print("\nTesting different max_depth values for Decision Tree with Entropy criterion:")
 
-for depth in depths_to_test:
-    modelo_entropy = DecisionTreeClassifier(
-        criterion="entropy",
-        random_state=42,
-        class_weight='balanced',
-        max_depth=depth,
-        min_samples_split=50,
-        min_samples_leaf=1
-    )
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/report_treino.png)
 
-    modelo_entropy.fit(X_train, y_train)
-    
-    y_pred_entropy = modelo_entropy.predict(X_test)
-    acuracia_entropy = accuracy_score(y_test, y_pred_entropy)
-    accuracy_scores_entropy.append(acuracia_entropy)
 
-    y_pred_entropy_train = modelo_entropy.predict(X_train)
-    acuracia_entropy_train = accuracy_score(y_train, y_pred_entropy_train)
-    accuracy_scores_entropy_train.append(acuracia_entropy_train)
-```
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/matriz_confusao_teste.png)
 
 
-#### Gráfico comparativo - profundidades Gini x Entrophy
-![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/Depth-level%20test.png)
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/report_teste.png)
 
-O melhor resultado foi obtido com Entropy na profundidade 8, obtendo 0.7377 de acurácia na base de teste e 0.7613 na base de treino
-Para melhorar a acurácia, utilizamos Grid Search e cross validation, com uma gama de valores distintos para o número mínimo de amostras para se formar um nó e para o splittar.
 
-### Código GridSearch
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/correlacao_features.png)
 
-```python
- print("\nPerforming Grid Search for min_samples_split and min_samples_leaf (Criterion: Entropy)")
 
- 
- param_grid = {
-     'max_depth': [7, 8, 9, 10], # Focar em profundidades próximas à melhor encontrada (8)
-     'min_samples_split': [2, 5, 10, 20, 30, 40, 50], 
-     'min_samples_leaf': [1, 5, 10, 15, 20] # 
-     
- }
 
- 
- dt = DecisionTreeClassifier(criterion="entropy", random_state=42, class_weight='balanced')
 
- # Criar o GridSearch com cross validantion separado em 5.
- grid_search = GridSearchCV(estimator=dt, param_grid=param_grid, cv=5, scoring='accuracy', n_jobs=-1)
 
- # Treinar diferentes modelos com diferentes parametros
- grid_search.fit(X_train, y_train)
 
- Imprimir os melhores parametros encontrados
- print("\nBest parameters found by Grid Search:")
- print(grid_search.best_params_)
- print("Best cross-validation accuracy found by Grid Search:")
- print(grid_search.best_score_)
 
- # Definir melhor modelo do GridSearch
- best_modelo = grid_search.best_estimator_
 
- # Testar o modelo em base de teste distinta
- y_pred_best = best_modelo.predict(X_test)
- acuracia_best = accuracy_score(y_test, y_pred_best)
-```
 
-O Grid Search nos retorna a informação de que os parâmetros mais adequandos para o modelo são:
-Min_samples_leaf: 1
-Min_samples_split: 50
-Max_depth: 9
-Criterion: Entropy
 
-### Resultados obtidos com o modelo 2.
 
-Relatório de Classificação:
-precision    recall  f1-score   support
 
-              Júnior       0.66      0.49      0.56       306
-               Pleno       0.54      0.66      0.60       426
-              Sênior       0.75      0.72      0.73       538
 
-            accuracy                           0.65      1270
-           macro avg       0.65      0.63      0.63      1270
-        weighted avg       0.66      0.65      0.65      1270
 
-### Interpretação do modelo 2
 
-O conjunto de dados foi dividido em proporções de 70% para treino e 30% para teste, garantindo uma avaliação independente do modelo. A seed random_state=42 assegura a reprodutibilidade da divisão.
-As características são padronizadas utilizando StandardScaler. Este passo é crucial para o KNN, pois ele se baseia em distâncias, e a padronização evita que features com escalas maiores dominem o cálculo da distância.
 
-A técnica GridSearchCV com validação cruzada (5 folds) é aplicada para encontrar o valor ideal para o parâmetro n_neighbors (k) do KNN.
-A busca é realizada no intervalo de 1 a 20 vizinhos, com o objetivo de maximizar a acurácia.
-O melhor valor de k encontrado é impresso:
-Melhor valor de k: 17
 
-O modelo KNN é treinado utilizando o melhor valor de k identificado (17).
-As previsões são realizadas nos conjuntos de treino e teste para avaliar o desempenho do modelo em dados que ele viu durante o treinamento e em dados novos.
-As acurácias são calculadas e exibidas:
-Acurácia de Teste: 0.65
-Acurácia de Treino: 0.71
-A acurácia de treino ser ligeiramente maior que a de teste sugere que o modelo pode ter aprendido um pouco mais as nuances do conjunto de treino, mas a diferença não indica um overfitting severo.
 
 
 
-## Análise comparativa dos modelos
 
-Os atributos utilizados foram padronizados para ambos os modelos:
 
-- Investimento em milhões
-_ Idade
-_ Gênero
-_ Cor/Raça/Etnia
-_ Nível de Ensino
-_ Situação de Trabalho
-_ Faixa salarial
-_ Tempo de experiência
-_ Forma de Trabalho
-_ Nível (atributo alvo)
 
-Ambos os modelos utilizados foram de classificação, com o objetivo final de classificar o atributo "Nível" (Júnior, Pleno, Sênior) de cada indivíduo da tabela, e foram otimizados a partir de testes com diferentes métricas e diferentes atributos, além da implementação de bibliotecas como XGBoost.
 
-O modelo 1, Classificação com Árvore de Decisão, atingiu uma acurácia máxima de 0.73 na base de teste, e 0.76 na base de treino. O modelo aprendeu bem a discernir as classes "Júnior" e "Sênior", ambas tendo precisão e recall maior quando comparadas à classe "Pleno". A maior dificuldade de aprendizado do modelo é de distinguir as classes "Sênior" e "Pleno".
-
-O modelo 2, Classificação por K Nearest Neighbors, antingiu uma acurácia máxima de 0.65 na base de teste, e 0.71 na base de treino.
-As bases de treino e teste foram dividas em 70% e 30%, respectivamente, em contraste ao 80% e 20% do modelo de árvore de decisão. As mesmas dificuldades foram enfrentadas: O maior recall e precisão foi da classe com maior contagem. 
-
-### Conclusão comparativa
-
-Ambos os modelos apresentaram características semelhantes e enfrentaram dificuldades análogas. A aplicação de dois modelos de classificação mostrou-se ineficaz para a obtenção de conclusões distintas. Diante disso, optou-se pela substituição do modelo com pior desempenho por um novo modelo, com o intuito de aprimorar os resultados da análise.
-
-### Distribuição do modelo (opcional)
-
-Tende criar um pacote de distribuição para o modelo construído, para ser aplicado 
-em um sistema inteligente.
-
-
-### Conclusão
-
-Apesar dos testes com diferentes profundidades, o modelo não ultrapassou a acurácia de 75% nos testes. Isso pode
-acontecer por diferentes motivos, como overfitting da base de dados, ou falta de atributos relevantes para diferenciar
-as classes, ou até mesmo escolha equivocada do modelo de classificação ideal. Por tal motivo, foi definido como modelo 2
-a classificação por KNN (K-Nearest Neighbors)
-
-Uma conclusão deve ter 3 partes:
-
-   * Breve resumo do que foi desenvolvido
-	 * Apresenação geral dos resultados obtidos com discussão das vantagens e desvantagens do sistema inteligente
-	 * Limitações e possibilidades de melhoria
 
 
 # REFERÊNCIAS
