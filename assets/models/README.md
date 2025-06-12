@@ -4,6 +4,167 @@
 * modelo final 2
 
 ---
+
+# Modelo 1 - Árvore de Decisão
+
+## Bloco 1 - Importação das bibliotecas
+
+```python
+import pandas as pd
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
+import seaborn as sns
+import matplotlib.pyplot as plt
+````
+## Bloco 2 - Carregamento e limpeza de dados
+
+```python
+df = pd.read_excel("/content/state of data 1 (1).xlsx", header=[0, 1], engine='openpyxl')
+
+# Selecionar os atributos e o alvo com nomes exatos
+colunas_usadas = [
+    "('P1_a ', 'Idade')",
+    "('P1_b ', 'Genero')",
+    "('P2_h ', 'Faixa salarial')",
+    "('P2_i ', 'Quanto tempo de experiência na área de dados você tem?')",
+    "('P2_r ', 'Atualmente qual a sua forma de trabalho?')",
+    "('P1_i_2 ', 'Regiao onde mora')",
+    "Investimento em milhões",
+    "('P2_g ', 'Nivel')" # alvo
+]
+
+df = df[colunas_usadas]
+
+# Renomear as colunas para facilitar o código
+df.columns = [
+    "Idade", "Genero", "FaixaSalarial", "TempoExperiencia",
+    "FormaTrabalho", "Regiao", "Investimento", "Nivel"
+]
+
+# Checar valores faltantes
+print("Missing values before handling:\n", df.isnull().sum())
+print(f"Shape before dropping NaNs: {df.shape}")
+
+# Remover linhas com valores faltantes
+df.dropna(inplace=True) # Removes rows with any NaN values
+
+```
+
+## Bloco 3 - Testando e otimizando o modelo
+
+```python
+# Separar X (atributos) e y (alvo)
+X = df.drop("Nivel", axis=1)
+y = df["Nivel"]
+
+# Codificar variáveis categóricas
+X_encoded = pd.get_dummies(X)
+
+# Dividir em treino e teste
+X_train, X_test, y_train, y_test = train_test_split(
+    X_encoded, y, test_size=0.2, random_state=42
+
+# Testar diferentes profundidades 
+
+depths_to_test = range(1, 21) # Profundidades de 1 a 20
+accuracy_scores_entropy = [] 
+accuracy_scores_entropy_train = []
+
+print("\nTesting different max_depth values for Decision Tree with Entropy criterion:")
+
+for depth in depths_to_test:
+    modelo_entropy = DecisionTreeClassifier(
+        criterion="entropy",  
+        random_state=42,
+        class_weight='balanced',
+        max_depth=depth,  
+        min_samples_split=50, 
+        min_samples_leaf=1
+    )
+
+    modelo_entropy.fit(X_train, y_train)
+    # Calcular acurácias de treino e de teste
+    y_pred_entropy = modelo_entropy.predict(X_test)
+    acuracia_entropy = accuracy_score(y_test, y_pred_entropy)
+    accuracy_scores_entropy.append(acuracia_entropy)
+    y_pred_entropy_train = modelo_entropy.predict(X_train)
+    acuracia_entropy_train = accuracy_score(y_train, y_pred_entropy_train)
+    accuracy_scores_entropy_train.append(acuracia_entropy_train)
+```
+
+## Bloco 4 - Otimização com GridSearch
+
+```python
+ #Definir os parametros a serem testados
+ param_grid = {
+     'max_depth': [7, 8, 9, 10], # Profundidades próximas à ideal encontrada
+     'min_samples_split': [2, 5, 10, 20, 30, 40, 50],
+     'min_samples_leaf': [1, 5, 10, 15, 20] 
+ }
+
+ dt = DecisionTreeClassifier(criterion="entropy", random_state=42, class_weight='balanced')
+
+ # Partir a base em 5 (cv=5)
+ grid_search = GridSearchCV(estimator=dt, param_grid=param_grid, cv=5, scoring='accuracy', n_jobs=-1)
+
+ grid_search.fit(X_train, y_train)
+
+ print("\nBest parameters found by Grid Search:")
+ print(grid_search.best_params_)
+ print("Best cross-validation accuracy found by Grid Search:")
+ print(grid_search.best_score_) # This is the average cross-validation score
+
+ best_modelo = grid_search.best_estimator_
+
+ # Avaliar o melhor modelo na base de teste intependente
+ y_pred_best = best_modelo.predict(X_test)
+ acuracia_best = accuracy_score(y_test, y_pred_best)
+ print(f"\nAccuracy of the best model (from Grid Search) on the test set: {acuracia_best:.4f}")
+
+```
+
+## Bloco 5 - Visualização final dos resultados
+
+```python
+
+ #Treinar o modelo final com os melhores parâmetros encontrados (por exemplo, usando Entropy, depth 8)
+ final_modelo = DecisionTreeClassifier(
+      criterion="entropy",
+      random_state=42,
+      class_weight='balanced',
+      max_depth=8,
+      min_samples_split=50, # Número ideal encontrado pelo GridSearch
+      min_samples_leaf=1 # Número ideal encontrado pelo GridSearch
+ )
+ final_modelo.fit(X_train, y_train)
+
+ # Fazer previsões com o modelo final
+ y_pred_final = final_modelo.predict(X_test)
+
+ # Avaliar o modelo final
+ matriz_final = confusion_matrix(y_test, y_pred_final)
+
+ # Visualizar a matriz de confusão do modelo final
+ plt.figure(figsize=(8,6))
+ sns.heatmap(matriz_final, annot=True, fmt="d", cmap="Blues",
+             xticklabels=final_modelo.classes_, yticklabels=final_modelo.classes_)
+ plt.xlabel("Previsto")
+ plt.ylabel("Real")
+ plt.title("Matriz de Confusão (Modelo Final)")
+ plt.savefig("confusion_matrix_final.png")
+ plt.show()
+ files.download("confusion_matrix_final.png")
+
+
+ # Relatório com métricas do modelo final
+ print("\nRelatório de Classificação (Modelo Final):")
+ print(classification_report(y_test, y_pred_final))
+
+ # Mostrar acurácia do modelo final
+ acuracia_final = accuracy_score(y_test, y_pred_final)
+ print(f"\nAcurácia do modelo Final: {acuracia_final:.4f}")
+```
 *modelo 2 versão preliminaro
 
 ```python
