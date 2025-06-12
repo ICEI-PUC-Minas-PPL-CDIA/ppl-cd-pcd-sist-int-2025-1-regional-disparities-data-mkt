@@ -688,7 +688,7 @@ O modelo de classificação com Random Forest foi ajustado com GridSearchCV e va
 
 ### Código do modelo
 
-```
+```python
 # 2. Divisão treino/teste (20/80)
 print("\n2. Dividindo os dados em treino e teste (20/80)...")
 X_train, X_test, y_train, y_test = train_test_split(X, y,
