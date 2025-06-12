@@ -658,20 +658,23 @@ Max_depth: 9
 Criterion: Entropy
 
 ###Resultados obtidos com modelo 2
+### 📊 Resultados do Modelo - Random Forest
 ### Acurácia:
+#### 🏋️ Conjunto de Treino
 
-### Resultados do Modelo
-|                       Conjunto de Treino                       |
-|-------------------|----------|-----------|----------|----------|
-| **Accuracy**       | -        | -         | **0.82** | **1089**|
-| **Média Macro**    | 0.82     | 0.82      | 0.82     | 1089    |
-| **Média Ponderada**| 0.82     | 0.82      | 0.82     | 1089    |
+| Métrica             | Precisão | Revocação | F1-Score | Suporte |
+|---------------------|----------|-----------|----------|---------|
+| **Accuracy**        | -        | -         | **0.82** | **1089**|
+| **Média Macro**     | 0.82     | 0.82      | 0.82     | 1089    |
+| **Média Ponderada** | 0.82     | 0.82      | 0.82     | 1089    |
 
-|                         Conjunto de Teste                       |
+#### 🧪 Conjunto de Teste
+
+| Métrica             | Precisão | Revocação | F1-Score | Suporte |
 |---------------------|----------|-----------|----------|---------|
 | **Accuracy**        | -        | -         | **0.71** | **3385**|
-| **Média macro**     | 0.70     | 0.71      | 0.70     | 3385    |
-| **Média ponderada** | 0.71     | 0.71      | 0.71     | 3385    |
+| **Média Macro**     | 0.70     | 0.71      | 0.70     | 3385    |
+| **Média Ponderada** | 0.71     | 0.71      | 0.71     | 3385    |
 
 ### Acurácia Global
 
