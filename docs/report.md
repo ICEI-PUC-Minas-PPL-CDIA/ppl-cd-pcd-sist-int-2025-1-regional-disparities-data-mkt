@@ -657,8 +657,8 @@ Min_samples_split: 50
 Max_depth: 9
 Criterion: Entropy
 
-###Resultados obtidos com modelo 2
-### 📊 Resultados do Modelo - Random Forest
+
+### 📊 Resultados do Modelo 2 - Random Forest
 ### Acurácia:
 #### 🏋️ Conjunto de Treino
 
