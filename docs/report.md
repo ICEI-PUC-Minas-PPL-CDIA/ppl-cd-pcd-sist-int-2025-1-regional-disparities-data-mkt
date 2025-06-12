@@ -684,7 +684,47 @@ Criterion: Entropy
 
 ### Interpretação Modelo 2
 
-O modelo de classificação usando Randon forest, foi testado com parametros diferentes
+O modelo de classificação com Random Forest foi ajustado com GridSearchCV e validado com divisão de 80% para treino e 20% para teste. Utilizou-se One Hot Encoder para variáveis categóricas e StandardScaler para dados numéricos. Foram avaliadas métricas como acurácia, precisão, revocação e F1-score, sendo a acurácia usada como principal critério para escolha do melhor modelo.
+
+### Código do modelo
+
+```
+# 2. Divisão treino/teste (20/80)
+print("\n2. Dividindo os dados em treino e teste (20/80)...")
+X_train, X_test, y_train, y_test = train_test_split(X, y,
+ test_size=0.8,  # Changed to 0.8 for 80% test
+ random_state=42,
+ stratify=y)
+# 1. Definição dos hiperparâmetros para otimização
+print("\n1. Configurando grid de hiperparâmetros...")
+param_grid = {
+    'n_estimators': [200, 300, 400],      # Número de árvores
+    'max_depth': [15, 20, 25, 30],        # Profundidade máxima das árvores
+    'min_samples_split': [2, 5, 10],      # Número mínimo de amostras para split
+    'min_samples_leaf': [1, 2, 4],        # Número mínimo de amostras em folhas
+    'class_weight': ['balanced', 'balanced_subsample'],  # Pesos das classes
+    'max_features': ['sqrt', 'log2']       # Número de features a considerar
+}
+
+# 2. Criação e configuração do modelo base
+print("\n2. Criando modelo base...")
+rf_base = RandomForestClassifier(random_state=42, n_jobs=-1)
+
+# 3. Configuração e execução do GridSearchCV
+print("\n3. Iniciando busca em grade com validação cruzada...")
+grid_search = GridSearchCV(
+    estimator=rf_base,
+    param_grid=param_grid,
+    cv=5,                  # 5-fold cross-validation
+    scoring='accuracy',    # Métrica para otimização
+    n_jobs=-1,            # Usar todos os cores disponíveis
+    verbose=1             # Mostrar progresso
+)
+
+# 4. Treinamento com GridSearchCV
+print("\n4. Treinando modelo com os melhores parâmetros...")
+grid_search.fit(X_train_selected, y_train_balanced)
+```
 
 
 
