@@ -1,11 +1,15 @@
 # Modelos do sistema
 
-* modelo final 1
-* modelo final 2
+* Modelo 1 Final  (Árvore de Decisão).
+* Modelo Extinto  (KNN).
+* Modelo 2 Final  (Random Forest).
 
+Nesta partição do repositorio estão presentes os códigos dos modelos ultilizados e as devidas explicações de suas features.
 ---
 
 # Modelo 1 - Árvore de Decisão
+
+Explicação do por que foi usado esse modelo:
 
 ## Bloco 1 - Importação das bibliotecas
 
@@ -17,11 +21,17 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 import seaborn as sns
 import matplotlib.pyplot as plt
 ````
+Este bloco importa as bibliotecas necessárias para:
+Manipulação de dados (pandas)
+Construção e avaliação do modelo de árvore de decisão (sklearn)
+Visualização dos resultados (seaborn e matplotlib)
+
+
 ## Bloco 2 - Carregamento e limpeza de dados
 
 ```python
-df = pd.read_excel("/content/state of data 1 (1).xlsx", header=[0, 1], engine='openpyxl')
 
+df = pd.read_excel("state_of_data_updated_Limpa.xlsx", header=[0, 1], engine='openpyxl')
 # Selecionar os atributos e o alvo com nomes exatos
 colunas_usadas = [
     "('P1_a ', 'Idade')",
@@ -50,6 +60,26 @@ print(f"Shape before dropping NaNs: {df.shape}")
 df.dropna(inplace=True) # Removes rows with any NaN values
 
 ```
+
+Features utilizadas:
+"Idade" - Idade do profissional
+"Genero" - Gênero do profissional
+"FaixaSalarial" - Faixa salarial atual
+"TempoExperiencia" - Tempo de experiência na área de dados
+"FormaTrabalho" - Modalidade de trabalho atual
+"Regiao" - Região onde mora
+"Investimento" - Investimento em milhões
+"Nivel" (Target) - Nível profissional
+Propósito de cada feature:
+"Idade": Indica possível correlação entre idade e nível profissional
+"Genero": Permite análise de distribuição de níveis por gênero
+"FaixaSalarial": Forte indicador do nível profissional
+"TempoExperiencia": Crucial para determinar o nível de senioridade
+"FormaTrabalho": Pode indicar correlação entre modalidade de trabalho e nível
+"Regiao": Permite análise de distribuição geográfica dos níveis
+"Investimento": Pode indicar relação entre investimento da empresa e níveis profissionais
+
+
 
 ## Bloco 3 - Testando e otimizando o modelo
 
@@ -93,6 +123,12 @@ for depth in depths_to_test:
     accuracy_scores_entropy_train.append(acuracia_entropy_train)
 ```
 
+Este bloco:
+Separa features (X) e target (y)
+Realiza one-hot encoding das variáveis categóricas
+Prepara os dados para treinamento
+
+
 ## Bloco 4 - Otimização com GridSearch
 
 ```python
@@ -123,6 +159,12 @@ for depth in depths_to_test:
  print(f"\nAccuracy of the best model (from Grid Search) on the test set: {acuracia_best:.4f}")
 
 ```
+
+Critério de entropia para divisão dos nós
+Balanceamento de classes
+Validação com dados de teste
+Monitoramento de overfitting através das acurácias de treino e teste
+
 
 ## Bloco 5 - Visualização final dos resultados
 
@@ -165,7 +207,7 @@ for depth in depths_to_test:
  acuracia_final = accuracy_score(y_test, y_pred_final)
  print(f"\nAcurácia do modelo Final: {acuracia_final:.4f}")
 ```
-*modelo 2 versão preliminaro
+* Modelo KNN versão (Extinto)
 
 ```python
 from IPython import get_ipython
