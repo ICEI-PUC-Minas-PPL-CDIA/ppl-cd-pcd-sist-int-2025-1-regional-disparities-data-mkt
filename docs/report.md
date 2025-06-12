@@ -661,8 +661,13 @@ Criterion: Entropy
 ### Acurácia:
 
 ### Resultados do Modelo
+|                       Conjunto de Treino                       |
+|-------------------|----------|-----------|----------|----------|
+| **Accuracy**       | -        | -         | **0.82** | **1089**|
+| **Média Macro**    | 0.82     | 0.82      | 0.82     | 1089    |
+| **Média Ponderada**| 0.82     | 0.82      | 0.82     | 1089    |
 
-| Métrica             | Precisão | Revocação | F1-Score | Suporte |
+|                         Conjunto de Teste                       |
 |---------------------|----------|-----------|----------|---------|
 | **Accuracy**        | -        | -         | **0.71** | **3385**|
 | **Média macro**     | 0.70     | 0.71      | 0.70     | 3385    |
@@ -672,6 +677,12 @@ Criterion: Entropy
 
 - **Acurácia no treino:** 0.8228  
 - **Acurácia no teste:** 0.7146
+
+
+### Interpretação Modelo 2
+
+O modelo de classificação usando Randon forest, foi testado com parametros diferentes
+
 
 
 ## Análise comparativa dos modelos
