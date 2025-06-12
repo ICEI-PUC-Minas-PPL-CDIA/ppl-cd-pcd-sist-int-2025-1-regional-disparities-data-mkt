@@ -725,7 +725,13 @@ grid_search = GridSearchCV(
 print("\n4. Treinando modelo com os melhores parâmetros...")
 grid_search.fit(X_train_selected, y_train_balanced)
 ```
+###Assim ficou a curva de aprendizado
+![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/curva_apredizado.png)
+### Curva de Aprendizado
 
+A curva mostra que a acurácia no treino é consistentemente maior do que na validação, sugerindo **overfitting** — o modelo aprende bem os dados de treino, mas generaliza com menor eficácia.
+
+Com o aumento do conjunto de treino, a acurácia de validação melhora gradualmente, enquanto a de treino se estabiliza. Como as curvas não convergem totalmente, o modelo ainda pode ser otimizado com regularização, ajuste de hiperparâmetros ou mais dados.
 
 
 ## Análise comparativa dos modelos
