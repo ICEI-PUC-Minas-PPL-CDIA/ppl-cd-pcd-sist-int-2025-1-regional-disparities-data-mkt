@@ -657,6 +657,15 @@ Min_samples_split: 50
 Max_depth: 9
 Criterion: Entropy
 
+###Resultados obtidos com modelo 2
+### Acurácia:
+
+|**Accuracy**  |          0.71  |    3385|
+|**macro avg** |      0.70   |   0.71  |    0.70   |   3385|
+|**Weighted avg**|       0.71    |  0.71  |    0.71  |    3385|
+|Acurácia no treino** | 0.8228|
+|**Acurácia no teste** | 0.7146Z|
+
 
 ## Análise comparativa dos modelos
 
