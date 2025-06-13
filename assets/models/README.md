@@ -22,9 +22,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 ````
 Este bloco importa as bibliotecas necessárias para:
-Manipulação de dados (pandas)
-Construção e avaliação do modelo de árvore de decisão (sklearn)
-Visualização dos resultados (seaborn e matplotlib)
+
+Manipulação de dados (pandas).
+
+Construção e avaliação do modelo de árvore de decisão (sklearn).
+
+Visualização dos resultados (seaborn e matplotlib).
 
 
 ## Bloco 2 - Carregamento e limpeza de dados
@@ -62,23 +65,37 @@ df.dropna(inplace=True) # Removes rows with any NaN values
 ```
 
 Features utilizadas:
-"Idade" - Idade do profissional
-"Genero" - Gênero do profissional
-"FaixaSalarial" - Faixa salarial atual
-"TempoExperiencia" - Tempo de experiência na área de dados
-"FormaTrabalho" - Modalidade de trabalho atual
-"Regiao" - Região onde mora
-"Investimento" - Investimento em milhões
-"Nivel" (Target) - Nível profissional
-Propósito de cada feature:
-"Idade": Indica possível correlação entre idade e nível profissional
-"Genero": Permite análise de distribuição de níveis por gênero
-"FaixaSalarial": Forte indicador do nível profissional
-"TempoExperiencia": Crucial para determinar o nível de senioridade
-"FormaTrabalho": Pode indicar correlação entre modalidade de trabalho e nível
-"Regiao": Permite análise de distribuição geográfica dos níveis
-"Investimento": Pode indicar relação entre investimento da empresa e níveis profissionais
+"Idade" - Idade do profissional.
 
+"Genero" - Gênero do profissional.
+
+"FaixaSalarial" - Faixa salarial atual.
+
+"TempoExperiencia" - Tempo de experiência na área de dados.
+
+"FormaTrabalho" - Modalidade de trabalho atual.
+
+"Regiao" - Região onde mora.
+
+"Investimento" - Investimento em milhões.
+
+"Nivel" (Target) - Nível profissional.
+
+Propósito de cada feature:
+
+"Idade": Indica possível correlação entre idade e nível profissional.
+
+"Genero": Permite análise de distribuição de níveis por gênero.
+
+"FaixaSalarial": Forte indicador do nível profissional.
+
+"TempoExperiencia": Crucial para determinar o nível de senioridade.
+
+"FormaTrabalho": Pode indicar correlação entre modalidade de trabalho e nível.
+
+"Regiao": Permite análise de distribuição geográfica dos níveis.
+
+"Investimento": Pode indicar relação entre investimento da empresa e níveis profissionais.
 
 
 ## Bloco 3 - Testando e otimizando o modelo
@@ -123,10 +140,24 @@ for depth in depths_to_test:
     accuracy_scores_entropy_train.append(acuracia_entropy_train)
 ```
 
+
 Este bloco:
-Separa features (X) e target (y)
-Realiza one-hot encoding das variáveis categóricas
-Prepara os dados para treinamento
+
+Separa features (X) e target (y).
+
+Realiza one-hot encoding das variáveis categóricas.
+
+Prepara os dados para treinamento.
+
+Este bloco também testa diferentes profundidades da árvore de decisão (1 a 20) para encontrar o melhor parâmetro, usando:
+
+Critério de entropia.
+
+Peso de classes balanceado.
+
+Mínimo de 50 amostras para split.
+
+Mínimo de 1 amostra por folha.
 
 
 ## Bloco 4 - Otimização com GridSearch
@@ -157,16 +188,18 @@ Prepara os dados para treinamento
  y_pred_best = best_modelo.predict(X_test)
  acuracia_best = accuracy_score(y_test, y_pred_best)
  print(f"\nAccuracy of the best model (from Grid Search) on the test set: {acuracia_best:.4f}")
-
 ```
 
-Critério de entropia para divisão dos nós
-Balanceamento de classes
-Validação com dados de teste
-Monitoramento de overfitting através das acurácias de treino e teste
+Este bloco realiza uma busca em grade (GridSearch) para otimizar:
+
+Profundidade máxima da árvore.
+
+Número mínimo de amostras para split.
+
+Número mínimo de amostras por folha.
 
 
-## Bloco 5 - Visualização final dos resultados
+## Bloco 5 - Visualização final dos resultados.
 
 ```python
 
@@ -207,7 +240,35 @@ Monitoramento de overfitting através das acurácias de treino e teste
  acuracia_final = accuracy_score(y_test, y_pred_final)
  print(f"\nAcurácia do modelo Final: {acuracia_final:.4f}")
 ```
-* Modelo KNN versão (Extinto)
+
+
+Este bloco:
+Treina o modelo final com os melhores parâmetros encontrados.
+
+Gera previsões.
+
+Cria matriz de confusão.
+
+Calcula métricas de avaliação (acurácia, precisão, recall, F1-score).
+
+Visualiza os resultados.
+
+
+Dessa forma, o modelo final usa:
+Profundidade máxima de 8 níveis.
+
+50 amostras mínimas para split.
+
+1 amostra mínima por folha.
+
+Peso de classes balanceado para lidar com desbalanceamento.
+
+
+# Modelo KNN versão (Extinto)
+
+Explicação por que o modelo foi não foi inserido na versão final:
+
+## Bloco 1 - Importação das Bibliotecas
 
 ```python
 from IPython import get_ipython
@@ -226,11 +287,28 @@ from sklearn.metrics import (
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
-### Carregar os dados (substitua pelo seu caminho)
+Esta célula tem como principal função importar bibliotecas essenciais para análise de dados, modelagem, visualização e avaliação de performance. E em sua estrutura contém:
+pandas, numpy: manipulação de dados.
+
+sklearn.model_selection.train_test_split: separação da base em treino/teste.
+
+StandardScaler: normalização.
+
+KNeighborsClassifier: modelo KNN.
+
+GridSearchCV: busca de hiperparâmetros.
+
+accuracy_score, confusion_matrix, etc.: métricas de avaliação.
+
+matplotlib, seaborn: visualização gráfica.
+
+## Bloco 2 - Carregar os dados
+
 ```python
 df = pd.read_excel('state_of_data_updated_Limpa.xlsx')
+
 ```
-### Selecionar features relevantes e target
+## Bloco 3 - Selecionar features relevantes e target 
 ```python
 features = [
     'Investimento em milhões',
@@ -246,7 +324,7 @@ features = [
 
 target = "('P2_g ', 'Nivel')"  # Nível (Júnior=0, Pleno=1, Sênior=2)
 ```
-### Filtrar dados e remover possíveis NaNs
+## Bloco 4 - Filtrar dados e remover possíveis NaNs
 ```python
 df_clean = df[features + [target]].dropna()
 
@@ -254,80 +332,79 @@ X = df_clean[features]
 y = df_clean[target]
 ```
 
-### Verificar balanceamento das classes
+## Bloco 5 - Verificar balanceamento das classes
 ```python
 print("Contagem por classe:")
 print(y.value_counts())
 ```
-
-### Dividir em treino (70%) e teste (30%)
+## Bloco 6 - Dividir em treino (70%) e teste (30%)
 ```python
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, random_state=42
 )
 ```
-### Padronizar as features (importante para KNN)
+## Bloco 7 - Padronizar as features (importante para KNN)
 ```python
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 ```
-### Definir os valores de k para testar
+## Bloco 8 - Definir os valores de k para testar
 ```python
 param_grid = {'n_neighbors': range(1, 21)}
 ```
 
-### Usar GridSearchCV para encontrar o melhor k
+## Bloco 9 - Usar GridSearchCV para encontrar o melhor k
 ```python
 knn = KNeighborsClassifier()
 grid_search = GridSearchCV(knn, param_grid, cv=5, scoring='accuracy')
 grid_search.fit(X_train_scaled, y_train)
 ```
 
-### Melhor valor de k
+## Bloco 10 - Melhor valor de k
 ```python
 best_k = grid_search.best_params_['n_neighbors']
 print(f"\nMelhor valor de k: {best_k}")
 ```
 
-### Treinar o modelo com o melhor k
+## Bloco 11 - Treinar o modelo com o melhor k
 ```python
 best_knn = KNeighborsClassifier(n_neighbors=best_k)
 best_knn.fit(X_train_scaled, y_train)
 ```
 
-### Previsões no conjunto de teste
+## Bloco 12 - Previsões no conjunto de teste
 ```python
 y_pred_test = best_knn.predict(X_test_scaled)
 ```
 
-# Métricas de avaliação
+## Bloco 13 - Métricas de avaliação
 ```python
 accuracy_test = accuracy_score(y_test, y_pred_test)
 print(f"\nAcurácia de Teste: {accuracy_test:.2f}")
 ```
 
-### Calcular a acurácia de treino
+## Bloco 14 - Calcular a acurácia de treino
 ```python
 y_pred_train = best_knn.predict(X_train_scaled)
 accuracy_train = accuracy_score(y_train, y_pred_train)
 print(f"Acurácia de Treino: {accuracy_train:.2f}")
 ```
 
-### Matriz de confusão
+## Bloco 15 - Matriz de confusão
 ```python
 conf_matrix = confusion_matrix(y_test, y_pred_test)
 print("\nMatriz de Confusão:")
 print(conf_matrix)
 ```
 
-### Relatório de classificação
+## Bloco 16 - Relatório de classificação
 ```python
 print("\nRelatório de Classificação:")
 print(classification_report(y_test, y_pred_test))
 ```
 
-### Plot da matriz de confusão
+## Bloco 17 - Plot da matriz de confusão
 ```python
 plt.figure(figsize=(8, 6))
 sns.heatmap(
@@ -354,7 +431,7 @@ for k in k_values:
     accuracies.append(accuracy_score(y_test, y_pred_temp))
 ```
 
-### Plotar a acurácia vs. k
+## Bloco 18 - Plotar a acurácia vs. k
 ```python
 plt.figure(figsize=(10, 6))
 plt.plot(k_values, accuracies, marker='o')
