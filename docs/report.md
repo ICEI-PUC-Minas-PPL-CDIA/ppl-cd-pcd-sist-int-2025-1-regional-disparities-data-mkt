@@ -763,7 +763,118 @@ A curva mostra que a acurácia no treino é consistentemente maior do que na val
 
 Com o aumento do conjunto de treino, a acurácia de validação melhora gradualmente, enquanto a de treino se estabiliza. Como as curvas não convergem totalmente, o modelo ainda pode ser otimizado com regularização, ajuste de hiperparâmetros ou mais dados.
 
+## Parte mais importante do segundo modelo 
+```python
+# Importando as bibliotecas necessárias
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split, GridSearchCV, learning_curve
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.preprocessing import StandardScaler
+from imblearn.over_sampling import SMOTE
+import matplotlib.pyplot as plt
+from sklearn.feature_selection import SelectFromModel
 
+# Configurações iniciais
+plt.style.use('default')
+pd.set_option('display.float_format', lambda x: '%.3f' % x)
+
+# Função para limpar nomes de colunas
+def limpar_nome_coluna(nome):
+    nome = str(nome)
+    nome = nome.replace("'", "").replace('"', "").replace("(", "").replace(")", "")
+    nome = nome.replace("/", "_").replace(" ", "_").replace("-", "_")
+    nome = nome.replace(".", "").replace("?", "").replace("!", "")
+    nome = nome.replace(",", "").replace(":", "").replace(";", "")
+    nome = nome.replace("@", "at").replace("%", "pct").strip()
+    return nome
+
+# Carregar e preparar os dados
+df = pd.read_excel('state_of_data_updated_Limpa.xlsx')
+df.columns = [limpar_nome_coluna(col) for col in df.columns]
+
+# Selecionar features e target
+numeric_columns = df.select_dtypes(include=['int64', 'float64']).columns
+target_column = 'P2_g__Nivel_Num'
+X = df[numeric_columns].drop(target_column, axis=1) if target_column in numeric_columns else df[numeric_columns]
+y = df[target_column]
+
+# Dividir dados (20% treino, 80% teste)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.8, random_state=42, stratify=y)
+
+# Pré-processamento
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Balanceamento com SMOTE
+smote = SMOTE(random_state=42)
+X_train_balanced, y_train_balanced = smote.fit_resample(X_train_scaled, y_train)
+
+# Seleção de features
+base_model = RandomForestClassifier(n_estimators=100, random_state=42)
+base_model.fit(X_train_balanced, y_train_balanced)
+selector = SelectFromModel(base_model, prefit=True)
+X_train_selected = selector.transform(X_train_balanced)
+X_test_selected = selector.transform(X_test_scaled)
+selected_features = X.columns[selector.get_support()].tolist()
+
+# Otimização do modelo
+param_grid = {
+    'n_estimators': [200, 300, 400],
+    'max_depth': [15, 20, 25, 30],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4],
+    'class_weight': ['balanced', 'balanced_subsample'],
+    'max_features': ['sqrt', 'log2']
+}
+
+rf_base = RandomForestClassifier(random_state=42, n_jobs=-1)
+grid_search = GridSearchCV(rf_base, param_grid, cv=5, scoring='accuracy', n_jobs=-1, verbose=1)
+grid_search.fit(X_train_selected, y_train_balanced)
+rf_model = grid_search.best_estimator_
+
+# Avaliação
+y_train_pred = rf_model.predict(X_train_selected)
+y_test_pred = rf_model.predict(X_test_selected)
+
+print(f"Acurácia no treino: {accuracy_score(y_train_balanced, y_train_pred):.4f}")
+print(f"Acurácia no teste: {accuracy_score(y_test, y_test_pred):.4f}")
+print("\nClassification Report:")
+print(classification_report(y_test, y_test_pred))
+```
+Este projeto implementa um pipeline completo de machine learning utilizando o modelo Random Forest para classificar a variável P2_g__Nivel_Num, a partir de dados numéricos carregados de um arquivo Excel.
+
+Etapas do Projeto
+
+Limpeza de Dados: Padronização dos nomes das colunas para evitar erros.
+
+Divisão dos Dados: Separados em treino (20%) e teste (80%) de forma estratificada.
+
+Normalização: Aplicada com StandardScaler para uniformizar os dados.
+
+Balanceamento de Classes: Uso de SMOTE para lidar com classes desbalanceadas.
+
+Seleção de Features: Realizada com um modelo base de Random Forest.
+
+Otimização de Hiperparâmetros: Usando GridSearchCV com validação cruzada.
+
+Avaliação Final: Com acurácia e relatório de classificação nos conjuntos de treino e teste.
+
+Destaques
+
+Este código segue boas práticas de ciência de dados, incluindo:
+
+Limpeza de dados automatizada;
+
+Tratamento de desbalanceamento;
+
+Seleção de atributos relevantes;
+
+Ajuste fino dos parâmetros do modelo.
+
+Ideal para problemas de classificação com dados numéricos e classes desbalanceadas.
 ## Análise comparativa dos modelos
 
 Os atributos utilizados foram padronizados para ambos os modelos:
