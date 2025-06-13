@@ -324,6 +324,8 @@ features = [
 
 target = "('P2_g ', 'Nivel')"  # Nível (Júnior=0, Pleno=1, Sênior=2)
 ```
+Definição das olunas de entrada (features) e coluna alvo (target)
+
 ## Bloco 4 - Filtrar dados e remover possíveis NaNs
 ```python
 df_clean = df[features + [target]].dropna()
@@ -331,28 +333,55 @@ df_clean = df[features + [target]].dropna()
 X = df_clean[features]
 y = df_clean[target]
 ```
+Remoção de possiveis valores ausentes e separa features e target e as estruturas que fazem isso são:
+
+dropna() do Pandas para limpeza.
+
+Atribuição para criação de X e y.
+
 
 ## Bloco 5 - Verificar balanceamento das classes
 ```python
 print("Contagem por classe:")
 print(y.value_counts())
 ```
+
+Mostrar o número de amostras em cada classe, ultilizando a estrutura:
+
+value_counts() do Pandas.
+
+
 ## Bloco 6 - Dividir em treino (70%) e teste (30%)
 ```python
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, random_state=42
 )
 ```
+Separar a base entre treino e teste, utilizando a estrutura:
+
+ train_test_split do Scikit-Learn.
+
+
 ## Bloco 7 - Padronizar as features (importante para KNN)
 ```python
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 ```
+
+Obter a escala dos dados, ultilizando a estrutura:
+
+StandardScaler e seus métodos fit_transform e transform.
+
+
 ## Bloco 8 - Definir os valores de k para testar
 ```python
 param_grid = {'n_neighbors': range(1, 21)}
 ```
+
+Definir a varredura de valores para o parâmetro k do KNN, utilizando a estrutura:
+
+dicionário padrão do Python.
 
 ## Bloco 9 - Usar GridSearchCV para encontrar o melhor k
 ```python
@@ -361,11 +390,23 @@ grid_search = GridSearchCV(knn, param_grid, cv=5, scoring='accuracy')
 grid_search.fit(X_train_scaled, y_train)
 ```
 
+Achar o melhor valor de K com validação cruzada, utilizando as estruturas:
+
+GridSearchCV.
+
+fit().
+
+
 ## Bloco 10 - Melhor valor de k
 ```python
 best_k = grid_search.best_params_['n_neighbors']
 print(f"\nMelhor valor de k: {best_k}")
 ```
+
+Mostrar o valor k achado, utilizando as estruturas:
+
+best_params_ from GridSearchCV.
+
 
 ## Bloco 11 - Treinar o modelo com o melhor k
 ```python
@@ -373,10 +414,21 @@ best_knn = KNeighborsClassifier(n_neighbors=best_k)
 best_knn.fit(X_train_scaled, y_train)
 ```
 
+Treinar o modelo final com o melhor valor de K achado, para isso é usando:
+
+```python
+KNeighborsClassifier
+
+fit()
+````
+
 ## Bloco 12 - Previsões no conjunto de teste
 ```python
 y_pred_test = best_knn.predict(X_test_scaled)
 ```
+Realizar previsões no modelo de teste usando: predict
+
+
 
 ## Bloco 13 - Métricas de avaliação
 ```python
