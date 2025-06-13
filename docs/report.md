@@ -26,6 +26,36 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
+## 📑 Índice
+
+- [Resumo](#resumo)
+- [Introdução](#introdução)
+- [Contextualização](#contextualização)
+- [Problema](#problema)
+- [Objetivo Geral](#objetivo-geral)
+- [Objetivos Específicos](#objetivos-específicos)
+- [Justificativas](#justificativas)
+- [Público Alvo](#público-alvo)
+- [Análise Exploratória dos Dados](#análise-exploratória-dos-dados)
+  - [1. Introdução](#1-introdução)
+  - [2. Atributos Analisados (Dicionário de Dados)](#2-atributos-analisados-dicionário-de-dados)
+  - [3. Estatísticas Descritivas](#3-estatísticas-descritivas)
+  - [4. Principais Insights](#4-principais-insights)
+  - [5. Gráficos Adicionais](#5-gráficos-adicionais)
+- [Preparação dos Dados](#preparação-dos-dados)
+- [Tabela de Variáveis e Codificações](#tabela-de-variáveis-e-codificações)
+- [Indução de Modelos](#indução-de-modelos)
+  - [Modelo 1: Classificação com Árvore de Decisão](#modelo-1-classificação-com-árvore-de-decisão)
+  - [Modelo 2: Random Forest](#modelo-2-random-forest)
+- [Treinamento e Otimização do Modelo](#treinamento-e-otimização-do-modelo)
+- [Análise Comparativa dos Modelos](#análise-comparativa-dos-modelos)
+- [Conclusão](#conclusão)
+- [Referências](#referências)
+- [Apêndices](#apêndices)
+- [Resultados (Temporário)](#resultados-temporário)
+
+---
+
 ### Resumo
 
 Este estudo analisa como fatores individuais (formação, habilidades técnicas e socioeconômicos) impactam carreiras em dados no Brasil, utilizando o State of Data 2023 como base principal. Aplicando métodos estatísticos, identificaremos:
