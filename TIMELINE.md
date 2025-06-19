@@ -140,7 +140,9 @@ Código no GitHub
 
 Autoavaliação da equipe
 
+
 📊 Principais Entregas por Sprint
+
 Sprint	Período	Entregas	Pontos
 1	28/02-14/03	Problema definido, EDA inicial	5
 2	21/03-04/04	Análise exploratória completa	5
@@ -148,8 +150,11 @@ Sprint	Período	Entregas	Pontos
 4	02/05-16/05	Dois modelos implementados	5
 5	23/05-06/06	Análise comparativa concluída	5
 6	13/06-20/06	Materiais finais e apresentação	25
+
 Duração total: 18 semanas (Feb-Jun 2024)
+
 Tecnologias usadas: Python, Pandas, Scikit-learn, SMOTE, Matplotlib
+
 Repositório: https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/report.md
 
 Este projeto revelou como desigualdades estruturais moldam trajetórias profissionais em dados, oferecendo um mapa para mudanças concretas.
