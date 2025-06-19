@@ -1,6 +1,7 @@
 # 📊 Análise do Mercado de Ciência de Dados no Brasil: Fatores Individuais que Impactam sua Carreira  
 
-**Autores**:  
+**Autores**: 
+
 Walker Rocha, Álvaro Oliveira, Guilherme Amintas, Izabela Dobscha, Luiz Eduardo
 
 **Orientadores**: Prof. Hugo Bastos e Prof. Hayala Nepomuceno  
