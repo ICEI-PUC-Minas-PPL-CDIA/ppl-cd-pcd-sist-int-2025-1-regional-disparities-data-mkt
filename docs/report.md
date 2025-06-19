@@ -126,29 +126,29 @@ O crescimento do mercado de ciência de dados no Brasil, embora promissor, é ma
 
 *Desigualdades Estruturais no Nível Individual*
 
-➡ Divisão de habilidades: Profissionais com domínio em ferramentas avançadas (MLOps, engenharia de dados) têm salários até 50% maiores, mas muitos não têm acesso a capacitação nessas tecnologias (Stack Overflow, 2023).
+- Divisão de habilidades: Profissionais com domínio em ferramentas avançadas (MLOps, engenharia de dados) têm salários até 50% maiores, mas muitos não têm acesso a capacitação nessas tecnologias (Stack Overflow, 2023).
 
-➡ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), excluindo quem não está inserido em ambientes corporativos da área tecnológica.
+- Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), excluindo quem não está inserido em ambientes corporativos da área tecnológica.
 
-➡ Educação formal vs. alternativas: Pós-graduação aumenta em 30% as chances de alcançar cargos sênior, mas bootcamps e certificações são a única via para muitos sem diploma na área (Data Science Academy, 2023).
+- Educação formal vs. alternativas: Pós-graduação aumenta em 30% as chances de alcançar cargos sênior, mas bootcamps e certificações são a única via para muitos sem diploma na área (Data Science Academy, 2023).
 
-➡ Habilidades não técnicas negligenciadas: Competências como comunicação e storytelling impactam 40% das promoções (Harvard Business Review, 2022), mas são pouco desenvolvidas em cursos técnicos.
+- Habilidades não técnicas negligenciadas: Competências como comunicação e storytelling impactam 40% das promoções (Harvard Business Review, 2022), mas são pouco desenvolvidas em cursos técnicos.
 
 *Impactos Diretos na Carreira:*
 
 Para profissionais:
 
-➡ Iniciantes sem acesso a mentorias ou cursos especializados levam 2x mais tempo para conseguir o primeiro emprego na área.
+- Iniciantes sem acesso a mentorias ou cursos especializados levam 2x mais tempo para conseguir o primeiro emprego na área.
 
-➡ Quem não domina inglês ou ferramentas em alta demanda (ex: LLMs, cloud) fica excluído de vagas globais e bem remuneradas.
+- Quem não domina inglês ou ferramentas em alta demanda (ex: LLMs, cloud) fica excluído de vagas globais e bem remuneradas.
 
-➡ Profissionais de grupos sub-representados (mulheres, negros, periféricos) enfrentam maior dificuldade para alcançar cargos de liderança.
+- Profissionais de grupos sub-representados (mulheres, negros, periféricos) enfrentam maior dificuldade para alcançar cargos de liderança.
 
 Para empresas e instituições:
 
-➡ Empresas perdem talentos qualificados por não identificarem potenciais além do currículo tradicional.
+- Empresas perdem talentos qualificados por não identificarem potenciais além do currículo tradicional.
 
-➡ Instituições de ensino formam profissionais desalinhados com demandas reais do mercado, gerando desemprego técnico.
+- Instituições de ensino formam profissionais desalinhados com demandas reais do mercado, gerando desemprego técnico.
 
 *Lacuna Crítica*
 
@@ -188,15 +188,15 @@ Desenvolver um modelo analítico baseado no State of Data Brazil 2023 para ident
 
 *1-Mapear o perfil individual dos profissionais*
 
-➡ Analisar a distribuição de formação acadêmica (STEM vs não-STEM), modalidades de capacitação (graduação, pós, cursos livres) e sua correlação com níveis salariais;
+- Analisar a distribuição de formação acadêmica (STEM vs não-STEM), modalidades de capacitação (graduação, pós, cursos livres) e sua correlação com níveis salariais;
 
-➡ Avaliar o impacto de fatores socioeconômicos.
+- Avaliar o impacto de fatores socioeconômicos.
 
 *2-Mensurar como variáveis como gênero, raça, região de origem e tipo de instituição de formação afetam:*
 
-➡ Tempo para ingresso no mercado;
+- Tempo para ingresso no mercado;
 
-➡ Acesso a oportunidades em empresas de elite.
+- Acesso a oportunidades em empresas de elite.
 
 ---
 
@@ -228,11 +228,11 @@ Essas disparidades não são explicadas apenas por competência técnica, mas po
 
 Não há sistemas que cruzem:
 
-✔ Perfil individual → Habilidades mais valorizadas no mercado;
+- Perfil individual → Habilidades mais valorizadas no mercado;
 
-✔ Trajetórias alternativas → Como profissionais sem diploma tradicional alcançaram sucesso;
+- Trajetórias alternativas → Como profissionais sem diploma tradicional alcançaram sucesso;
 
-✔ Barreiras socioeconômicas → Quais fatores (além da técnica) impedem a progressão.
+- Barreiras socioeconômicas → Quais fatores (além da técnica) impedem a progressão.
 
 Isso prejudica:
 
@@ -493,55 +493,6 @@ Primeiramente, antes de entramos na execução do modelo, temos que analisar a c
 
 
 ![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/correlacao_features.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# REFERÊNCIAS
-
-Como um projeto de sistema inteligente não requer revisão bibliográfica, 
-a inclusão das referências não é obrigatória. No entanto, caso você 
-tenha utilizado referências na introdução ou deseje 
-incluir referências relacionadas às tecnologias, padrões, ou metodologias 
-que serão usadas no seu trabalho, relacione-as de acordo com a ABNT.
-
-Verifique no link abaixo como devem ser as referências no padrão ABNT:
-
-http://www.pucminas.br/imagedb/documento/DOC\_DSC\_NOME\_ARQUI20160217102425.pdf
-
-Por exemplo:
-
-**[1]** - _ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019. E-book. ISBN 9788543025001._
-
-**[2]** - _COPPIN, Ben. **Inteligência artificial**. Rio de Janeiro, RJ: LTC, c2010. E-book. ISBN 978-85-216-2936-8._
-
-**[3]** - _CORMEN, Thomas H. et al. **Algoritmos: teoria e prática**. Rio de Janeiro, RJ: Elsevier, Campus, c2012. xvi, 926 p. ISBN 9788535236996._
-
-**[4]** - _SUTHERLAND, Jeffrey Victor. **Scrum: a arte de fazer o dobro do trabalho na metade do tempo**. 2. ed. rev. São Paulo, SP: Leya, 2016. 236, [4] p. ISBN 9788544104514._
-
-**[5]** - _RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial**. Rio de Janeiro: Elsevier, c2013. xxi, 988 p. ISBN 9788535237016._
 
 
 
@@ -956,54 +907,56 @@ Dados:
 
 Base restrita ao State of Data 2023
 
-Classes desbalanceadas (Sênior: 1816, Júnior: 1015)
+->Classes desbalanceadas (Sênior: 1816, Júnior: 1015)
 
-Falta de atributos sobre habilidades específicas
+->Falta de atributos sobre habilidades específicas
 
-Modelagem:
+*Modelagem*:
 
-Dificuldade em classificar nível Pleno
+->Dificuldade em classificar nível Pleno
 
-Acurácia máxima de 72%
+->Acurácia máxima de 72%
 
-Possível overfitting (diferença treino-teste)
+->Possível overfitting (diferença treino-teste)
 
-Sugestões de Melhoria
+-*Sugestões de Melhoria*
+
 Coleta de Dados:
 
-Incluir variáveis sobre habilidades técnicas específicas
+->Incluir variáveis sobre habilidades técnicas específicas
 
-Ampliar amostra de grupos sub-representados
+->Ampliar amostra de grupos sub-representados
 
-Modelagem:
+-*Modelagem*:
 
-Testar algoritmos como XGBoost ou Redes Neurais
+->Testar algoritmos como XGBoost ou Redes Neurais
 
-Incorporar técnicas avançadas de feature engineering
+->Incorporar técnicas avançadas de feature engineering
 
-Desenvolver modelo específico para classificação Pleno/Sênior
+->Desenvolver modelo específico para classificação Pleno/Sênior
 
-Análise:
+-*Análise*:
 
-Adicionar análise temporal da progressão de carreira
+->Adicionar análise temporal da progressão de carreira
 
-Investigar relação entre formação acadêmica e promoções
+->Investigar relação entre formação acadêmica e promoções
 
-Considerações Finais
+-*Considerações Finais*
+
 Os resultados confirmam que o nível profissional no mercado de dados brasileiro é influenciado por:
 
-Experiência prática (principal diferenciador Júnior/Pleno)
+->Experiência prática (principal diferenciador Júnior/Pleno)
 
-Fatores regionais (Sudeste concentra melhores oportunidades)
+->Fatores regionais (Sudeste concentra melhores oportunidades)
 
-Desigualdades estruturais (gênero, acesso a educação)
+->Desigualdades estruturais (gênero, acesso a educação)
 
-Este estudo fornece uma base quantitativa para:
+-*Este estudo fornece uma base quantitativa para*:
 
-Profissionais planejarem suas carreiras
+->Profissionais planejarem suas carreiras
 
-Empresas desenvolverem programas de capacitação
+->Empresas desenvolverem programas de capacitação
 
-Instituições de ensino ajustarem currículos
+->Instituições de ensino ajustarem currículos
 
 
