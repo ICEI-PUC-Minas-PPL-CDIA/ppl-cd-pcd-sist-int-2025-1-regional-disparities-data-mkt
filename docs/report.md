@@ -90,11 +90,11 @@ O mercado de dados no Brasil vive um momento de expansão, aimpulsionado pelo us
 
 Enquanto alguns cientistas de dados conseguem alcançar salários elevados e posições estratégicas em poucos anos, outros, mesmo com qualificações técnicas semelhantes, enfrentam dificuldades para ingressar no mercado ou progredir na carreira. Essa disparidade não se explica apenas por diferenças regionais (como a concentração de vagas no Sudeste), mas também por barreiras individuais, como:
 
-➡ Divisão técnica: Profissionais com domínio em ferramentas avançadas (ex: PySpark, TensorFlow) têm salários até 35% superiores à média (Pesquisa Stack Overflow, 2023), mas muitos não têm acesso a capacitação nessas tecnologias.
+- Divisão técnica: Profissionais com domínio em ferramentas avançadas (ex: PySpark, TensorFlow) têm salários até 35% superiores à média (Pesquisa Stack Overflow, 2023), mas muitos não têm acesso a capacitação nessas tecnologias.
 
-➡ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), privilegiando quem já está inserido em ambientes corporativos da área tecnológica.
+- Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), privilegiando quem já está inserido em ambientes corporativos da área tecnológica.
 
-➡ Educação formal vs. cursos alternativos: Profissionais com pós-graduação têm 20% mais chances de alcançar cargos sênior, mas bootcamps e certificações podem acelerar a entrada no mercado para quem não tem diploma na área (Data Science Academy, 2023).
+- Educação formal vs. cursos alternativos: Profissionais com pós-graduação têm 20% mais chances de alcançar cargos sênior, mas bootcamps e certificações podem acelerar a entrada no mercado para quem não tem diploma na área (Data Science Academy, 2023).
 
 Além disso, habilidades não técnicas—como comunicação, pensamento crítico e capacidade de traduzir dados em decisões, são frequentemente subestimadas, mas determinam até 40% da progressão para cargos de liderança (Harvard Business Review, 2022).
 
