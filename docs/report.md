@@ -832,7 +832,7 @@ Ideal para problemas de classificação com dados numéricos e classes desbalanc
 
 Os atributos utilizados foram padronizados para ambos os modelos:
 
-- Investimento em milhões
+_ Investimento em milhões
 _ Idade
 _ Gênero
 _ Cor/Raça/Etnia
@@ -854,23 +854,17 @@ As bases de treino e teste foram dividas em 70% e 30%, respectivamente, em contr
 
 Ambos os modelos apresentaram características semelhantes e enfrentaram dificuldades análogas. A aplicação de dois modelos de classificação mostrou-se ineficaz para a obtenção de conclusões distintas. Diante disso, optou-se pela substituição do modelo com pior desempenho por um novo modelo, com o intuito de aprimorar os resultados da análise.
 
-### Distribuição do modelo (opcional)
-
-Tende criar um pacote de distribuição para o modelo construído, para ser aplicado 
-em um sistema inteligente.
-
-
 ### Conclusão
 
 
 ## Resumo do Desenvolvimento
 Este trabalho investigou como fatores individuais impactam a carreira em ciência de dados no Brasil, utilizando dados do State of Data 2023. Desenvolvemos dois modelos preditivos (Árvore de Decisão e Random Forest) para classificar profissionais em níveis Júnior, Pleno e Sênior, com base em características como:
 
-- Experiência profissional (40% têm até 2 anos na área)
-- Faixa salarial (média R$8.001-12.000)
-- Formação acadêmica
-- Gênero (75% masculino)
-- Região (Sudeste concentra 45% dos profissionais)
+- Experiência profissional (40% têm até 2 anos na área);
+- Faixa salarial (média R$8.001-12.000);
+- Formação acadêmica;
+- Gênero (75% masculino);
+- Região (Sudeste concentra 45% dos profissionais).
 
 ## Resultados e Discussão
 
@@ -881,20 +875,20 @@ Este trabalho investigou como fatores individuais impactam a carreira em ciênci
 | Random Forest    | 71.46%           | Sênior (0.85)            | Pleno (0.65)           |
 
 **Vantagens**:
-- Ambos os modelos identificaram padrões claros para classificar Júnior e Sênior
-- Random Forest mostrou melhor balanceamento entre classes após SMOTE
-- Variáveis como tempo de experiência e faixa salarial foram as mais relevantes
+- Ambos os modelos identificaram padrões claros para classificar Júnior e Sênior;
+- Random Forest mostrou melhor balanceamento entre classes após SMOTE;
+- Variáveis como tempo de experiência e faixa salarial foram as mais relevantes.
 
 **Desvantagens**:
-- Dificuldade em classificar nível Pleno (sobreposição de características)
-- Acurácia limitada (~72%) sugere necessidade de mais atributos
-- Disparidades regionais podem ter influenciado os resultados
+- Dificuldade em classificar nível Pleno (sobreposição de características);
+- Acurácia limitada (~72%) sugere necessidade de mais atributos;
+- Disparidades regionais podem ter influenciado os resultados.
 
 ### Principais Descobertas
 1. **Fatores Críticos**:
-   - Tempo de experiência: 40% dos profissionais têm até 2 anos na área
-   - Gênero: 75% dos respondentes são homens
-   - Região: Sudeste concentra 45% dos profissionais e maiores salários
+   - Tempo de experiência: 40% dos profissionais têm até 2 anos na área;
+   - Gênero: 75% dos respondentes são homens;
+   - Região: Sudeste concentra 45% dos profissionais e maiores salários.
 
 2. **Desigualdades Identificadas**:
    ```python
@@ -907,56 +901,56 @@ Dados:
 
 Base restrita ao State of Data 2023
 
-->Classes desbalanceadas (Sênior: 1816, Júnior: 1015)
+->Classes desbalanceadas (Sênior: 1816, Júnior: 1015);
 
-->Falta de atributos sobre habilidades específicas
+->Falta de atributos sobre habilidades específicas.
 
 *Modelagem*:
 
-->Dificuldade em classificar nível Pleno
+->Dificuldade em classificar nível Pleno;
 
-->Acurácia máxima de 72%
+->Acurácia máxima de 72%;
 
-->Possível overfitting (diferença treino-teste)
+->Possível overfitting (diferença treino-teste).
 
 -*Sugestões de Melhoria*
 
 Coleta de Dados:
 
-->Incluir variáveis sobre habilidades técnicas específicas
+->Incluir variáveis sobre habilidades técnicas específicas;
 
-->Ampliar amostra de grupos sub-representados
+->Ampliar amostra de grupos sub-representados.
 
 -*Modelagem*:
 
-->Testar algoritmos como XGBoost ou Redes Neurais
+->Testar algoritmos como XGBoost ou Redes Neurais;
 
-->Incorporar técnicas avançadas de feature engineering
+->Incorporar técnicas avançadas de feature engineering;
 
-->Desenvolver modelo específico para classificação Pleno/Sênior
+->Desenvolver modelo específico para classificação Pleno/Sênior.
 
 -*Análise*:
 
-->Adicionar análise temporal da progressão de carreira
+->Adicionar análise temporal da progressão de carreira;
 
-->Investigar relação entre formação acadêmica e promoções
+->Investigar relação entre formação acadêmica e promoções.
 
 -*Considerações Finais*
 
 Os resultados confirmam que o nível profissional no mercado de dados brasileiro é influenciado por:
 
-->Experiência prática (principal diferenciador Júnior/Pleno)
+->Experiência prática (principal diferenciador Júnior/Pleno);
 
-->Fatores regionais (Sudeste concentra melhores oportunidades)
+->Fatores regionais (Sudeste concentra melhores oportunidades);
 
-->Desigualdades estruturais (gênero, acesso a educação)
+->Desigualdades estruturais (gênero, acesso a educação).
 
 -*Este estudo fornece uma base quantitativa para*:
 
-->Profissionais planejarem suas carreiras
+->Profissionais planejarem suas carreiras;
 
-->Empresas desenvolverem programas de capacitação
+->Empresas desenvolverem programas de capacitação;
 
-->Instituições de ensino ajustarem currículos
+->Instituições de ensino ajustarem currículos.
 
 
