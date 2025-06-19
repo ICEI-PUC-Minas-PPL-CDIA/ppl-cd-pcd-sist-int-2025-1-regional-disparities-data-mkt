@@ -911,15 +911,99 @@ em um sistema inteligente.
 
 ### Conclusão
 
-Apesar dos testes com diferentes profundidades, o modelo não ultrapassou a acurácia de 75% nos testes. Isso pode
-acontecer por diferentes motivos, como overfitting da base de dados, ou falta de atributos relevantes para diferenciar
-as classes, ou até mesmo escolha equivocada do modelo de classificação ideal. Por tal motivo, foi definido como modelo 2
-a classificação por KNN (K-Nearest Neighbors)
 
-Uma conclusão deve ter 3 partes:
+## Resumo do Desenvolvimento
+Este trabalho investigou como fatores individuais impactam a carreira em ciência de dados no Brasil, utilizando dados do State of Data 2023. Desenvolvemos dois modelos preditivos (Árvore de Decisão e Random Forest) para classificar profissionais em níveis Júnior, Pleno e Sênior, com base em características como:
 
-   * Breve resumo do que foi desenvolvido
-	 * Apresenação geral dos resultados obtidos com discussão das vantagens e desvantagens do sistema inteligente
-	 * Limitações e possibilidades de melhoria
+- Experiência profissional (40% têm até 2 anos na área)
+- Faixa salarial (média R$8.001-12.000)
+- Formação acadêmica
+- Gênero (75% masculino)
+- Região (Sudeste concentra 45% dos profissionais)
+
+## Resultados e Discussão
+
+### Desempenho dos Modelos
+| Modelo           | Acurácia (Teste) | Melhor Classe (F1-Score) | Pior Classe (F1-Score) |
+|------------------|------------------|--------------------------|------------------------|
+| Árvore Decisão   | 72%              | Sênior (0.79)            | Pleno (0.61)           |
+| Random Forest    | 71.46%           | Sênior (0.85)            | Pleno (0.65)           |
+
+**Vantagens**:
+- Ambos os modelos identificaram padrões claros para classificar Júnior e Sênior
+- Random Forest mostrou melhor balanceamento entre classes após SMOTE
+- Variáveis como tempo de experiência e faixa salarial foram as mais relevantes
+
+**Desvantagens**:
+- Dificuldade em classificar nível Pleno (sobreposição de características)
+- Acurácia limitada (~72%) sugere necessidade de mais atributos
+- Disparidades regionais podem ter influenciado os resultados
+
+### Principais Descobertas
+1. **Fatores Críticos**:
+   - Tempo de experiência: 40% dos profissionais têm até 2 anos na área
+   - Gênero: 75% dos respondentes são homens
+   - Região: Sudeste concentra 45% dos profissionais e maiores salários
+
+2. **Desigualdades Identificadas**:
+   ```python
+   # Disparidade salarial por região (em salários mínimos)
+   regioes = ['Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul']
+   salarios_medios = [6.2, 7.1, 8.3, 10.5, 9.2]
+Limitações e Melhorias Futuras
+Limitações Atuais
+Dados:
+
+Base restrita ao State of Data 2023
+
+Classes desbalanceadas (Sênior: 1816, Júnior: 1015)
+
+Falta de atributos sobre habilidades específicas
+
+Modelagem:
+
+Dificuldade em classificar nível Pleno
+
+Acurácia máxima de 72%
+
+Possível overfitting (diferença treino-teste)
+
+Sugestões de Melhoria
+Coleta de Dados:
+
+Incluir variáveis sobre habilidades técnicas específicas
+
+Ampliar amostra de grupos sub-representados
+
+Modelagem:
+
+Testar algoritmos como XGBoost ou Redes Neurais
+
+Incorporar técnicas avançadas de feature engineering
+
+Desenvolver modelo específico para classificação Pleno/Sênior
+
+Análise:
+
+Adicionar análise temporal da progressão de carreira
+
+Investigar relação entre formação acadêmica e promoções
+
+Considerações Finais
+Os resultados confirmam que o nível profissional no mercado de dados brasileiro é influenciado por:
+
+Experiência prática (principal diferenciador Júnior/Pleno)
+
+Fatores regionais (Sudeste concentra melhores oportunidades)
+
+Desigualdades estruturais (gênero, acesso a educação)
+
+Este estudo fornece uma base quantitativa para:
+
+Profissionais planejarem suas carreiras
+
+Empresas desenvolverem programas de capacitação
+
+Instituições de ensino ajustarem currículos
 
 
