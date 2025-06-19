@@ -76,7 +76,7 @@ Usamos dados do **State of Data Brazil 2023** e técnicas de **Machine Learning*
 
 ## 📂 **Acesso ao Projeto Completo**  
 
-🔗 **Código e Dados**: [Link para o Repositório]()  
+🔗 **Código e Dados**: [[Link para o Repositório](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/report.md)]()  
 🎥 **Vídeo de Apresentação**: [Link para o Vídeo]()  
 📊 **Slides**: [Link para a Apresentação]()  
 
