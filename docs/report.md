@@ -495,10 +495,7 @@ Primeiramente, antes de entramos na execução do modelo, temos que analisar a c
 
 
 ---
-# Temporario
-
-
-### Resultados 
+#Resultados 
 ---
 ### Resultados obtidos com o modelo 1.
 ### Acurácia:
