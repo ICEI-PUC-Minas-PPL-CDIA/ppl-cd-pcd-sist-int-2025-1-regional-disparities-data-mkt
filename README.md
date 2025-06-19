@@ -2,7 +2,9 @@
 
 **Autores**:  
 Walker Rocha, Álvaro Oliveira, Guilherme Amintas, Izabela Dobscha, Luiz Eduardo
+
 **Orientadores**: Prof. Hugo Bastos e Prof. Hayala Nepomuceno  
+
 **Instituição**: PUC Minas - Ciência de Dados  
 
 ---
