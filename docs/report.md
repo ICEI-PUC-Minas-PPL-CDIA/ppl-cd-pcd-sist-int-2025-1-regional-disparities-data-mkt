@@ -494,28 +494,6 @@ Primeiramente, antes de entramos na execução do modelo, temos que analisar a c
 
 
 
-# APÊNDICES
-
-**Colocar link:**
-
-Do código (armazenado no repositório);
-
-Dos artefatos (armazenado do repositório);
-
-Da apresentação final (armazenado no repositório);
-
-Do vídeo de apresentação (armazenado no repositório).
-
-Variaveis a serem utilzadas:
-RegiaoP1_i_2
-Nivel de atuação P2_g
-faixa salarial 
-ha quanto tempo está na area de dados
-
-
-
-
-
 ---
 # Temporario
 
@@ -951,4 +929,16 @@ Os resultados confirmam que o nível profissional no mercado de dados brasileiro
 
 ->Instituições de ensino ajustarem currículos.
 
+
+# APÊNDICES
+
+**Colocar link:**
+
+Link do Codigo: https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/assets/models/README.md
+
+Dos artefatos (armazenado do repositório);
+
+Da apresentação final (armazenado no repositório);
+
+Do vídeo de apresentação (armazenado no repositório).
 
