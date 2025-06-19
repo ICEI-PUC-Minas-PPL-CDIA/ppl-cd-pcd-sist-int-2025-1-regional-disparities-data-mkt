@@ -50,9 +50,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 - [Treinamento e Otimização do Modelo](#treinamento-e-otimização-do-modelo)
 - [Análise Comparativa dos Modelos](#análise-comparativa-dos-modelos)
 - [Conclusão](#conclusão)
-- [Referências](#referências)
 - [Apêndices](#apêndices)
-- [Resultados (Temporário)](#resultados-temporário)
 
 ---
 
