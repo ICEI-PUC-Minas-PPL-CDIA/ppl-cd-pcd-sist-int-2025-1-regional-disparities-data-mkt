@@ -26,7 +26,7 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-## 📑 Índice
+##  Índice
 
 - [Resumo](#resumo)
 - [Introdução](#introdução)
@@ -92,11 +92,11 @@ O mercado de dados no Brasil vive um momento de expansão, aimpulsionado pelo us
 
 Enquanto alguns cientistas de dados conseguem alcançar salários elevados e posições estratégicas em poucos anos, outros, mesmo com qualificações técnicas semelhantes, enfrentam dificuldades para ingressar no mercado ou progredir na carreira. Essa disparidade não se explica apenas por diferenças regionais (como a concentração de vagas no Sudeste), mas também por barreiras individuais, como:
 
-➡️ Divisão técnica: Profissionais com domínio em ferramentas avançadas (ex: PySpark, TensorFlow) têm salários até 35% superiores à média (Pesquisa Stack Overflow, 2023), mas muitos não têm acesso a capacitação nessas tecnologias.
+➡ Divisão técnica: Profissionais com domínio em ferramentas avançadas (ex: PySpark, TensorFlow) têm salários até 35% superiores à média (Pesquisa Stack Overflow, 2023), mas muitos não têm acesso a capacitação nessas tecnologias.
 
-➡️ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), privilegiando quem já está inserido em ambientes corporativos da área tecnológica.
+➡ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), privilegiando quem já está inserido em ambientes corporativos da área tecnológica.
 
-➡️ Educação formal vs. cursos alternativos: Profissionais com pós-graduação têm 20% mais chances de alcançar cargos sênior, mas bootcamps e certificações podem acelerar a entrada no mercado para quem não tem diploma na área (Data Science Academy, 2023).
+➡ Educação formal vs. cursos alternativos: Profissionais com pós-graduação têm 20% mais chances de alcançar cargos sênior, mas bootcamps e certificações podem acelerar a entrada no mercado para quem não tem diploma na área (Data Science Academy, 2023).
 
 Além disso, habilidades não técnicas—como comunicação, pensamento crítico e capacidade de traduzir dados em decisões, são frequentemente subestimadas, mas determinam até 40% da progressão para cargos de liderança (Harvard Business Review, 2022).
 
@@ -126,29 +126,29 @@ O crescimento do mercado de ciência de dados no Brasil, embora promissor, é ma
 
 *Desigualdades Estruturais no Nível Individual*
 
-➡️ Divisão de habilidades: Profissionais com domínio em ferramentas avançadas (MLOps, engenharia de dados) têm salários até 50% maiores, mas muitos não têm acesso a capacitação nessas tecnologias (Stack Overflow, 2023).
+➡ Divisão de habilidades: Profissionais com domínio em ferramentas avançadas (MLOps, engenharia de dados) têm salários até 50% maiores, mas muitos não têm acesso a capacitação nessas tecnologias (Stack Overflow, 2023).
 
-➡️ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), excluindo quem não está inserido em ambientes corporativos da área tecnológica.
+➡ Networking e viés de contratação: 60% das vagas são preenchidas por indicação (LinkedIn, 2023), excluindo quem não está inserido em ambientes corporativos da área tecnológica.
 
-➡️ Educação formal vs. alternativas: Pós-graduação aumenta em 30% as chances de alcançar cargos sênior, mas bootcamps e certificações são a única via para muitos sem diploma na área (Data Science Academy, 2023).
+➡ Educação formal vs. alternativas: Pós-graduação aumenta em 30% as chances de alcançar cargos sênior, mas bootcamps e certificações são a única via para muitos sem diploma na área (Data Science Academy, 2023).
 
-➡️ Habilidades não técnicas negligenciadas: Competências como comunicação e storytelling impactam 40% das promoções (Harvard Business Review, 2022), mas são pouco desenvolvidas em cursos técnicos.
+➡ Habilidades não técnicas negligenciadas: Competências como comunicação e storytelling impactam 40% das promoções (Harvard Business Review, 2022), mas são pouco desenvolvidas em cursos técnicos.
 
 *Impactos Diretos na Carreira:*
 
 Para profissionais:
 
-➡️ Iniciantes sem acesso a mentorias ou cursos especializados levam 2x mais tempo para conseguir o primeiro emprego na área.
+➡ Iniciantes sem acesso a mentorias ou cursos especializados levam 2x mais tempo para conseguir o primeiro emprego na área.
 
-➡️ Quem não domina inglês ou ferramentas em alta demanda (ex: LLMs, cloud) fica excluído de vagas globais e bem remuneradas.
+➡ Quem não domina inglês ou ferramentas em alta demanda (ex: LLMs, cloud) fica excluído de vagas globais e bem remuneradas.
 
-➡️ Profissionais de grupos sub-representados (mulheres, negros, periféricos) enfrentam maior dificuldade para alcançar cargos de liderança.
+➡ Profissionais de grupos sub-representados (mulheres, negros, periféricos) enfrentam maior dificuldade para alcançar cargos de liderança.
 
 Para empresas e instituições:
 
-➡️ Empresas perdem talentos qualificados por não identificarem potenciais além do currículo tradicional.
+➡ Empresas perdem talentos qualificados por não identificarem potenciais além do currículo tradicional.
 
-➡️ Instituições de ensino formam profissionais desalinhados com demandas reais do mercado, gerando desemprego técnico.
+➡ Instituições de ensino formam profissionais desalinhados com demandas reais do mercado, gerando desemprego técnico.
 
 *Lacuna Crítica*
 
@@ -164,11 +164,11 @@ Não existe hoje um sistema que analise como variáveis individuais, e não apen
 
 Um modelo analítico baseado em dados individuais que cruze:
 
-✔️ Perfis profissionais → Quais experiências levam a melhores salários e empregabilidade.
+- Perfis profissionais → Quais experiências levam a melhores salários e empregabilidade.
 
-✔️ Pesquisas salariais e de recrutamento → Viéses de contratação e gaps de competências.
+- Pesquisas salariais e de recrutamento → Viéses de contratação e gaps de competências.
 
-✔️ Trajetórias de sucesso → Rotas alternativas de capacitação (ex.: certificações X pós-graduação).
+- Trajetórias de sucesso → Rotas alternativas de capacitação (ex.: certificações X pós-graduação).
 
 *Objetivo final:*
 
@@ -188,15 +188,15 @@ Desenvolver um modelo analítico baseado no State of Data Brazil 2023 para ident
 
 *1-Mapear o perfil individual dos profissionais*
 
-➡️ Analisar a distribuição de formação acadêmica (STEM vs não-STEM), modalidades de capacitação (graduação, pós, cursos livres) e sua correlação com níveis salariais;
+➡ Analisar a distribuição de formação acadêmica (STEM vs não-STEM), modalidades de capacitação (graduação, pós, cursos livres) e sua correlação com níveis salariais;
 
-➡️ Avaliar o impacto de fatores socioeconômicos.
+➡ Avaliar o impacto de fatores socioeconômicos.
 
 *2-Mensurar como variáveis como gênero, raça, região de origem e tipo de instituição de formação afetam:*
 
-➡️ Tempo para ingresso no mercado;
+➡ Tempo para ingresso no mercado;
 
-➡️ Acesso a oportunidades em empresas de elite.
+➡ Acesso a oportunidades em empresas de elite.
 
 ---
 
@@ -236,17 +236,17 @@ Não há sistemas que cruzem:
 
 Isso prejudica:
 
-❌ Profissionais: Escolhem capacitações que não trazem retorno financeiro ou oportunidades reais;
+- Profissionais: Escolhem capacitações que não trazem retorno financeiro ou oportunidades reais;
 
-❌ Empresas: Perdem talentos qualificados por focarem apenas em currículos tradicionais;
+- Empresas: Perdem talentos qualificados por focarem apenas em currículos tradicionais;
 
-❌ Instituições de ensino: Não adaptam cursos às demandas reais do mercado.
+- Instituições de ensino: Não adaptam cursos às demandas reais do mercado.
 
 Impacto Social
 
 Este estudo visa transformar dados em ações práticas:
 
-✅ Para profissionais:
+ Para profissionais:
 
 -Identificar quais habilidades (técnicas e comportamentais) priorizar;
 
@@ -254,7 +254,7 @@ Este estudo visa transformar dados em ações práticas:
 
 -Ajudar grupos sub-representados a superar barreiras de acesso.
 
-✅ Para empresas:
+ Para empresas:
 
 -Reduzir vieses em contratações e valorizar habilidades além do diploma;
 
@@ -270,10 +270,10 @@ Este estudo tem como público-alvo profissionais em diferentes estágios da carr
 ## Análise exploratórida dos dados
 
 
-## 📌 1. Introdução
+##  1. Introdução
 O projeto utiliza o dataset da planilha unificada da State_of_data_2023 com Microdados(MCTI) como principal fonte de dados, que relaciona os estados brasileiros com o mercado de dados, incluindo informações sobre investimentos, características demográficas dos profissionais e condições de trabalho.
 
-## 📊 2. Atributos Analisados (Dicionário de Dados)
+##  2. Atributos Analisados (Dicionário de Dados)
 
 | Atributo | Descrição | Escala do Dado | Tipo de Dado |
 |----------|-----------|----------------|--------------|
@@ -295,7 +295,7 @@ O projeto utiliza o dataset da planilha unificada da State_of_data_2023 com Micr
 | EXPERIÊNCIA PREJUDICADA POR RAÇA | Se já teve experiência prejudicada por raça | Nominal | Inteiro (Binário) |
 | EXPERIÊNCIA PREJUDICADA POR GÊNERO | Se já teve experiência prejudicada por gênero | Nominal | Inteiro (Binário) |
 
-## 📈 3. Estatísticas Descritivas
+##  3. Estatísticas Descritivas
 
 ### Dados Numéricos
 
@@ -332,7 +332,7 @@ Abaixo temos a tabela com as operações estatisticas feitas sobre as colunas da
 
 "Sudeste concentra os maiores investimentos em dados no país"
 
-## 🔍 4. Principais Insights
+##  4. Principais Insights
 
 1. **Perfil predominante**: 
    - Homem (75%), 30 anos, trabalha remotamente (45%), com 3-5 anos de experiência
@@ -357,7 +357,7 @@ Abaixo temos a tabela com as operações estatisticas feitas sobre as colunas da
    - Faixa salarial média entre R$ 8.001-12.000
    - 73.51% consideram mudar de emprego nos próximos 6 meses
 
-## 📊 5. Gráficos Adicionais
+##  5. Gráficos Adicionais
 
 ### Distribuição de Idade
 
@@ -432,7 +432,7 @@ Obtivemos através de analise da base que a distruibuição da varivel "('P2_g '
 
 Após isso o modelo separa quais as variaveis ira utilizar, separando das quais não sao númericas, dessa forma temos as seguintes features utilizadas:
 
-### ✅ Features Selecionadas para o Modelo
+###  Features Selecionadas para o Modelo
 
 | Nº  | Feature                                                                                           |
 |-----|---------------------------------------------------------------------------------------------------|
@@ -690,9 +690,9 @@ Max_depth: 9
 Criterion: Entropy
 
 
-### 📊 Resultados do Modelo 2 - Random Forest
+###  Resultados do Modelo 2 - Random Forest
 ### Acurácia:
-#### 🏋️ Conjunto de Treino
+####  Conjunto de Treino
 
 | Métrica             | Precisão | Revocação | F1-Score | Suporte |
 |---------------------|----------|-----------|----------|---------|
@@ -700,7 +700,7 @@ Criterion: Entropy
 | **Média Macro**     | 0.82     | 0.82      | 0.82     | 1089    |
 | **Média Ponderada** | 0.82     | 0.82      | 0.82     | 1089    |
 
-#### 🧪 Conjunto de Teste
+####  Conjunto de Teste
 
 | Métrica             | Precisão | Revocação | F1-Score | Suporte |
 |---------------------|----------|-----------|----------|---------|
