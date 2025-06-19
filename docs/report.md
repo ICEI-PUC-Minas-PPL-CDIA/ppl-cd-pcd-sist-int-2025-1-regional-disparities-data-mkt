@@ -120,6 +120,8 @@ Os resultados visam orientar tanto profissionais (em estratégias personalizadas
 
 ###    Problema
 
+*Pergunta orientada a dados: Como o nível profissional do indivíduo afeta o mercado de trabalho de Ciência de Dados?*
+
 O crescimento do mercado de ciência de dados no Brasil, embora promissor, é marcado por disparidades significativas no nível individual, onde fatores como formação, habilidades, acesso a networking e condições socioeconômicas determinam quem consegue ingressar, progredir e se manter competitivo na área. Enquanto alguns profissionais alcançam cargos bem remunerados e oportunidades em empresas inovadoras, outros—mesmo com qualificações técnicas semelhantes—enfrentam barreiras persistentes devido a:
 
 *Desigualdades Estruturais no Nível Individual*
