@@ -681,7 +681,7 @@ grid_search = GridSearchCV(
 print("\n4. Treinando modelo com os melhores parâmetros...")
 grid_search.fit(X_train_selected, y_train_balanced)
 ```
-###Assim ficou a curva de aprendizado
+## Assim ficou a curva de aprendizado
 ![image](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/docs/imagens/curva_apredizado.png)
 ### Curva de Aprendizado
 
