@@ -2,28 +2,28 @@ cff-version: 1.0.1
 message: Por favor, cite o repositório utilizando estes metadados.
 title: Diferenças no mercado de Ciência de Dados do Brasil a nível de indivíduo
 authors:
-   - family_names: Oliveira Soares de Souza  
-     given_names: Álvaro
-   - family_names: Eduardo Araújo de Medeiros
-     given_names: Luiz
-   - family_names: Amintas Lopes Magalhães
-     given_names: Guilherme
-   - family_names: Dobscha Santos Borges
-     given_names: Izabela
-   - family_names: Junio Gonzaga Rocha
-     given_names: Walker
-   - name-suffix: Professor
+  - family_names: Oliveira Soares de Souza
+    given_names: Álvaro
+  - family_names: Eduardo Araújo de Medeiros
+    given_names: Luiz
+  - family_names: Amintas Lopes Magalhães
+    given_names: Guilherme
+  - family_names: Dobscha Santos Borges
+    given_names: Izabela
+  - family_names: Junio Gonzaga Rocha
+    given_names: Walker
+  - family_names: Nepomuceno Curto
+    given_names: Hayala
+    name_suffix: Professor
     affiliation: PUC Minas
-    family-names: Nepomuceno Curto
-    given-names: Hayala
-   - name-suffix: Professor
+  - family_names: de Paula
+    given_names: Hugo
+    name_suffix: Professor
     affiliation: PUC Minas
-    family-names: de Paula
-    given-names: Hugo
 keywords:
   - Ciência de Dados
   - Aprendizado de Máquina
-repository-code: https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt
+repository_code: https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2023-06-27
