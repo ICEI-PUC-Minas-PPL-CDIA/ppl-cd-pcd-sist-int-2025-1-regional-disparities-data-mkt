@@ -926,6 +926,12 @@ Os resultados confirmam que o nível profissional no mercado de dados brasileiro
 
 ->Instituições de ensino ajustarem currículos.
 
+# Vídeo de apresentação do trabalho 
+
+A seguir está o link para o youtube do nosso vídeo de apresentação do projeto:
+
+https://youtu.be/thQE2Djoqog
+
 
 # APÊNDICES
 
