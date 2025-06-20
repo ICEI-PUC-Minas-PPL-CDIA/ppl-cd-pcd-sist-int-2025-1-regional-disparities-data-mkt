@@ -62,7 +62,7 @@ Este estudo analisa como fatores individuais (formação, habilidades técnicas 
 
 -Como diferentes trajetórias de capacitação (graduação, cursos livres) afetam a progressão
 
--Barreiras enfrentadas por grupos sub-representados
+-Barreiras enfrentadas por grupos sub-representados   
 
 Os resultados fornecerão um guia prático para profissionais e instituições, promovendo maior equidade no mercado de dados brasileiro. 
 
