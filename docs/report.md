@@ -952,5 +952,5 @@ https://youtu.be/thQE2Djoqog
 [Acesse a apresentação final por aqui](https://www.canva.com/design/DAGq1c5JoHk/ukzXEvJHgD2WGfKCZzLDuA/edit?utm_content=DAGq1c5JoHk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Link do video  de apresentação:
-[Acesse o video por aqui](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/assets/results/projeto_hugo.mp4)
+[Acesse o video por aqui](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/assets/results/Video_projeto.mp4)
 
