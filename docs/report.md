@@ -928,20 +928,29 @@ Os resultados confirmam que o nível profissional no mercado de dados brasileiro
 
 # Vídeo de apresentação do trabalho 
 
-A seguir está o link para o youtube do nosso vídeo de apresentação do projeto:
+**A seguir está o link para o youtube do nosso vídeo de apresentação do projeto:**
 
 https://youtu.be/thQE2Djoqog
 
 
 # APÊNDICES
 
-**Colocar link:**
 
-Link do Codigo: https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/assets/models/README.md
+## Link do Codigo:
+[Acesse o código do modelo 1 e modelo 2 po aqui]( https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/assets/models/README.md)
 
-Dos artefatos (armazenado do repositório);
+## link para acessar os artefatos:
+[Acesse as imagens por meio desse link](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/tree/main/docs/imagens)
 
-Da apresentação final (armazenado no repositório);
+---
 
-Do vídeo de apresentação: https://youtu.be/thQE2Djoqog
+[Acesse as tabelas usadas por meio desse link](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/tree/main/assets/data)
+
+---
+
+## Link da apresentação final: 
+[Acesse a apresentação final por aqui](https://www.canva.com/design/DAGq1c5JoHk/ukzXEvJHgD2WGfKCZzLDuA/edit?utm_content=DAGq1c5JoHk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+## Link do video  de apresentação:
+[Acesse o video por aqui](https://youtu.be/thQE2Djoqog)
 
