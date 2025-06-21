@@ -937,7 +937,7 @@ https://youtu.be/thQE2Djoqog
 
 
 ## Link do Codigo:
-[Acesse o código do modelo 1 e modelo 2 po aqui]( https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/assets/models/README.md)
+[Acesse o código do modelo 1 e modelo 2 por aqui]( https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/assets/models/README.md)
 
 ## link para acessar os artefatos:
 [Acesse as imagens por meio desse link](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/tree/main/docs/imagens)
@@ -952,5 +952,5 @@ https://youtu.be/thQE2Djoqog
 [Acesse a apresentação final por aqui](https://www.canva.com/design/DAGq1c5JoHk/ukzXEvJHgD2WGfKCZzLDuA/edit?utm_content=DAGq1c5JoHk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Link do video  de apresentação:
-[Acesse o video por aqui](https://youtu.be/thQE2Djoqog)
+[Acesse o video por aqui](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/blob/main/assets/results/projeto_hugo.mp4)
 
