@@ -86,7 +86,7 @@ Ao focar no nível individual, esta pesquisa visa não apenas entender as desigu
 
 ###    Contextualização
 
-O mercado de dados no Brasil vive um momento de expansão, aimpulsionado pelo uso de tecnologias como inteligência artificial, machine learning e análise de big data. No entanto, por trás dessa demanda aquecida por profissionais qualificados, há uma realidade desigual: as oportunidades e trajetórias na área são profundamente moldadas por fatores individuais, como formação acadêmica, habilidades técnicas e comportamentais, acesso a redes profissionais e condições socioeconômicas.
+O mercado de dados no Brasil vive um momento de expansão, impulsionado pelo uso de tecnologias como inteligência artificial, machine learning e análise de big data. No entanto, por trás dessa demanda aquecida por profissionais qualificados, há uma realidade desigual: as oportunidades e trajetórias na área são profundamente moldadas por fatores individuais, como formação acadêmica, habilidades técnicas e comportamentais, acesso a redes profissionais e condições socioeconômicas.
 
 Enquanto alguns cientistas de dados conseguem alcançar salários elevados e posições estratégicas em poucos anos, outros, mesmo com qualificações técnicas semelhantes, enfrentam dificuldades para ingressar no mercado ou progredir na carreira. Essa disparidade não se explica apenas por diferenças regionais (como a concentração de vagas no Sudeste), mas também por barreiras individuais, como:
 
