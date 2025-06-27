@@ -1,9 +1,9 @@
 # Artefatos do projeto
 
-Liste os artefatos produzidos, com suas localizaçãoes e descrição do conteúdo.
 
 
-* `/data` - Pasta com os dados do projeto
-* `/models` - Pasta com os modelos já induzidos
-* `/results ` - Pasta com os resultados da análise exploratória de dados
+[Datasets utilizados](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/tree/main/assets/data)
 
+[Imagens do projeto](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/tree/main/docs/imagens)
+
+[Modelos](https://github.com/ICEI-PUC-Minas-PPL-CDIA/ppl-cd-pcd-sist-int-2025-1-regional-disparities-data-mkt/tree/main/assets/models)
