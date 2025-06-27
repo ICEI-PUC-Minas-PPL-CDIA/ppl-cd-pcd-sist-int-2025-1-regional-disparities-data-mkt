@@ -2,23 +2,23 @@ cff-version: 1.0.1
 message: Por favor, cite o repositório utilizando estes metadados.
 title: Diferenças no mercado de Ciência de Dados do Brasil a nível de indivíduo
 authors:
-  - family_names: Oliveira Soares de Souza
-    given_names: Álvaro
-  - family_names: Eduardo Araújo de Medeiros
-    given_names: Luiz
-  - family_names: Amintas Lopes Magalhães
-    given_names: Guilherme
-  - family_names: Dobscha Santos Borges
-    given_names: Izabela
-  - family_names: Junio Gonzaga Rocha
-    given_names: Walker
-  - family_names: Nepomuceno Curto
-    given_names: Hayala
-    name_suffix: Professor
+  - family-names: Oliveira Soares de Souza
+    given-names: Álvaro
+  - family-names: Eduardo Araújo de Medeiros
+    given-names: Luiz
+  - family-names: Amintas Lopes Magalhães
+    given-names: Guilherme
+  - family-names: Dobscha Santos Borges
+    given-names: Izabela
+  - family-names: Junio Gonzaga Rocha
+    given-names: Walker
+  - family-names: Nepomuceno Curto
+    given-names: Hayala
+    name-suffix: Professor
     affiliation: PUC Minas
-  - family_names: de Paula
-    given_names: Hugo
-    name_suffix: Professor
+  - family-names: de Paula
+    given-names: Hugo
+    name-suffix: Professor
     affiliation: PUC Minas
 keywords:
   - Ciência de Dados
