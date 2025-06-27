@@ -414,7 +414,9 @@ best_knn = KNeighborsClassifier(n_neighbors=best_k)
 best_knn.fit(X_train_scaled, y_train)
 ```
 
-Treinar o modelo final com o melhor valor de K achado, para isso é usando:
+KNeighborsClassifier(n_neighbors=best_k): Cria o modelo KNN com o melhor k.
+fit: Treina o modelo com todos os dados de treino.
+Propósito: Preparar o modelo final para fazer previsões.
 
 ```python
 KNeighborsClassifier
@@ -426,8 +428,9 @@ fit()
 ```python
 y_pred_test = best_knn.predict(X_test_scaled)
 ```
-Realizar previsões no modelo de teste usando: predict
-
+predict: Usa o modelo treinado para prever as classes dos dados de teste.
+y_pred_test: Vetor com as previsões do modelo.
+Propósito: Obter as previsões para avaliar o desempenho do modelo.
 
 
 ## Bloco 13 - Métricas de avaliação
@@ -435,6 +438,8 @@ Realizar previsões no modelo de teste usando: predict
 accuracy_test = accuracy_score(y_test, y_pred_test)
 print(f"\nAcurácia de Teste: {accuracy_test:.2f}")
 ```
+accuracy_score: Calcula a proporção de acertos do modelo no teste.
+Propósito: Medir o desempenho do modelo em dados nunca vistos.
 
 ## Bloco 14 - Calcular a acurácia de treino
 ```python
@@ -442,6 +447,9 @@ y_pred_train = best_knn.predict(X_train_scaled)
 accuracy_train = accuracy_score(y_train, y_pred_train)
 print(f"Acurácia de Treino: {accuracy_train:.2f}")
 ```
+predict: Faz previsões nos dados de treino.
+accuracy_score: Mede o desempenho do modelo no próprio treino.
+Propósito: Comparar acurácia de treino e teste para verificar se há overfitting (modelo decorando o treino)
 
 ## Bloco 15 - Matriz de confusão
 ```python
@@ -449,12 +457,20 @@ conf_matrix = confusion_matrix(y_test, y_pred_test)
 print("\nMatriz de Confusão:")
 print(conf_matrix)
 ```
+confusion_matrix: Cria uma matriz mostrando quantos exemplos de cada classe foram corretamente ou incorretamente classificados.
+Propósito: Analisar detalhadamente os erros do modelo (por exemplo, se confunde mais Júnior com Pleno, etc).
 
 ## Bloco 16 - Relatório de classificação
 ```python
 print("\nRelatório de Classificação:")
 print(classification_report(y_test, y_pred_test))
 ```
+classification_report: Mostra precisão, recall e f1-score para cada classe.
+Precisão: Entre as previsões daquela classe, quantas estavam corretas.
+Recall: Entre os exemplos reais daquela classe, quantos foram encontrados.
+F1-score: Média harmônica entre precisão e recall.
+Propósito: Avaliação detalhada do desempenho do modelo em cada classe.
+
 
 ## Bloco 17 - Plot da matriz de confusão
 ```python
@@ -482,6 +498,10 @@ for k in k_values:
     y_pred_temp = knn_temp.predict(X_test_scaled)
     accuracies.append(accuracy_score(y_test, y_pred_temp))
 ```
+sns.heatmap: Plota a matriz de confusão como um mapa de calor, facilitando a visualização dos acertos e erros.
+for k in k_values: Treina e testa o modelo para cada valor de k de 1 a 20.
+accuracies.append: Guarda a acurácia de cada k.
+Propósito: Visualizar o desempenho do modelo para diferentes valores de k e identificar tendências.
 
 ## Bloco 18 - Plotar a acurácia vs. k
 ```python
@@ -496,6 +516,11 @@ plt.grid()
 plt.show()
 
 ```
+plt.plot: Plota a acurácia para cada valor de k.
+plt.axvline: Destaca o melhor k encontrado.
+plt.legend, plt.grid, plt.show: Adiciona legenda, grade e exibe o gráfico.
+Propósito: Visualizar como a escolha de k afeta a acurácia e confirmar se o melhor k faz sentido
+
 ---
 # Modelo 2 Random forest versão final
 Abaixo estará disponível a visualização do código de Random forest utilizado no modelo 2, ele estará divido por blocos e com uma explicação de suas features e ferramentas usadas para a criação do mesmo:
@@ -522,6 +547,23 @@ import warnings
 warnings.filterwarnings('ignore')
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
 ```
+Este bloco carrega as principais bibliotecas para:
+
+pandas, numpy: manipulação de dados.
+
+sklearn.model_selection: divisão dos dados e validação cruzada.
+
+sklearn.ensemble: modelo Random Forest.
+
+sklearn.metrics: avaliação do modelo (acurácia, matriz de confusão, etc.).
+
+sklearn.preprocessing: normalização dos dados.
+
+imblearn.over_sampling.SMOTE: balanceamento das classes.
+
+matplotlib.pyplot: visualização gráfica.
+
+SelectFromModel: seleção de variáveis com base na importância.
 
 ## Bloco 2: Carregamento e limpeza de dados.
 
@@ -602,6 +644,21 @@ if missing_values.sum() > 0:
 else:
     print("Não há valores missing no dataset.")
 ```
+Função principal: ler a planilha Excel e limpar nomes das colunas para evitar problemas futuros com caracteres especiais.
+
+Apresenta:
+
+Número de registros e features.
+
+Primeiras linhas do dataset.
+
+Estatísticas descritivas das colunas numéricas.
+
+Distribuição da variável alvo P2_g__Nivel_Num.
+
+Verificação de dados faltantes.
+
+Inclui visualização da distribuição da variável alvo com plt.hist.
 
 ## Bloco 3: Preparação dos dados.
 
@@ -710,6 +767,25 @@ plt.title('Importância das Features')
 plt.tight_layout()
 plt.show()
 ```
+Este é o bloco de engenharia de atributos e pré-processamento. Contém:
+
+Seleção de features numéricas.
+
+Divisão dos dados em treino (20%) e teste (80%) — proposital para avaliar desempenho real.
+
+Normalização com StandardScaler: essencial para evitar viés de escala em atributos numéricos.
+
+Balanceamento com SMOTE: resolve o desbalanceamento entre classes da variável alvo.
+
+Seleção de features importantes com RandomForest + SelectFromModel.
+
+Visualizações:
+
+Divisão treino/teste.
+
+Distribuição das classes antes e depois do SMOTE.
+
+Importância das features.
 
 ## Bloco 4: Otimização do Modelo
 
@@ -784,6 +860,25 @@ plt.legend(loc='lower right')
 plt.grid(True)
 plt.show()
 ```
+
+Este bloco foca em encontrar os melhores hiperparâmetros com GridSearchCV.
+
+Define o grid de busca com:
+
+n_estimators: quantidade de árvores.
+
+max_depth, min_samples_split, min_samples_leaf: controle da complexidade.
+
+class_weight: ajusta desbalanceamento interno.
+
+max_features: estratégia de seleção de atributos por árvore.
+
+Usa 5-fold cross-validation para testar cada combinação e escolhe a com melhor acurácia.
+
+Treina o modelo final com os melhores parâmetros.
+
+Exibe a curva de aprendizado, comparando desempenho em treino vs validação.
+
 ## Bloco 5: Avaliação do Modelo.
 
 ```python
@@ -878,6 +973,17 @@ print("1. Diferença entre acurácia de treino e teste indica o nível de overfi
 print("2. Matriz de confusão mostra onde o modelo mais acerta/erra")
 print("3. Classification report fornece métricas detalhadas por classe")
 ```
+
+Avalia o modelo nos conjuntos de treino e teste com:
+
+Acurácia.
+
+classification_report: precisão, recall e F1-score por classe.
+
+Matriz de confusão (texto e imagem).
+
+Visualização das métricas.
+
 Bloco 6: Analise e importancia das features.
 
 ```python
@@ -951,6 +1057,17 @@ print("1. As features mais importantes indicam os principais fatores preditivos"
 print("2. A correlação entre features pode indicar redundância de informação")
 print("3. A redução de dimensionalidade ajuda a evitar overfitting")
 ```
+
+Este bloco:
+
+Exibe um gráfico com a importância relativa das variáveis.
+
+Analisa detalhadamente as 5 mais importantes.
+
+Mostra estatísticas descritivas das features selecionadas.
+
+Exibe a matriz de correlação para avaliar redundâncias.
+
 Bloco 7:
 
 ```python
@@ -981,6 +1098,8 @@ print(f"Acurácia no conjunto de treino: {accuracy_score(y_train_balanced, y_tra
 print(f"Acurácia no conjunto de teste: {accuracy_score(y_test, y_test_pred):.4f}")
 
 ```
+
+Cria gráfico de barras horizontal com a importância das features (reforçando o Bloco 6) e imprime os valores.
 
 Bloco 8: 
 
@@ -1014,7 +1133,7 @@ print("Melhores parâmetros:", grid_search.best_params_)
 print("Melhor score:", grid_search.best_score_)
 
 ```
-
+Outro GridSearchCV, mais enxuto, focado em testar novas combinações com menos variáveis e outro modelo base.
 
 
 
